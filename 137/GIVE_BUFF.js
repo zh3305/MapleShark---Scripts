@@ -693,11 +693,10 @@ for (var index = 0; index < 0x220; index++) {
 }
 mplew.StartNode("SecondaryStat::DecodeForLocal");
 v4 = Check_Buff (mask, 0x22B8C18);
-  if (sub_42CEB0 (/* *)
+  if (sub_42CEB0 (v4)
   {
      mplew.StartNode("Mask - " + map.get(0x22B8C18));
-    if  mplew.EndNode(false); ( sub_42D850 (/* &v4969 */
-      ) )
+    if   ( sub_42D850 (mask ) )
     {
       v5 = mplew.writeInt("v5");
     }
@@ -707,12 +706,13 @@ v4 = Check_Buff (mask, 0x22B8C18);
     }
     v4970 = mplew.writeInt("v4970");
     v4971 = mplew.writeInt("v4971");
+    mplew.EndNode(false);
   }
   v10 = Check_Buff (mask, 0x22B8C60);
   if ( sub_42CEB0 (v10))
   {
      mplew.StartNode("Mask - " + map.get(0x22B8C60));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v11 = mplew.writeInt("v11");
     }
@@ -728,7 +728,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v16))
   {
      mplew.StartNode("Mask - " + map.get(0x22B8CA8));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v17 = mplew.writeInt("v17");
     }
@@ -744,7 +744,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v22))
   {
      mplew.StartNode("Mask - " + map.get(0x22B8CF0));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v23 = mplew.writeInt("v23");
     }
@@ -760,7 +760,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v28))
   {
      mplew.StartNode("Mask - " + map.get(0x22B8D38));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v29 = mplew.writeInt("v29");
     }
@@ -776,7 +776,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v34))
   {
      mplew.StartNode("Mask - " + map.get(0x22B8D80));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v35 = mplew.writeInt("v35");
     }
@@ -792,7 +792,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v40))
   {
      mplew.StartNode("Mask - " + map.get(0x22B8DC8));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v41 = mplew.writeInt("v41");
     }
@@ -808,7 +808,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v46))
   {
      mplew.StartNode("Mask - " + map.get(0x22B8E10));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v47 = mplew.writeInt("v47");
     }
@@ -824,7 +824,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v52))
   {
      mplew.StartNode("Mask - " + map.get(0x22B8E58));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v53 = mplew.writeInt("v53");
     }
@@ -840,7 +840,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v58))
   {
      mplew.StartNode("Mask - " + map.get(0x22B8EA0));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v59 = mplew.writeInt("v59");
     }
@@ -856,7 +856,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v64))
   {
      mplew.StartNode("Mask - " + map.get(0x22B8EE8));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v65 = mplew.writeInt("v65");
     }
@@ -872,7 +872,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v70))
   {
      mplew.StartNode("Mask - " + map.get(0x22B8F30));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v71 = mplew.writeInt("v71");
     }
@@ -888,7 +888,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v76))
   {
      mplew.StartNode("Mask - " + map.get(0x22B8F78));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v77 = mplew.writeInt("v77");
     }
@@ -904,7 +904,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v82))
   {
      mplew.StartNode("Mask - " + map.get(0x22B8FC0));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v83 = mplew.writeInt("v83");
     }
@@ -920,7 +920,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v88))
   {
      mplew.StartNode("Mask - " + map.get(0x22B9008));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v89 = mplew.writeInt("v89");
     }
@@ -936,7 +936,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v94))
   {
      mplew.StartNode("Mask - " + map.get(0x22B9050));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v95 = mplew.writeInt("v95");
     }
@@ -952,7 +952,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v100))
   {
      mplew.StartNode("Mask - " + map.get(0x22B9098));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v101 = mplew.writeInt("v101");
     }
@@ -968,7 +968,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v106))
   {
      mplew.StartNode("Mask - " + map.get(0x22B90E0));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v107 = mplew.writeInt("v107");
     }
@@ -984,7 +984,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v112))
   {
      mplew.StartNode("Mask - " + map.get(0x22B9128));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v113 = mplew.writeInt("v113");
     }
@@ -1000,7 +1000,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v118))
   {
      mplew.StartNode("Mask - " + map.get(0x22B9170));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v119 = mplew.writeInt("v119");
     }
@@ -1016,7 +1016,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v124))
   {
      mplew.StartNode("Mask - " + map.get(0x22B91B8));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v125 = mplew.writeInt("v125");
     }
@@ -1032,7 +1032,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v130))
   {
      mplew.StartNode("Mask - " + map.get(0x22B9200));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v131 = mplew.writeInt("v131");
     }
@@ -1048,7 +1048,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v136))
   {
      mplew.StartNode("Mask - " + map.get(0x22B9248));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v137 = mplew.writeInt("v137");
     }
@@ -1064,7 +1064,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v142))
   {
      mplew.StartNode("Mask - " + map.get(0x22B9290));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v143 = mplew.writeInt("v143");
     }
@@ -1080,7 +1080,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v148))
   {
      mplew.StartNode("Mask - " + map.get(0x22B92D8));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v149 = mplew.writeInt("v149");
     }
@@ -1096,7 +1096,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v154))
   {
      mplew.StartNode("Mask - " + map.get(0x22B9320));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v155 = mplew.writeInt("v155");
     }
@@ -1112,7 +1112,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v160))
   {
      mplew.StartNode("Mask - " + map.get(0x22B9368));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v161 = mplew.writeInt("v161");
     }
@@ -1128,7 +1128,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v166))
   {
      mplew.StartNode("Mask - " + map.get(0x22B93B0));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v167 = mplew.writeInt("v167");
     }
@@ -1144,7 +1144,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v172))
   {
      mplew.StartNode("Mask - " + map.get(0x22B93F8));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v173 = mplew.writeInt("v173");
     }
@@ -1160,7 +1160,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v178))
   {
      mplew.StartNode("Mask - " + map.get(0x22B9440));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v179 = mplew.writeInt("v179");
     }
@@ -1176,7 +1176,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v184))
   {
      mplew.StartNode("Mask - " + map.get(0x22B9488));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v185 = mplew.writeInt("v185");
     }
@@ -1192,7 +1192,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v190))
   {
      mplew.StartNode("Mask - " + map.get(0x22B94D0));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v191 = mplew.writeInt("v191");
     }
@@ -1208,7 +1208,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v196))
   {
      mplew.StartNode("Mask - " + map.get(0x22B9518));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v197 = mplew.writeInt("v197");
     }
@@ -1224,7 +1224,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v202))
   {
      mplew.StartNode("Mask - " + map.get(0x22B9560));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v203 = mplew.writeInt("v203");
     }
@@ -1240,7 +1240,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v208))
   {
      mplew.StartNode("Mask - " + map.get(0x22B95A8));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v209 = mplew.writeInt("v209");
     }
@@ -1256,7 +1256,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v214))
   {
      mplew.StartNode("Mask - " + map.get(0x22B95F0));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v215 = mplew.writeInt("v215");
     }
@@ -1272,7 +1272,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v220))
   {
      mplew.StartNode("Mask - " + map.get(0x22B9638));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v221 = mplew.writeInt("v221");
     }
@@ -1288,7 +1288,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v226))
   {
      mplew.StartNode("Mask - " + map.get(0x22B9680));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v227 = mplew.writeInt("v227");
     }
@@ -1304,7 +1304,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v232))
   {
      mplew.StartNode("Mask - " + map.get(0x22B96C8));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v233 = mplew.writeInt("v233");
     }
@@ -1320,7 +1320,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v238))
   {
      mplew.StartNode("Mask - " + map.get(0x22B88B8));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v239 = mplew.writeInt("v239");
     }
@@ -1336,7 +1336,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v244))
   {
      mplew.StartNode("Mask - " + map.get(0x22B9710));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v245 = mplew.writeInt("v245");
     }
@@ -1352,7 +1352,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v250))
   {
      mplew.StartNode("Mask - " + map.get(0x22B9758));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v251 = mplew.writeInt("v251");
     }
@@ -1368,7 +1368,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v256))
   {
      mplew.StartNode("Mask - " + map.get(0x22B97A0));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v257 = mplew.writeInt("v257");
     }
@@ -1384,7 +1384,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v262))
   {
      mplew.StartNode("Mask - " + map.get(0x22B97E8));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v263 = mplew.writeInt("v263");
     }
@@ -1400,7 +1400,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v268))
   {
      mplew.StartNode("Mask - " + map.get(0x22B9830));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v269 = mplew.writeInt("v269");
     }
@@ -1416,7 +1416,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v274))
   {
      mplew.StartNode("Mask - " + map.get(0x22B9878));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v275 = mplew.writeInt("v275");
     }
@@ -1432,7 +1432,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v280))
   {
      mplew.StartNode("Mask - " + map.get(0x22B98C0));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v281 = mplew.writeInt("v281");
     }
@@ -1448,7 +1448,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v286))
   {
      mplew.StartNode("Mask - " + map.get(0x22B9908));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v287 = mplew.writeInt("v287");
     }
@@ -1464,7 +1464,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v292))
   {
      mplew.StartNode("Mask - " + map.get(0x22B9950));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v293 = mplew.writeInt("v293");
     }
@@ -1480,7 +1480,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v298))
   {
      mplew.StartNode("Mask - " + map.get(0x22B9998));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v299 = mplew.writeInt("v299");
     }
@@ -1496,7 +1496,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v304))
   {
      mplew.StartNode("Mask - " + map.get(0x22B99E0));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v305 = mplew.writeInt("v305");
     }
@@ -1512,7 +1512,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v310))
   {
      mplew.StartNode("Mask - " + map.get(0x22B9A28));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v311 = mplew.writeInt("v311");
     }
@@ -1528,7 +1528,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v316))
   {
      mplew.StartNode("Mask - " + map.get(0x22B9A70));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v317 = mplew.writeInt("v317");
     }
@@ -1544,7 +1544,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v322))
   {
      mplew.StartNode("Mask - " + map.get(0x22B9AB8));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v323 = mplew.writeInt("v323");
     }
@@ -1560,7 +1560,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v328))
   {
      mplew.StartNode("Mask - " + map.get(0x22B9B00));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v329 = mplew.writeInt("v329");
     }
@@ -1576,7 +1576,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v334))
   {
      mplew.StartNode("Mask - " + map.get(0x22B9B48));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v335 = mplew.writeInt("v335");
     }
@@ -1592,7 +1592,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v340))
   {
      mplew.StartNode("Mask - " + map.get(0x22B9B90));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v341 = mplew.writeInt("v341");
     }
@@ -1608,7 +1608,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v346))
   {
      mplew.StartNode("Mask - " + map.get(0x22B9BD8));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v347 = mplew.writeInt("v347");
     }
@@ -1624,7 +1624,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v352))
   {
      mplew.StartNode("Mask - " + map.get(0x22B9C20));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v353 = mplew.writeInt("v353");
     }
@@ -1640,7 +1640,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v358))
   {
      mplew.StartNode("Mask - " + map.get(0x22B9C68));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v359 = mplew.writeInt("v359");
     }
@@ -1656,7 +1656,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v364))
   {
      mplew.StartNode("Mask - " + map.get(0x22B9CB0));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v365 = mplew.writeInt("v365");
     }
@@ -1672,7 +1672,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v370))
   {
      mplew.StartNode("Mask - " + map.get(0x22B8BD0));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v371 = mplew.writeInt("v371");
     }
@@ -1688,7 +1688,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v376))
   {
      mplew.StartNode("Mask - " + map.get(0x22B9CF8));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v377 = mplew.writeInt("v377");
     }
@@ -1704,7 +1704,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v382))
   {
      mplew.StartNode("Mask - " + map.get(0x22B9D40));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v383 = mplew.writeInt("v383");
     }
@@ -1720,7 +1720,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v388))
   {
      mplew.StartNode("Mask - " + map.get(0x22B9D88));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v389 = mplew.writeInt("v389");
     }
@@ -1736,7 +1736,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v394))
   {
      mplew.StartNode("Mask - " + map.get(0x22B9DD0));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v395 = mplew.writeInt("v395");
     }
@@ -1752,7 +1752,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v400))
   {
      mplew.StartNode("Mask - " + map.get(0x22B9E18));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v401 = mplew.writeInt("v401");
     }
@@ -1768,7 +1768,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v406))
   {
      mplew.StartNode("Mask - " + map.get(0x22B9E60));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v407 = mplew.writeInt("v407");
     }
@@ -1784,7 +1784,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v412))
   {
      mplew.StartNode("Mask - " + map.get(0x22B9EA8));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v413 = mplew.writeInt("v413");
     }
@@ -1800,7 +1800,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v418))
   {
      mplew.StartNode("Mask - " + map.get(0x22B9EF0));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v419 = mplew.writeInt("v419");
     }
@@ -1816,7 +1816,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v424))
   {
      mplew.StartNode("Mask - " + map.get(0x22B9F38));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v425 = mplew.writeInt("v425");
     }
@@ -1832,7 +1832,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v430))
   {
      mplew.StartNode("Mask - " + map.get(0x22B9F80));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v431 = mplew.writeInt("v431");
     }
@@ -1848,7 +1848,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v436))
   {
      mplew.StartNode("Mask - " + map.get(0x22B9FC8));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v437 = mplew.writeInt("v437");
     }
@@ -1864,7 +1864,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v442))
   {
      mplew.StartNode("Mask - " + map.get(0x22BA010));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v443 = mplew.writeInt("v443");
     }
@@ -1880,7 +1880,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v448))
   {
      mplew.StartNode("Mask - " + map.get(0x22BA058));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v449 = mplew.writeInt("v449");
     }
@@ -1896,7 +1896,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v454))
   {
      mplew.StartNode("Mask - " + map.get(0x22BA0A0));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v455 = mplew.writeInt("v455");
     }
@@ -1912,7 +1912,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v460))
   {
      mplew.StartNode("Mask - " + map.get(0x22BA0E8));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v461 = mplew.writeInt("v461");
     }
@@ -1928,7 +1928,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v466))
   {
      mplew.StartNode("Mask - " + map.get(0x22BA130));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v467 = mplew.writeInt("v467");
     }
@@ -1944,7 +1944,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v472))
   {
      mplew.StartNode("Mask - " + map.get(0x22BA178));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v473 = mplew.writeInt("v473");
     }
@@ -1960,7 +1960,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v478))
   {
      mplew.StartNode("Mask - " + map.get(0x22BA1C0));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v479 = mplew.writeInt("v479");
     }
@@ -1976,7 +1976,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v484))
   {
      mplew.StartNode("Mask - " + map.get(0x22BA208));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v485 = mplew.writeInt("v485");
     }
@@ -1992,7 +1992,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v490))
   {
      mplew.StartNode("Mask - " + map.get(0x22BA250));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v491 = mplew.writeInt("v491");
     }
@@ -2008,7 +2008,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v496))
   {
      mplew.StartNode("Mask - " + map.get(0x22BA298));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v497 = mplew.writeInt("v497");
     }
@@ -2024,7 +2024,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v502))
   {
      mplew.StartNode("Mask - " + map.get(0x22BA2E0));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v503 = mplew.writeInt("v503");
     }
@@ -2040,7 +2040,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v508))
   {
      mplew.StartNode("Mask - " + map.get(0x22BA328));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v509 = mplew.writeInt("v509");
     }
@@ -2056,7 +2056,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v514))
   {
      mplew.StartNode("Mask - " + map.get(0x22BA370));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v515 = mplew.writeInt("v515");
     }
@@ -2072,7 +2072,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v520))
   {
      mplew.StartNode("Mask - " + map.get(0x22BA3B8));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v521 = mplew.writeInt("v521");
     }
@@ -2088,7 +2088,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v526))
   {
      mplew.StartNode("Mask - " + map.get(0x22BA400));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v527 = mplew.writeInt("v527");
     }
@@ -2104,7 +2104,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v532))
   {
      mplew.StartNode("Mask - " + map.get(0x22BA448));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v533 = mplew.writeInt("v533");
     }
@@ -2120,7 +2120,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v538))
   {
      mplew.StartNode("Mask - " + map.get(0x22BA490));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v539 = mplew.writeInt("v539");
     }
@@ -2136,7 +2136,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v544))
   {
      mplew.StartNode("Mask - " + map.get(0x22BA4D8));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v545 = mplew.writeInt("v545");
     }
@@ -2152,7 +2152,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v550))
   {
      mplew.StartNode("Mask - " + map.get(0x22BA520));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v551 = mplew.writeInt("v551");
     }
@@ -2168,7 +2168,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v556))
   {
      mplew.StartNode("Mask - " + map.get(0x22BA568));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v557 = mplew.writeInt("v557");
     }
@@ -2184,7 +2184,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v562))
   {
      mplew.StartNode("Mask - " + map.get(0x22BA5B0));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v563 = mplew.writeInt("v563");
     }
@@ -2200,7 +2200,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v568))
   {
      mplew.StartNode("Mask - " + map.get(0x22BA5F8));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v569 = mplew.writeInt("v569");
     }
@@ -2216,7 +2216,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v574))
   {
      mplew.StartNode("Mask - " + map.get(0x22BA640));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v575 = mplew.writeInt("v575");
     }
@@ -2232,7 +2232,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v580))
   {
      mplew.StartNode("Mask - " + map.get(0x22BA688));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v581 = mplew.writeInt("v581");
     }
@@ -2248,7 +2248,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v586))
   {
      mplew.StartNode("Mask - " + map.get(0x22BA6D0));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v587 = mplew.writeInt("v587");
     }
@@ -2264,7 +2264,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v592))
   {
      mplew.StartNode("Mask - " + map.get(0x22BA718));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v593 = mplew.writeInt("v593");
     }
@@ -2280,7 +2280,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v598))
   {
      mplew.StartNode("Mask - " + map.get(0x22BA760));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v599 = mplew.writeInt("v599");
     }
@@ -2296,7 +2296,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v604))
   {
      mplew.StartNode("Mask - " + map.get(0x22BA7A8));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v605 = mplew.writeInt("v605");
     }
@@ -2312,7 +2312,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v610))
   {
      mplew.StartNode("Mask - " + map.get(0x22BA7F0));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v611 = mplew.writeInt("v611");
     }
@@ -2328,7 +2328,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v616))
   {
      mplew.StartNode("Mask - " + map.get(0x22BA838));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v617 = mplew.writeInt("v617");
     }
@@ -2344,7 +2344,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v622))
   {
      mplew.StartNode("Mask - " + map.get(0x22B8AB0));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v623 = mplew.writeInt("v623");
     }
@@ -2360,7 +2360,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v628))
   {
      mplew.StartNode("Mask - " + map.get(0x22BA880));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v629 = mplew.writeInt("v629");
     }
@@ -2376,7 +2376,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v634))
   {
      mplew.StartNode("Mask - " + map.get(0x22BA8C8));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v635 = mplew.writeInt("v635");
     }
@@ -2392,7 +2392,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v640))
   {
      mplew.StartNode("Mask - " + map.get(0x22BA910));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v641 = mplew.writeInt("v641");
     }
@@ -2408,7 +2408,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v646))
   {
      mplew.StartNode("Mask - " + map.get(0x22BA958));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v647 = mplew.writeInt("v647");
     }
@@ -2424,7 +2424,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v652))
   {
      mplew.StartNode("Mask - " + map.get(0x22BA9A0));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v653 = mplew.writeInt("v653");
     }
@@ -2440,7 +2440,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v658))
   {
      mplew.StartNode("Mask - " + map.get(0x22BA9E8));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v659 = mplew.writeInt("v659");
     }
@@ -2456,7 +2456,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v664))
   {
      mplew.StartNode("Mask - " + map.get(0x22BAA30));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v665 = mplew.writeInt("v665");
     }
@@ -2472,7 +2472,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v670))
   {
      mplew.StartNode("Mask - " + map.get(0x22BAA78));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v671 = mplew.writeInt("v671");
     }
@@ -2488,7 +2488,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v676))
   {
      mplew.StartNode("Mask - " + map.get(0x22B8AF8));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v677 = mplew.writeInt("v677");
     }
@@ -2504,7 +2504,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v682))
   {
      mplew.StartNode("Mask - " + map.get(0x22BAAC0));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v683 = mplew.writeInt("v683");
     }
@@ -2520,7 +2520,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v688))
   {
      mplew.StartNode("Mask - " + map.get(0x22BAB08));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v689 = mplew.writeInt("v689");
     }
@@ -2536,7 +2536,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v694))
   {
      mplew.StartNode("Mask - " + map.get(0x22BAB50));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v695 = mplew.writeInt("v695");
     }
@@ -2552,7 +2552,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v700))
   {
      mplew.StartNode("Mask - " + map.get(0x22BAB98));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v701 = mplew.writeInt("v701");
     }
@@ -2568,7 +2568,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v706))
   {
      mplew.StartNode("Mask - " + map.get(0x22BABE0));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v707 = mplew.writeInt("v707");
     }
@@ -2584,7 +2584,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v712))
   {
      mplew.StartNode("Mask - " + map.get(0x22BAC28));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v713 = mplew.writeInt("v713");
     }
@@ -2600,7 +2600,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v718))
   {
      mplew.StartNode("Mask - " + map.get(0x22BAC70));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v719 = mplew.writeInt("v719");
     }
@@ -2616,7 +2616,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v724))
   {
      mplew.StartNode("Mask - " + map.get(0x22BACB8));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v725 = mplew.writeInt("v725");
     }
@@ -2632,7 +2632,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v730))
   {
      mplew.StartNode("Mask - " + map.get(0x22BAD00));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v731 = mplew.writeInt("v731");
     }
@@ -2648,7 +2648,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v736))
   {
      mplew.StartNode("Mask - " + map.get(0x22BAD48));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v737 = mplew.writeInt("v737");
     }
@@ -2664,7 +2664,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v742))
   {
      mplew.StartNode("Mask - " + map.get(0x22BAD90));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v743 = mplew.writeInt("v743");
     }
@@ -2680,7 +2680,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v748))
   {
      mplew.StartNode("Mask - " + map.get(0x22BADD8));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v749 = mplew.writeInt("v749");
     }
@@ -2696,7 +2696,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v754))
   {
      mplew.StartNode("Mask - " + map.get(0x22BAE20));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v755 = mplew.writeInt("v755");
     }
@@ -2712,7 +2712,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v760))
   {
      mplew.StartNode("Mask - " + map.get(0x22BAE68));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v761 = mplew.writeInt("v761");
     }
@@ -2728,7 +2728,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v766))
   {
      mplew.StartNode("Mask - " + map.get(0x22BAEB0));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v767 = mplew.writeInt("v767");
     }
@@ -2744,7 +2744,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v772))
   {
      mplew.StartNode("Mask - " + map.get(0x22BAEF8));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v773 = mplew.writeInt("v773");
     }
@@ -2760,7 +2760,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v778))
   {
      mplew.StartNode("Mask - " + map.get(0x22BAF40));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v779 = mplew.writeInt("v779");
     }
@@ -2776,7 +2776,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v784))
   {
      mplew.StartNode("Mask - " + map.get(0x22BAF88));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v785 = mplew.writeInt("v785");
     }
@@ -2792,7 +2792,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v790))
   {
      mplew.StartNode("Mask - " + map.get(0x22BAFD0));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v791 = mplew.writeInt("v791");
     }
@@ -2808,7 +2808,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v796))
   {
      mplew.StartNode("Mask - " + map.get(0x22BB018));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v797 = mplew.writeInt("v797");
     }
@@ -2824,7 +2824,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v802))
   {
      mplew.StartNode("Mask - " + map.get(0x22BB060));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v803 = mplew.writeInt("v803");
     }
@@ -2840,7 +2840,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v808))
   {
      mplew.StartNode("Mask - " + map.get(0x22BB0A8));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v809 = mplew.writeInt("v809");
     }
@@ -2856,7 +2856,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v814))
   {
      mplew.StartNode("Mask - " + map.get(0x22BB0F0));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v815 = mplew.writeInt("v815");
     }
@@ -2872,7 +2872,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v820))
   {
      mplew.StartNode("Mask - " + map.get(0x22BB138));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v821 = mplew.writeInt("v821");
     }
@@ -2888,7 +2888,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v826))
   {
      mplew.StartNode("Mask - " + map.get(0x22BB180));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v827 = mplew.writeInt("v827");
     }
@@ -2904,7 +2904,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v832))
   {
      mplew.StartNode("Mask - " + map.get(0x22BB1C8));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v833 = mplew.writeInt("v833");
     }
@@ -2920,7 +2920,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v838))
   {
      mplew.StartNode("Mask - " + map.get(0x22BB210));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v839 = mplew.writeInt("v839");
     }
@@ -2936,7 +2936,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v844))
   {
      mplew.StartNode("Mask - " + map.get(0x22BB258));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v845 = mplew.writeInt("v845");
     }
@@ -2952,7 +2952,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v850))
   {
      mplew.StartNode("Mask - " + map.get(0x22BB2A0));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v851 = mplew.writeInt("v851");
     }
@@ -2968,7 +2968,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v856))
   {
      mplew.StartNode("Mask - " + map.get(0x22BB2E8));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v857 = mplew.writeInt("v857");
     }
@@ -2984,7 +2984,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v862))
   {
      mplew.StartNode("Mask - " + map.get(0x22BB330));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v863 = mplew.writeInt("v863");
     }
@@ -3000,7 +3000,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v868))
   {
      mplew.StartNode("Mask - " + map.get(0x22BB378));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v869 = mplew.writeInt("v869");
     }
@@ -3016,7 +3016,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v874))
   {
      mplew.StartNode("Mask - " + map.get(0x22BB3C0));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v875 = mplew.writeInt("v875");
     }
@@ -3032,7 +3032,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v880))
   {
      mplew.StartNode("Mask - " + map.get(0x22BB408));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v881 = mplew.writeInt("v881");
     }
@@ -3048,7 +3048,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v886))
   {
      mplew.StartNode("Mask - " + map.get(0x22BB450));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v887 = mplew.writeInt("v887");
     }
@@ -3064,7 +3064,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v892))
   {
      mplew.StartNode("Mask - " + map.get(0x22BB498));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v893 = mplew.writeInt("v893");
     }
@@ -3080,7 +3080,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v898))
   {
      mplew.StartNode("Mask - " + map.get(0x22BB4E0));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v899 = mplew.writeInt("v899");
     }
@@ -3096,7 +3096,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v904))
   {
      mplew.StartNode("Mask - " + map.get(0x22BB528));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v905 = mplew.writeInt("v905");
     }
@@ -3112,7 +3112,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v910))
   {
      mplew.StartNode("Mask - " + map.get(0x22BB570));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v911 = mplew.writeInt("v911");
     }
@@ -3128,7 +3128,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v916))
   {
      mplew.StartNode("Mask - " + map.get(0x22BB5B8));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v917 = mplew.writeInt("v917");
     }
@@ -3144,7 +3144,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v922))
   {
      mplew.StartNode("Mask - " + map.get(0x22BB600));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v923 = mplew.writeInt("v923");
     }
@@ -3160,7 +3160,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v928))
   {
      mplew.StartNode("Mask - " + map.get(0x22BB648));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v929 = mplew.writeInt("v929");
     }
@@ -3176,7 +3176,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v934))
   {
      mplew.StartNode("Mask - " + map.get(0x22BB690));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v935 = mplew.writeInt("v935");
     }
@@ -3192,7 +3192,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v940))
   {
      mplew.StartNode("Mask - " + map.get(0x22BB6D8));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v941 = mplew.writeInt("v941");
     }
@@ -3208,7 +3208,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v946))
   {
      mplew.StartNode("Mask - " + map.get(0x22BB720));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v947 = mplew.writeInt("v947");
     }
@@ -3224,7 +3224,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v952))
   {
      mplew.StartNode("Mask - " + map.get(0x22BB768));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v953 = mplew.writeInt("v953");
     }
@@ -3240,7 +3240,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v958))
   {
      mplew.StartNode("Mask - " + map.get(0x22B8750));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v959 = mplew.writeInt("v959");
     }
@@ -3256,7 +3256,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v964))
   {
      mplew.StartNode("Mask - " + map.get(0x22BB7B0));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v965 = mplew.writeInt("v965");
     }
@@ -3272,7 +3272,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v970))
   {
      mplew.StartNode("Mask - " + map.get(0x22BB7F8));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v971 = mplew.writeInt("v971");
     }
@@ -3288,7 +3288,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v976))
   {
      mplew.StartNode("Mask - " + map.get(0x22BB840));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v977 = mplew.writeInt("v977");
     }
@@ -3304,7 +3304,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v982))
   {
      mplew.StartNode("Mask - " + map.get(0x22BB888));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v983 = mplew.writeInt("v983");
     }
@@ -3320,7 +3320,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v988))
   {
      mplew.StartNode("Mask - " + map.get(0x22BB8D0));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v989 = mplew.writeInt("v989");
     }
@@ -3336,7 +3336,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v994))
   {
      mplew.StartNode("Mask - " + map.get(0x22BB918));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v995 = mplew.writeInt("v995");
     }
@@ -3352,7 +3352,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1000))
   {
      mplew.StartNode("Mask - " + map.get(0x22BB960));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1001 = mplew.writeInt("v1001");
     }
@@ -3368,7 +3368,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1006))
   {
      mplew.StartNode("Mask - " + map.get(0x22BB9A8));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1007 = mplew.writeInt("v1007");
     }
@@ -3384,7 +3384,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1012))
   {
      mplew.StartNode("Mask - " + map.get(0x22BB9F0));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1013 = mplew.writeInt("v1013");
     }
@@ -3400,7 +3400,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1018))
   {
      mplew.StartNode("Mask - " + map.get(0x22BBA38));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1019 = mplew.writeInt("v1019");
     }
@@ -3416,7 +3416,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1024))
   {
      mplew.StartNode("Mask - " + map.get(0x22BBA80));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1025 = mplew.writeInt("v1025");
     }
@@ -3432,7 +3432,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1030))
   {
      mplew.StartNode("Mask - " + map.get(0x22BBAC8));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1031 = mplew.writeInt("v1031");
     }
@@ -3448,7 +3448,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1036))
   {
      mplew.StartNode("Mask - " + map.get(0x22BBB10));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1037 = mplew.writeInt("v1037");
     }
@@ -3464,7 +3464,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1042))
   {
      mplew.StartNode("Mask - " + map.get(0x22BBB58));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1043 = mplew.writeInt("v1043");
     }
@@ -3480,7 +3480,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1048))
   {
      mplew.StartNode("Mask - " + map.get(0x22BBBA0));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1049 = mplew.writeInt("v1049");
     }
@@ -3496,7 +3496,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1054))
   {
      mplew.StartNode("Mask - " + map.get(0x22BBBE8));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1055 = mplew.writeInt("v1055");
     }
@@ -3512,7 +3512,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1060))
   {
      mplew.StartNode("Mask - " + map.get(0x22BBC30));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1061 = mplew.writeInt("v1061");
     }
@@ -3528,7 +3528,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1066))
   {
      mplew.StartNode("Mask - " + map.get(0x22BBC78));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1067 = mplew.writeInt("v1067");
     }
@@ -3544,7 +3544,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1072))
   {
      mplew.StartNode("Mask - " + map.get(0x22BBCC0));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1073 = mplew.writeInt("v1073");
     }
@@ -3560,7 +3560,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1078))
   {
      mplew.StartNode("Mask - " + map.get(0x22BBD08));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1079 = mplew.writeInt("v1079");
     }
@@ -3576,7 +3576,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1084))
   {
      mplew.StartNode("Mask - " + map.get(0x22BBD50));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1085 = mplew.writeInt("v1085");
     }
@@ -3592,7 +3592,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1090))
   {
      mplew.StartNode("Mask - " + map.get(0x22B8708));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1091 = mplew.writeInt("v1091");
     }
@@ -3608,7 +3608,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1096))
   {
      mplew.StartNode("Mask - " + map.get(0x22BBD98));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1097 = mplew.writeInt("v1097");
     }
@@ -3624,7 +3624,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1102))
   {
      mplew.StartNode("Mask - " + map.get(0x22BBDE0));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1103 = mplew.writeInt("v1103");
     }
@@ -3640,7 +3640,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1108))
   {
      mplew.StartNode("Mask - " + map.get(0x22BBE28));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1109 = mplew.writeInt("v1109");
     }
@@ -3656,7 +3656,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1114))
   {
      mplew.StartNode("Mask - " + map.get(0x22BBE70));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1115 = mplew.writeInt("v1115");
     }
@@ -3672,7 +3672,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1120))
   {
      mplew.StartNode("Mask - " + map.get(0x22BBEB8));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1121 = mplew.writeInt("v1121");
     }
@@ -3688,7 +3688,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1126))
   {
      mplew.StartNode("Mask - " + map.get(0x22BBF00));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1127 = mplew.writeInt("v1127");
     }
@@ -3704,7 +3704,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1132))
   {
      mplew.StartNode("Mask - " + map.get(0x22BBF48));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1133 = mplew.writeInt("v1133");
     }
@@ -3720,7 +3720,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1138))
   {
      mplew.StartNode("Mask - " + map.get(0x22BBF90));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1139 = mplew.writeInt("v1139");
     }
@@ -3736,7 +3736,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1144))
   {
      mplew.StartNode("Mask - " + map.get(0x22BBFD8));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1145 = mplew.writeInt("v1145");
     }
@@ -3752,7 +3752,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1150))
   {
      mplew.StartNode("Mask - " + map.get(0x22BC020));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1151 = mplew.writeInt("v1151");
     }
@@ -3768,7 +3768,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1156))
   {
      mplew.StartNode("Mask - " + map.get(0x22BC068));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1157 = mplew.writeInt("v1157");
     }
@@ -3784,7 +3784,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1162))
   {
      mplew.StartNode("Mask - " + map.get(0x22BC0B0));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1163 = mplew.writeInt("v1163");
     }
@@ -3800,7 +3800,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1168))
   {
      mplew.StartNode("Mask - " + map.get(0x22BC0F8));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1169 = mplew.writeInt("v1169");
     }
@@ -3816,7 +3816,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1174))
   {
      mplew.StartNode("Mask - " + map.get(0x22BC140));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1175 = mplew.writeInt("v1175");
     }
@@ -3832,7 +3832,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1180))
   {
      mplew.StartNode("Mask - " + map.get(0x22BC188));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1181 = mplew.writeInt("v1181");
     }
@@ -3848,7 +3848,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1186))
   {
      mplew.StartNode("Mask - " + map.get(0x22BC1D0));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1187 = mplew.writeInt("v1187");
     }
@@ -3864,7 +3864,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1192))
   {
      mplew.StartNode("Mask - " + map.get(0x22B8798));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1193 = mplew.writeInt("v1193");
     }
@@ -3880,7 +3880,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1198))
   {
      mplew.StartNode("Mask - " + map.get(0x22BC218));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1199 = mplew.writeInt("v1199");
     }
@@ -3896,7 +3896,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1204))
   {
      mplew.StartNode("Mask - " + map.get(0x22BC260));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1205 = mplew.writeInt("v1205");
     }
@@ -3912,7 +3912,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1210))
   {
      mplew.StartNode("Mask - " + map.get(0x22BC2A8));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1211 = mplew.writeInt("v1211");
     }
@@ -3928,7 +3928,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1216))
   {
      mplew.StartNode("Mask - " + map.get(0x22BC2F0));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1217 = mplew.writeInt("v1217");
     }
@@ -3944,7 +3944,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1222))
   {
      mplew.StartNode("Mask - " + map.get(0x22BC338));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1223 = mplew.writeInt("v1223");
     }
@@ -3960,7 +3960,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1228))
   {
      mplew.StartNode("Mask - " + map.get(0x22BC380));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1229 = mplew.writeInt("v1229");
     }
@@ -3976,7 +3976,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1234))
   {
      mplew.StartNode("Mask - " + map.get(0x22BC3C8));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1235 = mplew.writeInt("v1235");
     }
@@ -3992,7 +3992,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1240))
   {
      mplew.StartNode("Mask - " + map.get(0x22B87E0));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1241 = mplew.writeInt("v1241");
     }
@@ -4008,7 +4008,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1246))
   {
      mplew.StartNode("Mask - " + map.get(0x22BC410));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1247 = mplew.writeInt("v1247");
     }
@@ -4024,7 +4024,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1252))
   {
      mplew.StartNode("Mask - " + map.get(0x22B8828));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1253 = mplew.writeInt("v1253");
     }
@@ -4040,7 +4040,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1258))
   {
      mplew.StartNode("Mask - " + map.get(0x22BC458));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1259 = mplew.writeInt("v1259");
     }
@@ -4056,7 +4056,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1264))
   {
      mplew.StartNode("Mask - " + map.get(0x22BC4A0));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1265 = mplew.writeInt("v1265");
     }
@@ -4072,7 +4072,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1270))
   {
      mplew.StartNode("Mask - " + map.get(0x22BC4E8));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1271 = mplew.writeInt("v1271");
     }
@@ -4088,7 +4088,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1276))
   {
      mplew.StartNode("Mask - " + map.get(0x22BC530));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1277 = mplew.writeInt("v1277");
     }
@@ -4104,7 +4104,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1282))
   {
      mplew.StartNode("Mask - " + map.get(0x22BC578));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1283 = mplew.writeInt("v1283");
     }
@@ -4120,7 +4120,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1288))
   {
      mplew.StartNode("Mask - " + map.get(0x22BC5C0));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1289 = mplew.writeInt("v1289");
     }
@@ -4136,7 +4136,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1294))
   {
      mplew.StartNode("Mask - " + map.get(0x22BC608));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1295 = mplew.writeInt("v1295");
     }
@@ -4152,7 +4152,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1300))
   {
      mplew.StartNode("Mask - " + map.get(0x22BC650));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1301 = mplew.writeInt("v1301");
     }
@@ -4168,7 +4168,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1306))
   {
      mplew.StartNode("Mask - " + map.get(0x22BC698));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1307 = mplew.writeInt("v1307");
     }
@@ -4184,7 +4184,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1312))
   {
      mplew.StartNode("Mask - " + map.get(0x22BC6E0));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1313 = mplew.writeInt("v1313");
     }
@@ -4200,7 +4200,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1318))
   {
      mplew.StartNode("Mask - " + map.get(0x22BC728));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1319 = mplew.writeInt("v1319");
     }
@@ -4216,7 +4216,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1324))
   {
      mplew.StartNode("Mask - " + map.get(0x22BC770));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1325 = mplew.writeInt("v1325");
     }
@@ -4232,7 +4232,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1330))
   {
      mplew.StartNode("Mask - " + map.get(0x22BC7B8));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1331 = mplew.writeInt("v1331");
     }
@@ -4248,7 +4248,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1336))
   {
      mplew.StartNode("Mask - " + map.get(0x22BC800));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1337 = mplew.writeInt("v1337");
     }
@@ -4264,7 +4264,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1342))
   {
      mplew.StartNode("Mask - " + map.get(0x22BC848));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1343 = mplew.writeInt("v1343");
     }
@@ -4280,7 +4280,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1348))
   {
      mplew.StartNode("Mask - " + map.get(0x22BC890));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1349 = mplew.writeInt("v1349");
     }
@@ -4296,7 +4296,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1354))
   {
      mplew.StartNode("Mask - " + map.get(0x22BC8D8));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1355 = mplew.writeInt("v1355");
     }
@@ -4312,7 +4312,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1360))
   {
      mplew.StartNode("Mask - " + map.get(0x22BC920));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1361 = mplew.writeInt("v1361");
     }
@@ -4328,7 +4328,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1366))
   {
      mplew.StartNode("Mask - " + map.get(0x22BC968));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1367 = mplew.writeInt("v1367");
     }
@@ -4344,7 +4344,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1372))
   {
      mplew.StartNode("Mask - " + map.get(0x22BC9B0));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1373 = mplew.writeInt("v1373");
     }
@@ -4360,7 +4360,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1378))
   {
      mplew.StartNode("Mask - " + map.get(0x22BC9F8));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1379 = mplew.writeInt("v1379");
     }
@@ -4376,7 +4376,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1384))
   {
      mplew.StartNode("Mask - " + map.get(0x22BCA40));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1385 = mplew.writeInt("v1385");
     }
@@ -4392,7 +4392,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1390))
   {
      mplew.StartNode("Mask - " + map.get(0x22BCA88));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1391 = mplew.writeInt("v1391");
     }
@@ -4408,7 +4408,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1396))
   {
      mplew.StartNode("Mask - " + map.get(0x22BCAD0));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1397 = mplew.writeInt("v1397");
     }
@@ -4424,7 +4424,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1402))
   {
      mplew.StartNode("Mask - " + map.get(0x22BCB18));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1403 = mplew.writeInt("v1403");
     }
@@ -4440,7 +4440,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1408))
   {
      mplew.StartNode("Mask - " + map.get(0x22BCB60));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1409 = mplew.writeInt("v1409");
     }
@@ -4456,7 +4456,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1414))
   {
      mplew.StartNode("Mask - " + map.get(0x22BCBA8));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1415 = mplew.writeInt("v1415");
     }
@@ -4472,7 +4472,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1420))
   {
      mplew.StartNode("Mask - " + map.get(0x22BCBF0));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1421 = mplew.writeInt("v1421");
     }
@@ -4488,7 +4488,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1426))
   {
      mplew.StartNode("Mask - " + map.get(0x22BCC38));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1427 = mplew.writeInt("v1427");
     }
@@ -4504,7 +4504,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1432))
   {
      mplew.StartNode("Mask - " + map.get(0x22BCC80));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1433 = mplew.writeInt("v1433");
     }
@@ -4520,7 +4520,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1438))
   {
      mplew.StartNode("Mask - " + map.get(0x22BCCC8));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1439 = mplew.writeInt("v1439");
     }
@@ -4536,7 +4536,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1444))
   {
      mplew.StartNode("Mask - " + map.get(0x22BCD10));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1445 = mplew.writeInt("v1445");
     }
@@ -4552,7 +4552,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1450))
   {
      mplew.StartNode("Mask - " + map.get(0x22BCD58));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1451 = mplew.writeInt("v1451");
     }
@@ -4568,7 +4568,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1456))
   {
      mplew.StartNode("Mask - " + map.get(0x22B8870));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1457 = mplew.writeInt("v1457");
     }
@@ -4584,7 +4584,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1462))
   {
      mplew.StartNode("Mask - " + map.get(0x22BCDA0));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1463 = mplew.writeInt("v1463");
     }
@@ -4600,7 +4600,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1468))
   {
      mplew.StartNode("Mask - " + map.get(0x22BCDE8));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1469 = mplew.writeInt("v1469");
     }
@@ -4616,7 +4616,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1474))
   {
      mplew.StartNode("Mask - " + map.get(0x22BCE30));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1475 = mplew.writeInt("v1475");
     }
@@ -4632,7 +4632,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1480))
   {
      mplew.StartNode("Mask - " + map.get(0x22BCE78));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1481 = mplew.writeInt("v1481");
     }
@@ -4648,7 +4648,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1486))
   {
      mplew.StartNode("Mask - " + map.get(0x22BCEC0));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1487 = mplew.writeInt("v1487");
     }
@@ -4664,7 +4664,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1492))
   {
      mplew.StartNode("Mask - " + map.get(0x22BCF08));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1493 = mplew.writeInt("v1493");
     }
@@ -4680,7 +4680,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1498))
   {
      mplew.StartNode("Mask - " + map.get(0x22BCF50));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1499 = mplew.writeInt("v1499");
     }
@@ -4696,7 +4696,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1504))
   {
      mplew.StartNode("Mask - " + map.get(0x22BCF98));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1505 = mplew.writeInt("v1505");
     }
@@ -4712,7 +4712,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1510))
   {
      mplew.StartNode("Mask - " + map.get(0x22BCFE0));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1511 = mplew.writeInt("v1511");
     }
@@ -4728,7 +4728,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1516))
   {
      mplew.StartNode("Mask - " + map.get(0x22BD028));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1517 = mplew.writeInt("v1517");
     }
@@ -4744,7 +4744,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1522))
   {
      mplew.StartNode("Mask - " + map.get(0x22BD070));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1523 = mplew.writeInt("v1523");
     }
@@ -4760,7 +4760,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1528))
   {
      mplew.StartNode("Mask - " + map.get(0x22BD0B8));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1529 = mplew.writeInt("v1529");
     }
@@ -4776,7 +4776,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1534))
   {
      mplew.StartNode("Mask - " + map.get(0x22BD100));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1535 = mplew.writeInt("v1535");
     }
@@ -4792,7 +4792,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1540))
   {
      mplew.StartNode("Mask - " + map.get(0x22BD148));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1541 = mplew.writeInt("v1541");
     }
@@ -4808,7 +4808,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1546))
   {
      mplew.StartNode("Mask - " + map.get(0x22B89D8));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1547 = mplew.writeInt("v1547");
     }
@@ -4824,7 +4824,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1552))
   {
      mplew.StartNode("Mask - " + map.get(0x22BD190));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1553 = mplew.writeInt("v1553");
     }
@@ -4840,7 +4840,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1558))
   {
      mplew.StartNode("Mask - " + map.get(0x22BD1D8));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1559 = mplew.writeInt("v1559");
     }
@@ -4856,7 +4856,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1564))
   {
      mplew.StartNode("Mask - " + map.get(0x22BD220));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1565 = mplew.writeInt("v1565");
     }
@@ -4872,7 +4872,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1570))
   {
      mplew.StartNode("Mask - " + map.get(0x22BD268));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1571 = mplew.writeInt("v1571");
     }
@@ -4888,7 +4888,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1576))
   {
      mplew.StartNode("Mask - " + map.get(0x22BD2B0));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1577 = mplew.writeInt("v1577");
     }
@@ -4904,7 +4904,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1582))
   {
      mplew.StartNode("Mask - " + map.get(0x22BD2F8));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1583 = mplew.writeInt("v1583");
     }
@@ -4920,7 +4920,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1588))
   {
      mplew.StartNode("Mask - " + map.get(0x22BD340));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1589 = mplew.writeInt("v1589");
     }
@@ -4936,7 +4936,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1594))
   {
      mplew.StartNode("Mask - " + map.get(0x22BD388));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1595 = mplew.writeInt("v1595");
     }
@@ -4952,7 +4952,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1600))
   {
      mplew.StartNode("Mask - " + map.get(0x22BD3D0));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1601 = mplew.writeInt("v1601");
     }
@@ -4968,7 +4968,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1606))
   {
      mplew.StartNode("Mask - " + map.get(0x22BD418));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1607 = mplew.writeInt("v1607");
     }
@@ -4984,7 +4984,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1612))
   {
      mplew.StartNode("Mask - " + map.get(0x22BD460));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1613 = mplew.writeInt("v1613");
     }
@@ -5000,7 +5000,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1618))
   {
      mplew.StartNode("Mask - " + map.get(0x22BD4A8));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1619 = mplew.writeInt("v1619");
     }
@@ -5016,7 +5016,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1624))
   {
      mplew.StartNode("Mask - " + map.get(0x22BD4F0));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1625 = mplew.writeInt("v1625");
     }
@@ -5032,7 +5032,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1630))
   {
      mplew.StartNode("Mask - " + map.get(0x22BD538));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1631 = mplew.writeInt("v1631");
     }
@@ -5048,7 +5048,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1636))
   {
      mplew.StartNode("Mask - " + map.get(0x22BD580));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1637 = mplew.writeInt("v1637");
     }
@@ -5064,7 +5064,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1642))
   {
      mplew.StartNode("Mask - " + map.get(0x22BD5C8));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1643 = mplew.writeInt("v1643");
     }
@@ -5080,7 +5080,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1648))
   {
      mplew.StartNode("Mask - " + map.get(0x22BD610));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1649 = mplew.writeInt("v1649");
     }
@@ -5096,7 +5096,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1654))
   {
      mplew.StartNode("Mask - " + map.get(0x22BD658));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1655 = mplew.writeInt("v1655");
     }
@@ -5112,7 +5112,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1660))
   {
      mplew.StartNode("Mask - " + map.get(0x22BD6A0));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1661 = mplew.writeInt("v1661");
     }
@@ -5128,7 +5128,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1666))
   {
      mplew.StartNode("Mask - " + map.get(0x22BD6E8));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1667 = mplew.writeInt("v1667");
     }
@@ -5144,7 +5144,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1672))
   {
      mplew.StartNode("Mask - " + map.get(0x22BD730));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1673 = mplew.writeInt("v1673");
     }
@@ -5160,7 +5160,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1678))
   {
      mplew.StartNode("Mask - " + map.get(0x22BD778));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1679 = mplew.writeInt("v1679");
     }
@@ -5176,7 +5176,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1684))
   {
      mplew.StartNode("Mask - " + map.get(0x22BD7C0));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1685 = mplew.writeInt("v1685");
     }
@@ -5192,7 +5192,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1690))
   {
      mplew.StartNode("Mask - " + map.get(0x22B8A20));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1691 = mplew.writeInt("v1691");
     }
@@ -5208,7 +5208,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1696))
   {
      mplew.StartNode("Mask - " + map.get(0x22BD808));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1697 = mplew.writeInt("v1697");
     }
@@ -5224,7 +5224,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1702))
   {
      mplew.StartNode("Mask - " + map.get(0x22BD850));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1703 = mplew.writeInt("v1703");
     }
@@ -5240,7 +5240,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1708))
   {
      mplew.StartNode("Mask - " + map.get(0x22B8A68));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1709 = mplew.writeInt("v1709");
     }
@@ -5256,7 +5256,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1714))
   {
      mplew.StartNode("Mask - " + map.get(0x22BD898));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1715 = mplew.writeInt("v1715");
     }
@@ -5272,7 +5272,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1720))
   {
      mplew.StartNode("Mask - " + map.get(0x22BD8E0));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1721 = mplew.writeInt("v1721");
     }
@@ -5288,7 +5288,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1726))
   {
      mplew.StartNode("Mask - " + map.get(0x22BD928));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1727 = mplew.writeInt("v1727");
     }
@@ -5304,7 +5304,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1732))
   {
      mplew.StartNode("Mask - " + map.get(0x22BD970));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1733 = mplew.writeInt("v1733");
     }
@@ -5320,7 +5320,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1738))
   {
      mplew.StartNode("Mask - " + map.get(0x22BD9B8));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1739 = mplew.writeInt("v1739");
     }
@@ -5336,7 +5336,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1744))
   {
      mplew.StartNode("Mask - " + map.get(0x22BDA00));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1745 = mplew.writeInt("v1745");
     }
@@ -5352,7 +5352,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1750))
   {
      mplew.StartNode("Mask - " + map.get(0x22BDA48));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1751 = mplew.writeInt("v1751");
     }
@@ -5368,7 +5368,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1756))
   {
      mplew.StartNode("Mask - " + map.get(0x22BDA90));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1757 = mplew.writeInt("v1757");
     }
@@ -5384,7 +5384,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1762))
   {
      mplew.StartNode("Mask - " + map.get(0x22BDAD8));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1763 = mplew.writeInt("v1763");
     }
@@ -5400,7 +5400,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1768))
   {
      mplew.StartNode("Mask - " + map.get(0x22BDB20));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1769 = mplew.writeInt("v1769");
     }
@@ -5416,7 +5416,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1774))
   {
      mplew.StartNode("Mask - " + map.get(0x22BDB68));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1775 = mplew.writeInt("v1775");
     }
@@ -5432,7 +5432,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1780))
   {
      mplew.StartNode("Mask - " + map.get(0x22BDBB0));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1781 = mplew.writeInt("v1781");
     }
@@ -5448,7 +5448,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1786))
   {
      mplew.StartNode("Mask - " + map.get(0x22BDBF8));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1787 = mplew.writeInt("v1787");
     }
@@ -5464,7 +5464,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1792))
   {
      mplew.StartNode("Mask - " + map.get(0x22BDC40));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1793 = mplew.writeInt("v1793");
     }
@@ -5480,7 +5480,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1798))
   {
      mplew.StartNode("Mask - " + map.get(0x22B8B88));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1799 = mplew.writeInt("v1799");
     }
@@ -5496,7 +5496,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1804))
   {
      mplew.StartNode("Mask - " + map.get(0x22BDC88));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1805 = mplew.writeInt("v1805");
     }
@@ -5512,7 +5512,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1810))
   {
      mplew.StartNode("Mask - " + map.get(0x22BDCD0));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1811 = mplew.writeInt("v1811");
     }
@@ -5528,7 +5528,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1816))
   {
      mplew.StartNode("Mask - " + map.get(0x22B8B40));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1817 = mplew.writeInt("v1817");
     }
@@ -5544,7 +5544,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1822))
   {
      mplew.StartNode("Mask - " + map.get(0x22BDD18));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1823 = mplew.writeInt("v1823");
     }
@@ -5560,7 +5560,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1828))
   {
      mplew.StartNode("Mask - " + map.get(0x22BDD60));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1829 = mplew.writeInt("v1829");
     }
@@ -5576,7 +5576,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1834))
   {
      mplew.StartNode("Mask - " + map.get(0x22BDDA8));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1835 = mplew.writeInt("v1835");
     }
@@ -5592,7 +5592,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1840))
   {
      mplew.StartNode("Mask - " + map.get(0x22BDDF0));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1841 = mplew.writeInt("v1841");
     }
@@ -5608,7 +5608,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1846))
   {
      mplew.StartNode("Mask - " + map.get(0x22BDE38));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1847 = mplew.writeInt("v1847");
     }
@@ -5624,7 +5624,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1852))
   {
      mplew.StartNode("Mask - " + map.get(0x22BDE80));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1853 = mplew.writeInt("v1853");
     }
@@ -5640,7 +5640,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1858))
   {
      mplew.StartNode("Mask - " + map.get(0x22BDEC8));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1859 = mplew.writeInt("v1859");
     }
@@ -5656,7 +5656,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1864))
   {
      mplew.StartNode("Mask - " + map.get(0x22BDF10));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1865 = mplew.writeInt("v1865");
     }
@@ -5672,7 +5672,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1870))
   {
      mplew.StartNode("Mask - " + map.get(0x22BDF58));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1871 = mplew.writeInt("v1871");
     }
@@ -5688,7 +5688,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1876))
   {
      mplew.StartNode("Mask - " + map.get(0x22BDFA0));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1877 = mplew.writeInt("v1877");
     }
@@ -5704,7 +5704,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1882))
   {
      mplew.StartNode("Mask - " + map.get(0x22BDFE8));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1883 = mplew.writeInt("v1883");
     }
@@ -5720,7 +5720,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1888))
   {
      mplew.StartNode("Mask - " + map.get(0x22BE030));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1889 = mplew.writeInt("v1889");
     }
@@ -5736,7 +5736,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1894))
   {
      mplew.StartNode("Mask - " + map.get(0x22BE078));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1895 = mplew.writeInt("v1895");
     }
@@ -5752,7 +5752,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1900))
   {
      mplew.StartNode("Mask - " + map.get(0x22BE0C0));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1901 = mplew.writeInt("v1901");
     }
@@ -5768,7 +5768,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1906))
   {
      mplew.StartNode("Mask - " + map.get(0x22BE108));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1907 = mplew.writeInt("v1907");
     }
@@ -5784,7 +5784,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1912))
   {
      mplew.StartNode("Mask - " + map.get(0x22BE150));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1913 = mplew.writeInt("v1913");
     }
@@ -5800,7 +5800,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1918))
   {
      mplew.StartNode("Mask - " + map.get(0x22BE198));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1919 = mplew.writeInt("v1919");
     }
@@ -5816,7 +5816,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1924))
   {
      mplew.StartNode("Mask - " + map.get(0x22BE1E0));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1925 = mplew.writeInt("v1925");
     }
@@ -5832,7 +5832,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1930))
   {
      mplew.StartNode("Mask - " + map.get(0x22BE228));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1931 = mplew.writeInt("v1931");
     }
@@ -5848,7 +5848,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1936))
   {
      mplew.StartNode("Mask - " + map.get(0x22BE270));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1937 = mplew.writeInt("v1937");
     }
@@ -5864,7 +5864,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1942))
   {
      mplew.StartNode("Mask - " + map.get(0x22BE2B8));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1943 = mplew.writeInt("v1943");
     }
@@ -5880,7 +5880,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1948))
   {
      mplew.StartNode("Mask - " + map.get(0x22BE300));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1949 = mplew.writeInt("v1949");
     }
@@ -5896,7 +5896,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1954))
   {
      mplew.StartNode("Mask - " + map.get(0x22BE348));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1955 = mplew.writeInt("v1955");
     }
@@ -5912,7 +5912,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1960))
   {
      mplew.StartNode("Mask - " + map.get(0x22BE390));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1961 = mplew.writeInt("v1961");
     }
@@ -5928,7 +5928,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1966))
   {
      mplew.StartNode("Mask - " + map.get(0x22BE3D8));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1967 = mplew.writeInt("v1967");
     }
@@ -5944,7 +5944,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1972))
   {
      mplew.StartNode("Mask - " + map.get(0x22BE420));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1973 = mplew.writeInt("v1973");
     }
@@ -5960,7 +5960,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1978))
   {
      mplew.StartNode("Mask - " + map.get(0x22BE468));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1979 = mplew.writeInt("v1979");
     }
@@ -5976,7 +5976,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1984))
   {
      mplew.StartNode("Mask - " + map.get(0x22BE4B0));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1985 = mplew.writeInt("v1985");
     }
@@ -5992,7 +5992,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1990))
   {
      mplew.StartNode("Mask - " + map.get(0x22BE4F8));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1991 = mplew.writeInt("v1991");
     }
@@ -6008,7 +6008,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v1996))
   {
      mplew.StartNode("Mask - " + map.get(0x22BE540));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v1997 = mplew.writeInt("v1997");
     }
@@ -6024,7 +6024,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v2002))
   {
      mplew.StartNode("Mask - " + map.get(0x22BE588));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v2003 = mplew.writeInt("v2003");
     }
@@ -6040,7 +6040,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v2008))
   {
      mplew.StartNode("Mask - " + map.get(0x22BE5D0));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v2009 = mplew.writeInt("v2009");
     }
@@ -6056,7 +6056,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v2014))
   {
      mplew.StartNode("Mask - " + map.get(0x22BE618));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v2015 = mplew.writeInt("v2015");
     }
@@ -6072,7 +6072,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v2020))
   {
      mplew.StartNode("Mask - " + map.get(0x22BE660));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v2021 = mplew.writeInt("v2021");
     }
@@ -6088,7 +6088,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v2026))
   {
      mplew.StartNode("Mask - " + map.get(0x22BE6A8));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v2027 = mplew.writeInt("v2027");
     }
@@ -6104,7 +6104,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v2032))
   {
      mplew.StartNode("Mask - " + map.get(0x22BE6F0));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v2033 = mplew.writeInt("v2033");
     }
@@ -6120,7 +6120,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v2038))
   {
      mplew.StartNode("Mask - " + map.get(0x22BE738));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v2039 = mplew.writeInt("v2039");
     }
@@ -6136,7 +6136,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v2044))
   {
      mplew.StartNode("Mask - " + map.get(0x22BE780));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v2045 = mplew.writeInt("v2045");
     }
@@ -6152,7 +6152,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v2050))
   {
      mplew.StartNode("Mask - " + map.get(0x22BE7C8));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v2051 = mplew.writeInt("v2051");
     }
@@ -6168,7 +6168,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v2056))
   {
      mplew.StartNode("Mask - " + map.get(0x22BE810));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v2057 = mplew.writeInt("v2057");
     }
@@ -6184,7 +6184,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v2062))
   {
      mplew.StartNode("Mask - " + map.get(0x22BE858));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v2063 = mplew.writeInt("v2063");
     }
@@ -6200,7 +6200,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v2068))
   {
      mplew.StartNode("Mask - " + map.get(0x22BE8A0));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v2069 = mplew.writeInt("v2069");
     }
@@ -6216,7 +6216,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v2074))
   {
      mplew.StartNode("Mask - " + map.get(0x22BE8E8));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v2075 = mplew.writeInt("v2075");
     }
@@ -6232,7 +6232,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v2080))
   {
      mplew.StartNode("Mask - " + map.get(0x22BE930));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v2081 = mplew.writeInt("v2081");
     }
@@ -6248,7 +6248,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v2086))
   {
      mplew.StartNode("Mask - " + map.get(0x22BE978));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v2087 = mplew.writeInt("v2087");
     }
@@ -6264,7 +6264,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v2092))
   {
      mplew.StartNode("Mask - " + map.get(0x22BE9C0));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v2093 = mplew.writeInt("v2093");
     }
@@ -6280,7 +6280,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v2098))
   {
      mplew.StartNode("Mask - " + map.get(0x22BEA08));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v2099 = mplew.writeInt("v2099");
     }
@@ -6296,7 +6296,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v2104))
   {
      mplew.StartNode("Mask - " + map.get(0x22BEA50));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v2105 = mplew.writeInt("v2105");
     }
@@ -6312,7 +6312,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v2110))
   {
      mplew.StartNode("Mask - " + map.get(0x22BEA98));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v2111 = mplew.writeInt("v2111");
     }
@@ -6328,7 +6328,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v2116))
   {
      mplew.StartNode("Mask - " + map.get(0x22BEAE0));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v2117 = mplew.writeInt("v2117");
     }
@@ -6344,7 +6344,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v2122))
   {
      mplew.StartNode("Mask - " + map.get(0x22BEB28));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v2123 = mplew.writeInt("v2123");
     }
@@ -6360,7 +6360,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v2128))
   {
      mplew.StartNode("Mask - " + map.get(0x22BEB70));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v2129 = mplew.writeInt("v2129");
     }
@@ -6376,7 +6376,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v2134))
   {
      mplew.StartNode("Mask - " + map.get(0x22BEBB8));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v2135 = mplew.writeInt("v2135");
     }
@@ -6392,7 +6392,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v2140))
   {
      mplew.StartNode("Mask - " + map.get(0x22BEC00));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v2141 = mplew.writeInt("v2141");
     }
@@ -6408,7 +6408,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v2146))
   {
      mplew.StartNode("Mask - " + map.get(0x22BEC48));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v2147 = mplew.writeInt("v2147");
     }
@@ -6424,7 +6424,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v2152))
   {
      mplew.StartNode("Mask - " + map.get(0x22BEC90));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v2153 = mplew.writeInt("v2153");
     }
@@ -6440,7 +6440,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v2158))
   {
      mplew.StartNode("Mask - " + map.get(0x22BECD8));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v2159 = mplew.writeInt("v2159");
     }
@@ -6456,7 +6456,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v2164))
   {
      mplew.StartNode("Mask - " + map.get(0x22BED20));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v2165 = mplew.writeInt("v2165");
     }
@@ -6472,7 +6472,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v2170))
   {
      mplew.StartNode("Mask - " + map.get(0x22BED68));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v2171 = mplew.writeInt("v2171");
     }
@@ -6488,7 +6488,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v2176))
   {
      mplew.StartNode("Mask - " + map.get(0x22BEDB0));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v2177 = mplew.writeInt("v2177");
     }
@@ -6504,7 +6504,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v2182))
   {
      mplew.StartNode("Mask - " + map.get(0x22BEDF8));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v2183 = mplew.writeInt("v2183");
     }
@@ -6520,7 +6520,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v2188))
   {
      mplew.StartNode("Mask - " + map.get(0x22BEE40));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v2189 = mplew.writeInt("v2189");
     }
@@ -6536,7 +6536,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v2194))
   {
      mplew.StartNode("Mask - " + map.get(0x22BEE88));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v2195 = mplew.writeInt("v2195");
     }
@@ -6552,7 +6552,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v2200))
   {
      mplew.StartNode("Mask - " + map.get(0x22BEED0));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v2201 = mplew.writeInt("v2201");
     }
@@ -6568,7 +6568,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v2206))
   {
      mplew.StartNode("Mask - " + map.get(0x22BEF18));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v2207 = mplew.writeInt("v2207");
     }
@@ -6584,7 +6584,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v2212))
   {
      mplew.StartNode("Mask - " + map.get(0x22BEF60));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v2213 = mplew.writeInt("v2213");
     }
@@ -6600,7 +6600,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v2218))
   {
      mplew.StartNode("Mask - " + map.get(0x22BEFA8));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v2219 = mplew.writeInt("v2219");
     }
@@ -6616,7 +6616,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v2224))
   {
      mplew.StartNode("Mask - " + map.get(0x22BEFF0));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v2225 = mplew.writeInt("v2225");
     }
@@ -6632,7 +6632,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v2230))
   {
      mplew.StartNode("Mask - " + map.get(0x22BF038));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v2231 = mplew.writeInt("v2231");
     }
@@ -6648,7 +6648,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v2236))
   {
      mplew.StartNode("Mask - " + map.get(0x22BF080));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v2237 = mplew.writeInt("v2237");
     }
@@ -6664,7 +6664,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v2242))
   {
      mplew.StartNode("Mask - " + map.get(0x22BF0C8));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v2243 = mplew.writeInt("v2243");
     }
@@ -6680,7 +6680,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v2248))
   {
      mplew.StartNode("Mask - " + map.get(0x22BF110));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v2249 = mplew.writeInt("v2249");
     }
@@ -6696,7 +6696,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v2254))
   {
      mplew.StartNode("Mask - " + map.get(0x22BF158));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v2255 = mplew.writeInt("v2255");
     }
@@ -6712,7 +6712,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v2260))
   {
      mplew.StartNode("Mask - " + map.get(0x22BF1A0));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v2261 = mplew.writeInt("v2261");
     }
@@ -6728,7 +6728,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v2266))
   {
      mplew.StartNode("Mask - " + map.get(0x22BF1E8));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v2267 = mplew.writeInt("v2267");
     }
@@ -6744,7 +6744,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v2272))
   {
      mplew.StartNode("Mask - " + map.get(0x22BF230));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v2273 = mplew.writeInt("v2273");
     }
@@ -6760,7 +6760,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v2278))
   {
      mplew.StartNode("Mask - " + map.get(0x22BF278));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v2279 = mplew.writeInt("v2279");
     }
@@ -6776,7 +6776,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v2284))
   {
      mplew.StartNode("Mask - " + map.get(0x22BF2C0));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v2285 = mplew.writeInt("v2285");
     }
@@ -6792,7 +6792,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v2290))
   {
      mplew.StartNode("Mask - " + map.get(0x22BF308));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v2291 = mplew.writeInt("v2291");
     }
@@ -6808,7 +6808,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v2296))
   {
      mplew.StartNode("Mask - " + map.get(0x22BF350));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v2297 = mplew.writeInt("v2297");
     }
@@ -6824,7 +6824,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v2302))
   {
      mplew.StartNode("Mask - " + map.get(0x22BF398));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v2303 = mplew.writeInt("v2303");
     }
@@ -6840,7 +6840,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v2308))
   {
      mplew.StartNode("Mask - " + map.get(0x22BF3E0));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v2309 = mplew.writeInt("v2309");
     }
@@ -6856,7 +6856,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v2314))
   {
      mplew.StartNode("Mask - " + map.get(0x22BF428));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v2315 = mplew.writeInt("v2315");
     }
@@ -6872,7 +6872,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v2320))
   {
      mplew.StartNode("Mask - " + map.get(0x22BF470));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v2321 = mplew.writeInt("v2321");
     }
@@ -6888,7 +6888,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v2326))
   {
      mplew.StartNode("Mask - " + map.get(0x22BF4B8));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v2327 = mplew.writeInt("v2327");
     }
@@ -6904,7 +6904,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v2332))
   {
      mplew.StartNode("Mask - " + map.get(0x22BF500));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v2333 = mplew.writeInt("v2333");
     }
@@ -6920,7 +6920,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v2338))
   {
      mplew.StartNode("Mask - " + map.get(0x22BF548));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v2339 = mplew.writeInt("v2339");
     }
@@ -6936,7 +6936,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v2344))
   {
      mplew.StartNode("Mask - " + map.get(0x22BF590));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v2345 = mplew.writeInt("v2345");
     }
@@ -6952,7 +6952,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v2350))
   {
      mplew.StartNode("Mask - " + map.get(0x22BF5D8));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v2351 = mplew.writeInt("v2351");
     }
@@ -6968,7 +6968,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v2356))
   {
      mplew.StartNode("Mask - " + map.get(0x22BF620));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v2357 = mplew.writeInt("v2357");
     }
@@ -6984,7 +6984,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v2362))
   {
      mplew.StartNode("Mask - " + map.get(0x22BF668));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v2363 = mplew.writeInt("v2363");
     }
@@ -7000,7 +7000,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v2368))
   {
      mplew.StartNode("Mask - " + map.get(0x22BF6B0));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v2369 = mplew.writeInt("v2369");
     }
@@ -7016,7 +7016,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v2374))
   {
      mplew.StartNode("Mask - " + map.get(0x22BF6F8));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v2375 = mplew.writeInt("v2375");
     }
@@ -7032,7 +7032,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v2380))
   {
      mplew.StartNode("Mask - " + map.get(0x22BF740));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v2381 = mplew.writeInt("v2381");
     }
@@ -7048,7 +7048,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v2386))
   {
      mplew.StartNode("Mask - " + map.get(0x22BF788));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v2387 = mplew.writeInt("v2387");
     }
@@ -7064,7 +7064,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v2392))
   {
      mplew.StartNode("Mask - " + map.get(0x22BF7D0));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v2393 = mplew.writeInt("v2393");
     }
@@ -7080,7 +7080,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v2398))
   {
      mplew.StartNode("Mask - " + map.get(0x22BF818));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v2399 = mplew.writeInt("v2399");
     }
@@ -7096,7 +7096,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v2404))
   {
      mplew.StartNode("Mask - " + map.get(0x22BF860));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v2405 = mplew.writeInt("v2405");
     }
@@ -7112,7 +7112,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v2410))
   {
      mplew.StartNode("Mask - " + map.get(0x22BF8A8));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v2411 = mplew.writeInt("v2411");
     }
@@ -7128,7 +7128,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v2416))
   {
      mplew.StartNode("Mask - " + map.get(0x22BF8F0));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v2417 = mplew.writeInt("v2417");
     }
@@ -7144,7 +7144,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v2422))
   {
      mplew.StartNode("Mask - " + map.get(0x22B8900));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v2423 = mplew.writeInt("v2423");
     }
@@ -7160,7 +7160,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v2428))
   {
      mplew.StartNode("Mask - " + map.get(0x22BF938));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v2429 = mplew.writeInt("v2429");
     }
@@ -7176,7 +7176,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v2434))
   {
      mplew.StartNode("Mask - " + map.get(0x22BF980));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v2435 = mplew.writeInt("v2435");
     }
@@ -7192,7 +7192,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v2440))
   {
      mplew.StartNode("Mask - " + map.get(0x22B8948));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v2441 = mplew.writeInt("v2441");
     }
@@ -7208,7 +7208,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v2446))
   {
      mplew.StartNode("Mask - " + map.get(0x22B8990));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v2447 = mplew.writeInt("v2447");
     }
@@ -7224,7 +7224,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v2452))
   {
      mplew.StartNode("Mask - " + map.get(0x22BF9C8));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v2453 = mplew.writeInt("v2453");
     }
@@ -7240,7 +7240,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v2458))
   {
      mplew.StartNode("Mask - " + map.get(0x22BFA10));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v2459 = mplew.writeInt("v2459");
     }
@@ -7256,7 +7256,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v2464))
   {
      mplew.StartNode("Mask - " + map.get(0x22BFA58));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v2465 = mplew.writeInt("v2465");
     }
@@ -7272,7 +7272,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v2470))
   {
      mplew.StartNode("Mask - " + map.get(0x22BFAA0));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v2471 = mplew.writeInt("v2471");
     }
@@ -7288,7 +7288,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v2476))
   {
      mplew.StartNode("Mask - " + map.get(0x22BFAE8));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v2477 = mplew.writeInt("v2477");
     }
@@ -7304,7 +7304,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v2482))
   {
      mplew.StartNode("Mask - " + map.get(0x22BFB30));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v2483 = mplew.writeInt("v2483");
     }
@@ -7320,7 +7320,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v2488))
   {
      mplew.StartNode("Mask - " + map.get(0x22BFB78));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v2489 = mplew.writeInt("v2489");
     }
@@ -7336,7 +7336,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v2494))
   {
      mplew.StartNode("Mask - " + map.get(0x22BFBC0));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v2495 = mplew.writeInt("v2495");
     }
@@ -7352,7 +7352,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v2500))
   {
      mplew.StartNode("Mask - " + map.get(0x22BFC08));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v2501 = mplew.writeInt("v2501");
     }
@@ -7368,7 +7368,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v2506))
   {
      mplew.StartNode("Mask - " + map.get(0x22BFC50));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v2507 = mplew.writeInt("v2507");
     }
@@ -7384,7 +7384,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v2512))
   {
      mplew.StartNode("Mask - " + map.get(0x22BFC98));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v2513 = mplew.writeInt("v2513");
     }
@@ -7400,7 +7400,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v2518))
   {
      mplew.StartNode("Mask - " + map.get(0x22BF110));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v2519 = mplew.writeInt("v2519");
     }
@@ -7416,7 +7416,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v2524))
   {
      mplew.StartNode("Mask - " + map.get(0x22BF158));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v2525 = mplew.writeInt("v2525");
     }
@@ -7432,7 +7432,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v2530))
   {
      mplew.StartNode("Mask - " + map.get(0x22BFCE0));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v2531 = mplew.writeInt("v2531");
     }
@@ -7448,7 +7448,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v2536))
   {
      mplew.StartNode("Mask - " + map.get(0x22BFD28));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v2537 = mplew.writeInt("v2537");
     }
@@ -7464,7 +7464,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v2542))
   {
      mplew.StartNode("Mask - " + map.get(0x22BEFF0));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v2543 = mplew.writeInt("v2543");
     }
@@ -7480,7 +7480,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v2548))
   {
      mplew.StartNode("Mask - " + map.get(0x22BFD70));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v2549 = mplew.writeInt("v2549");
     }
@@ -7496,7 +7496,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v2554))
   {
      mplew.StartNode("Mask - " + map.get(0x22BFDB8));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v2555 = mplew.writeInt("v2555");
     }
@@ -7512,7 +7512,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v2560))
   {
      mplew.StartNode("Mask - " + map.get(0x22BFE00));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v2561 = mplew.writeInt("v2561");
     }
@@ -7528,7 +7528,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v2566))
   {
      mplew.StartNode("Mask - " + map.get(0x22BFE48));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v2567 = mplew.writeInt("v2567");
     }
@@ -7544,7 +7544,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v2572))
   {
      mplew.StartNode("Mask - " + map.get(0x22BFE90));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v2573 = mplew.writeInt("v2573");
     }
@@ -7560,7 +7560,7 @@ v4 = Check_Buff (mask, 0x22B8C18);
   if ( sub_42CEB0 (v2578))
   {
      mplew.StartNode("Mask - " + map.get(0x22BFED8));
-    if ( sub_42D850 (/* &v4969 */) )
+    if ( sub_42D850 (mask) )
     {
       v2579 = mplew.writeInt("v2579");
     }

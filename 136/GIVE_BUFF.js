@@ -59,7 +59,6 @@ function HashMap() {
   }
 }
 var map = new HashMap();
-map.put(160, 160);//未知
  map.put(0x22408f8 , 179);
  map.put(0x2240940 , 180);
  map.put(0x2240988 , 181);
