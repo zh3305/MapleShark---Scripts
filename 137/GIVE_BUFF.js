@@ -7085,13 +7085,13 @@ for (l = 0; l < 9; ++l)
     // add_buff(a1,68 * a2 + 0x22B8218, 0x220);
     // return a1;
     // }
-    if (sub_B7C3F0(mask, (492 + l))) 
+    if (sub_B7C3F0(mask, (497 + l))) 
     {
-        mplew.StartNode("Mas+-- 未处理 " + (492 + l));
+        mplew.StartNode("Mas+-- 未处理 " + (497 + l));
         // ((*v4393 + 24))(v4393, iPacket);
-        switch ((492 + l)) 
+        switch ((497 + l)) 
         {
-            case 492 + 9 :
+            case 497 + 9 :
                 // mplew.writeShort("");
                 // mplew.writeZeroBytes(7);
                 mplew.writeInt("Skill Value");
@@ -7135,10 +7135,9 @@ v2720 = Check_Buff(mask, 0x22C0040);
 if (sub_42CEB0(v2720)) 
 {
     mplew.StartNode("Mask - " + map.get(0x22C0040));
-    v2721 = sub_439640( /* iPacket */
-    );
-    v2722 = sub_439640( /* iPacket */
-    );
+    mplew.AddComment("未处理buff ")
+    v2721 = sub_439640( /* iPacket */);
+    v2722 = sub_439640( /* iPacket */ );
     mplew.EndNode(false);
 }
 v2723 = Check_Buff(mask, 0x22C0088);
@@ -7146,18 +7145,16 @@ if (sub_42CEB0(v2723))
 {
     mplew.StartNode("Mask - " + map.get(0x22C0088));
     v2724 = mplew.write("v2724");
-    v2725 = sub_439640( /* iPacket */
-    );
+    mplew.AddComment("未处理buff ")
+    v2725 = sub_439640( /* iPacket */);
     mplew.EndNode(false);
 }
 v2726 = Check_Buff(mask, 0x22C00D0);
 if (sub_42CEB0(v2726)) 
 {
     mplew.StartNode("Mask - " + map.get(0x22C00D0));
-    v3161 = sub_439640( /* iPacket */
-    );
-    sub_403C70( /* &v3161 */
-    );
+    mplew.AddComment("未处理buff ")
+    v3161 = sub_439640( /* iPacket */);
     mplew.EndNode(false);
 }
 mplew.EndNode(false);

@@ -1,6 +1,241 @@
-function HashMap(){var size=0;var entry=new Object();this.put=function(key,value){if(!this.containsKey(key)){size++}entry[key]=value}this.get=function(key){if(this.containsKey(key)){return entry[key]}else{return null}}this.remove=function(key){if(delete entry[key]){size--}}this.containsKey=function(key){return(key in entry)}this.containsValue=function(value){for(var prop in entry){if(entry[prop]==value){return true}}return false}this.values=function(){var values=new Array(size);for(var prop in entry){values.push(entry[prop])}return values}this.keys=function(){var keys=new Array(size);for(var prop in entry){keys.push(prop)}return keys}this.size=function(){return size}}
+function HashMap(){var size=0;var entry=new Object();this.put=function(key,value){if(!this.containsKey(key)){size++}entry[key]=value}this.get=function(key){if(this.containsKey(key)){return entry[key]}else{return null}}this.remove=function(key){if(delete entry[key]){size--}}this.containsKey=function(key){return(key in entry)}this.containsValue=function(value){for(var prop in entry){if(entry[prop]==value){return true}}return false}this.values=function(){var values=new Array(size);for(var prop in entry){values.push(entry[prop])}return values;}this.keys=function(){var keys=new Array(size);for(var prop in entry){keys.push(prop)}return keys;}this.size=function(){return size;}}
+var map = new HashMap();
+ map.put(0x22b8f78,64);
+ map.put(0x22b95a8,78);
+ map.put(0x22b95f0,79);
+ map.put(0x22b9638,332);
+ map.put(0x22b9440,74);
+ map.put(0x22b9488,195);
+ map.put(0x22b9560,77);
+ map.put(0x22b9518,76);
+ map.put(0x22b97e8,86);
+ map.put(0x22b9830,190);
+ map.put(0x22b9878,87);
+ map.put(0x22b98c0,88);
+ map.put(0x22bb408,189);
+ map.put(0x22bb450,194);
+ map.put(0x22b9908,174);
+ map.put(0x22b9998,177);
+ map.put(0x22b99e0,175);
+ map.put(0x22b9a28,176);
+ map.put(0x22b94d0,75);
+ map.put(0x22b94d0,75);
+ map.put(0x22b88b8,82);
+ map.put(0x22b9200,67);
+ map.put(0x22b93f8,73);
+ map.put(0x22b9a70,89);
+ map.put(0x22b9ab8,105);
+ map.put(0x22b9c68,95);
+ map.put(0x22b9cb0,245);
+ map.put(0x22b8bd0,246);
+ map.put(0x22b9cf8,96);
+ map.put(0x22b9f38,102);
+ map.put(0x22b9fc8,106);
+ map.put(0x22ba010,115);
+ map.put(0x22ba058,107);
+ map.put(0x22ba130,109);
+ map.put(0x22ba178,110);
+ map.put(0x22ba1c0,111);
+ map.put(0x22ba208,112);
+ map.put(0x22ba250,113);
+ map.put(0x22ba298,114);
+ map.put(0x22ba5b0,125);
+ map.put(0x22bf7d0,480);
+ map.put(0x22ba640,127);
+ map.put(0x22ba688,128);
+ map.put(0x22ba6d0,129);
+ map.put(0x22ba718,131);
+ map.put(0x22ba7f0,134);
+ map.put(0x22ba880,135);
+ map.put(0x22ba8c8,191);
+ map.put(0x22ba910,172);
+ map.put(0x22badd8,138);
+ map.put(0x22ba9e8,140);
+ map.put(0x22baac0,152);
+ map.put(0x22bab08,313);
+ map.put(0x22bab08,313);
+ map.put(0x22bad48,160);
+ map.put(0x22baa78,142);
+ map.put(0x22bad90,161);
+ map.put(0x22baeb0,164);
+ map.put(0x22baef8,248);
+ map.put(0x22bb0f0,170);
+ map.put(0x22bb1c8,178);
+ map.put(0x22bb210,185);
+ map.put(0x22bb528,193);
+ map.put(0x22ba3b8,119);
+ map.put(0x22bb498,199);
+ map.put(0x22bcfe0,206);
+ map.put(0x22b8750,208);
+ map.put(0x22bb768,210);
+ map.put(0x22bb960,218);
+ map.put(0x22bbb58,225);
+ map.put(0x22bbba0,244);
+ map.put(0x22bbc30,227);
+ map.put(0x22bbc78,247);
+ map.put(0x22bbcc0,260);
+ map.put(0x22bbd08,228);
+ map.put(0x22bbe28,233);
+ map.put(0x22bff20,234);
+ map.put(0x22bff68,412);
+ map.put(0x22bbf90,237);
+ map.put(0x22bbfd8,239);
+ map.put(0x22bc1d0,242);
+ map.put(0x22bbf00,249);
+ map.put(0x22b9d40,251);
+ map.put(0x22bc140,252);
+ map.put(0x22bc260,250);
+ map.put(0x22bc2f0,258);
+ map.put(0x22bc338,259);
+ map.put(0x22bc3c8,261);
+ map.put(0x22b87e0,262);
+ map.put(0x22b8828,264);
+ map.put(0x22bc458,265);
+ map.put(0x22bc4a0,274);
+ map.put(0x22bc4e8,130);
+ map.put(0x22bc2a8,256);
+ map.put(0x22bc578,269);
+ map.put(0x22bc5c0,270);
+ map.put(0x22bc608,271);
+ map.put(0x22bc650,272);
+ map.put(0x22bc650,272);
+ map.put(0x22bc698,273);
+ map.put(0x22bc6e0,275);
+ map.put(0x22bc728,276);
+ map.put(0x22bc770,277);
+ map.put(0x22bc7b8,278);
+ map.put(0x22bc800,279);
+ map.put(0x22bc848,280);
+ map.put(0x22bc890,337);
+ map.put(0x22bc8d8,281);
+ map.put(0x22bc920,282);
+ map.put(0x22bc968,283);
+ map.put(0x22bc9b0,284);
+ map.put(0x22bb6d8,205);
+ map.put(0x22bc068,253);
+ map.put(0x22ba9a0,139);
+ map.put(0x22bcbf0,289);
+ map.put(0x22ba328,117);
+ map.put(0x22bcc38,290);
+ map.put(0x22bcc80,291);
+ map.put(0x22bcd10,293);
+ map.put(0x22bcd58,294);
+ map.put(0x22b8870,295);
+ map.put(0x22bcda0,299);
+ map.put(0x22bd028,304);
+ map.put(0x22bd0b8,306);
+ map.put(0x22bd148,308);
+ map.put(0x22ba838,311);
+ map.put(0x22b8ab0,343);
+ map.put(0x22bd190,312);
+ map.put(0x22bbf48,314);
+ map.put(0x22bd1d8,315);
+ map.put(0x22bd220,316);
+ map.put(0x22bd268,317);
+ map.put(0x22bd388,321);
+ map.put(0x22bd3d0,322);
+ map.put(0x22bd418,323);
+ map.put(0x22bd460,324);
+ map.put(0x22bd4a8,325);
+ map.put(0x22bd4f0,326);
+ map.put(0x22bd6e8,336);
+ map.put(0x22bb018,168);
+ map.put(0x22b8a20,344);
+ map.put(0x22bd898,348);
+ map.put(0x22bd850,346);
+ map.put(0x22bd8e0,349);
+ map.put(0x22bd928,350);
+ map.put(0x22b8a68,347);
+ map.put(0x22b8a68,347);
+ map.put(0x22bcb60,330);
+ map.put(0x22bc068,253);
+ map.put(0x22b8af8,143);
+ map.put(0x22bdc88,362);
+ map.put(0x22bdda8,367);
+ map.put(0x22bd100,307);
+ map.put(0x22be1e0,383);
+ map.put(0x22be228,384);
+ map.put(0x22be390,389);
+ map.put(0x22be3d8,390);
+ map.put(0x22be420,391);
+ map.put(0x22bf110,403);
+ map.put(0x22bbeb8,236);
+ map.put(0x22bec00,422);
+ map.put(0x22bee40,430);
+ map.put(0x22bee88,431);
+ map.put(0x22bee88,431);
+ map.put(0x22beff0,436);
+ map.put(0x22bf230,442);
+ map.put(0x22bf470,450);
+ map.put(0x22bf428,449);
+ map.put(0x22bf5d8,456);
+ map.put(0x22bf938,464);
+ map.put(0x22bf818,482);
+ map.put(0x22bf860,483);
+ map.put(0x22b8948,486);
+ map.put(0x22bf980,465);
+ map.put(0x22bfd28,477);
+ map.put(0x22bfa58,466);
+ map.put(0x22bfa58,466);
+ map.put(0x22bfaa0,473);
+ map.put(0x22bfae8,467);
+ map.put(0x22bfb78,470);
+ map.put(0x22bfbc0,471);
+ map.put(0x22bfc08,472);
+ map.put(0x22bfc98,475);
+ map.put(0x22bf110,403);
+ map.put(0x22bfd28,477);
+ map.put(0x22b9b90,92);
+ map.put(0x22beff0,436);
+ map.put(0x22bfa10,489);
+ map.put(0x22bfd70,468);
+ map.put(0x22bfdb8,478);
+ map.put(0x22bfe00,493);
+ map.put(0x22bfe48,494);
+ map.put(0x22bfed8,496);
+ map.put(0x22bd418,323);
+ map.put(0x22bd8e0,349);
+ map.put(0x22bd928,350);
+ map.put(0x22be390,389);
+ map.put(0x22be6f0,405);
+ map.put(0x22be780,407);
+ map.put(0x22bec00,422);
+ map.put(0x22bf230,442);
+ map.put(0x22bf5d8,456);
+ map.put(0x22ba838,311);
 
+//for (l = 0; l < 9; ++l) {
+map.put(0x22b8218, 497);
+map.put(0x22b825c, 498);
+map.put(0x22b82a0, 499);
+map.put(0x22b82e4, 500);
+map.put(0x22b8328, 501);
+map.put(0x22b836c, 502);
+map.put(0x22b83b0, 503);
+map.put(0x22b83f4, 504);
+map.put(0x22b8438, 505);
 
+ function sub_42CEB0(bool)
+{    mplew.EndNode(false);
+
+      mplew.StartNode("Mask - " + map.get(311)));
+    return bool;
+}
+function Check_Buff(mask, Key)
+{
+    return sub_B7C3F0(mask, map.get(Key))
+}
+function sub_B7C3F0(uFlag, a2)
+{
+    var result;
+    if (a2 < 0x220) {
+        result = (uFlag[a2 >> 5] >> (31 - (a2 & 0x1F))) & 1;
+    }
+    else {
+        result = 0;
+    }
+    return result;
+}
 Init();
 function Init()
 //LONG __thiscall CUserRemote::Init(int this, var CInPacket2, var a3, int a4)
@@ -10,7 +245,6 @@ function Init()
     v5 = mplew.writeMapleAsciiString("chr.getName()");
     v6 = mplew.writeMapleAsciiString("ultExplorer.getCustomData()");
     v7 = mplew.writeMapleAsciiString("gs.getName()");
-
     m_nGuildMarkBg = mplew.writeShort("m_nGuildMarkBg");
     m_nGuildMarkBgColor = mplew.write("m_nGuildMarkBgColor");
     m_nGuildMark = mplew.writeShort("m_nGuildMark");
@@ -20,14 +254,12 @@ function Init()
     m_nPopularity = mplew.writeInt("m_nPopularity");
     m_nFarmLevel = mplew.writeInt("m_nFarmLevel");
     mplew.writeInt("m_nNameTagMark");
-    mplew.StartNode(" SecondaryStat::DecodeForRemote");
+    // mplew.StartNode(" SecondaryStat::DecodeForRemote");
     DecodeForRemote();
-    mplew.EndNode(false);
-
+    // mplew.EndNode(false);
     m_nJobCode = mplew.writeShort("m_nJobCode");
     m_nSubJobCode = mplew.writeShort("m_nSubJobCode");
     m_nTotalCHUC = mplew.writeInt("m_nTotalCHUC");
-
     mplew.StartNode("AvatarLook::Decode");
     addCharLook();
     mplew.EndNode(false);
@@ -35,7 +267,6 @@ function Init()
         mplew.AddComment("神之子");
         addCharLook();
     }
-
     mplew.StartNode("UnkFunctin6");
     UnkFunctin6();
     mplew.EndNode(false);
@@ -54,7 +285,6 @@ function Init()
     mplew.writeInt("unk");
     mplew.writeMapleAsciiString("unk");
     mplew.writeMapleAsciiString("unk");
-
     mplew.writeShort("unk", -1);
     mplew.writeShort("unk", -1);
     mplew.write("unk", 0);
@@ -83,7 +313,6 @@ function Init()
     v140 = mplew.writePos("chr.getTruePosition()");
     mplew.write("chr.getStance()");
     v15 = mplew.writeShort("chr.getFH()");
-
     mplew.StartNode("chr.getPets()");
     i = 0;
     while (mplew.write("")) {
@@ -104,7 +333,6 @@ function Init()
     m_nTamingMobLevel = mplew.writeInt("m_nTamingMobLevel");
     m_nTamingMobExp = mplew.writeInt("m_nTamingMobExp");
     m_nTamingMobFatigue = mplew.writeInt("m_nTamingMobFatigue");
-
     v41 = mplew.write("m_nMiniRoomType");
     if (v41) {
         v42 = mplew.writeInt("m_dwMiniRoomSN ");
@@ -115,8 +343,6 @@ function Init()
         mplew.write("m_nMaxUsers");
         mplew.write("m_bDelayedLoad 延迟加载?", 1);
     }
-
-
     v57 = mplew.write("getChalkboard");
     if (v57) {
         mplew.writeMapleAsciiString("");
@@ -127,7 +353,6 @@ function Init()
     mplew.StartNode("addRingInfo getMid");
     addRingInfo();
     mplew.EndNode(false);
-
     if (mplew.write("未知数据?addMRingInfo")) {
         mplew.writeInt("unk ");
         mplew.writeInt("unk");
@@ -146,7 +371,6 @@ function Init()
     }
     // mplew.StartNode("");
     // mplew.EndNode(false);
-
     unk_mask = mplew.write("unk_mask");
     if (unk_mask & 1) {
         mplew.StartNode("1");
@@ -191,7 +415,6 @@ function Init()
         v87 = mplew.writeMapleAsciiString("if(v86)");
     }
     mplew.write("", 1);
-
     if (MapleJob.is狂龙战士(m_nJobCode)) {
         mplew.AddComment("狂龙战士未处理!!!!!!!!!!!!!");
         // // v93 = *(v92 + 16);
@@ -199,11 +422,10 @@ function Init()
         // if (parseInt(v93 / 10000) == 190
         //     || v94 == 193
         //     || v94 == 199
-        //     || v93 == 1902040//1902040	第1阶段龙
-        //     || v93 == 1902041//1902041	第2阶段龙	
-        //     || v93 == 1902042//1902042	第3阶段龙
+        //     || v93 == 1902040//1902040 第1阶段龙
+        //     || v93 == 1902041//1902041 第2阶段龙
+        //     || v93 == 1902042//1902042 第3阶段龙
         //     || parseInt(v93 / 1000) == 1983) {
-
         //     if ( *(a2 + 16)) {
         //         v100 = *(a2 + 16);
         //     }
@@ -264,8 +486,6 @@ function Init()
     mplew.StartNode("sub_1A20350");
     sub_1A20350(/* iPacket */);
     mplew.EndNode(false);
-
-
 }
 function sub_1A20350(/*  */)
 //void __stdcall sub_1A20350 (/* int a1, var a2, int a3 */)
@@ -418,7 +638,6 @@ function sub_CE5A20(/*  */)
     mplew.write("unk", 0);
     mplew.write("unk", 0);
 }
-
 function sub_18A4210(/*  */)
 //int __thiscall sub_18A4210 (/* int this, int a2 */)
 {
@@ -436,7 +655,6 @@ function sub_18A4210(/*  */)
     }
     return result;
 }
-
 function UnkFunctin6(/*  */)
 //char __thiscall sub_727C30 (/* _DWORD *this, int iPacket */)
 {
@@ -454,7 +672,6 @@ function UnkFunctin6(/*  */)
     return result;
 }
 function addCharLook() {
-
     AvatarLook = {};
     AvatarLook_1 = AvatarLook;
     AvatarLook.nGender = mplew.write("AvatarLook.nGender");
@@ -463,25 +680,21 @@ function addCharLook() {
     AvatarLook_1.nJob = mplew.writeInt("AvatarLook_1.nJob");
     mplew.write("");
     mplew.writeInt("anHairEquip");
-
     mplew.StartNode("for Item 1");
     for (v3 = mplew.write("for count"); v3 != 0xFF; v3 = mplew.write("")) {
         v4 = mplew.writeInt("ItemID");
     }
     mplew.EndNode(false);
-
     mplew.StartNode("for Item 2");
     for (v6 = mplew.write("for count 2"); v6 != 0xFF; v6 = mplew.write("")) {
         v7 = mplew.writeInt("ItemID");
     }
     mplew.EndNode(false);
-
     mplew.StartNode("for Item 3");
     for (i = mplew.write("i"); i != 0xFF; i = mplew.write("i")) {
         v10 = mplew.writeInt("ItemID");
     }
     mplew.EndNode(false);
-
     mplew.writeInt("nWeaponStickerID");
     mplew.writeInt("nWeaponID");
     mplew.writeInt("nSubWeaponID");
@@ -492,7 +705,6 @@ function addCharLook() {
     mplew.writeInt("PetID2");
     mplew.writeInt("PetID3");
     mplew.EndNode(false);
-
     v12 = AvatarLook_1.nJob;
     if (parseInt(v12 / 100) != 31 && v12 != 3001) {
         if (parseInt(v12 / 100) != 36 && v12 != 3002) {
@@ -546,1418 +758,1655 @@ function DecodeForRemote()
     var mask = Array();
     writeMaskFromList(mask, 0x44);
     mplew.EndNode(false);
-    //   v562= mplew.writeBuffer("v562",0x44);
-    //   Check_Buff(&v562, &v560   , 0x2240C58);     // 27?
-    if (sub_B7C3F0(mask, 27)) {
-        mplew.StartNode("Mask- " + 27);
-        v3 = mplew.write("v3");
-        mplew.EndNode(false);
+    for (var index = 0; index < 0x220; index++)
+    {
+        if (sub_B7C3F0(mask, index))
+        {
+            mplew.AddComment("--- Buff " + index.toString(10) + "---");
+        }
     }
-    //   Check_Buff(&v562, &v559   , 0x2241288);      // 77 斗气集中    COMBO
-    if (sub_B7C3F0(mask, 77)) {
-        mplew.StartNode("Mask- " + 77);
-        v4 = mplew.write("v4");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v558   , 0x22412D0);      // 78 属性攻击WK_CHARGE
-    if (sub_B7C3F0(mask, 78)) {
-        mplew.StartNode("Mask- " + 78);
-        v5 = mplew.writeShort("v5");
-        v6 = mplew.writeInt("v6");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v557   , 0x2241318);      // ELEMENTAL_CHARGE 330  属性攻击
-    if (sub_B7C3F0(mask, 330)) {
-        mplew.StartNode("Mask- " + 330);
-        v7 = mplew.writeShort("v7");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v556   , 0x2241120);      // 73 //昏迷  STUN(73),
-    if (sub_B7C3F0(mask, 73)) {
-        mplew.StartNode("Mask- " + 73);
-        v8 = mplew.writeShort("v8");
-        v9 = mplew.writeInt("v9");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v555   , 0x2241168);      // 194
-    if (sub_B7C3F0(mask, 194)) {
-        mplew.StartNode("Mask- " + 194);
-        v10 = mplew.write("v10");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v554   , 0x2241240);      // 76 DARKNESS
-    if (sub_B7C3F0(mask, 76)) {
-        mplew.StartNode("Mask- " + 76);
-        v11 = mplew.writeShort("v11");
-        v12 = mplew.writeInt("v12");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v553   , 0x22411F8);      // 75
-    if (sub_B7C3F0(mask, 75)) {
-        mplew.StartNode("Mask- " + 75);
-        v13 = mplew.writeShort("v13");
-        v14 = mplew.writeInt("v14");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v552   , 0x22414C8);      // 85
-    if (sub_B7C3F0(mask, 85)) {
-        mplew.StartNode("Mask- " + 85);
-        v15 = mplew.writeShort("v15");
-        v16 = mplew.writeInt("v16");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v551   , 0x2241510);      // 189
-    if (sub_B7C3F0(mask, 189)) {
-        mplew.StartNode("Mask- " + 189);
-        v17 = mplew.writeShort("v17");
-        v18 = mplew.writeInt("v18");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v550   , 0x2241558);      // 86
-    if (sub_B7C3F0(mask, 86)) {
-        mplew.StartNode("Mask- " + 86);
-        v19 = mplew.writeShort("v19");
-        v20 = mplew.writeInt("v20");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v549   , 0x22415A0);      // 87
-    if (sub_B7C3F0(mask, 87)) {
-        mplew.StartNode("Mask- " + 87);
-        v21 = mplew.writeShort("v21");
-        v22 = mplew.writeInt("v22");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v548   , 0x22430E8);      // 188??
-    if (sub_B7C3F0(mask, 188)) {
-        mplew.StartNode("Mask- " + 188);
-        v23 = mplew.writeShort("v23");
-        v24 = mplew.writeInt("v24");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v547   , 0x2243130);      // 193
-    if (sub_B7C3F0(mask, 193)) {
-        mplew.StartNode("Mask- " + 193);
-        v25 = mplew.writeShort("v25");
-        v26 = mplew.writeInt("v26");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v546   , 0x22415E8);      // 173
-    if (sub_B7C3F0(mask, 173)) {
-        mplew.StartNode("Mask- " + 173);
-        v27 = mplew.writeShort("v27");
-        v28 = mplew.writeInt("v28");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v545   , 0x2241678);      // 176
-    if (sub_B7C3F0(mask, 176)) {
-        mplew.StartNode("Mask- " + 176);
-        v29 = mplew.write("v29");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v544   , 0x22416C0);      // 174
-    if (sub_B7C3F0(mask, 174)) {
-        mplew.StartNode("Mask- " + 174);
-        v30 = mplew.writeShort("v30");
-        v31 = mplew.writeInt("v31");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v543   , 0x2241708);      // 175
-    if (sub_B7C3F0(mask, 175)) {
-        mplew.StartNode("Mask- " + 175);
-        v32 = mplew.writeShort("v32");
-        v33 = mplew.writeInt("v33");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v542   , 0x22411B0);      // 74
-    if (sub_B7C3F0(mask, 74)) {
-        mplew.StartNode("Mask- " + 74);
-        v34 = mplew.writeShort("v34");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v541   , 0x22411B0);      // 74
-    if (sub_B7C3F0(mask, 74)) {
-        mplew.StartNode("Mask- " + 74);
-        v35 = mplew.writeShort("v35");
-        v36 = mplew.writeInt("v36");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v540   , 0x2240598);      // 81
-    if (sub_B7C3F0(mask, 81)) {
-        mplew.StartNode("Mask- " + 81);
-        v37 = mplew.writeShort("v37");
-        v38 = mplew.writeInt("v38");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v539   , 0x2240EE0);      // 66
-    if (sub_B7C3F0(mask, 66)) {
-        mplew.StartNode("Mask- " + 66);
-        mplew.EndNode(false);
-    }
-    if (sub_B7C3F0(mask, 72)) {
-        mplew.StartNode("Mask- " + 72);
-        mplew.EndNode(false);
-    }
-    if (sub_B7C3F0(mask, 88)) {
-        mplew.StartNode("Mask- " + 88);
-        v39 = mplew.writeShort("v39");
-        v40 = mplew.writeInt("v40");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v536   , 0x2241798);      // 104
-    if (sub_B7C3F0(mask, 104)) {
-        mplew.StartNode("Mask- " + 104);
-        v41 = mplew.writeShort("v41");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v535   , 0x2241948);      // 94???
-    if (sub_B7C3F0(mask, 94)) {
-        mplew.StartNode("Mask- " + 94);
-        v42 = mplew.writeShort("v42");
-        v43 = mplew.writeInt("v43");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v534   , 0x2241990);      // 244
-    if (sub_B7C3F0(mask, 244)) {
-        mplew.StartNode("Mask- " + 244);
-        v44 = mplew.writeShort("v44");
-        v45 = mplew.writeInt("v45");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v533   , 0x22408B0);      // 245
-    if (sub_B7C3F0(mask, 245)) {
-        mplew.StartNode("Mask- " + 245);
-        v46 = mplew.writeShort("v46");
-        v47 = mplew.writeInt("v47");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v532   , 0x22419D8);      // 95
-    if (sub_B7C3F0(mask, 95)) {
-        mplew.StartNode("Mask- " + 95);
-        v48 = mplew.writeInt("v48");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v531   , 0x2241C18);      // 101
-    if (sub_B7C3F0(mask, 101)) {
-        mplew.StartNode("Mask- " + 101);
-        v49 = mplew.writeShort("v49");
-        v50 = mplew.writeInt("v50");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v530   , 0x2241CA8);      // 105
-    if (sub_B7C3F0(mask, 105)) {
-        mplew.StartNode("Mask- " + 105);
-        v51 = mplew.writeShort("v51");
-        v52 = mplew.writeInt("v52");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v529   , 0x2241CF0);      // 114
-    if (sub_B7C3F0(mask, 114)) {
-        mplew.StartNode("Mask- " + 114);
-        v53 = mplew.writeShort("v53");
-        v54 = mplew.writeInt("v54");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v528   , 0x2241D38);      // 106
-    if (sub_B7C3F0(mask, 106)) {
-        mplew.StartNode("Mask- " + 106);
-        v55 = mplew.writeShort("v55");
-        v56 = mplew.writeInt("v56");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v527   , 0x2241E10);      // 108
-    if (sub_B7C3F0(mask, 108)) {
-        mplew.StartNode("Mask- " + 108);
-        v57 = mplew.writeInt("v57");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v526   , 0x2241E58);      // 109
-    if (sub_B7C3F0(mask, 109)) {
-        mplew.StartNode("Mask- " + 109);
-        v58 = mplew.writeInt("v58");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v525   , 0x2241EA0);      // 110
-    if (sub_B7C3F0(mask, 110)) {
-        mplew.StartNode("Mask- " + 110);
-        v59 = mplew.writeInt("v59");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v524   , 0x2241EE8);      // 111
-    if (sub_B7C3F0(mask, 111)) {
-        mplew.StartNode("Mask- " + 111);
-        v60 = mplew.writeInt("v60");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v523   , 0x2241F30);      // 112
-    if (sub_B7C3F0(mask, 112)) {
-        mplew.StartNode("Mask- " + 112);
-        v61 = mplew.writeShort("v61");
-        v62 = mplew.writeInt("v62");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v522   , 0x2241F78);      // 113
-    if (sub_B7C3F0(mask, 113)) {
-        mplew.StartNode("Mask- " + 113);
+    mplew.StartNode("SecondaryStat::DecodeForRemote");
+  v769= mplew.writeBuffer("v769",0x44);
+  v3 = Check_Buff(mask, 0x22B8F78);
+  if ( sub_42CEB0 ( v3 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22B8F78));
+    v4 = mplew.write("v4");
+      mplew.EndNode(false);
+  }
+  v5 = Check_Buff(mask, 0x22B95A8);
+  if ( sub_42CEB0 ( v5 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22B95A8));
+    v6 = mplew.write("v6");
+      mplew.EndNode(false);
+  }
+  v7 = Check_Buff(mask, 0x22B95F0);
+  if ( sub_42CEB0 ( v7 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22B95F0));
+    v8 = mplew.writeShort("v8");
+    v9 = mplew.writeInt("v9");
+      mplew.EndNode(false);
+  }
+  v10 = Check_Buff(mask, 0x22B9638);
+  if ( sub_42CEB0 ( v10 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22B9638));
+    v11 = mplew.writeShort("v11");
+      mplew.EndNode(false);
+  }
+  v12 = Check_Buff(mask, 0x22B9440);
+  if ( sub_42CEB0 ( v12 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22B9440));
+    v13 = mplew.writeShort("v13");
+    v14 = mplew.writeInt("v14");
+      mplew.EndNode(false);
+  }
+  v15 = Check_Buff(mask, 0x22B9488);
+  if ( sub_42CEB0 ( v15 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22B9488));
+    v16 = mplew.write("v16");
+      mplew.EndNode(false);
+  }
+  v17 = Check_Buff(mask, 0x22B9560);
+  if ( sub_42CEB0 ( v17 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22B9560));
+    v18 = mplew.writeShort("v18");
+    v19 = mplew.writeInt("v19");
+      mplew.EndNode(false);
+  }
+  v20 = Check_Buff(mask, 0x22B9518);
+  if ( sub_42CEB0 ( v20 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22B9518));
+    v21 = mplew.writeShort("v21");
+    v22 = mplew.writeInt("v22");
+      mplew.EndNode(false);
+  }
+  v23 = Check_Buff(mask, 0x22B97E8);
+  if ( sub_42CEB0 ( v23 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22B97E8));
+    v24 = mplew.writeShort("v24");
+    v25 = mplew.writeInt("v25");
+      mplew.EndNode(false);
+  }
+  v26 = Check_Buff(mask, 0x22B9830);
+  if ( sub_42CEB0 ( v26 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22B9830));
+    v27 = mplew.writeShort("v27");
+    v28 = mplew.writeInt("v28");
+      mplew.EndNode(false);
+  }
+  v29 = Check_Buff(mask, 0x22B9878);
+  if ( sub_42CEB0 ( v29 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22B9878));
+    v30 = mplew.writeShort("v30");
+    v31 = mplew.writeInt("v31");
+      mplew.EndNode(false);
+  }
+  v32 = Check_Buff(mask, 0x22B98C0);
+  if ( sub_42CEB0 ( v32 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22B98C0));
+    v33 = mplew.writeShort("v33");
+    v34 = mplew.writeInt("v34");
+      mplew.EndNode(false);
+  }
+  v35 = Check_Buff(mask, 0x22BB408);
+  if ( sub_42CEB0 ( v35 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BB408));
+    v36 = mplew.writeShort("v36");
+    v37 = mplew.writeInt("v37");
+      mplew.EndNode(false);
+  }
+  v38 = Check_Buff(mask, 0x22BB450);
+  if ( sub_42CEB0 ( v38 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BB450));
+    v39 = mplew.writeShort("v39");
+    v40 = mplew.writeInt("v40");
+      mplew.EndNode(false);
+  }
+  v41 = Check_Buff(mask, 0x22B9908);
+  if ( sub_42CEB0 ( v41 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22B9908));
+    v42 = mplew.writeShort("v42");
+    v43 = mplew.writeInt("v43");
+      mplew.EndNode(false);
+  }
+  v44 = Check_Buff(mask, 0x22B9998);
+  if ( sub_42CEB0 ( v44 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22B9998));
+    v45 = mplew.write("v45");
+      mplew.EndNode(false);
+  }
+  v46 = Check_Buff(mask, 0x22B99E0);
+  if ( sub_42CEB0 ( v46 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22B99E0));
+    v47 = mplew.writeShort("v47");
+    v48 = mplew.writeInt("v48");
+      mplew.EndNode(false);
+  }
+  v49 = Check_Buff(mask, 0x22B9A28);
+  if ( sub_42CEB0 ( v49 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22B9A28));
+    v50 = mplew.writeShort("v50");
+    v51 = mplew.writeInt("v51");
+      mplew.EndNode(false);
+  }
+  v52 = Check_Buff(mask, 0x22B94D0);
+  if ( sub_42CEB0 ( v52 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22B94D0));
+    v53 = mplew.writeShort("v53");
+      mplew.EndNode(false);
+  }
+  v54 = Check_Buff(mask, 0x22B94D0);
+  if ( sub_42CEB0 ( v54 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22B94D0));
+    v55 = mplew.writeShort("v55");
+    v56 = mplew.writeInt("v56");
+      mplew.EndNode(false);
+  }
+  v57 = Check_Buff(mask, 0x22B88B8);
+  if ( sub_42CEB0 ( v57 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22B88B8));
+    v58 = mplew.writeShort("v58");
+    v59 = mplew.writeInt("v59");
+      mplew.EndNode(false);
+  }
+  v60 = Check_Buff(mask, 0x22B9200);
+  if ( sub_42CEB0 ( v60 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22B9200));
+
+      mplew.EndNode(false);
+  }
+  v61 = Check_Buff(mask, 0x22B93F8);
+  if ( sub_42CEB0 ( v61 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22B93F8));
+
+      mplew.EndNode(false);
+  }
+  v62 = Check_Buff(mask, 0x22B9A70);
+  if ( sub_42CEB0 ( v62 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22B9A70));
+    v63 = mplew.writeShort("v63");
+    v64 = mplew.writeInt("v64");
+      mplew.EndNode(false);
+  }
+  v65 = Check_Buff(mask, 0x22B9AB8);
+  if ( sub_42CEB0 ( v65 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22B9AB8));
+    v66 = mplew.writeShort("v66");
+      mplew.EndNode(false);
+  }
+  v67 = Check_Buff(mask, 0x22B9C68);
+  if ( sub_42CEB0 ( v67 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22B9C68));
+    v68 = mplew.writeShort("v68");
+    v69 = mplew.writeInt("v69");
+      mplew.EndNode(false);
+  }
+  v70 = Check_Buff(mask, 0x22B9CB0);
+  if ( sub_42CEB0 ( v70 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22B9CB0));
+    v71 = mplew.writeShort("v71");
+    v72 = mplew.writeInt("v72");
+      mplew.EndNode(false);
+  }
+  v73 = Check_Buff(mask, 0x22B8BD0);
+  if ( sub_42CEB0 ( v73 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22B8BD0));
+    v74 = mplew.writeShort("v74");
+    v75 = mplew.writeInt("v75");
+      mplew.EndNode(false);
+  }
+  v76 = Check_Buff(mask, 0x22B9CF8);
+  if ( sub_42CEB0 ( v76 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22B9CF8));
+    v77 = mplew.writeInt("v77");
+      mplew.EndNode(false);
+  }
+  v78 = Check_Buff(mask, 0x22B9F38);
+  if ( sub_42CEB0 ( v78 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22B9F38));
+    v79 = mplew.writeShort("v79");
+    v80 = mplew.writeInt("v80");
+      mplew.EndNode(false);
+  }
+  v81 = Check_Buff(mask, 0x22B9FC8);
+  if ( sub_42CEB0 ( v81 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22B9FC8));
+    v82 = mplew.writeShort("v82");
+    v83 = mplew.writeInt("v83");
+      mplew.EndNode(false);
+  }
+  v84 = Check_Buff(mask, 0x22BA010);
+  if ( sub_42CEB0 ( v84 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BA010));
+    v85 = mplew.writeShort("v85");
+    v86 = mplew.writeInt("v86");
+      mplew.EndNode(false);
+  }
+  v87 = Check_Buff(mask, 0x22BA058);
+  if ( sub_42CEB0 ( v87 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BA058));
+    v88 = mplew.writeShort("v88");
+    v89 = mplew.writeInt("v89");
+      mplew.EndNode(false);
+  }
+  v90 = Check_Buff(mask, 0x22BA130);
+  if ( sub_42CEB0 ( v90 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BA130));
+    v91 = mplew.writeInt("v91");
+      mplew.EndNode(false);
+  }
+  v92 = Check_Buff(mask, 0x22BA178);
+  if ( sub_42CEB0 ( v92 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BA178));
+    v93 = mplew.writeInt("v93");
+      mplew.EndNode(false);
+  }
+  v94 = Check_Buff(mask, 0x22BA1C0);
+  if ( sub_42CEB0 ( v94 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BA1C0));
+    v95 = mplew.writeInt("v95");
+      mplew.EndNode(false);
+  }
+  v96 = Check_Buff(mask, 0x22BA208);
+  if ( sub_42CEB0 ( v96 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BA208));
+    v97 = mplew.writeInt("v97");
+      mplew.EndNode(false);
+  }
+  v98 = Check_Buff(mask, 0x22BA250);
+  if ( sub_42CEB0 ( v98 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BA250));
+    v99 = mplew.writeShort("v99");
+    v100 = mplew.writeInt("v100");
+      mplew.EndNode(false);
+  }
+  v101 = Check_Buff(mask, 0x22BA298);
+  if ( sub_42CEB0 ( v101 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BA298));
+
+      mplew.EndNode(false);
+  }
+  v102 = Check_Buff(mask, 0x22BA5B0);
+  if ( sub_42CEB0 ( v102 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BA5B0));
+    v103 = mplew.writeShort("v103");
+    v104 = mplew.writeInt("v104");
+      mplew.EndNode(false);
+  }
+  v105 = Check_Buff(mask, 0x22BF7D0);
+  if ( sub_42CEB0 ( v105 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BF7D0));
+    v106 = mplew.writeShort("v106");
+    v107 = mplew.writeInt("v107");
+      mplew.EndNode(false);
+  }
+  v108 = Check_Buff(mask, 0x22BA640);
+  if ( sub_42CEB0 ( v108 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BA640));
+    v109 = mplew.writeShort("v109");
+    v110 = mplew.writeInt("v110");
+      mplew.EndNode(false);
+  }
+  v111 = Check_Buff(mask, 0x22BA688);
+  if ( sub_42CEB0 ( v111 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BA688));
+    v112 = mplew.writeShort("v112");
+    v113 = mplew.writeInt("v113");
+      mplew.EndNode(false);
+  }
+  v114 = Check_Buff(mask, 0x22BA6D0);
+  if ( sub_42CEB0 ( v114 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BA6D0));
+    v115 = mplew.writeShort("v115");
+    v116 = mplew.writeInt("v116");
+      mplew.EndNode(false);
+  }
+  v117 = Check_Buff(mask, 0x22BA718);
+  if ( sub_42CEB0 ( v117 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BA718));
+    v118 = mplew.writeInt("v118");
+      mplew.EndNode(false);
+  }
+  v119 = Check_Buff(mask, 0x22BA7F0);
+  if ( sub_42CEB0 ( v119 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BA7F0));
+
+      mplew.EndNode(false);
+  }
+  v120 = Check_Buff(mask, 0x22BA880);
+  if ( sub_42CEB0 ( v120 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BA880));
+    v121 = mplew.writeShort("v121");
+    v122 = mplew.writeInt("v122");
+      mplew.EndNode(false);
+  }
+  v123 = Check_Buff(mask, 0x22BA8C8);
+  if ( sub_42CEB0 ( v123 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BA8C8));
+    v124 = mplew.writeShort("v124");
+    v125 = mplew.writeInt("v125");
+      mplew.EndNode(false);
+  }
+  v126 = Check_Buff(mask, 0x22BA910);
+  if ( sub_42CEB0 ( v126 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BA910));
+    v127 = mplew.writeShort("v127");
+    v128 = mplew.writeInt("v128");
+      mplew.EndNode(false);
+  }
+  v129 = Check_Buff(mask, 0x22BADD8);
+  if ( sub_42CEB0 ( v129 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BADD8));
+    v130 = mplew.writeShort("v130");
+    v131 = mplew.writeInt("v131");
+      mplew.EndNode(false);
+  }
+  v132 = Check_Buff(mask, 0x22BA9E8);
+  if ( sub_42CEB0 ( v132 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BA9E8));
+    v133 = mplew.writeShort("v133");
+    v134 = mplew.writeInt("v134");
+      mplew.EndNode(false);
+  }
+  v135 = Check_Buff(mask, 0x22BAAC0);
+  if ( sub_42CEB0 ( v135 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BAAC0));
+    v136 = mplew.write("v136");
+      mplew.EndNode(false);
+  }
+  v137 = Check_Buff(mask, 0x22BAB08);
+  if ( sub_42CEB0 ( v137 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BAB08));
+    v138 = mplew.write("v138");
+      mplew.EndNode(false);
+  }
+  v139 = Check_Buff(mask, 0x22BAB08);
+  if ( sub_42CEB0 ( v139 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BAB08));
+
+      mplew.EndNode(false);
+  }
+  v140 = Check_Buff(mask, 0x22BAD48);
+  if ( sub_42CEB0 ( v140 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BAD48));
+
+      mplew.EndNode(false);
+  }
+  v141 = Check_Buff(mask, 0x22BAA78);
+  if ( sub_42CEB0 ( v141 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BAA78));
+
+      mplew.EndNode(false);
+  }
+  v142 = Check_Buff(mask, 0x22BAD90);
+  if ( sub_42CEB0 ( v142 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BAD90));
+    v143 = mplew.writeShort("v143");
+    v144 = mplew.writeInt("v144");
+      mplew.EndNode(false);
+  }
+  v145 = Check_Buff(mask, 0x22BAEB0);
+  if ( sub_42CEB0 ( v145 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BAEB0));
+
+      mplew.EndNode(false);
+  }
+  v146 = Check_Buff(mask, 0x22BAEF8);
+  if ( sub_42CEB0 ( v146 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BAEF8));
+
+      mplew.EndNode(false);
+  }
+  v147 = Check_Buff(mask, 0x22BB0F0);
+  if ( sub_42CEB0 ( v147 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BB0F0));
+    v148 = mplew.writeShort("v148");
+    v149 = mplew.writeInt("v149");
+      mplew.EndNode(false);
+  }
+  v150 = Check_Buff(mask, 0x22BB1C8);
+  if ( sub_42CEB0 ( v150 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BB1C8));
+    v151 = mplew.writeShort("v151");
+    v152 = mplew.writeInt("v152");
+      mplew.EndNode(false);
+  }
+  v153 = Check_Buff(mask, 0x22BB210);
+  if ( sub_42CEB0 ( v153 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BB210));
+    v154 = mplew.writeShort("v154");
+    v155 = mplew.writeInt("v155");
+      mplew.EndNode(false);
+  }
+  v156 = Check_Buff(mask, 0x22BB528);
+  if ( sub_42CEB0 ( v156 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BB528));
+    v157 = mplew.writeShort("v157");
+    v158 = mplew.writeInt("v158");
+      mplew.EndNode(false);
+  }
+  v159 = Check_Buff(mask, 0x22BA3B8);
+  if ( sub_42CEB0 ( v159 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BA3B8));
+    v160 = mplew.writeShort("v160");
+    v161 = mplew.writeInt("v161");
+      mplew.EndNode(false);
+  }
+  v162 = Check_Buff(mask, 0x22BB498);
+  if ( sub_42CEB0 ( v162 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BB498));
+
+      mplew.EndNode(false);
+  }
+  v163 = Check_Buff(mask, 0x22BCFE0);
+  if ( sub_42CEB0 ( v163 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BCFE0));
+    v164 = mplew.writeShort("v164");
+    v165 = mplew.writeInt("v165");
+      mplew.EndNode(false);
+  }
+  v166 = Check_Buff(mask, 0x22B8750);
+  if ( sub_42CEB0 ( v166 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22B8750));
+    v167 = mplew.writeShort("v167");
+    v168 = mplew.writeInt("v168");
+      mplew.EndNode(false);
+  }
+  v169 = Check_Buff(mask, 0x22BB768);
+  if ( sub_42CEB0 ( v169 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BB768));
+    v170 = mplew.writeShort("v170");
+    v171 = mplew.writeInt("v171");
+      mplew.EndNode(false);
+  }
+  v172 = Check_Buff(mask, 0x22BB960);
+  if ( sub_42CEB0 ( v172 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BB960));
+    v173 = mplew.writeShort("v173");
+    v174 = mplew.writeInt("v174");
+      mplew.EndNode(false);
+  }
+  v175 = Check_Buff(mask, 0x22BBB58);
+  if ( sub_42CEB0 ( v175 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BBB58));
+    v176 = mplew.writeShort("v176");
+    v177 = mplew.writeInt("v177");
+      mplew.EndNode(false);
+  }
+  v178 = Check_Buff(mask, 0x22BBBA0);
+  if ( sub_42CEB0 ( v178 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BBBA0));
+    v179 = mplew.writeShort("v179");
+    v180 = mplew.writeInt("v180");
+      mplew.EndNode(false);
+  }
+  v181 = Check_Buff(mask, 0x22BBC30);
+  if ( sub_42CEB0 ( v181 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BBC30));
+    v182 = mplew.writeShort("v182");
+    v183 = mplew.writeInt("v183");
+      mplew.EndNode(false);
+  }
+  v184 = Check_Buff(mask, 0x22BBC78);
+  if ( sub_42CEB0 ( v184 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BBC78));
+    v185 = mplew.writeShort("v185");
+    v186 = mplew.writeInt("v186");
+      mplew.EndNode(false);
+  }
+  v187 = Check_Buff(mask, 0x22BBCC0);
+  if ( sub_42CEB0 ( v187 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BBCC0));
+    v188 = mplew.writeShort("v188");
+    v189 = mplew.writeInt("v189");
+      mplew.EndNode(false);
+  }
+  v190 = Check_Buff(mask, 0x22BBD08);
+  if ( sub_42CEB0 ( v190 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BBD08));
+    v191 = mplew.writeShort("v191");
+    v192 = mplew.writeInt("v192");
+      mplew.EndNode(false);
+  }
+  v193 = Check_Buff(mask, 0x22BBE28);
+  if ( sub_42CEB0 ( v193 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BBE28));
+    v194 = mplew.writeInt("v194");
+      mplew.EndNode(false);
+  }
+  v195 = Check_Buff(mask, 0x22BFF20);
+  if ( sub_42CEB0 ( v195 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BFF20));
+    v196 = mplew.write("v196");
+      mplew.EndNode(false);
+  }
+  v197 = Check_Buff(mask, 0x22BFF68);
+  if ( sub_42CEB0 ( v197 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BFF68));
+    v198 = mplew.write("v198");
+      mplew.EndNode(false);
+  }
+  v199 = Check_Buff(mask, 0x22BBF90);
+  if ( sub_42CEB0 ( v199 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BBF90));
+    v200 = mplew.writeShort("v200");
+    v201 = mplew.writeInt("v201");
+      mplew.EndNode(false);
+  }
+  v202 = Check_Buff(mask, 0x22BBFD8);
+  if ( sub_42CEB0 ( v202 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BBFD8));
+    v203 = mplew.writeShort("v203");
+    v204 = mplew.writeInt("v204");
+      mplew.EndNode(false);
+  }
+  v205 = Check_Buff(mask, 0x22BC1D0);
+  if ( sub_42CEB0 ( v205 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BC1D0));
+    v206 = mplew.writeShort("v206");
+    v207 = mplew.writeInt("v207");
+      mplew.EndNode(false);
+  }
+  v208 = Check_Buff(mask, 0x22BBF00);
+  if ( sub_42CEB0 ( v208 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BBF00));
+    v209 = mplew.writeShort("v209");
+    v210 = mplew.writeInt("v210");
+      mplew.EndNode(false);
+  }
+  v211 = Check_Buff(mask, 0x22B9D40);
+  if ( sub_42CEB0 ( v211 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22B9D40));
+    v212 = mplew.writeShort("v212");
+      mplew.EndNode(false);
+  }
+  v213 = Check_Buff(mask, 0x22BC140);
+  if ( sub_42CEB0 ( v213 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BC140));
+    v214 = mplew.writeInt("v214");
+      mplew.EndNode(false);
+  }
+  v215 = Check_Buff(mask, 0x22BC260);
+  if ( sub_42CEB0 ( v215 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BC260));
+    v216 = mplew.writeShort("v216");
+    v217 = mplew.writeInt("v217");
+      mplew.EndNode(false);
+  }
+  v218 = Check_Buff(mask, 0x22BC2F0);
+  if ( sub_42CEB0 ( v218 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BC2F0));
+    v219 = mplew.writeShort("v219");
+    v220 = mplew.writeInt("v220");
+      mplew.EndNode(false);
+  }
+  v221 = Check_Buff(mask, 0x22BC338);
+  if ( sub_42CEB0 ( v221 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BC338));
+    v222 = mplew.writeShort("v222");
+    v223 = mplew.writeInt("v223");
+      mplew.EndNode(false);
+  }
+  v224 = Check_Buff(mask, 0x22BC3C8);
+  if ( sub_42CEB0 ( v224 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BC3C8));
+    v225 = mplew.writeShort("v225");
+    v226 = mplew.writeInt("v226");
+      mplew.EndNode(false);
+  }
+  v227 = Check_Buff(mask, 0x22B87E0);
+  if ( sub_42CEB0 ( v227 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22B87E0));
+    v228 = mplew.writeShort("v228");
+    v229 = mplew.writeInt("v229");
+      mplew.EndNode(false);
+  }
+  v230 = Check_Buff(mask, 0x22B8828);
+  if ( sub_42CEB0 ( v230 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22B8828));
+    v231 = mplew.writeShort("v231");
+    v232 = mplew.writeInt("v232");
+      mplew.EndNode(false);
+  }
+  v233 = Check_Buff(mask, 0x22BC458);
+  if ( sub_42CEB0 ( v233 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BC458));
+    v234 = mplew.writeShort("v234");
+    v235 = mplew.writeInt("v235");
+      mplew.EndNode(false);
+  }
+  v236 = Check_Buff(mask, 0x22BC4A0);
+  if ( sub_42CEB0 ( v236 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BC4A0));
+    v237 = mplew.writeShort("v237");
+    v238 = mplew.writeInt("v238");
+      mplew.EndNode(false);
+  }
+  v239 = Check_Buff(mask, 0x22BC4E8);
+  if ( sub_42CEB0 ( v239 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BC4E8));
+    v240 = mplew.writeShort("v240");
+    v241 = mplew.writeInt("v241");
+      mplew.EndNode(false);
+  }
+  v242 = Check_Buff(mask, 0x22BC2A8);
+  if ( sub_42CEB0 ( v242 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BC2A8));
+    v243 = mplew.writeShort("v243");
+    v244 = mplew.writeInt("v244");
+      mplew.EndNode(false);
+  }
+  v245 = Check_Buff(mask, 0x22BC578);
+  if ( sub_42CEB0 ( v245 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BC578));
+    v246 = mplew.writeShort("v246");
+    v247 = mplew.writeInt("v247");
+      mplew.EndNode(false);
+  }
+  v248 = Check_Buff(mask, 0x22BC5C0);
+  if ( sub_42CEB0 ( v248 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BC5C0));
+    v249 = mplew.writeShort("v249");
+    v250 = mplew.writeInt("v250");
+      mplew.EndNode(false);
+  }
+  v251 = Check_Buff(mask, 0x22BC608);
+  if ( sub_42CEB0 ( v251 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BC608));
+    v252 = mplew.writeShort("v252");
+    v253 = mplew.writeInt("v253");
+      mplew.EndNode(false);
+  }
+  v254 = Check_Buff(mask, 0x22BC650);
+  if ( sub_42CEB0 ( v254 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BC650));
+    v255 = mplew.writeShort("v255");
+    v256 = mplew.writeInt("v256");
+      mplew.EndNode(false);
+  }
+  v257 = Check_Buff(mask, 0x22BC650);
+  if ( sub_42CEB0 ( v257 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BC650));
+    v258 = v73974360();
+    v259 = mplew.writeInt("v259");
+      mplew.EndNode(false);
+  }
+  v260 = Check_Buff(mask, 0x22BC698);
+  if ( sub_42CEB0 ( v260 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BC698));
+    v261 = mplew.writeShort("v261");
+    v262 = mplew.writeInt("v262");
+      mplew.EndNode(false);
+  }
+  v263 = Check_Buff(mask, 0x22BC6E0);
+  if ( sub_42CEB0 ( v263 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BC6E0));
+    v264 = mplew.writeShort("v264");
+    v265 = mplew.writeInt("v265");
+      mplew.EndNode(false);
+  }
+  v266 = Check_Buff(mask, 0x22BC728);
+  if ( sub_42CEB0 ( v266 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BC728));
+    v267 = mplew.writeShort("v267");
+    v268 = mplew.writeInt("v268");
+      mplew.EndNode(false);
+  }
+  v269 = Check_Buff(mask, 0x22BC770);
+  if ( sub_42CEB0 ( v269 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BC770));
+    v270 = mplew.writeShort("v270");
+    v271 = mplew.writeInt("v271");
+      mplew.EndNode(false);
+  }
+  v272 = Check_Buff(mask, 0x22BC7B8);
+  if ( sub_42CEB0 ( v272 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BC7B8));
+    v273 = mplew.writeShort("v273");
+    v274 = mplew.writeInt("v274");
+      mplew.EndNode(false);
+  }
+  v275 = Check_Buff(mask, 0x22BC800);
+  if ( sub_42CEB0 ( v275 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BC800));
+    v276 = mplew.writeShort("v276");
+    v277 = mplew.writeInt("v277");
+      mplew.EndNode(false);
+  }
+  v278 = Check_Buff(mask, 0x22BC848);
+  if ( sub_42CEB0 ( v278 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BC848));
+    v279 = mplew.writeShort("v279");
+    v280 = mplew.writeInt("v280");
+      mplew.EndNode(false);
+  }
+  v281 = Check_Buff(mask, 0x22BC890);
+  if ( sub_42CEB0 ( v281 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BC890));
+    v282 = mplew.writeShort("v282");
+    v283 = mplew.writeInt("v283");
+      mplew.EndNode(false);
+  }
+  v284 = Check_Buff(mask, 0x22BC8D8);
+  if ( sub_42CEB0 ( v284 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BC8D8));
+    v285 = mplew.writeShort("v285");
+    v286 = mplew.writeInt("v286");
+      mplew.EndNode(false);
+  }
+  v287 = Check_Buff(mask, 0x22BC920);
+  if ( sub_42CEB0 ( v287 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BC920));
+    v288 = mplew.writeShort("v288");
+    v289 = mplew.writeInt("v289");
+      mplew.EndNode(false);
+  }
+  v290 = Check_Buff(mask, 0x22BC968);
+  if ( sub_42CEB0 ( v290 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BC968));
+
+      mplew.EndNode(false);
+  }
+  v291 = Check_Buff(mask, 0x22BC9B0);
+  if ( sub_42CEB0 ( v291 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BC9B0));
+    v292 = mplew.writeShort("v292");
+    v293 = mplew.writeInt("v293");
+      mplew.EndNode(false);
+  }
+  v294 = Check_Buff(mask, 0x22BB6D8);
+  if ( sub_42CEB0 ( v294 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BB6D8));
+    v295 = mplew.writeShort("v295");
+    v296 = mplew.writeInt("v296");
+      mplew.EndNode(false);
+  }
+  v297 = Check_Buff(mask, 0x22BC068);
+  if ( sub_42CEB0 ( v297 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BC068));
+    v298 = mplew.writeShort("v298");
+    v299 = mplew.writeInt("v299");
+      mplew.EndNode(false);
+  }
+  v300 = Check_Buff(mask, 0x22BA9A0);
+  if ( sub_42CEB0 ( v300 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BA9A0));
+    v301 = mplew.writeShort("v301");
+    v302 = mplew.writeInt("v302");
+      mplew.EndNode(false);
+  }
+  v303 = Check_Buff(mask, 0x22BCBF0);
+  if ( sub_42CEB0 ( v303 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BCBF0));
+    v304 = mplew.writeShort("v304");
+    v305 = mplew.writeInt("v305");
+      mplew.EndNode(false);
+  }
+  v306 = Check_Buff(mask, 0x22BA328);
+  if ( sub_42CEB0 ( v306 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BA328));
+    v307 = mplew.writeShort("v307");
+    v308 = mplew.writeInt("v308");
+      mplew.EndNode(false);
+  }
+  v309 = Check_Buff(mask, 0x22BCC38);
+  if ( sub_42CEB0 ( v309 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BCC38));
+    v310 = mplew.writeShort("v310");
+    v311 = mplew.writeInt("v311");
+      mplew.EndNode(false);
+  }
+  v312 = Check_Buff(mask, 0x22BCC80);
+  if ( sub_42CEB0 ( v312 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BCC80));
+    v313 = mplew.writeShort("v313");
+    v314 = mplew.writeInt("v314");
+      mplew.EndNode(false);
+  }
+  v315 = Check_Buff(mask, 0x22BCD10);
+  if ( sub_42CEB0 ( v315 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BCD10));
+    v316 = mplew.writeShort("v316");
+    v317 = mplew.writeInt("v317");
+      mplew.EndNode(false);
+  }
+  v318 = Check_Buff(mask, 0x22BCD58);
+  if ( sub_42CEB0 ( v318 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BCD58));
+    v319 = mplew.writeShort("v319");
+    v320 = mplew.writeInt("v320");
+      mplew.EndNode(false);
+  }
+  v321 = Check_Buff(mask, 0x22B8870);
+  if ( sub_42CEB0 ( v321 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22B8870));
+    v322 = mplew.write("v322");
+    v323 = mplew.writeInt("v323");
+      mplew.EndNode(false);
+  }
+  v324 = Check_Buff(mask, 0x22BCDA0);
+  if ( sub_42CEB0 ( v324 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BCDA0));
+    v325 = mplew.writeShort("v325");
+    v326 = mplew.writeInt("v326");
+      mplew.EndNode(false);
+  }
+  v327 = Check_Buff(mask, 0x22BD028);
+  if ( sub_42CEB0 ( v327 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BD028));
+    v328 = mplew.writeShort("v328");
+    v329 = mplew.writeInt("v329");
+      mplew.EndNode(false);
+  }
+  v330 = Check_Buff(mask, 0x22BD0B8);
+  if ( sub_42CEB0 ( v330 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BD0B8));
+    v331 = mplew.write("v331");
+    v332 = mplew.writeInt("v332");
+      mplew.EndNode(false);
+  }
+  v333 = Check_Buff(mask, 0x22BD148);
+  if ( sub_42CEB0 ( v333 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BD148));
+    v334 = mplew.write("v334");
+      mplew.EndNode(false);
+  }
+  v335 = Check_Buff(mask, 0x22BA838);
+  if ( sub_42CEB0 ( v335 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BA838));
+    v336 = mplew.writeShort("v336");
+    v337 = mplew.writeInt("v337");
+      mplew.EndNode(false);
+  }
+  v338 = Check_Buff(mask, 0x22B8AB0);
+  if ( sub_42CEB0 ( v338 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22B8AB0));
+    v339 = mplew.writeShort("v339");
+    v340 = mplew.writeInt("v340");
+      mplew.EndNode(false);
+  }
+  v341 = Check_Buff(mask, 0x22BD190);
+  if ( sub_42CEB0 ( v341 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BD190));
+    v342 = mplew.writeShort("v342");
+    v343 = mplew.writeInt("v343");
+      mplew.EndNode(false);
+  }
+  v344 = Check_Buff(mask, 0x22BBF48);
+  if ( sub_42CEB0 ( v344 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BBF48));
+    v345 = mplew.writeShort("v345");
+    v346 = mplew.writeInt("v346");
+      mplew.EndNode(false);
+  }
+  v347 = Check_Buff(mask, 0x22BD1D8);
+  if ( sub_42CEB0 ( v347 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BD1D8));
+    v348 = mplew.writeShort("v348");
+    v349 = mplew.writeInt("v349");
+      mplew.EndNode(false);
+  }
+  v350 = Check_Buff(mask, 0x22BD220);
+  if ( sub_42CEB0 ( v350 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BD220));
+    v351 = mplew.writeShort("v351");
+    v352 = mplew.writeInt("v352");
+      mplew.EndNode(false);
+  }
+  v353 = Check_Buff(mask, 0x22BD268);
+  if ( sub_42CEB0 ( v353 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BD268));
+    v354 = mplew.writeShort("v354");
+    v355 = mplew.writeInt("v355");
+      mplew.EndNode(false);
+  }
+  v356 = Check_Buff(mask, 0x22BD388);
+  if ( sub_42CEB0 ( v356 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BD388));
+    v357 = mplew.writeShort("v357");
+    v358 = mplew.writeInt("v358");
+      mplew.EndNode(false);
+  }
+  v359 = Check_Buff(mask, 0x22BD3D0);
+  if ( sub_42CEB0 ( v359 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BD3D0));
+    v360 = mplew.writeShort("v360");
+    v361 = mplew.writeInt("v361");
+      mplew.EndNode(false);
+  }
+  v362 = Check_Buff(mask, 0x22BD418);
+  if ( sub_42CEB0 ( v362 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BD418));
+    v363 = mplew.writeShort("v363");
+    v364 = mplew.writeInt("v364");
+      mplew.EndNode(false);
+  }
+  v365 = Check_Buff(mask, 0x22BD460);
+  if ( sub_42CEB0 ( v365 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BD460));
+    v366 = mplew.writeShort("v366");
+    v367 = mplew.writeInt("v367");
+      mplew.EndNode(false);
+  }
+  v368 = Check_Buff(mask, 0x22BD4A8);
+  if ( sub_42CEB0 ( v368 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BD4A8));
+    v369 = mplew.writeShort("v369");
+    v370 = mplew.writeInt("v370");
+      mplew.EndNode(false);
+  }
+  v371 = Check_Buff(mask, 0x22BD4F0);
+  if ( sub_42CEB0 ( v371 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BD4F0));
+    v372 = mplew.writeShort("v372");
+    v373 = mplew.writeInt("v373");
+      mplew.EndNode(false);
+  }
+  v374 = Check_Buff(mask, 0x22BD6E8);
+  if ( sub_42CEB0 ( v374 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BD6E8));
+    v375 = mplew.writeShort("v375");
+    v376 = mplew.writeInt("v376");
+      mplew.EndNode(false);
+  }
+  v377 = Check_Buff(mask, 0x22BB018);
+  if ( sub_42CEB0 ( v377 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BB018));
+    v378 = mplew.writeShort("v378");
+    v379 = mplew.writeInt("v379");
+      mplew.EndNode(false);
+  }
+  v380 = Check_Buff(mask, 0x22B8A20);
+  if ( sub_42CEB0 ( v380 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22B8A20));
+    v381 = mplew.writeShort("v381");
+    v382 = mplew.writeInt("v382");
+      mplew.EndNode(false);
+  }
+  v383 = Check_Buff(mask, 0x22BD898);
+  if ( sub_42CEB0 ( v383 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BD898));
+    v384 = mplew.writeShort("v384");
+    v385 = mplew.writeInt("v385");
+      mplew.EndNode(false);
+  }
+  v386 = Check_Buff(mask, 0x22BD850);
+  if ( sub_42CEB0 ( v386 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BD850));
+
+      mplew.EndNode(false);
+  }
+  v387 = Check_Buff(mask, 0x22BD8E0);
+  if ( sub_42CEB0 ( v387 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BD8E0));
+    v388 = mplew.writeShort("v388");
+    v389 = mplew.writeInt("v389");
+      mplew.EndNode(false);
+  }
+  v390 = Check_Buff(mask, 0x22BD928);
+  if ( sub_42CEB0 ( v390 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BD928));
+    v391 = mplew.writeShort("v391");
+    v392 = mplew.writeInt("v392");
+      mplew.EndNode(false);
+  }
+  v393 = Check_Buff(mask, 0x22B8A68);
+  if ( sub_42CEB0 ( v393 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22B8A68));
+    v394 = mplew.writeInt("v394");
+      mplew.EndNode(false);
+  }
+  v395 = Check_Buff(mask, 0x22B8A68);
+  if ( sub_42CEB0 ( v395 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22B8A68));
+    v396 = mplew.writeInt("v396");
+      mplew.EndNode(false);
+  }
+  v397 = Check_Buff(mask, 0x22BCB60);
+  if ( sub_42CEB0 ( v397 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BCB60));
+    v398 = mplew.writeInt("v398");
+    v399 = v73974360();
+    v400 = mplew.writeInt("v400");
+      mplew.EndNode(false);
+  }
+  v401 = Check_Buff(mask, 0x22BC068);
+  if ( sub_42CEB0 ( v401 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BC068));
+     v402  = mplew.write("") != 0;
+      mplew.EndNode(false);
+  }
+  v403 = Check_Buff(mask, 0x22B8AF8);
+  if ( sub_42CEB0 ( v403 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22B8AF8));
+    v404 = mplew.writeInt("v404");
+    v405 = mplew.writeInt("v405");
+      mplew.EndNode(false);
+  }
+  v406 = Check_Buff(mask, 0x22BDC88);
+  if ( sub_42CEB0 ( v406 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BDC88));
+    v407 = mplew.writeInt("v407");
+    v408 = mplew.writeInt("v408");
+      mplew.EndNode(false);
+  }
+  v409 = Check_Buff(mask, 0x22BDDA8);
+  if ( sub_42CEB0 ( v409 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BDDA8));
+    v410 = mplew.writeShort("v410");
+    v411 = mplew.writeInt("v411");
+      mplew.EndNode(false);
+  }
+  v412 = Check_Buff(mask, 0x22BD100);
+  if ( sub_42CEB0 ( v412 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BD100));
+    v413 = mplew.writeShort("v413");
+    v414 = mplew.writeInt("v414");
+      mplew.EndNode(false);
+  }
+  v415 = Check_Buff(mask, 0x22BE1E0);
+  if ( sub_42CEB0 ( v415 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BE1E0));
+    v416 = mplew.writeShort("v416");
+    v417 = mplew.writeInt("v417");
+      mplew.EndNode(false);
+  }
+  v418 = Check_Buff(mask, 0x22BE228);
+  if ( sub_42CEB0 ( v418 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BE228));
+    v419 = mplew.writeShort("v419");
+    v420 = mplew.writeInt("v420");
+      mplew.EndNode(false);
+  }
+  v421 = Check_Buff(mask, 0x22BE390);
+  if ( sub_42CEB0 ( v421 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BE390));
+    v422 = mplew.writeShort("v422");
+    v423 = mplew.writeInt("v423");
+      mplew.EndNode(false);
+  }
+  v424 = Check_Buff(mask, 0x22BE3D8);
+  if ( sub_42CEB0 ( v424 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BE3D8));
+    v425 = mplew.writeShort("v425");
+    v426 = mplew.writeInt("v426");
+      mplew.EndNode(false);
+  }
+  v427 = Check_Buff(mask, 0x22BE420);
+  if ( sub_42CEB0 ( v427 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BE420));
+    v428 = mplew.writeShort("v428");
+    v429 = mplew.writeInt("v429");
+      mplew.EndNode(false);
+  }
+  v430 = Check_Buff(mask, 0x22BF110);
+  if ( sub_42CEB0 ( v430 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BF110));
+    v431 = mplew.writeShort("v431");
+    v432 = mplew.writeInt("v432");
+      mplew.EndNode(false);
+  }
+  v433 = Check_Buff(mask, 0x22BBEB8);
+  if ( sub_42CEB0 ( v433 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BBEB8));
+    v434 = mplew.writeShort("v434");
+    v435 = mplew.writeInt("v435");
+      mplew.EndNode(false);
+  }
+  v436 = Check_Buff(mask, 0x22BEC00);
+  if ( sub_42CEB0 ( v436 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BEC00));
+    v437 = mplew.writeShort("v437");
+    v438 = mplew.writeInt("v438");
+      mplew.EndNode(false);
+  }
+  v439 = Check_Buff(mask, 0x22BEE40);
+  if ( sub_42CEB0 ( v439 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BEE40));
+    v440 = mplew.writeInt("v440");
+    v441 = mplew.writeInt("v441");
+      mplew.EndNode(false);
+  }
+  v442 = Check_Buff(mask, 0x22BEE88);
+  if ( sub_42CEB0 ( v442 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BEE88));
+    v443 = mplew.writeShort("v443");
+    v444 = mplew.writeInt("v444");
+      mplew.EndNode(false);
+  }
+  v445 = Check_Buff(mask, 0x22BEE88);
+  if ( sub_42CEB0 ( v445 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BEE88));
+    v446 = mplew.writeInt("v446");
+      mplew.EndNode(false);
+  }
+  v447 = Check_Buff(mask, 0x22BEFF0);
+  if ( sub_42CEB0 ( v447 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BEFF0));
+    v448 = mplew.writeShort("v448");
+    v449 = mplew.writeInt("v449");
+      mplew.EndNode(false);
+  }
+  v450 = Check_Buff(mask, 0x22BF230);
+  if ( sub_42CEB0 ( v450 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BF230));
+    v451 = mplew.writeInt("v451");
+      mplew.EndNode(false);
+  }
+  v452 = Check_Buff(mask, 0x22BF470);
+  if ( sub_42CEB0 ( v452 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BF470));
+    v453 = mplew.writeInt("v453");
+      mplew.EndNode(false);
+  }
+  v454 = Check_Buff(mask, 0x22BF428);
+  if ( sub_42CEB0 ( v454 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BF428));
+    v455 = mplew.writeInt("v455");
+      mplew.EndNode(false);
+  }
+  v456 = Check_Buff(mask, 0x22BF5D8);
+  if ( sub_42CEB0 ( v456 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BF5D8));
+    v457 = mplew.writeShort("v457");
+    v458 = mplew.writeInt("v458");
+      mplew.EndNode(false);
+  }
+  v459 = Check_Buff(mask, 0x22BF938);
+  if ( sub_42CEB0 ( v459 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BF938));
+    v460 = mplew.writeShort("v460");
+    v461 = mplew.writeInt("v461");
+      mplew.EndNode(false);
+  }
+  v462 = Check_Buff(mask, 0x22BF818);
+  if ( sub_42CEB0 ( v462 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BF818));
+    v463 = mplew.writeShort("v463");
+    v464 = mplew.writeInt("v464");
+      mplew.EndNode(false);
+  }
+  v465 = Check_Buff(mask, 0x22BF860);
+  if ( sub_42CEB0 ( v465 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BF860));
+    v466 = mplew.writeShort("v466");
+    v467 = mplew.writeInt("v467");
+      mplew.EndNode(false);
+  }
+  v468 = Check_Buff(mask, 0x22B8948);
+  if ( sub_42CEB0 ( v468 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22B8948));
+    v469 = mplew.writeInt("v469");
+    v470 = mplew.writeInt("v470");
+      mplew.EndNode(false);
+  }
+  v471 = Check_Buff(mask, 0x22BF980);
+  if ( sub_42CEB0 ( v471 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BF980));
+    v472 = mplew.writeShort("v472");
+    v473 = mplew.writeInt("v473");
+      mplew.EndNode(false);
+  }
+  v474 = Check_Buff(mask, 0x22BFD28);
+  if ( sub_42CEB0 ( v474 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BFD28));
+    v475 = mplew.writeShort("v475");
+    v476 = mplew.writeInt("v476");
+      mplew.EndNode(false);
+  }
+  v477 = Check_Buff(mask, 0x22BFA58);
+  if ( sub_42CEB0 ( v477 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BFA58));
+    v478 = mplew.writeShort("v478");
+    v479 = mplew.writeInt("v479");
+      mplew.EndNode(false);
+  }
+  v480 = Check_Buff(mask, 0x22BFA58);
+  if ( sub_42CEB0 ( v480 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BFA58));
+    v481 = mplew.writeInt("v481");
+      mplew.EndNode(false);
+  }
+  v482 = Check_Buff(mask, 0x22BFAA0);
+  if ( sub_42CEB0 ( v482 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BFAA0));
+    v483 = mplew.writeShort("v483");
+    v484 = mplew.writeInt("v484");
+      mplew.EndNode(false);
+  }
+  v485 = Check_Buff(mask, 0x22BFAE8);
+  if ( sub_42CEB0 ( v485 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BFAE8));
+    v486 = mplew.writeShort("v486");
+    v487 = mplew.writeInt("v487");
+      mplew.EndNode(false);
+  }
+  v488 = Check_Buff(mask, 0x22BFB78);
+  if ( sub_42CEB0 ( v488 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BFB78));
+    v489 = mplew.writeShort("v489");
+    v490 = mplew.writeInt("v490");
+      mplew.EndNode(false);
+  }
+  v491 = Check_Buff(mask, 0x22BFBC0);
+  if ( sub_42CEB0 ( v491 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BFBC0));
+    v492 = mplew.writeShort("v492");
+    v493 = mplew.writeInt("v493");
+      mplew.EndNode(false);
+  }
+  v494 = Check_Buff(mask, 0x22BFC08);
+  if ( sub_42CEB0 ( v494 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BFC08));
+    v495 = mplew.writeShort("v495");
+    v496 = mplew.writeInt("v496");
+      mplew.EndNode(false);
+  }
+  v497 = Check_Buff(mask, 0x22BFC98);
+  if ( sub_42CEB0 ( v497 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BFC98));
+    v498 = mplew.writeShort("v498");
+    v499 = mplew.writeInt("v499");
+      mplew.EndNode(false);
+  }
+  v500 = Check_Buff(mask, 0x22BF110);
+  if ( sub_42CEB0 ( v500 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BF110));
+    v501 = mplew.writeShort("v501");
+    v502 = mplew.writeInt("v502");
+      mplew.EndNode(false);
+  }
+  v503 = Check_Buff(mask, 0x22BFD28);
+  if ( sub_42CEB0 ( v503 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BFD28));
+    v504 = mplew.writeShort("v504");
+    v505 = mplew.writeInt("v505");
+      mplew.EndNode(false);
+  }
+  v506 = Check_Buff(mask, 0x22B9B90);
+  if ( sub_42CEB0 ( v506 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22B9B90));
+    v507 = mplew.writeShort("v507");
+    v508 = mplew.writeInt("v508");
+      mplew.EndNode(false);
+  }
+  v509 = Check_Buff(mask, 0x22BEFF0);
+  if ( sub_42CEB0 ( v509 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BEFF0));
+    v510 = mplew.writeShort("v510");
+    v511 = mplew.writeInt("v511");
+      mplew.EndNode(false);
+  }
+  v512 = Check_Buff(mask, 0x22BFA10);
+  if ( sub_42CEB0 ( v512 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BFA10));
+    v513 = mplew.writeShort("v513");
+    v514 = mplew.writeInt("v514");
+      mplew.EndNode(false);
+  }
+  v515 = Check_Buff(mask, 0x22BFD70);
+  if ( sub_42CEB0 ( v515 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BFD70));
+    v516 = mplew.writeShort("v516");
+    v517 = mplew.writeInt("v517");
+      mplew.EndNode(false);
+  }
+  v518 = Check_Buff(mask, 0x22BFDB8);
+  if ( sub_42CEB0 ( v518 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BFDB8));
+    v519 = mplew.writeShort("v519");
+    v520 = mplew.writeInt("v520");
+      mplew.EndNode(false);
+  }
+  v521 = Check_Buff(mask, 0x22BFE00);
+  if ( sub_42CEB0 ( v521 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BFE00));
+    v522 = mplew.writeInt("v522");
+      mplew.EndNode(false);
+  }
+  v523 = Check_Buff(mask, 0x22BFE48);
+  if ( sub_42CEB0 ( v523 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BFE48));
+    v524 = mplew.writeInt("v524");
+      mplew.EndNode(false);
+  }
+  v525 = Check_Buff(mask, 0x22BFED8);
+  if ( sub_42CEB0 ( v525 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BFED8));
+    v526 = mplew.writeShort("v526");
+    v527 = mplew.writeInt("v527");
+      mplew.EndNode(false);
+  }
+  v528 = Check_Buff(mask, 0x22BD418);
+  if ( sub_42CEB0 ( v528 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BD418));
+    v529 = mplew.write("v529");
+      mplew.EndNode(false);
+  }
+   v530  = mplew.write("");
+   v531  = mplew.write("");
+  v532 = mplew.write("v532");
+  v533 = Check_Buff(mask, 0x22BD8E0);
+  if ( sub_42CEB0 ( v533 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BD8E0));
+    v534 = mplew.write("v534");
+      mplew.EndNode(false);
+  }
+  v535 = Check_Buff(mask, 0x22BD928);
+  if ( sub_42CEB0 ( v535 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BD928));
+    v536 = mplew.write("v536");
+      mplew.EndNode(false);
+  }
+  v537 = Check_Buff(mask, 0x22BE390);
+  if ( sub_42CEB0 ( v537 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BE390));
+    v538 = mplew.write("v538");
+      mplew.EndNode(false);
+  }
+  v539 = Check_Buff(mask, 0x22BE6F0);
+  if ( sub_42CEB0 ( v539 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BE6F0));
+    v540 = mplew.writeInt("v540");
+    v541 = mplew.writeInt("v541");
+    v542 = mplew.writeInt("v542");
+      mplew.EndNode(false);
+  }
+  v543 = Check_Buff(mask, 0x22BE780);
+  if ( sub_42CEB0 ( v543 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BE780));
+    v544 = mplew.writeInt("v544");
+    v545 = mplew.writeInt("v545");
+      mplew.EndNode(false);
+  }
+  v546 = Check_Buff(mask, 0x22BEC00);
+  if ( sub_42CEB0 ( v546 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BEC00));
+    v547 = mplew.writeInt("v547");
+    v548 = mplew.write("v548");
+    v549 = mplew.writeInt("v549");
+    v550 = mplew.writeInt("v550");
+      mplew.EndNode(false);
+  }
+  v551 = Check_Buff(mask, 0x22BF230);
+  if ( sub_42CEB0 ( v551 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BF230));
+    v552 = mplew.write("v552");
+      mplew.EndNode(false);
+  }
+  v553 = Check_Buff(mask, 0x22BF5D8);
+  if ( sub_42CEB0 ( v553 ) )
+  {
+        mplew.StartNode("Mask - " + map.get(0x22BF5D8));
+    v554 = mplew.writeInt("v554");
+      mplew.EndNode(false);
+  }
+  sub_EAD600 (/* iPacket */);
+  v555 = mplew.writeInt("v555");
+  var basemask=497;
+  for ( i = 0; i < 9; ++i )
+  {
+    if (sub_B7C3F0(mask, (basemask + l))) 
+    {
+        mplew.StartNode("Mas+-- 未处理 " + (basemask + l));
+        mplew.writeShort(0);
+        switch ( l)) 
+        {
+            case 0:
+            case 1:
+            case 4:
+                mplew.writeShort(0);
+                mplew.writeInt(0);
+                break;
+            case  3 :
+                mplew.writeInt("c_mount.getItemId()");
+                 mplew.writeInt("buffSrc");
+                break;
+            case 6:
+                mplew.writeShort(0);
+                mplew.writeInt(0);
+                mplew.writeLong(0);
+                break;
+            // case 2:
+            // case 5:
+            // case 7:
+            // case 8:
+            default:
+                mplew.writeInt(0);
+                mplew.writeInt(0);
+                break;
+        }
+        mplew.write(1);
+        mplew.writeInt("CHAR_MAGIC_SPAWN");
         mplew.EndNode(false);
     }
 
-    if (sub_B7C3F0(mask, 124)) {
-        mplew.StartNode(" Mask - " + 124);
-        v63 = mplew.writeShort(" v63 ");
-        v64 = mplew.writeInt(" v64 ");
+  }
+  v559 = Check_Buff(mask, 0x22BA838);
+  if ( sub_42CEB0 ( v559 ) )
+    {
+        mplew.StartNode("Mask - " + map.get(0x22BA838));
+        v560 = mplew.writeInt("v560");
         mplew.EndNode(false);
     }
-    //   Check_Buff(&v562, &v520   , 0x22472B8);      // 472
-    if (sub_B7C3F0(mask, 472)) {
-        mplew.StartNode(" Mask - " + 472);
-        v65 = mplew.writeShort(" v65 ");
-        v66 = mplew.writeInt(" v66 ");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v519   , 0x2242320);      // 126
-    if (sub_B7C3F0(mask, 126)) {
-        mplew.StartNode(" Mask - " + 126);
-        v67 = mplew.writeShort(" v67 ");
-        v68 = mplew.writeInt(" v68 ");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v518   , 0x2242368);      // 127
-    if (sub_B7C3F0(mask, 127)) {
-        mplew.StartNode(" Mask - " + 127);
-        v69 = mplew.writeShort(" v69 ");
-        v70 = mplew.writeInt(" v70 ");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v517   , 0x22423B0);      // 128
-    if (sub_B7C3F0(mask, 128)) {
-        mplew.StartNode(" Mask - " + 128);
-        v71 = mplew.writeShort(" v71 ");
-        v72 = mplew.writeInt(" v72 ");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v516   , 0x22423F8);      // 130
-    if (sub_B7C3F0(mask, 130)) {
-        mplew.StartNode(" Mask - " + 130);
-        v73 = mplew.writeInt(" v73 ");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v515   , 0x22424D0);      // 133
-    if (sub_B7C3F0(mask, 133)) {
-        mplew.StartNode(" Mask - " + 133);
-        mplew.EndNode(false);
-    }
+//   add_buff(a2, &v769, 0x220u);
+}
 
-    // 0x213342560 // 134
-    if (sub_B7C3F0(mask, 134)) {
-        mplew.StartNode("Mask- " + 134);
-        unk_mask = mplew.writeShort("unk_mask");
-        v75 = mplew.writeInt("v75");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v513   , 0x22425A8);      // 190
-    if (sub_B7C3F0(mask, 190)) {
-        mplew.StartNode("Mask- " + 190);
-        v76 = mplew.writeShort("v76");
-        v77 = mplew.writeInt("v77");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v512   , 0x22425F0);      // 171
-    if (sub_B7C3F0(mask, 171)) {
-        mplew.StartNode("Mask- " + 171);
-        v78 = mplew.writeShort("v78");
-        v79 = mplew.writeInt("v79");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v511   , 0x2242AB8);      // 137
-    if (sub_B7C3F0(mask, 137)) {
-        mplew.StartNode("Mask- " + 137);
-        v80 = mplew.writeShort("v80");
-        v81 = mplew.writeInt("v81");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v510   , 0x22426C8);      // 139
-    if (sub_B7C3F0(mask, 139)) {
-        mplew.StartNode("Mask- " + 139);
-        v82 = mplew.writeShort("v82");
-        v83 = mplew.writeInt("v83");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v509   , 0x22427A0);      // 151
-    if (sub_B7C3F0(mask, 151)) {
-        mplew.StartNode("Mask- " + 151);
-        v84 = mplew.write("v84");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v508   , 0x22427E8);      // 311
-    if (sub_B7C3F0(mask, 311)) {
-        mplew.StartNode("Mask- " + 311);
-        v85 = mplew.write("v85");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v507   , 0x22427E8);      // 311
-    if (sub_B7C3F0(mask, 311)) {
-        mplew.StartNode("Mask- " + 311);
-        mplew.EndNode(false);
-    }
-    // 0x231142A28);      // 159
-    if (sub_B7C3F0(mask, 159)) {
-        mplew.StartNode("Mask- " + 159);
-        mplew.EndNode(false);
-    }
-    // 0x215942758); // 141
-    if (sub_B7C3F0(mask, 141)) {
-        mplew.StartNode("Mask- " + 141);
-        mplew.EndNode(false);
-    }
-    // 0x214142A70);      // 160
-    if (sub_B7C3F0(mask, 160)) {
-        mplew.StartNode(" Mask - " + 160);
-        v86 = mplew.writeShort(" v86 ");
-        v87 = mplew.writeInt(" v87 ");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v503   , 0x2242B90);      // 163
-    if (sub_B7C3F0(mask, 163)) {
-        mplew.StartNode("Mask- " + 163);
-        mplew.EndNode(false);
-    }
-    // 0x216342BD8); // 247
-    if (sub_B7C3F0(mask, 247)) {
-        mplew.StartNode("Mask- " + 247);
-        mplew.EndNode(false);
-    }
-    // 0x224742DD0);      // 169
-    if (sub_B7C3F0(mask, 169)) {
-        mplew.StartNode(" Mask - " + 169);
-        v88 = mplew.writeShort(" v88 ");
-        v89 = mplew.writeInt(" v89 ");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v500   , 0x2242EA8);      // 177
-    if (sub_B7C3F0(mask, 177)) {
-        mplew.StartNode(" Mask - " + 177);
-        v90 = mplew.writeShort(" v90 ");
-        v91 = mplew.writeInt(" v91 ");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v499   , 0x2242EF0);      // 184
-    if (sub_B7C3F0(mask, 184)) {
-        mplew.StartNode(" Mask - " + 184);
-        v92 = mplew.writeShort(" v92 ");
-        v93 = mplew.writeInt(" v93 ");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v498   , 0x2243208);      // 192
-    if (sub_B7C3F0(mask, 192)) {
-        mplew.StartNode(" Mask - " + 192);
-        v94 = mplew.writeShort(" v94 ");
-        v95 = mplew.writeInt(" v95 ");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v497   , 0x2242098);      // 118
-    if (sub_B7C3F0(mask, 118)) {
-        mplew.StartNode(" Mask - " + 118);
-        v96 = mplew.writeShort(" v96 ");
-        v97 = mplew.writeInt(" v97 ");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v496   , 0x2243178);      // 198
-    if (sub_B7C3F0(mask, 198)) {
-        mplew.StartNode("Mask- " + 198);
-        mplew.EndNode(false);
-    }
-    //  0x219844C78); // 205
-    if (sub_B7C3F0(mask, 205)) {
-        mplew.StartNode("Mask- " + 205);
-        v98 = mplew.writeShort("v98");
-        v99 = mplew.writeInt("v99");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v494   , 0x2240430);      // 207
-    if (sub_B7C3F0(mask, 207)) {
-        mplew.StartNode("Mask- " + 207);
-        v100 = mplew.writeShort("v100");
-        v101 = mplew.writeInt("v101");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v493   , 0x2243448);      // 145
-    if (sub_B7C3F0(mask, 145)) {
-        mplew.StartNode("Mask- " + 145);
-        v102 = mplew.writeShort("v102");
-        v103 = mplew.writeInt("v103");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v492   , 0x2243640);      // 153
-    if (sub_B7C3F0(mask, 153)) {
-        mplew.StartNode("Mask- " + 153);
-        v104 = mplew.writeShort("v104");
-        v105 = mplew.writeInt("v105");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v491   , 0x2243838);      // 224
-    if (sub_B7C3F0(mask, 224)) {
-        mplew.StartNode("Mask- " + 224);
-        v106 = mplew.writeShort("v106");
-        v107 = mplew.writeInt("v107");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v490   , 0x2243880);      // 243
-    if (sub_B7C3F0(mask, 243)) {
-        mplew.StartNode("Mask- " + 243);
-        v108 = mplew.writeShort("v108");
-        v109 = mplew.writeInt("v109");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v489   , 0x2243910);      // 226
-    if (sub_B7C3F0(mask, 226)) {
-        mplew.StartNode("Mask- " + 226);
-        v110 = mplew.writeShort("v110");
-        v111 = mplew.writeInt("v111");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v488   , 0x2243958);      // 246
-    if (sub_B7C3F0(mask, 246)) {
-        mplew.StartNode("Mask- " + 246);
-        v112 = mplew.writeShort("v112");
-        v113 = mplew.writeInt("v113");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v487   , 0x22439A0);      // 259
-    if (sub_B7C3F0(mask, 259)) {
-        mplew.StartNode("Mask- " + 259);
-        v114 = mplew.writeShort("v114");
-        v115 = mplew.writeInt("v115");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v486   , 0x22439E8);      // 227
-    if (sub_B7C3F0(mask, 227)) {
-        mplew.StartNode("Mask- " + 227);
-        v116 = mplew.writeShort("v116");
-        v117 = mplew.writeInt("v117");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v485   , 0x2243B08);      // 232
-    if (sub_B7C3F0(mask, 232)) {
-        mplew.StartNode("Mask- " + 232);
-        v118 = mplew.writeInt("v118");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v484   , 0x2247A08);      // 233
-    if (sub_B7C3F0(mask, 233)) {
-        mplew.StartNode("Mask- " + 233);
-        v119 = mplew.write("v119");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v483   , 0x2247A50);      // 410
-    if (sub_B7C3F0(mask, 410)) {
-        mplew.StartNode("Mask- " + 410);
-        v120 = mplew.write("v120");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v482   , 0x2243C70);      // 236
-    if (sub_B7C3F0(mask, 236)) {
-        mplew.StartNode("Mask- " + 236);
-        v121 = mplew.writeShort("v121");
-        v122 = mplew.writeInt("v122");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v481   , 0x2243CB8);      // 238
-    if (sub_B7C3F0(mask, 238)) {
-        mplew.StartNode("Mask- " + 238);
-        v123 = mplew.writeShort("v123");
-        v124 = mplew.writeInt("v124");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v480   , 0x2243EB0);      // 241
-    if (sub_B7C3F0(mask, 241)) {
-        mplew.StartNode("Mask- " + 241);
-        v125 = mplew.writeShort("v125");
-        v126 = mplew.writeInt("v126");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v479   , 0x2243BE0);      // 248
-    if (sub_B7C3F0(mask, 248)) {
-        mplew.StartNode("Mask- " + 248);
-        v127 = mplew.writeShort("v127");
-        v128 = mplew.writeInt("v128");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v478   , 0x2241A20);      // 250
-    if (sub_B7C3F0(mask, 250)) {
-        mplew.StartNode("Mask- " + 250);
-        v129 = mplew.writeShort("v129");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v477   , 0x2243E20);      // 251
-    if (sub_B7C3F0(mask, 251)) {
-        mplew.StartNode("Mask- " + 251);
-        v130 = mplew.writeInt("v130");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v476   , 0x2243F40);      // 249
-    if (sub_B7C3F0(mask, 249)) {
-        mplew.StartNode("Mask- " + 249);
-        v131 = mplew.writeShort("v131");
-        v132 = mplew.writeInt("v132");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v475   , 0x2243FD0);      // 257
-    if (sub_B7C3F0(mask, 257)) {
-        mplew.StartNode("Mask- " + 257);
-        v133 = mplew.writeShort("v133");
-        v134 = mplew.writeInt("v134");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v474   , 0x2244018);      // 258
-    if (sub_B7C3F0(mask, 258)) {
-        mplew.StartNode("Mask- " + 258);
-        v135 = mplew.writeShort("v135");
-        v136 = mplew.writeInt("v136");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v473   , 0x22440A8);      // 260
-    if (sub_B7C3F0(mask, 260)) {
-        mplew.StartNode("Mask- " + 260);
-        v137 = mplew.writeShort("v137");
-        v138 = mplew.writeInt("v138");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v472   , 0x22404C0);      // 261
-    if (sub_B7C3F0(mask, 261)) {
-        mplew.StartNode("Mask- " + 261);
-        v139 = mplew.writeShort("v139");
-        v140 = mplew.writeInt("v140");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v471   , 0x2240508);      // 263
-    if (sub_B7C3F0(mask, 263)) {
-        mplew.StartNode("Mask- " + 263);
-        v141 = mplew.writeShort("v141");
-        v142 = mplew.writeInt("v142");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v470   , 0x2244138);      // 264
-    if (sub_B7C3F0(mask, 264)) {
-        mplew.StartNode("Mask- " + 264);
-        v143 = mplew.writeShort("v143");
-        v144 = mplew.writeInt("v144");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v469   , 0x2244180);      // 273
-    if (sub_B7C3F0(mask, 273)) {
-        mplew.StartNode("Mask- " + 273);
-        v145 = mplew.writeShort("v145");
-        v146 = mplew.writeInt("v146");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v468   , 0x22441C8);      // 129
-    if (sub_B7C3F0(mask, 129)) {
-        mplew.StartNode("Mask- " + 129);
-        v147 = mplew.writeShort("v147");
-        v148 = mplew.writeInt("v148");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v467   , 0x2243F88);      // 255
-    if (sub_B7C3F0(mask, 255)) {
-        mplew.StartNode("Mask- " + 255);
-        v149 = mplew.writeShort("v149");
-        v150 = mplew.writeInt("v150");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v466   , 0x2244258);      // 268
-    if (sub_B7C3F0(mask, 268)) {
-        mplew.StartNode("Mask- " + 268);
-        v151 = mplew.writeShort("v151");
-        v152 = mplew.writeInt("v152");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v465   , 0x22442A0);      // 269
-    if (sub_B7C3F0(mask, 269)) {
-        mplew.StartNode("Mask- " + 269);
-        v153 = mplew.writeShort("v153");
-        v154 = mplew.writeInt("v154");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v464   , 0x22442E8);      // 270
-    if (sub_B7C3F0(mask, 270)) {
-        mplew.StartNode("Mask- " + 270);
-        v155 = mplew.writeShort("v155");
-        v156 = mplew.writeInt("v156");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v463   , 0x2244330);      // 271
-    if (sub_B7C3F0(mask, 271)) {
-        mplew.StartNode("Mask- " + 271);
-        v157 = mplew.writeShort("v157");
-        v158 = mplew.writeInt("v158");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v462   , 0x2244330);      // 271
-    if (sub_B7C3F0(mask, 271)) {
-        mplew.StartNode("Mask- " + 271);
-        v159 = timeGetTime();
-        v160 = mplew.writeInt("v160");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v461   , 0x2244378);      // 272
-    if (sub_B7C3F0(mask, 272)) {
-        mplew.StartNode("Mask- " + 272);
-        v161 = mplew.writeShort("v161");
-        v162 = mplew.writeInt("v162");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v460   , 0x22443C0);      // 274
-    if (sub_B7C3F0(mask, 274)) {
-        mplew.StartNode("Mask- " + 274);
-        v163 = mplew.writeShort("v163");
-        v164 = mplew.writeInt("v164");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v459   , 0x2244408);      // 275
-    if (sub_B7C3F0(mask, 275)) {
-        mplew.StartNode("Mask- " + 275);
-        v165 = mplew.writeShort("v165");
-        v166 = mplew.writeInt("v166");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v458   , 0x2244450);      // 276
-    if (sub_B7C3F0(mask, 276)) {
-        mplew.StartNode("Mask- " + 276);
-        v167 = mplew.writeShort("v167");
-        v168 = mplew.writeInt("v168");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v457   , 0x2244498);      // 277
-    if (sub_B7C3F0(mask, 277)) {
-        mplew.StartNode("Mask- " + 277);
-        v169 = mplew.writeShort("v169");
-        v170 = mplew.writeInt("v170");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v456   , 0x22444E0);      // 278
-    if (sub_B7C3F0(mask, 278)) {
-        mplew.StartNode("Mask- " + 278);
-        v171 = mplew.writeShort("v171");
-        v172 = mplew.writeInt("v172");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v455   , 0x2244528);      // 335
-    if (sub_B7C3F0(mask, 335)) {
-        mplew.StartNode("Mask- " + 335);
-        v173 = mplew.writeShort("v173");
-        v174 = mplew.writeInt("v174");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v454   , 0x2244570);      // 279
-    if (sub_B7C3F0(mask, 279)) {
-        mplew.StartNode("Mask- " + 279);
-        v175 = mplew.writeShort("v175");
-        v176 = mplew.writeInt("v176");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v453   , 0x22445B8);      // 280
-    if (sub_B7C3F0(mask, 280)) {
-        mplew.StartNode("Mask- " + 280);
-        v177 = mplew.writeShort("v177");
-        v178 = mplew.writeInt("v178");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v452   , 0x2244600);      // 281
-    if (sub_B7C3F0(mask, 281)) {
-        mplew.StartNode("Mask- " + 281);
-        mplew.EndNode(false);
-    }
-    //  0x228144648);      // 282
-    if (sub_B7C3F0(mask, 282)) {
-        mplew.StartNode(" Mask - " + 282);
-        v179 = mplew.writeShort(" v179 ");
-        v180 = mplew.writeInt(" v180 ");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v450   , 0x22433B8);      // 204
-    if (sub_B7C3F0(mask, 204)) {
-        mplew.StartNode(" Mask - " + 204);
-        v181 = mplew.writeShort(" v181 ");
-        v182 = mplew.writeInt(" v182 ");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v449   , 0x2243D48);      // 252
-    if (sub_B7C3F0(mask, 252)) {
-        mplew.StartNode(" Mask - " + 252);
-        v183 = mplew.writeShort(" v183 ");
-        v184 = mplew.writeInt(" v184 ");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v448   , 0x2242680);      // 138
-    if (sub_B7C3F0(mask, 138)) {
-        mplew.StartNode(" Mask - " + 138);
-        v185 = mplew.writeShort(" v185 ");
-        v186 = mplew.writeInt(" v186 ");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v447   , 0x2244888);      // 287
-    if (sub_B7C3F0(mask, 287)) {
-        mplew.StartNode(" Mask - " + 287);
-        v187 = mplew.writeShort(" v187 ");
-        v188 = mplew.writeInt(" v188 ");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v446   , 0x2242008);      // 116
-    if (sub_B7C3F0(mask, 116)) {
-        mplew.StartNode(" Mask - " + 116);
-        v189 = mplew.writeShort(" v189 ");
-        v190 = mplew.writeInt(" v190 ");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v445   , 0x22448D0);      // 288
-    if (sub_B7C3F0(mask, 288)) {
-        mplew.StartNode(" Mask - " + 288);
-        v191 = mplew.writeShort(" v191 ");
-        v192 = mplew.writeInt(" v192 ");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v444   , 0x2244918);      // 289
-    if (sub_B7C3F0(mask, 289)) {
-        mplew.StartNode(" Mask - " + 289);
-        v193 = mplew.writeShort(" v193 ");
-        v194 = mplew.writeInt(" v194 ");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v443   , 0x22449A8);      // 291
-    if (sub_B7C3F0(mask, 291)) {
-        mplew.StartNode(" Mask - " + 291);
-        v195 = mplew.writeShort(" v195 ");
-        v196 = mplew.writeInt(" v196 ");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v442   , 0x22449F0);      // 292
-    if (sub_B7C3F0(mask, 292)) {
-        mplew.StartNode(" Mask - " + 292);
-        v197 = mplew.writeShort(" v197 ");
-        v198 = mplew.writeInt(" v198 ");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v441   , 0x2240550);      // 293
-    if (sub_B7C3F0(mask, 293)) {
-        mplew.StartNode(" Mask - " + 293);
-        v199 = mplew.write(" v199 ");
-        v200 = mplew.writeInt(" v200 ");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v440   , 0x2244A38);      // 297
-    if (sub_B7C3F0(mask, 297)) {
-        mplew.StartNode(" Mask - " + 297);
-        v201 = mplew.writeShort(" v201 ");
-        v202 = mplew.writeInt(" v202 ");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v439   , 0x2244CC0);      // 302
-    if (sub_B7C3F0(mask, 302)) {
-        mplew.StartNode(" Mask - " + 302);
-        v203 = mplew.writeShort(" v203 ");
-        v204 = mplew.writeInt(" v204 ");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v438   , 0x2244D50);      // 304
-    if (sub_B7C3F0(mask, 304)) {
-        mplew.StartNode(" Mask - " + 304);
-        v205 = mplew.write(" v205 ");
-        v206 = mplew.writeInt(" v206 ");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v437   , 0x2244DE0);      // 306
-    if (sub_B7C3F0(mask, 306)) {
-        mplew.StartNode(" Mask - " + 306);
-        v207 = mplew.write(" v207 ");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v436   , 0x2242518);      // 309
-    if (sub_B7C3F0(mask, 309)) {
-        mplew.StartNode(" Mask - " + 309);
-        v208 = mplew.writeShort(" v208 ");
-        v209 = mplew.writeInt(" v209 ");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v435   , 0x2240790);      // 341
-    if (sub_B7C3F0(mask, 341)) {
-        mplew.StartNode(" Mask - " + 341);
-        v210 = mplew.writeShort(" v210 ");
-        v211 = mplew.writeInt(" v211 ");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v434   , 0x2244E28);      // 310
-    if (sub_B7C3F0(mask, 310)) {
-        mplew.StartNode(" Mask - " + 310);
-        v212 = mplew.writeShort(" v212 ");
-        v213 = mplew.writeInt(" v213 ");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v433   , 0x2243C28);      // 312
-    if (sub_B7C3F0(mask, 312)) {
-        mplew.StartNode(" Mask - " + 312);
-        v214 = mplew.writeShort(" v214 ");
-        v215 = mplew.writeInt(" v215 ");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v432   , 0x2244E70);      // 313
-    if (sub_B7C3F0(mask, 313)) {
-        mplew.StartNode(" Mask - " + 313);
-        v216 = mplew.writeShort(" v216 ");
-        v217 = mplew.writeInt(" v217 ");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v431   , 0x2244EB8);      // 314
-    if (sub_B7C3F0(mask, 314)) {
-        mplew.StartNode(" Mask - " + 314);
-        v218 = mplew.writeShort(" v218 ");
-        v219 = mplew.writeInt(" v219 ");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v430   , 0x2244F00);      // 315
-    if (sub_B7C3F0(mask, 315)) {
-        mplew.StartNode(" Mask - " + 315);
-        v220 = mplew.writeShort(" v220 ");
-        v221 = mplew.writeInt(" v221 ");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v429   , 0x2245020);      // 319
-    if (sub_B7C3F0(mask, 319)) {
-        mplew.StartNode(" Mask - " + 319);
-        v222 = mplew.writeShort(" v222 ");
-        v223 = mplew.writeInt(" v223 ");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v428   , 0x2245068);      // 320
-    if (sub_B7C3F0(mask, 320)) {
-        mplew.StartNode(" Mask - " + 320);
-        v224 = mplew.writeShort(" v224 ");
-        v225 = mplew.writeInt(" v225 ");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v427   , 0x22450B0);      // 321
-    if (sub_B7C3F0(mask, 321)) {
-        mplew.StartNode(" Mask - " + 321);
-        v226 = mplew.writeShort(" v226 ");
-        v227 = mplew.writeInt(" v227 ");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v426   , 0x22450F8);      // 322
-    if (sub_B7C3F0(mask, 322)) {
-        mplew.StartNode(" Mask - " + 322);
-        v228 = mplew.writeShort(" v228 ");
-        v229 = mplew.writeInt(" v229 ");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v425   , 0x2245140);      // 323
-    if (sub_B7C3F0(mask, 323)) {
-        mplew.StartNode(" Mask - " + 323);
-        v230 = mplew.writeShort(" v230 ");
-        v231 = mplew.writeInt(" v231 ");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v424   , 0x2245188);      // 324
-    if (sub_B7C3F0(mask, 324)) {
-        mplew.StartNode(" Mask - " + 324);
-        v232 = mplew.writeShort(" v232 ");
-        v233 = mplew.writeInt(" v233 ");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v423   , 0x2245380);      // 334
-    if (sub_B7C3F0(mask, 334)) {
-        mplew.StartNode(" Mask - " + 334);
-        v234 = mplew.writeShort(" v234 ");
-        v235 = mplew.writeInt(" v235 ");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v422   , 0x2242CF8);      // 167
-    if (sub_B7C3F0(mask, 167)) {
-        mplew.StartNode(" Mask - " + 167);
-        v236 = mplew.writeShort(" v236 ");
-        v237 = mplew.writeInt(" v237 ");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v421   , 0x2240700);      // 342
-    if (sub_B7C3F0(mask, 342)) {
-        mplew.StartNode(" Mask - " + 342);
-        v238 = mplew.writeShort(" v238 ");
-        v239 = mplew.writeInt(" v239 ");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v420   , 0x2245530);      // 346
-    if (sub_B7C3F0(mask, 346)) {
-        mplew.StartNode(" Mask - " + 346);
-        v240 = mplew.writeShort(" v240 ");
-        v241 = mplew.writeInt(" v241 ");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v419   , 0x22454E8);      // 344
-    if (sub_B7C3F0(mask, 344)) {
-        mplew.StartNode(" Mask - " + 344);
-        mplew.EndNode(false);
-    }
-    //  0x234445578); // 347
-    if (sub_B7C3F0(mask, 347)) {
-        mplew.StartNode("Mask- " + 347);
-        v242 = mplew.writeShort("v242");
-        v243 = mplew.writeInt("v243");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v417   , 0x22455C0);      // 348
-    if (sub_B7C3F0(mask, 348)) {
-        mplew.StartNode("Mask- " + 348);
-        v244 = mplew.writeShort("v244");
-        v245 = mplew.writeInt("v245");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v416   , 0x2240748);      // 345
-    if (sub_B7C3F0(mask, 345)) {
-        mplew.StartNode("Mask- " + 345);
-        v246 = mplew.writeInt("v246");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v415   , 0x2240748);      // 345
-    if (sub_B7C3F0(mask, 345)) {
-        mplew.StartNode("Mask- " + 345);
-        v247 = mplew.writeInt("v247");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v414   , 0x22447F8);      // 328
-    if (sub_B7C3F0(mask, 328)) {
-        mplew.StartNode("Mask- " + 328);
-        v248 = mplew.writeInt("v248");
-        v249 = timeGetTime();
-        v250 = mplew.writeInt("v250");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v413   , 0x2243D48);      // 252
-    if (sub_B7C3F0(mask, 252)) {
-        mplew.StartNode("Mask- " + 252);
-        v251 = mplew.write("") != 0;
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v412   , 0x22407D8);      // 142
-    if (sub_B7C3F0(mask, 142)) {
-        mplew.StartNode("Mask- " + 142);
-        v252 = mplew.writeInt("v252");
-        v253 = mplew.writeInt("v253");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v411   , 0x2245920);      // 360
-    if (sub_B7C3F0(mask, 360)) {
-        mplew.StartNode("Mask- " + 360);
-        v254 = mplew.writeInt("v254");
-        v255 = mplew.writeInt("v255");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v410   , 0x2245A40);      // 365
-    if (sub_B7C3F0(mask, 365)) {
-        mplew.StartNode("Mask- " + 365);
-        v256 = mplew.writeShort("v256");
-        v257 = mplew.writeInt("v257");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v409   , 0x2244D98);      // 305
-    if (sub_B7C3F0(mask, 305)) {
-        mplew.StartNode("Mask- " + 305);
-        v258 = mplew.writeShort("v258");
-        v259 = mplew.writeInt("v259");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v408   , 0x2245E78);      // 381
-    if (sub_B7C3F0(mask, 381)) {
-        mplew.StartNode("Mask- " + 381);
-        v260 = mplew.writeShort("v260");
-        v261 = mplew.writeInt("v261");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v407   , 0x2245EC0);      // 382
-    if (sub_B7C3F0(mask, 382)) {
-        mplew.StartNode("Mask- " + 382);
-        v262 = mplew.writeShort("v262");
-        v263 = mplew.writeInt("v263");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v406   , 0x2246028);      // 387
-    if (sub_B7C3F0(mask, 387)) {
-        mplew.StartNode("Mask- " + 387);
-        v264 = mplew.writeShort("v264");
-        v265 = mplew.writeInt("v265");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v405   , 0x2246070);      // 388
-    if (sub_B7C3F0(mask, 388)) {
-        mplew.StartNode("Mask- " + 388);
-        v266 = mplew.writeShort("v266");
-        v267 = mplew.writeInt("v267");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v404   , 0x22460B8);      // 389
-    if (sub_B7C3F0(mask, 389)) {
-        mplew.StartNode("Mask- " + 389);
-        v268 = mplew.writeShort("v268");
-        v269 = mplew.writeInt("v269");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v403   , 0x2246DA8);      // 401
-    if (sub_B7C3F0(mask, 401)) {
-        mplew.StartNode("Mask- " + 401);
-        v270 = mplew.writeShort("v270");
-        v271 = mplew.writeInt("v271");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v402   , 0x2243B98);      // 235
-    if (sub_B7C3F0(mask, 235)) {
-        mplew.StartNode("Mask- " + 235);
-        v272 = mplew.writeShort("v272");
-        v273 = mplew.writeInt("v273");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v401   , 0x2246898);      // 420
-    if (sub_B7C3F0(mask, 420)) {
-        mplew.StartNode("Mask- " + 420);
-        v274 = mplew.writeShort("v274");
-        v275 = mplew.writeInt("v275");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v400   , 0x2246AD8);      // 428
-    if (sub_B7C3F0(mask, 428)) {
-        mplew.StartNode("Mask- " + 428);
-        v276 = mplew.writeInt("v276");
-        v277 = mplew.writeInt("v277");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v399   , 0x2246B20);      // 429
-    if (sub_B7C3F0(mask, 429)) {
-        mplew.StartNode("Mask- " + 429);
-        v278 = mplew.writeShort("v278");
-        v279 = mplew.writeInt("v279");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v398   , 0x2246B20);      // 429
-    if (sub_B7C3F0(mask, 429)) {
-        mplew.StartNode("Mask- " + 429);
-        v280 = mplew.writeInt("v280");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v397   , 0x2246C88);      // 434
-    if (sub_B7C3F0(mask, 434)) {
-        mplew.StartNode("Mask- " + 434);
-        v281 = mplew.writeShort("v281");
-        v282 = mplew.writeInt("v282");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v396   , 0x2246EC8);      // 440
-    if (sub_B7C3F0(mask, 440)) {
-        mplew.StartNode("Mask- " + 440);
-        v283 = mplew.writeInt("v283");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v395   , 0x2247108);      // 448
-    if (sub_B7C3F0(mask, 448)) {
-        mplew.StartNode("Mask- " + 448);
-        v284 = mplew.writeInt("v284");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v394   , 0x22470C0);      // 479
-    if (sub_B7C3F0(mask, 479)) {
-        mplew.StartNode("Mask- " + 479);
-        v285 = mplew.writeInt("v285");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v393   , 0x2247270);      // 454
-    if (sub_B7C3F0(mask, 454)) {
-        mplew.StartNode("Mask- " + 454);
-        v286 = mplew.writeShort("v286");
-        v287 = mplew.writeInt("v287");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v392   , 0x2247420);      // 456
-    if (sub_B7C3F0(mask, 456)) {
-        mplew.StartNode("Mask- " + 456);
-        v288 = mplew.writeShort("v288");
-        v289 = mplew.writeInt("v289");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v391   , 0x2247300);      // 474
-    if (sub_B7C3F0(mask, 474)) {
-        mplew.StartNode("Mask- " + 474);
-        v290 = mplew.writeShort("v290");
-        v291 = mplew.writeInt("v291");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v390   , 0x2247348);      // 475
-    if (sub_B7C3F0(mask, 475)) {
-        mplew.StartNode("Mask- " + 475);
-        v292 = mplew.writeShort("v292");
-        v293 = mplew.writeInt("v293");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v389   , 0x2240628);      // 478
-    if (sub_B7C3F0(mask, 478)) {
-        mplew.StartNode("Mask- " + 478);
-        v294 = mplew.writeInt("v294");
-        v295 = mplew.writeInt("v295");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v388   , 0x2247468);      // 457
-    if (sub_B7C3F0(mask, 457)) {
-        mplew.StartNode("Mask- " + 457);
-        v296 = mplew.writeShort("v296");
-        v297 = mplew.writeInt("v297");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v387   , 0x2247810);      // 469
-    if (sub_B7C3F0(mask, 469)) {
-        mplew.StartNode("Mask- " + 469);
-        v298 = mplew.writeShort("v298");
-        v299 = mplew.writeInt("v299");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v386   , 0x2247540);      // 458
-    if (sub_B7C3F0(mask, 458)) {
-        mplew.StartNode("Mask- " + 458);
-        v300 = mplew.writeShort("v300");
-        v301 = mplew.writeInt("v301");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v385   , 0x2247540);      // 458
-    if (sub_B7C3F0(mask, 458)) {
-        mplew.StartNode("Mask- " + 458);
-        v302 = mplew.writeInt("v302");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v384   , 0x2247588);      // 465
-    if (sub_B7C3F0(mask, 465)) {
-        mplew.StartNode("Mask- " + 465);
-        v303 = mplew.writeShort("v303");
-        v304 = mplew.writeInt("v304");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v383   , 0x22475D0);      // 459
-    if (sub_B7C3F0(mask, 459)) {
-        mplew.StartNode("Mask- " + 459);
-        v305 = mplew.writeShort("v305");
-        v306 = mplew.writeInt("v306");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v382   , 0x2247660);      // 462
-    if (sub_B7C3F0(mask, 462)) {
-        mplew.StartNode("Mask- " + 462);
-        v307 = mplew.writeShort("v307");
-        v308 = mplew.writeInt("v308");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v381   , 0x22476A8);      // 463
-    if (sub_B7C3F0(mask, 463)) {
-        mplew.StartNode("Mask- " + 463);
-        v309 = mplew.writeShort("v309");
-        v310 = mplew.writeInt("v310");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v380   , 0x22476F0);      // 464
-    if (sub_B7C3F0(mask, 464)) {
-        mplew.StartNode("Mask- " + 464);
-        v311 = mplew.writeShort("v311");
-        v312 = mplew.writeInt("v312");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v379   , 0x2247780);      // 467
-    if (sub_B7C3F0(mask, 467)) {
-        mplew.StartNode("Mask- " + 467);
-        v313 = mplew.writeShort("v313");
-        v314 = mplew.writeInt("v314");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v378   , 0x2246DA8);      // 465
-    if (sub_B7C3F0(mask, 465)) {
-        mplew.StartNode("Mask- " + 465);
-        v315 = mplew.writeShort("v315");
-        v316 = mplew.writeInt("v316");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v377   , 0x2247810);      // 469
-    if (sub_B7C3F0(mask, 469)) {
-        mplew.StartNode("Mask- " + 469);
-        v317 = mplew.writeShort("v317");
-        v318 = mplew.writeInt("v318");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v376   , 0x2241870);      // 91
-    if (sub_B7C3F0(mask, 91)) {
-        mplew.StartNode("Mask- " + 91);
-        v319 = mplew.writeShort("v319");
-        v320 = mplew.writeInt("v320");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v375   , 0x2246C88);      // 434
-    if (sub_B7C3F0(mask, 434)) {
-        mplew.StartNode("Mask- " + 434);
-        v321 = mplew.writeShort("v321");
-        v322 = mplew.writeInt("v322");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v374   , 0x22474F8);      // 449
-    if (sub_B7C3F0(mask, 449)) {
-        mplew.StartNode("Mask- " + 449);
-        v323 = mplew.writeShort("v323");
-        v324 = mplew.writeInt("v324");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v373   , 0x2247858);      // 460
-    if (sub_B7C3F0(mask, 460)) {
-        mplew.StartNode("Mask- " + 460);
-        v325 = mplew.writeShort("v325");
-        v326 = mplew.writeInt("v326");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v372   , 0x22478A0);      // 470
-    if (sub_B7C3F0(mask, 470)) {
-        mplew.StartNode("Mask- " + 470);
-        v327 = mplew.writeShort("v327");
-        v328 = mplew.writeInt("v328");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v371   , 0x22478E8);      // 485
-    if (sub_B7C3F0(mask, 485)) {
-        mplew.StartNode("Mask- " + 485);
-        v329 = mplew.writeInt("v329");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v370   , 0x2247930);      // 486
-    if (sub_B7C3F0(mask, 486)) {
-        mplew.StartNode("Mask- " + 486);
-        v330 = mplew.writeInt("v330");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v369   , 0x22479C0);      // 488
-    if (sub_B7C3F0(mask, 488)) {
-        mplew.StartNode("Mask- " + 488);
-        v331 = mplew.writeShort("v331");
-        v332 = mplew.writeInt("v332");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v368   , 0x22450B0);      // 321
-    if (sub_B7C3F0(mask, 321)) {
-        mplew.StartNode("Mask- " + 321);
-        v333 = mplew.write("v333");
-        mplew.EndNode(false);
-    }
-    v334 = mplew.write("");
-    v335 = mplew.write("")
-    v336 = mplew.write("v336")
-    //   Check_Buff(&v562, &v367   , 0x2245578);      // 347
-    if (sub_B7C3F0(mask, 347)) {
-        mplew.StartNode("Mask- " + 347);
-        v337 = mplew.write("v337");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v366   , 0x22455C0);      // 348
-    if (sub_B7C3F0(mask, 348)) {
-        mplew.StartNode("Mask- " + 348);
-        v338 = mplew.write("v338");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v365   , 0x2246028);      // 387
-    if (sub_B7C3F0(mask, 387)) {
-        mplew.StartNode("Mask- " + 387);
-        v339 = mplew.write("v339");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v364   , 0x2246388);      // 403
-    if (sub_B7C3F0(mask, 403)) {
-        mplew.StartNode("Mask- " + 403);
-        v340 = mplew.writeInt("v340");
-        v341 = mplew.writeInt("v341");
-        v342 = mplew.writeInt("v342");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v363   , 0x2246418);      // 405
-    if (sub_B7C3F0(mask, 405)) {
-        mplew.StartNode("Mask- " + 405);
-        v343 = mplew.writeInt("v343");
-        v344 = mplew.writeInt("v344");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v362   , 0x2246898);      // 420
-    if (sub_B7C3F0(mask, 420)) {
-        mplew.StartNode("Mask- " + 420);
-        v345 = mplew.writeInt("v345");
-        v346 = mplew.write("v346");
-        v347 = mplew.writeInt("v347");
-        v348 = mplew.writeInt("v348");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v361   , 0x2246EC8);      // 440
-    if (sub_B7C3F0(mask, 440)) {
-        mplew.StartNode("Mask- " + 440);
-        v349 = mplew.write("v349");
-        mplew.EndNode(false);
-    }
-    //   Check_Buff(&v562, &v360   , 0x2247270);      // 454
-    if (sub_B7C3F0(mask, 454)) {
-        mplew.StartNode("Mask- " + 454);
-        v350 = mplew.writeInt("v350");
-        mplew.EndNode(false);
-    }
-    mplew.writeInt("sub_E8C3D0");
-    mplew.writeInt("sub_E8C3D0");
-    mplew.writeInt("sub_E8C3D0");
-    mplew.writeInt("sub_E8C3D0");
-    v351 = mplew.writeInt("v351");
-
-
-
-    mplew.StartNode("for ( i = 0; i < 9; ++i )");
-    mplew.writeInt("", 0);
-    mplew.writeInt("", 0);
-    mplew.write("", 1);
-    mplew.writeInt("CHAR_MAGIC_SPAWN");//1
-
-    mplew.writeZeroBytes(8);
-    mplew.write("", 1);
-    mplew.writeInt("CHAR_MAGIC_SPAWN");//2
-
-    mplew.writeZeroBytes(10);
-    mplew.write("", 1);
-    mplew.writeInt("CHAR_MAGIC_SPAWN");//3
-
-    mplew.writeShort("", 0);
-    mplew.writeInt("ItemId()");
-    mplew.writeInt("buffSrc");
-    mplew.write("", 1);
-    mplew.writeInt("CHAR_MAGIC_SPAWN");//4
-    mplew.writeLong(0);
-    mplew.write("", 1);
-    mplew.writeInt("CHAR_MAGIC_SPAWN");//5
-    mplew.write("", 0);//129
-    mplew.writeInt("Randomizer.nextInt()");
-    mplew.writeZeroBytes(10);
-    mplew.write("", 1);
-    mplew.writeInt("CHAR_MAGIC_SPAWN");//6
-    mplew.writeZeroBytes(16);
-    mplew.write("", 1);
-    mplew.writeInt("CHAR_MAGIC_SPAWN");//7
-    mplew.writeZeroBytes(10);
-    mplew.write("", 1);
-    mplew.writeInt("CHAR_MAGIC_SPAWN");//8
-
-    mplew.writeZeroBytes(10);
-    mplew.write("", 1);
-    mplew.writeInt("CHAR_MAGIC_SPAWN");//9
-    mplew.EndNode(false);
-    //   for ( i = 0; i < 9; ++i )
-    //   {
-    //     v352 = sub_419000 (/* &v359, i */);
-    //     // Check_Buff(&v562, &v358, v352);
-    //     if(sub_B7C3F0(mask,))
-    //     {
-    //       (*(*v353 + 24))(v353, iPacket);
-    //     }
-    //   }
-    // //   Check_Buff(&v562, &v357   , 0x2242518);      // 309
-    // if(sub_B7C3F0(mask, 309))
-    //   {
-    //     v354 = mplew.writeInt("v354");
-    // }
-    //   return a2;
+function sub_EAD600 (/*  */)
+{
+  mplew.writeInt("v2");
+   mplew.writeInt("");
+  mplew.writeInt("");
+  result = mplew.writeInt("result");
+  if ( result > 0 )
+  {
+    v10 = result;
+    do
+    {
+      result = mplew.writeInt("result");
+      --v10;
+    }
+    while ( v10 );
+  }
+  return result;
 }
