@@ -834,8 +834,8 @@ function DecodeForRemote()
         v73 = mplew.writeInt(" v73 ");
         mplew.EndNode(false);
     }
-    //   Check_Buff(&v562, &v515   , 0x22424D0);      // 133
-    if (sub_B7C3F0(mask, 133)) {
+    //   Check_Buff(&v562, &v515   , 0x22424D0);      // 133  
+    if (sub_B7C3F0(mask, 133)) {//飞天骑乘
         mplew.StartNode(" Mask - " + 133);
         mplew.EndNode(false);
     }
@@ -1275,7 +1275,7 @@ function DecodeForRemote()
         mplew.EndNode(false);
     }
     //   Check_Buff(&v562, &v449   , 0x2243D48);      // 252
-    if (sub_B7C3F0(mask, 252)) {
+    if (sub_B7C3F0(mask, 252)) { //元素配合    
         mplew.StartNode(" Mask - " + 252);
         v183 = mplew.writeShort(" v183 ");
         v184 = mplew.writeInt(" v184 ");

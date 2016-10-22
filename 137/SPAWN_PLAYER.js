@@ -767,21 +767,21 @@ function DecodeForRemote()
     }
     mplew.StartNode("SecondaryStat::DecodeForRemote");
   v769= mplew.writeBuffer("v769",0x44);
-  v3 = Check_Buff(mask, 0x22B8F78);
+  v3 = Check_Buff(mask, 0x22B8F78);//64
   if ( sub_42CEB0 ( v3 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22B8F78));
     v4 = mplew.write("v4");
       mplew.EndNode(false);
   }
-  v5 = Check_Buff(mask, 0x22B95A8);
+  v5 = Check_Buff(mask, 0x22B95A8);//78
   if ( sub_42CEB0 ( v5 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22B95A8));
     v6 = mplew.write("v6");
       mplew.EndNode(false);
   }
-  v7 = Check_Buff(mask, 0x22B95F0);
+  v7 = Check_Buff(mask, 0x22B95F0);//79
   if ( sub_42CEB0 ( v7 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22B95F0));
@@ -789,14 +789,14 @@ function DecodeForRemote()
     v9 = mplew.writeInt("v9");
       mplew.EndNode(false);
   }
-  v10 = Check_Buff(mask, 0x22B9638);
+  v10 = Check_Buff(mask, 0x22B9638);//332
   if ( sub_42CEB0 ( v10 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22B9638));
     v11 = mplew.writeShort("v11");
       mplew.EndNode(false);
   }
-  v12 = Check_Buff(mask, 0x22B9440);
+  v12 = Check_Buff(mask, 0x22B9440);//74
   if ( sub_42CEB0 ( v12 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22B9440));
@@ -804,14 +804,14 @@ function DecodeForRemote()
     v14 = mplew.writeInt("v14");
       mplew.EndNode(false);
   }
-  v15 = Check_Buff(mask, 0x22B9488);
+  v15 = Check_Buff(mask, 0x22B9488);//195
   if ( sub_42CEB0 ( v15 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22B9488));
     v16 = mplew.write("v16");
       mplew.EndNode(false);
   }
-  v17 = Check_Buff(mask, 0x22B9560);
+  v17 = Check_Buff(mask, 0x22B9560);//77
   if ( sub_42CEB0 ( v17 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22B9560));
@@ -819,7 +819,7 @@ function DecodeForRemote()
     v19 = mplew.writeInt("v19");
       mplew.EndNode(false);
   }
-  v20 = Check_Buff(mask, 0x22B9518);
+  v20 = Check_Buff(mask, 0x22B9518);//76
   if ( sub_42CEB0 ( v20 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22B9518));
@@ -827,7 +827,7 @@ function DecodeForRemote()
     v22 = mplew.writeInt("v22");
       mplew.EndNode(false);
   }
-  v23 = Check_Buff(mask, 0x22B97E8);
+  v23 = Check_Buff(mask, 0x22B97E8);//86
   if ( sub_42CEB0 ( v23 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22B97E8));
@@ -835,7 +835,7 @@ function DecodeForRemote()
     v25 = mplew.writeInt("v25");
       mplew.EndNode(false);
   }
-  v26 = Check_Buff(mask, 0x22B9830);
+  v26 = Check_Buff(mask, 0x22B9830);//190
   if ( sub_42CEB0 ( v26 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22B9830));
@@ -843,7 +843,7 @@ function DecodeForRemote()
     v28 = mplew.writeInt("v28");
       mplew.EndNode(false);
   }
-  v29 = Check_Buff(mask, 0x22B9878);
+  v29 = Check_Buff(mask, 0x22B9878);//87
   if ( sub_42CEB0 ( v29 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22B9878));
@@ -851,7 +851,7 @@ function DecodeForRemote()
     v31 = mplew.writeInt("v31");
       mplew.EndNode(false);
   }
-  v32 = Check_Buff(mask, 0x22B98C0);
+  v32 = Check_Buff(mask, 0x22B98C0);//88
   if ( sub_42CEB0 ( v32 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22B98C0));
@@ -859,7 +859,7 @@ function DecodeForRemote()
     v34 = mplew.writeInt("v34");
       mplew.EndNode(false);
   }
-  v35 = Check_Buff(mask, 0x22BB408);
+  v35 = Check_Buff(mask, 0x22BB408);//189
   if ( sub_42CEB0 ( v35 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BB408));
@@ -867,7 +867,7 @@ function DecodeForRemote()
     v37 = mplew.writeInt("v37");
       mplew.EndNode(false);
   }
-  v38 = Check_Buff(mask, 0x22BB450);
+  v38 = Check_Buff(mask, 0x22BB450);//194
   if ( sub_42CEB0 ( v38 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BB450));
@@ -875,7 +875,7 @@ function DecodeForRemote()
     v40 = mplew.writeInt("v40");
       mplew.EndNode(false);
   }
-  v41 = Check_Buff(mask, 0x22B9908);
+  v41 = Check_Buff(mask, 0x22B9908);//174
   if ( sub_42CEB0 ( v41 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22B9908));
@@ -883,14 +883,14 @@ function DecodeForRemote()
     v43 = mplew.writeInt("v43");
       mplew.EndNode(false);
   }
-  v44 = Check_Buff(mask, 0x22B9998);
+  v44 = Check_Buff(mask, 0x22B9998);//177
   if ( sub_42CEB0 ( v44 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22B9998));
     v45 = mplew.write("v45");
       mplew.EndNode(false);
   }
-  v46 = Check_Buff(mask, 0x22B99E0);
+  v46 = Check_Buff(mask, 0x22B99E0);//175
   if ( sub_42CEB0 ( v46 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22B99E0));
@@ -898,7 +898,7 @@ function DecodeForRemote()
     v48 = mplew.writeInt("v48");
       mplew.EndNode(false);
   }
-  v49 = Check_Buff(mask, 0x22B9A28);
+  v49 = Check_Buff(mask, 0x22B9A28);//176
   if ( sub_42CEB0 ( v49 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22B9A28));
@@ -906,14 +906,14 @@ function DecodeForRemote()
     v51 = mplew.writeInt("v51");
       mplew.EndNode(false);
   }
-  v52 = Check_Buff(mask, 0x22B94D0);
+  v52 = Check_Buff(mask, 0x22B94D0);//75
   if ( sub_42CEB0 ( v52 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22B94D0));
     v53 = mplew.writeShort("v53");
       mplew.EndNode(false);
   }
-  v54 = Check_Buff(mask, 0x22B94D0);
+  v54 = Check_Buff(mask, 0x22B94D0);//75
   if ( sub_42CEB0 ( v54 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22B94D0));
@@ -921,7 +921,7 @@ function DecodeForRemote()
     v56 = mplew.writeInt("v56");
       mplew.EndNode(false);
   }
-  v57 = Check_Buff(mask, 0x22B88B8);
+  v57 = Check_Buff(mask, 0x22B88B8);//82
   if ( sub_42CEB0 ( v57 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22B88B8));
@@ -929,21 +929,21 @@ function DecodeForRemote()
     v59 = mplew.writeInt("v59");
       mplew.EndNode(false);
   }
-  v60 = Check_Buff(mask, 0x22B9200);
+  v60 = Check_Buff(mask, 0x22B9200);//67
   if ( sub_42CEB0 ( v60 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22B9200));
 
       mplew.EndNode(false);
   }
-  v61 = Check_Buff(mask, 0x22B93F8);
+  v61 = Check_Buff(mask, 0x22B93F8);//73
   if ( sub_42CEB0 ( v61 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22B93F8));
 
       mplew.EndNode(false);
   }
-  v62 = Check_Buff(mask, 0x22B9A70);
+  v62 = Check_Buff(mask, 0x22B9A70);//89
   if ( sub_42CEB0 ( v62 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22B9A70));
@@ -951,14 +951,14 @@ function DecodeForRemote()
     v64 = mplew.writeInt("v64");
       mplew.EndNode(false);
   }
-  v65 = Check_Buff(mask, 0x22B9AB8);
+  v65 = Check_Buff(mask, 0x22B9AB8);//105
   if ( sub_42CEB0 ( v65 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22B9AB8));
     v66 = mplew.writeShort("v66");
       mplew.EndNode(false);
   }
-  v67 = Check_Buff(mask, 0x22B9C68);
+  v67 = Check_Buff(mask, 0x22B9C68);//95
   if ( sub_42CEB0 ( v67 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22B9C68));
@@ -966,7 +966,7 @@ function DecodeForRemote()
     v69 = mplew.writeInt("v69");
       mplew.EndNode(false);
   }
-  v70 = Check_Buff(mask, 0x22B9CB0);
+  v70 = Check_Buff(mask, 0x22B9CB0);//245
   if ( sub_42CEB0 ( v70 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22B9CB0));
@@ -974,7 +974,7 @@ function DecodeForRemote()
     v72 = mplew.writeInt("v72");
       mplew.EndNode(false);
   }
-  v73 = Check_Buff(mask, 0x22B8BD0);
+  v73 = Check_Buff(mask, 0x22B8BD0);//246
   if ( sub_42CEB0 ( v73 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22B8BD0));
@@ -982,14 +982,14 @@ function DecodeForRemote()
     v75 = mplew.writeInt("v75");
       mplew.EndNode(false);
   }
-  v76 = Check_Buff(mask, 0x22B9CF8);
+  v76 = Check_Buff(mask, 0x22B9CF8);//96
   if ( sub_42CEB0 ( v76 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22B9CF8));
     v77 = mplew.writeInt("v77");
       mplew.EndNode(false);
   }
-  v78 = Check_Buff(mask, 0x22B9F38);
+  v78 = Check_Buff(mask, 0x22B9F38);//102
   if ( sub_42CEB0 ( v78 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22B9F38));
@@ -997,7 +997,7 @@ function DecodeForRemote()
     v80 = mplew.writeInt("v80");
       mplew.EndNode(false);
   }
-  v81 = Check_Buff(mask, 0x22B9FC8);
+  v81 = Check_Buff(mask, 0x22B9FC8);//106
   if ( sub_42CEB0 ( v81 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22B9FC8));
@@ -1005,7 +1005,7 @@ function DecodeForRemote()
     v83 = mplew.writeInt("v83");
       mplew.EndNode(false);
   }
-  v84 = Check_Buff(mask, 0x22BA010);
+  v84 = Check_Buff(mask, 0x22BA010);//115
   if ( sub_42CEB0 ( v84 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BA010));
@@ -1013,7 +1013,7 @@ function DecodeForRemote()
     v86 = mplew.writeInt("v86");
       mplew.EndNode(false);
   }
-  v87 = Check_Buff(mask, 0x22BA058);
+  v87 = Check_Buff(mask, 0x22BA058);//107
   if ( sub_42CEB0 ( v87 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BA058));
@@ -1021,35 +1021,35 @@ function DecodeForRemote()
     v89 = mplew.writeInt("v89");
       mplew.EndNode(false);
   }
-  v90 = Check_Buff(mask, 0x22BA130);
+  v90 = Check_Buff(mask, 0x22BA130);//109
   if ( sub_42CEB0 ( v90 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BA130));
     v91 = mplew.writeInt("v91");
       mplew.EndNode(false);
   }
-  v92 = Check_Buff(mask, 0x22BA178);
+  v92 = Check_Buff(mask, 0x22BA178);//110
   if ( sub_42CEB0 ( v92 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BA178));
     v93 = mplew.writeInt("v93");
       mplew.EndNode(false);
   }
-  v94 = Check_Buff(mask, 0x22BA1C0);
+  v94 = Check_Buff(mask, 0x22BA1C0);//111
   if ( sub_42CEB0 ( v94 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BA1C0));
     v95 = mplew.writeInt("v95");
       mplew.EndNode(false);
   }
-  v96 = Check_Buff(mask, 0x22BA208);
+  v96 = Check_Buff(mask, 0x22BA208);//112
   if ( sub_42CEB0 ( v96 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BA208));
     v97 = mplew.writeInt("v97");
       mplew.EndNode(false);
   }
-  v98 = Check_Buff(mask, 0x22BA250);
+  v98 = Check_Buff(mask, 0x22BA250);//113
   if ( sub_42CEB0 ( v98 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BA250));
@@ -1057,14 +1057,14 @@ function DecodeForRemote()
     v100 = mplew.writeInt("v100");
       mplew.EndNode(false);
   }
-  v101 = Check_Buff(mask, 0x22BA298);
+  v101 = Check_Buff(mask, 0x22BA298);//114
   if ( sub_42CEB0 ( v101 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BA298));
 
       mplew.EndNode(false);
   }
-  v102 = Check_Buff(mask, 0x22BA5B0);
+  v102 = Check_Buff(mask, 0x22BA5B0);//125
   if ( sub_42CEB0 ( v102 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BA5B0));
@@ -1072,7 +1072,7 @@ function DecodeForRemote()
     v104 = mplew.writeInt("v104");
       mplew.EndNode(false);
   }
-  v105 = Check_Buff(mask, 0x22BF7D0);
+  v105 = Check_Buff(mask, 0x22BF7D0);//480
   if ( sub_42CEB0 ( v105 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BF7D0));
@@ -1080,7 +1080,7 @@ function DecodeForRemote()
     v107 = mplew.writeInt("v107");
       mplew.EndNode(false);
   }
-  v108 = Check_Buff(mask, 0x22BA640);
+  v108 = Check_Buff(mask, 0x22BA640);//127
   if ( sub_42CEB0 ( v108 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BA640));
@@ -1088,7 +1088,7 @@ function DecodeForRemote()
     v110 = mplew.writeInt("v110");
       mplew.EndNode(false);
   }
-  v111 = Check_Buff(mask, 0x22BA688);
+  v111 = Check_Buff(mask, 0x22BA688);//128
   if ( sub_42CEB0 ( v111 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BA688));
@@ -1096,7 +1096,7 @@ function DecodeForRemote()
     v113 = mplew.writeInt("v113");
       mplew.EndNode(false);
   }
-  v114 = Check_Buff(mask, 0x22BA6D0);
+  v114 = Check_Buff(mask, 0x22BA6D0);//129
   if ( sub_42CEB0 ( v114 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BA6D0));
@@ -1104,21 +1104,21 @@ function DecodeForRemote()
     v116 = mplew.writeInt("v116");
       mplew.EndNode(false);
   }
-  v117 = Check_Buff(mask, 0x22BA718);
+  v117 = Check_Buff(mask, 0x22BA718);//131
   if ( sub_42CEB0 ( v117 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BA718));
     v118 = mplew.writeInt("v118");
       mplew.EndNode(false);
   }
-  v119 = Check_Buff(mask, 0x22BA7F0);
+  v119 = Check_Buff(mask, 0x22BA7F0);//134
   if ( sub_42CEB0 ( v119 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BA7F0));
 
       mplew.EndNode(false);
   }
-  v120 = Check_Buff(mask, 0x22BA880);
+  v120 = Check_Buff(mask, 0x22BA880);//135
   if ( sub_42CEB0 ( v120 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BA880));
@@ -1126,7 +1126,7 @@ function DecodeForRemote()
     v122 = mplew.writeInt("v122");
       mplew.EndNode(false);
   }
-  v123 = Check_Buff(mask, 0x22BA8C8);
+  v123 = Check_Buff(mask, 0x22BA8C8);//191
   if ( sub_42CEB0 ( v123 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BA8C8));
@@ -1134,7 +1134,7 @@ function DecodeForRemote()
     v125 = mplew.writeInt("v125");
       mplew.EndNode(false);
   }
-  v126 = Check_Buff(mask, 0x22BA910);
+  v126 = Check_Buff(mask, 0x22BA910);//172
   if ( sub_42CEB0 ( v126 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BA910));
@@ -1142,7 +1142,7 @@ function DecodeForRemote()
     v128 = mplew.writeInt("v128");
       mplew.EndNode(false);
   }
-  v129 = Check_Buff(mask, 0x22BADD8);
+  v129 = Check_Buff(mask, 0x22BADD8);//138
   if ( sub_42CEB0 ( v129 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BADD8));
@@ -1150,7 +1150,7 @@ function DecodeForRemote()
     v131 = mplew.writeInt("v131");
       mplew.EndNode(false);
   }
-  v132 = Check_Buff(mask, 0x22BA9E8);
+  v132 = Check_Buff(mask, 0x22BA9E8);//140
   if ( sub_42CEB0 ( v132 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BA9E8));
@@ -1158,42 +1158,42 @@ function DecodeForRemote()
     v134 = mplew.writeInt("v134");
       mplew.EndNode(false);
   }
-  v135 = Check_Buff(mask, 0x22BAAC0);
+  v135 = Check_Buff(mask, 0x22BAAC0);//152
   if ( sub_42CEB0 ( v135 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BAAC0));
     v136 = mplew.write("v136");
       mplew.EndNode(false);
   }
-  v137 = Check_Buff(mask, 0x22BAB08);
+  v137 = Check_Buff(mask, 0x22BAB08);//313
   if ( sub_42CEB0 ( v137 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BAB08));
     v138 = mplew.write("v138");
       mplew.EndNode(false);
   }
-  v139 = Check_Buff(mask, 0x22BAB08);
+  v139 = Check_Buff(mask, 0x22BAB08);//313
   if ( sub_42CEB0 ( v139 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BAB08));
 
       mplew.EndNode(false);
   }
-  v140 = Check_Buff(mask, 0x22BAD48);
+  v140 = Check_Buff(mask, 0x22BAD48);//160
   if ( sub_42CEB0 ( v140 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BAD48));
 
       mplew.EndNode(false);
   }
-  v141 = Check_Buff(mask, 0x22BAA78);
+  v141 = Check_Buff(mask, 0x22BAA78);//142
   if ( sub_42CEB0 ( v141 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BAA78));
 
       mplew.EndNode(false);
   }
-  v142 = Check_Buff(mask, 0x22BAD90);
+  v142 = Check_Buff(mask, 0x22BAD90);//161
   if ( sub_42CEB0 ( v142 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BAD90));
@@ -1201,21 +1201,21 @@ function DecodeForRemote()
     v144 = mplew.writeInt("v144");
       mplew.EndNode(false);
   }
-  v145 = Check_Buff(mask, 0x22BAEB0);
+  v145 = Check_Buff(mask, 0x22BAEB0);//164
   if ( sub_42CEB0 ( v145 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BAEB0));
 
       mplew.EndNode(false);
   }
-  v146 = Check_Buff(mask, 0x22BAEF8);
+  v146 = Check_Buff(mask, 0x22BAEF8);//248
   if ( sub_42CEB0 ( v146 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BAEF8));
 
       mplew.EndNode(false);
   }
-  v147 = Check_Buff(mask, 0x22BB0F0);
+  v147 = Check_Buff(mask, 0x22BB0F0);//170
   if ( sub_42CEB0 ( v147 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BB0F0));
@@ -1223,7 +1223,7 @@ function DecodeForRemote()
     v149 = mplew.writeInt("v149");
       mplew.EndNode(false);
   }
-  v150 = Check_Buff(mask, 0x22BB1C8);
+  v150 = Check_Buff(mask, 0x22BB1C8);//178
   if ( sub_42CEB0 ( v150 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BB1C8));
@@ -1231,7 +1231,7 @@ function DecodeForRemote()
     v152 = mplew.writeInt("v152");
       mplew.EndNode(false);
   }
-  v153 = Check_Buff(mask, 0x22BB210);
+  v153 = Check_Buff(mask, 0x22BB210);//185
   if ( sub_42CEB0 ( v153 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BB210));
@@ -1239,7 +1239,7 @@ function DecodeForRemote()
     v155 = mplew.writeInt("v155");
       mplew.EndNode(false);
   }
-  v156 = Check_Buff(mask, 0x22BB528);
+  v156 = Check_Buff(mask, 0x22BB528);//193
   if ( sub_42CEB0 ( v156 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BB528));
@@ -1247,7 +1247,7 @@ function DecodeForRemote()
     v158 = mplew.writeInt("v158");
       mplew.EndNode(false);
   }
-  v159 = Check_Buff(mask, 0x22BA3B8);
+  v159 = Check_Buff(mask, 0x22BA3B8);//119
   if ( sub_42CEB0 ( v159 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BA3B8));
@@ -1255,14 +1255,14 @@ function DecodeForRemote()
     v161 = mplew.writeInt("v161");
       mplew.EndNode(false);
   }
-  v162 = Check_Buff(mask, 0x22BB498);
+  v162 = Check_Buff(mask, 0x22BB498);//199
   if ( sub_42CEB0 ( v162 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BB498));
 
       mplew.EndNode(false);
   }
-  v163 = Check_Buff(mask, 0x22BCFE0);
+  v163 = Check_Buff(mask, 0x22BCFE0);//206
   if ( sub_42CEB0 ( v163 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BCFE0));
@@ -1270,7 +1270,7 @@ function DecodeForRemote()
     v165 = mplew.writeInt("v165");
       mplew.EndNode(false);
   }
-  v166 = Check_Buff(mask, 0x22B8750);
+  v166 = Check_Buff(mask, 0x22B8750);//208
   if ( sub_42CEB0 ( v166 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22B8750));
@@ -1278,7 +1278,7 @@ function DecodeForRemote()
     v168 = mplew.writeInt("v168");
       mplew.EndNode(false);
   }
-  v169 = Check_Buff(mask, 0x22BB768);
+  v169 = Check_Buff(mask, 0x22BB768);//210
   if ( sub_42CEB0 ( v169 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BB768));
@@ -1286,7 +1286,7 @@ function DecodeForRemote()
     v171 = mplew.writeInt("v171");
       mplew.EndNode(false);
   }
-  v172 = Check_Buff(mask, 0x22BB960);
+  v172 = Check_Buff(mask, 0x22BB960);//218
   if ( sub_42CEB0 ( v172 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BB960));
@@ -1294,7 +1294,7 @@ function DecodeForRemote()
     v174 = mplew.writeInt("v174");
       mplew.EndNode(false);
   }
-  v175 = Check_Buff(mask, 0x22BBB58);
+  v175 = Check_Buff(mask, 0x22BBB58);//225
   if ( sub_42CEB0 ( v175 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BBB58));
@@ -1302,7 +1302,7 @@ function DecodeForRemote()
     v177 = mplew.writeInt("v177");
       mplew.EndNode(false);
   }
-  v178 = Check_Buff(mask, 0x22BBBA0);
+  v178 = Check_Buff(mask, 0x22BBBA0);//244
   if ( sub_42CEB0 ( v178 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BBBA0));
@@ -1310,7 +1310,7 @@ function DecodeForRemote()
     v180 = mplew.writeInt("v180");
       mplew.EndNode(false);
   }
-  v181 = Check_Buff(mask, 0x22BBC30);
+  v181 = Check_Buff(mask, 0x22BBC30);//227
   if ( sub_42CEB0 ( v181 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BBC30));
@@ -1318,7 +1318,7 @@ function DecodeForRemote()
     v183 = mplew.writeInt("v183");
       mplew.EndNode(false);
   }
-  v184 = Check_Buff(mask, 0x22BBC78);
+  v184 = Check_Buff(mask, 0x22BBC78);//247
   if ( sub_42CEB0 ( v184 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BBC78));
@@ -1326,7 +1326,7 @@ function DecodeForRemote()
     v186 = mplew.writeInt("v186");
       mplew.EndNode(false);
   }
-  v187 = Check_Buff(mask, 0x22BBCC0);
+  v187 = Check_Buff(mask, 0x22BBCC0);//260
   if ( sub_42CEB0 ( v187 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BBCC0));
@@ -1334,7 +1334,7 @@ function DecodeForRemote()
     v189 = mplew.writeInt("v189");
       mplew.EndNode(false);
   }
-  v190 = Check_Buff(mask, 0x22BBD08);
+  v190 = Check_Buff(mask, 0x22BBD08);//228
   if ( sub_42CEB0 ( v190 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BBD08));
@@ -1342,28 +1342,28 @@ function DecodeForRemote()
     v192 = mplew.writeInt("v192");
       mplew.EndNode(false);
   }
-  v193 = Check_Buff(mask, 0x22BBE28);
+  v193 = Check_Buff(mask, 0x22BBE28);//233
   if ( sub_42CEB0 ( v193 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BBE28));
     v194 = mplew.writeInt("v194");
       mplew.EndNode(false);
   }
-  v195 = Check_Buff(mask, 0x22BFF20);
+  v195 = Check_Buff(mask, 0x22BFF20);//234
   if ( sub_42CEB0 ( v195 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BFF20));
     v196 = mplew.write("v196");
       mplew.EndNode(false);
   }
-  v197 = Check_Buff(mask, 0x22BFF68);
+  v197 = Check_Buff(mask, 0x22BFF68);//412
   if ( sub_42CEB0 ( v197 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BFF68));
     v198 = mplew.write("v198");
       mplew.EndNode(false);
   }
-  v199 = Check_Buff(mask, 0x22BBF90);
+  v199 = Check_Buff(mask, 0x22BBF90);//237
   if ( sub_42CEB0 ( v199 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BBF90));
@@ -1371,7 +1371,7 @@ function DecodeForRemote()
     v201 = mplew.writeInt("v201");
       mplew.EndNode(false);
   }
-  v202 = Check_Buff(mask, 0x22BBFD8);
+  v202 = Check_Buff(mask, 0x22BBFD8);//239
   if ( sub_42CEB0 ( v202 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BBFD8));
@@ -1379,7 +1379,7 @@ function DecodeForRemote()
     v204 = mplew.writeInt("v204");
       mplew.EndNode(false);
   }
-  v205 = Check_Buff(mask, 0x22BC1D0);
+  v205 = Check_Buff(mask, 0x22BC1D0);//242
   if ( sub_42CEB0 ( v205 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BC1D0));
@@ -1387,7 +1387,7 @@ function DecodeForRemote()
     v207 = mplew.writeInt("v207");
       mplew.EndNode(false);
   }
-  v208 = Check_Buff(mask, 0x22BBF00);
+  v208 = Check_Buff(mask, 0x22BBF00);//249
   if ( sub_42CEB0 ( v208 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BBF00));
@@ -1395,21 +1395,21 @@ function DecodeForRemote()
     v210 = mplew.writeInt("v210");
       mplew.EndNode(false);
   }
-  v211 = Check_Buff(mask, 0x22B9D40);
+  v211 = Check_Buff(mask, 0x22B9D40);//251
   if ( sub_42CEB0 ( v211 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22B9D40));
     v212 = mplew.writeShort("v212");
       mplew.EndNode(false);
   }
-  v213 = Check_Buff(mask, 0x22BC140);
+  v213 = Check_Buff(mask, 0x22BC140);//252
   if ( sub_42CEB0 ( v213 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BC140));
     v214 = mplew.writeInt("v214");
       mplew.EndNode(false);
   }
-  v215 = Check_Buff(mask, 0x22BC260);
+  v215 = Check_Buff(mask, 0x22BC260);//250
   if ( sub_42CEB0 ( v215 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BC260));
@@ -1417,7 +1417,7 @@ function DecodeForRemote()
     v217 = mplew.writeInt("v217");
       mplew.EndNode(false);
   }
-  v218 = Check_Buff(mask, 0x22BC2F0);
+  v218 = Check_Buff(mask, 0x22BC2F0);//258
   if ( sub_42CEB0 ( v218 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BC2F0));
@@ -1425,7 +1425,7 @@ function DecodeForRemote()
     v220 = mplew.writeInt("v220");
       mplew.EndNode(false);
   }
-  v221 = Check_Buff(mask, 0x22BC338);
+  v221 = Check_Buff(mask, 0x22BC338);//259
   if ( sub_42CEB0 ( v221 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BC338));
@@ -1433,7 +1433,7 @@ function DecodeForRemote()
     v223 = mplew.writeInt("v223");
       mplew.EndNode(false);
   }
-  v224 = Check_Buff(mask, 0x22BC3C8);
+  v224 = Check_Buff(mask, 0x22BC3C8);//261
   if ( sub_42CEB0 ( v224 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BC3C8));
@@ -1441,7 +1441,7 @@ function DecodeForRemote()
     v226 = mplew.writeInt("v226");
       mplew.EndNode(false);
   }
-  v227 = Check_Buff(mask, 0x22B87E0);
+  v227 = Check_Buff(mask, 0x22B87E0);//262
   if ( sub_42CEB0 ( v227 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22B87E0));
@@ -1449,7 +1449,7 @@ function DecodeForRemote()
     v229 = mplew.writeInt("v229");
       mplew.EndNode(false);
   }
-  v230 = Check_Buff(mask, 0x22B8828);
+  v230 = Check_Buff(mask, 0x22B8828);//264
   if ( sub_42CEB0 ( v230 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22B8828));
@@ -1457,7 +1457,7 @@ function DecodeForRemote()
     v232 = mplew.writeInt("v232");
       mplew.EndNode(false);
   }
-  v233 = Check_Buff(mask, 0x22BC458);
+  v233 = Check_Buff(mask, 0x22BC458);//265
   if ( sub_42CEB0 ( v233 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BC458));
@@ -1465,7 +1465,7 @@ function DecodeForRemote()
     v235 = mplew.writeInt("v235");
       mplew.EndNode(false);
   }
-  v236 = Check_Buff(mask, 0x22BC4A0);
+  v236 = Check_Buff(mask, 0x22BC4A0);//274
   if ( sub_42CEB0 ( v236 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BC4A0));
@@ -1473,7 +1473,7 @@ function DecodeForRemote()
     v238 = mplew.writeInt("v238");
       mplew.EndNode(false);
   }
-  v239 = Check_Buff(mask, 0x22BC4E8);
+  v239 = Check_Buff(mask, 0x22BC4E8);//130
   if ( sub_42CEB0 ( v239 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BC4E8));
@@ -1481,7 +1481,7 @@ function DecodeForRemote()
     v241 = mplew.writeInt("v241");
       mplew.EndNode(false);
   }
-  v242 = Check_Buff(mask, 0x22BC2A8);
+  v242 = Check_Buff(mask, 0x22BC2A8);//256
   if ( sub_42CEB0 ( v242 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BC2A8));
@@ -1489,7 +1489,7 @@ function DecodeForRemote()
     v244 = mplew.writeInt("v244");
       mplew.EndNode(false);
   }
-  v245 = Check_Buff(mask, 0x22BC578);
+  v245 = Check_Buff(mask, 0x22BC578);//269
   if ( sub_42CEB0 ( v245 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BC578));
@@ -1497,7 +1497,7 @@ function DecodeForRemote()
     v247 = mplew.writeInt("v247");
       mplew.EndNode(false);
   }
-  v248 = Check_Buff(mask, 0x22BC5C0);
+  v248 = Check_Buff(mask, 0x22BC5C0);//270
   if ( sub_42CEB0 ( v248 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BC5C0));
@@ -1505,7 +1505,7 @@ function DecodeForRemote()
     v250 = mplew.writeInt("v250");
       mplew.EndNode(false);
   }
-  v251 = Check_Buff(mask, 0x22BC608);
+  v251 = Check_Buff(mask, 0x22BC608);//271
   if ( sub_42CEB0 ( v251 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BC608));
@@ -1513,7 +1513,7 @@ function DecodeForRemote()
     v253 = mplew.writeInt("v253");
       mplew.EndNode(false);
   }
-  v254 = Check_Buff(mask, 0x22BC650);
+  v254 = Check_Buff(mask, 0x22BC650);//272
   if ( sub_42CEB0 ( v254 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BC650));
@@ -1521,7 +1521,7 @@ function DecodeForRemote()
     v256 = mplew.writeInt("v256");
       mplew.EndNode(false);
   }
-  v257 = Check_Buff(mask, 0x22BC650);
+  v257 = Check_Buff(mask, 0x22BC650);//272
   if ( sub_42CEB0 ( v257 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BC650));
@@ -1529,7 +1529,7 @@ function DecodeForRemote()
     v259 = mplew.writeInt("v259");
       mplew.EndNode(false);
   }
-  v260 = Check_Buff(mask, 0x22BC698);
+  v260 = Check_Buff(mask, 0x22BC698);//273
   if ( sub_42CEB0 ( v260 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BC698));
@@ -1537,7 +1537,7 @@ function DecodeForRemote()
     v262 = mplew.writeInt("v262");
       mplew.EndNode(false);
   }
-  v263 = Check_Buff(mask, 0x22BC6E0);
+  v263 = Check_Buff(mask, 0x22BC6E0);//275
   if ( sub_42CEB0 ( v263 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BC6E0));
@@ -1545,7 +1545,7 @@ function DecodeForRemote()
     v265 = mplew.writeInt("v265");
       mplew.EndNode(false);
   }
-  v266 = Check_Buff(mask, 0x22BC728);
+  v266 = Check_Buff(mask, 0x22BC728);//276
   if ( sub_42CEB0 ( v266 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BC728));
@@ -1553,7 +1553,7 @@ function DecodeForRemote()
     v268 = mplew.writeInt("v268");
       mplew.EndNode(false);
   }
-  v269 = Check_Buff(mask, 0x22BC770);
+  v269 = Check_Buff(mask, 0x22BC770);//277
   if ( sub_42CEB0 ( v269 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BC770));
@@ -1561,7 +1561,7 @@ function DecodeForRemote()
     v271 = mplew.writeInt("v271");
       mplew.EndNode(false);
   }
-  v272 = Check_Buff(mask, 0x22BC7B8);
+  v272 = Check_Buff(mask, 0x22BC7B8);//278
   if ( sub_42CEB0 ( v272 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BC7B8));
@@ -1569,7 +1569,7 @@ function DecodeForRemote()
     v274 = mplew.writeInt("v274");
       mplew.EndNode(false);
   }
-  v275 = Check_Buff(mask, 0x22BC800);
+  v275 = Check_Buff(mask, 0x22BC800);//279
   if ( sub_42CEB0 ( v275 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BC800));
@@ -1577,7 +1577,7 @@ function DecodeForRemote()
     v277 = mplew.writeInt("v277");
       mplew.EndNode(false);
   }
-  v278 = Check_Buff(mask, 0x22BC848);
+  v278 = Check_Buff(mask, 0x22BC848);//280
   if ( sub_42CEB0 ( v278 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BC848));
@@ -1585,7 +1585,7 @@ function DecodeForRemote()
     v280 = mplew.writeInt("v280");
       mplew.EndNode(false);
   }
-  v281 = Check_Buff(mask, 0x22BC890);
+  v281 = Check_Buff(mask, 0x22BC890);//337
   if ( sub_42CEB0 ( v281 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BC890));
@@ -1593,7 +1593,7 @@ function DecodeForRemote()
     v283 = mplew.writeInt("v283");
       mplew.EndNode(false);
   }
-  v284 = Check_Buff(mask, 0x22BC8D8);
+  v284 = Check_Buff(mask, 0x22BC8D8);//281
   if ( sub_42CEB0 ( v284 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BC8D8));
@@ -1601,7 +1601,7 @@ function DecodeForRemote()
     v286 = mplew.writeInt("v286");
       mplew.EndNode(false);
   }
-  v287 = Check_Buff(mask, 0x22BC920);
+  v287 = Check_Buff(mask, 0x22BC920);//282
   if ( sub_42CEB0 ( v287 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BC920));
@@ -1609,14 +1609,14 @@ function DecodeForRemote()
     v289 = mplew.writeInt("v289");
       mplew.EndNode(false);
   }
-  v290 = Check_Buff(mask, 0x22BC968);
+  v290 = Check_Buff(mask, 0x22BC968);//283
   if ( sub_42CEB0 ( v290 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BC968));
 
       mplew.EndNode(false);
   }
-  v291 = Check_Buff(mask, 0x22BC9B0);
+  v291 = Check_Buff(mask, 0x22BC9B0);//284
   if ( sub_42CEB0 ( v291 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BC9B0));
@@ -1624,7 +1624,7 @@ function DecodeForRemote()
     v293 = mplew.writeInt("v293");
       mplew.EndNode(false);
   }
-  v294 = Check_Buff(mask, 0x22BB6D8);
+  v294 = Check_Buff(mask, 0x22BB6D8);//205
   if ( sub_42CEB0 ( v294 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BB6D8));
@@ -1632,7 +1632,7 @@ function DecodeForRemote()
     v296 = mplew.writeInt("v296");
       mplew.EndNode(false);
   }
-  v297 = Check_Buff(mask, 0x22BC068);
+  v297 = Check_Buff(mask, 0x22BC068);//253
   if ( sub_42CEB0 ( v297 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BC068));
@@ -1640,7 +1640,7 @@ function DecodeForRemote()
     v299 = mplew.writeInt("v299");
       mplew.EndNode(false);
   }
-  v300 = Check_Buff(mask, 0x22BA9A0);
+  v300 = Check_Buff(mask, 0x22BA9A0);//139
   if ( sub_42CEB0 ( v300 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BA9A0));
@@ -1648,7 +1648,7 @@ function DecodeForRemote()
     v302 = mplew.writeInt("v302");
       mplew.EndNode(false);
   }
-  v303 = Check_Buff(mask, 0x22BCBF0);
+  v303 = Check_Buff(mask, 0x22BCBF0);//289
   if ( sub_42CEB0 ( v303 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BCBF0));
@@ -1656,7 +1656,7 @@ function DecodeForRemote()
     v305 = mplew.writeInt("v305");
       mplew.EndNode(false);
   }
-  v306 = Check_Buff(mask, 0x22BA328);
+  v306 = Check_Buff(mask, 0x22BA328);//117
   if ( sub_42CEB0 ( v306 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BA328));
@@ -1664,7 +1664,7 @@ function DecodeForRemote()
     v308 = mplew.writeInt("v308");
       mplew.EndNode(false);
   }
-  v309 = Check_Buff(mask, 0x22BCC38);
+  v309 = Check_Buff(mask, 0x22BCC38);//290
   if ( sub_42CEB0 ( v309 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BCC38));
@@ -1672,7 +1672,7 @@ function DecodeForRemote()
     v311 = mplew.writeInt("v311");
       mplew.EndNode(false);
   }
-  v312 = Check_Buff(mask, 0x22BCC80);
+  v312 = Check_Buff(mask, 0x22BCC80);//291
   if ( sub_42CEB0 ( v312 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BCC80));
@@ -1680,7 +1680,7 @@ function DecodeForRemote()
     v314 = mplew.writeInt("v314");
       mplew.EndNode(false);
   }
-  v315 = Check_Buff(mask, 0x22BCD10);
+  v315 = Check_Buff(mask, 0x22BCD10);//293
   if ( sub_42CEB0 ( v315 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BCD10));
@@ -1688,7 +1688,7 @@ function DecodeForRemote()
     v317 = mplew.writeInt("v317");
       mplew.EndNode(false);
   }
-  v318 = Check_Buff(mask, 0x22BCD58);
+  v318 = Check_Buff(mask, 0x22BCD58);//294
   if ( sub_42CEB0 ( v318 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BCD58));
@@ -1696,7 +1696,7 @@ function DecodeForRemote()
     v320 = mplew.writeInt("v320");
       mplew.EndNode(false);
   }
-  v321 = Check_Buff(mask, 0x22B8870);
+  v321 = Check_Buff(mask, 0x22B8870);//295
   if ( sub_42CEB0 ( v321 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22B8870));
@@ -1704,7 +1704,7 @@ function DecodeForRemote()
     v323 = mplew.writeInt("v323");
       mplew.EndNode(false);
   }
-  v324 = Check_Buff(mask, 0x22BCDA0);
+  v324 = Check_Buff(mask, 0x22BCDA0);//299
   if ( sub_42CEB0 ( v324 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BCDA0));
@@ -1712,7 +1712,7 @@ function DecodeForRemote()
     v326 = mplew.writeInt("v326");
       mplew.EndNode(false);
   }
-  v327 = Check_Buff(mask, 0x22BD028);
+  v327 = Check_Buff(mask, 0x22BD028);//304
   if ( sub_42CEB0 ( v327 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BD028));
@@ -1720,7 +1720,7 @@ function DecodeForRemote()
     v329 = mplew.writeInt("v329");
       mplew.EndNode(false);
   }
-  v330 = Check_Buff(mask, 0x22BD0B8);
+  v330 = Check_Buff(mask, 0x22BD0B8);//306
   if ( sub_42CEB0 ( v330 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BD0B8));
@@ -1728,14 +1728,14 @@ function DecodeForRemote()
     v332 = mplew.writeInt("v332");
       mplew.EndNode(false);
   }
-  v333 = Check_Buff(mask, 0x22BD148);
+  v333 = Check_Buff(mask, 0x22BD148);//308
   if ( sub_42CEB0 ( v333 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BD148));
     v334 = mplew.write("v334");
       mplew.EndNode(false);
   }
-  v335 = Check_Buff(mask, 0x22BA838);
+  v335 = Check_Buff(mask, 0x22BA838);//311
   if ( sub_42CEB0 ( v335 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BA838));
@@ -1743,7 +1743,7 @@ function DecodeForRemote()
     v337 = mplew.writeInt("v337");
       mplew.EndNode(false);
   }
-  v338 = Check_Buff(mask, 0x22B8AB0);
+  v338 = Check_Buff(mask, 0x22B8AB0);//343
   if ( sub_42CEB0 ( v338 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22B8AB0));
@@ -1751,7 +1751,7 @@ function DecodeForRemote()
     v340 = mplew.writeInt("v340");
       mplew.EndNode(false);
   }
-  v341 = Check_Buff(mask, 0x22BD190);
+  v341 = Check_Buff(mask, 0x22BD190);//312
   if ( sub_42CEB0 ( v341 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BD190));
@@ -1759,7 +1759,7 @@ function DecodeForRemote()
     v343 = mplew.writeInt("v343");
       mplew.EndNode(false);
   }
-  v344 = Check_Buff(mask, 0x22BBF48);
+  v344 = Check_Buff(mask, 0x22BBF48);//314
   if ( sub_42CEB0 ( v344 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BBF48));
@@ -1767,7 +1767,7 @@ function DecodeForRemote()
     v346 = mplew.writeInt("v346");
       mplew.EndNode(false);
   }
-  v347 = Check_Buff(mask, 0x22BD1D8);
+  v347 = Check_Buff(mask, 0x22BD1D8);//315
   if ( sub_42CEB0 ( v347 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BD1D8));
@@ -1775,7 +1775,7 @@ function DecodeForRemote()
     v349 = mplew.writeInt("v349");
       mplew.EndNode(false);
   }
-  v350 = Check_Buff(mask, 0x22BD220);
+  v350 = Check_Buff(mask, 0x22BD220);//316
   if ( sub_42CEB0 ( v350 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BD220));
@@ -1783,7 +1783,7 @@ function DecodeForRemote()
     v352 = mplew.writeInt("v352");
       mplew.EndNode(false);
   }
-  v353 = Check_Buff(mask, 0x22BD268);
+  v353 = Check_Buff(mask, 0x22BD268);//317
   if ( sub_42CEB0 ( v353 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BD268));
@@ -1791,7 +1791,7 @@ function DecodeForRemote()
     v355 = mplew.writeInt("v355");
       mplew.EndNode(false);
   }
-  v356 = Check_Buff(mask, 0x22BD388);
+  v356 = Check_Buff(mask, 0x22BD388);//321
   if ( sub_42CEB0 ( v356 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BD388));
@@ -1799,7 +1799,7 @@ function DecodeForRemote()
     v358 = mplew.writeInt("v358");
       mplew.EndNode(false);
   }
-  v359 = Check_Buff(mask, 0x22BD3D0);
+  v359 = Check_Buff(mask, 0x22BD3D0);//322
   if ( sub_42CEB0 ( v359 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BD3D0));
@@ -1807,7 +1807,7 @@ function DecodeForRemote()
     v361 = mplew.writeInt("v361");
       mplew.EndNode(false);
   }
-  v362 = Check_Buff(mask, 0x22BD418);
+  v362 = Check_Buff(mask, 0x22BD418);//323
   if ( sub_42CEB0 ( v362 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BD418));
@@ -1815,7 +1815,7 @@ function DecodeForRemote()
     v364 = mplew.writeInt("v364");
       mplew.EndNode(false);
   }
-  v365 = Check_Buff(mask, 0x22BD460);
+  v365 = Check_Buff(mask, 0x22BD460);//324
   if ( sub_42CEB0 ( v365 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BD460));
@@ -1823,7 +1823,7 @@ function DecodeForRemote()
     v367 = mplew.writeInt("v367");
       mplew.EndNode(false);
   }
-  v368 = Check_Buff(mask, 0x22BD4A8);
+  v368 = Check_Buff(mask, 0x22BD4A8);//325
   if ( sub_42CEB0 ( v368 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BD4A8));
@@ -1831,7 +1831,7 @@ function DecodeForRemote()
     v370 = mplew.writeInt("v370");
       mplew.EndNode(false);
   }
-  v371 = Check_Buff(mask, 0x22BD4F0);
+  v371 = Check_Buff(mask, 0x22BD4F0);//326
   if ( sub_42CEB0 ( v371 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BD4F0));
@@ -1839,7 +1839,7 @@ function DecodeForRemote()
     v373 = mplew.writeInt("v373");
       mplew.EndNode(false);
   }
-  v374 = Check_Buff(mask, 0x22BD6E8);
+  v374 = Check_Buff(mask, 0x22BD6E8);//336
   if ( sub_42CEB0 ( v374 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BD6E8));
@@ -1847,7 +1847,7 @@ function DecodeForRemote()
     v376 = mplew.writeInt("v376");
       mplew.EndNode(false);
   }
-  v377 = Check_Buff(mask, 0x22BB018);
+  v377 = Check_Buff(mask, 0x22BB018);//168
   if ( sub_42CEB0 ( v377 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BB018));
@@ -1855,7 +1855,7 @@ function DecodeForRemote()
     v379 = mplew.writeInt("v379");
       mplew.EndNode(false);
   }
-  v380 = Check_Buff(mask, 0x22B8A20);
+  v380 = Check_Buff(mask, 0x22B8A20);//344
   if ( sub_42CEB0 ( v380 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22B8A20));
@@ -1863,7 +1863,7 @@ function DecodeForRemote()
     v382 = mplew.writeInt("v382");
       mplew.EndNode(false);
   }
-  v383 = Check_Buff(mask, 0x22BD898);
+  v383 = Check_Buff(mask, 0x22BD898);//348
   if ( sub_42CEB0 ( v383 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BD898));
@@ -1871,14 +1871,14 @@ function DecodeForRemote()
     v385 = mplew.writeInt("v385");
       mplew.EndNode(false);
   }
-  v386 = Check_Buff(mask, 0x22BD850);
+  v386 = Check_Buff(mask, 0x22BD850);//346
   if ( sub_42CEB0 ( v386 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BD850));
 
       mplew.EndNode(false);
   }
-  v387 = Check_Buff(mask, 0x22BD8E0);
+  v387 = Check_Buff(mask, 0x22BD8E0);//349
   if ( sub_42CEB0 ( v387 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BD8E0));
@@ -1886,7 +1886,7 @@ function DecodeForRemote()
     v389 = mplew.writeInt("v389");
       mplew.EndNode(false);
   }
-  v390 = Check_Buff(mask, 0x22BD928);
+  v390 = Check_Buff(mask, 0x22BD928);//350
   if ( sub_42CEB0 ( v390 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BD928));
@@ -1894,21 +1894,21 @@ function DecodeForRemote()
     v392 = mplew.writeInt("v392");
       mplew.EndNode(false);
   }
-  v393 = Check_Buff(mask, 0x22B8A68);
+  v393 = Check_Buff(mask, 0x22B8A68);//347
   if ( sub_42CEB0 ( v393 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22B8A68));
     v394 = mplew.writeInt("v394");
       mplew.EndNode(false);
   }
-  v395 = Check_Buff(mask, 0x22B8A68);
+  v395 = Check_Buff(mask, 0x22B8A68);//347
   if ( sub_42CEB0 ( v395 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22B8A68));
     v396 = mplew.writeInt("v396");
       mplew.EndNode(false);
   }
-  v397 = Check_Buff(mask, 0x22BCB60);
+  v397 = Check_Buff(mask, 0x22BCB60);//330
   if ( sub_42CEB0 ( v397 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BCB60));
@@ -1917,14 +1917,14 @@ function DecodeForRemote()
     v400 = mplew.writeInt("v400");
       mplew.EndNode(false);
   }
-  v401 = Check_Buff(mask, 0x22BC068);
+  v401 = Check_Buff(mask, 0x22BC068);//253
   if ( sub_42CEB0 ( v401 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BC068));
      v402  = mplew.write("") != 0;
       mplew.EndNode(false);
   }
-  v403 = Check_Buff(mask, 0x22B8AF8);
+  v403 = Check_Buff(mask, 0x22B8AF8);//143
   if ( sub_42CEB0 ( v403 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22B8AF8));
@@ -1932,7 +1932,7 @@ function DecodeForRemote()
     v405 = mplew.writeInt("v405");
       mplew.EndNode(false);
   }
-  v406 = Check_Buff(mask, 0x22BDC88);
+  v406 = Check_Buff(mask, 0x22BDC88);//362
   if ( sub_42CEB0 ( v406 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BDC88));
@@ -1940,7 +1940,7 @@ function DecodeForRemote()
     v408 = mplew.writeInt("v408");
       mplew.EndNode(false);
   }
-  v409 = Check_Buff(mask, 0x22BDDA8);
+  v409 = Check_Buff(mask, 0x22BDDA8);//367
   if ( sub_42CEB0 ( v409 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BDDA8));
@@ -1948,7 +1948,7 @@ function DecodeForRemote()
     v411 = mplew.writeInt("v411");
       mplew.EndNode(false);
   }
-  v412 = Check_Buff(mask, 0x22BD100);
+  v412 = Check_Buff(mask, 0x22BD100);//307
   if ( sub_42CEB0 ( v412 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BD100));
@@ -1956,7 +1956,7 @@ function DecodeForRemote()
     v414 = mplew.writeInt("v414");
       mplew.EndNode(false);
   }
-  v415 = Check_Buff(mask, 0x22BE1E0);
+  v415 = Check_Buff(mask, 0x22BE1E0);//383
   if ( sub_42CEB0 ( v415 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BE1E0));
@@ -1964,7 +1964,7 @@ function DecodeForRemote()
     v417 = mplew.writeInt("v417");
       mplew.EndNode(false);
   }
-  v418 = Check_Buff(mask, 0x22BE228);
+  v418 = Check_Buff(mask, 0x22BE228);//384
   if ( sub_42CEB0 ( v418 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BE228));
@@ -1972,7 +1972,7 @@ function DecodeForRemote()
     v420 = mplew.writeInt("v420");
       mplew.EndNode(false);
   }
-  v421 = Check_Buff(mask, 0x22BE390);
+  v421 = Check_Buff(mask, 0x22BE390);//389
   if ( sub_42CEB0 ( v421 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BE390));
@@ -1980,7 +1980,7 @@ function DecodeForRemote()
     v423 = mplew.writeInt("v423");
       mplew.EndNode(false);
   }
-  v424 = Check_Buff(mask, 0x22BE3D8);
+  v424 = Check_Buff(mask, 0x22BE3D8);//390
   if ( sub_42CEB0 ( v424 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BE3D8));
@@ -1988,7 +1988,7 @@ function DecodeForRemote()
     v426 = mplew.writeInt("v426");
       mplew.EndNode(false);
   }
-  v427 = Check_Buff(mask, 0x22BE420);
+  v427 = Check_Buff(mask, 0x22BE420);//391
   if ( sub_42CEB0 ( v427 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BE420));
@@ -1996,7 +1996,7 @@ function DecodeForRemote()
     v429 = mplew.writeInt("v429");
       mplew.EndNode(false);
   }
-  v430 = Check_Buff(mask, 0x22BF110);
+  v430 = Check_Buff(mask, 0x22BF110);//403
   if ( sub_42CEB0 ( v430 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BF110));
@@ -2004,7 +2004,7 @@ function DecodeForRemote()
     v432 = mplew.writeInt("v432");
       mplew.EndNode(false);
   }
-  v433 = Check_Buff(mask, 0x22BBEB8);
+  v433 = Check_Buff(mask, 0x22BBEB8);//236
   if ( sub_42CEB0 ( v433 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BBEB8));
@@ -2012,7 +2012,7 @@ function DecodeForRemote()
     v435 = mplew.writeInt("v435");
       mplew.EndNode(false);
   }
-  v436 = Check_Buff(mask, 0x22BEC00);
+  v436 = Check_Buff(mask, 0x22BEC00);//422
   if ( sub_42CEB0 ( v436 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BEC00));
@@ -2020,7 +2020,7 @@ function DecodeForRemote()
     v438 = mplew.writeInt("v438");
       mplew.EndNode(false);
   }
-  v439 = Check_Buff(mask, 0x22BEE40);
+  v439 = Check_Buff(mask, 0x22BEE40);//430
   if ( sub_42CEB0 ( v439 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BEE40));
@@ -2028,7 +2028,7 @@ function DecodeForRemote()
     v441 = mplew.writeInt("v441");
       mplew.EndNode(false);
   }
-  v442 = Check_Buff(mask, 0x22BEE88);
+  v442 = Check_Buff(mask, 0x22BEE88);//431
   if ( sub_42CEB0 ( v442 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BEE88));
@@ -2036,14 +2036,14 @@ function DecodeForRemote()
     v444 = mplew.writeInt("v444");
       mplew.EndNode(false);
   }
-  v445 = Check_Buff(mask, 0x22BEE88);
+  v445 = Check_Buff(mask, 0x22BEE88);//431
   if ( sub_42CEB0 ( v445 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BEE88));
     v446 = mplew.writeInt("v446");
       mplew.EndNode(false);
   }
-  v447 = Check_Buff(mask, 0x22BEFF0);
+  v447 = Check_Buff(mask, 0x22BEFF0);//436
   if ( sub_42CEB0 ( v447 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BEFF0));
@@ -2051,28 +2051,28 @@ function DecodeForRemote()
     v449 = mplew.writeInt("v449");
       mplew.EndNode(false);
   }
-  v450 = Check_Buff(mask, 0x22BF230);
+  v450 = Check_Buff(mask, 0x22BF230);//442
   if ( sub_42CEB0 ( v450 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BF230));
     v451 = mplew.writeInt("v451");
       mplew.EndNode(false);
   }
-  v452 = Check_Buff(mask, 0x22BF470);
+  v452 = Check_Buff(mask, 0x22BF470);//450
   if ( sub_42CEB0 ( v452 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BF470));
     v453 = mplew.writeInt("v453");
       mplew.EndNode(false);
   }
-  v454 = Check_Buff(mask, 0x22BF428);
+  v454 = Check_Buff(mask, 0x22BF428);//449
   if ( sub_42CEB0 ( v454 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BF428));
     v455 = mplew.writeInt("v455");
       mplew.EndNode(false);
   }
-  v456 = Check_Buff(mask, 0x22BF5D8);
+  v456 = Check_Buff(mask, 0x22BF5D8);//456
   if ( sub_42CEB0 ( v456 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BF5D8));
@@ -2080,7 +2080,7 @@ function DecodeForRemote()
     v458 = mplew.writeInt("v458");
       mplew.EndNode(false);
   }
-  v459 = Check_Buff(mask, 0x22BF938);
+  v459 = Check_Buff(mask, 0x22BF938);//464
   if ( sub_42CEB0 ( v459 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BF938));
@@ -2088,7 +2088,7 @@ function DecodeForRemote()
     v461 = mplew.writeInt("v461");
       mplew.EndNode(false);
   }
-  v462 = Check_Buff(mask, 0x22BF818);
+  v462 = Check_Buff(mask, 0x22BF818);//482
   if ( sub_42CEB0 ( v462 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BF818));
@@ -2096,7 +2096,7 @@ function DecodeForRemote()
     v464 = mplew.writeInt("v464");
       mplew.EndNode(false);
   }
-  v465 = Check_Buff(mask, 0x22BF860);
+  v465 = Check_Buff(mask, 0x22BF860);//483
   if ( sub_42CEB0 ( v465 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BF860));
@@ -2104,7 +2104,7 @@ function DecodeForRemote()
     v467 = mplew.writeInt("v467");
       mplew.EndNode(false);
   }
-  v468 = Check_Buff(mask, 0x22B8948);
+  v468 = Check_Buff(mask, 0x22B8948);//486
   if ( sub_42CEB0 ( v468 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22B8948));
@@ -2112,7 +2112,7 @@ function DecodeForRemote()
     v470 = mplew.writeInt("v470");
       mplew.EndNode(false);
   }
-  v471 = Check_Buff(mask, 0x22BF980);
+  v471 = Check_Buff(mask, 0x22BF980);//465
   if ( sub_42CEB0 ( v471 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BF980));
@@ -2120,7 +2120,7 @@ function DecodeForRemote()
     v473 = mplew.writeInt("v473");
       mplew.EndNode(false);
   }
-  v474 = Check_Buff(mask, 0x22BFD28);
+  v474 = Check_Buff(mask, 0x22BFD28);//477
   if ( sub_42CEB0 ( v474 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BFD28));
@@ -2128,7 +2128,7 @@ function DecodeForRemote()
     v476 = mplew.writeInt("v476");
       mplew.EndNode(false);
   }
-  v477 = Check_Buff(mask, 0x22BFA58);
+  v477 = Check_Buff(mask, 0x22BFA58);//466
   if ( sub_42CEB0 ( v477 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BFA58));
@@ -2136,14 +2136,14 @@ function DecodeForRemote()
     v479 = mplew.writeInt("v479");
       mplew.EndNode(false);
   }
-  v480 = Check_Buff(mask, 0x22BFA58);
+  v480 = Check_Buff(mask, 0x22BFA58);//466
   if ( sub_42CEB0 ( v480 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BFA58));
     v481 = mplew.writeInt("v481");
       mplew.EndNode(false);
   }
-  v482 = Check_Buff(mask, 0x22BFAA0);
+  v482 = Check_Buff(mask, 0x22BFAA0);//473
   if ( sub_42CEB0 ( v482 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BFAA0));
@@ -2151,7 +2151,7 @@ function DecodeForRemote()
     v484 = mplew.writeInt("v484");
       mplew.EndNode(false);
   }
-  v485 = Check_Buff(mask, 0x22BFAE8);
+  v485 = Check_Buff(mask, 0x22BFAE8);//467
   if ( sub_42CEB0 ( v485 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BFAE8));
@@ -2159,7 +2159,7 @@ function DecodeForRemote()
     v487 = mplew.writeInt("v487");
       mplew.EndNode(false);
   }
-  v488 = Check_Buff(mask, 0x22BFB78);
+  v488 = Check_Buff(mask, 0x22BFB78);//470
   if ( sub_42CEB0 ( v488 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BFB78));
@@ -2167,7 +2167,7 @@ function DecodeForRemote()
     v490 = mplew.writeInt("v490");
       mplew.EndNode(false);
   }
-  v491 = Check_Buff(mask, 0x22BFBC0);
+  v491 = Check_Buff(mask, 0x22BFBC0);//471
   if ( sub_42CEB0 ( v491 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BFBC0));
@@ -2175,7 +2175,7 @@ function DecodeForRemote()
     v493 = mplew.writeInt("v493");
       mplew.EndNode(false);
   }
-  v494 = Check_Buff(mask, 0x22BFC08);
+  v494 = Check_Buff(mask, 0x22BFC08);//472
   if ( sub_42CEB0 ( v494 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BFC08));
@@ -2183,7 +2183,7 @@ function DecodeForRemote()
     v496 = mplew.writeInt("v496");
       mplew.EndNode(false);
   }
-  v497 = Check_Buff(mask, 0x22BFC98);
+  v497 = Check_Buff(mask, 0x22BFC98);//475
   if ( sub_42CEB0 ( v497 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BFC98));
@@ -2191,7 +2191,7 @@ function DecodeForRemote()
     v499 = mplew.writeInt("v499");
       mplew.EndNode(false);
   }
-  v500 = Check_Buff(mask, 0x22BF110);
+  v500 = Check_Buff(mask, 0x22BF110);//403
   if ( sub_42CEB0 ( v500 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BF110));
@@ -2199,7 +2199,7 @@ function DecodeForRemote()
     v502 = mplew.writeInt("v502");
       mplew.EndNode(false);
   }
-  v503 = Check_Buff(mask, 0x22BFD28);
+  v503 = Check_Buff(mask, 0x22BFD28);//477
   if ( sub_42CEB0 ( v503 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BFD28));
@@ -2207,7 +2207,7 @@ function DecodeForRemote()
     v505 = mplew.writeInt("v505");
       mplew.EndNode(false);
   }
-  v506 = Check_Buff(mask, 0x22B9B90);
+  v506 = Check_Buff(mask, 0x22B9B90);//92
   if ( sub_42CEB0 ( v506 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22B9B90));
@@ -2215,7 +2215,7 @@ function DecodeForRemote()
     v508 = mplew.writeInt("v508");
       mplew.EndNode(false);
   }
-  v509 = Check_Buff(mask, 0x22BEFF0);
+  v509 = Check_Buff(mask, 0x22BEFF0);//436
   if ( sub_42CEB0 ( v509 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BEFF0));
@@ -2223,7 +2223,7 @@ function DecodeForRemote()
     v511 = mplew.writeInt("v511");
       mplew.EndNode(false);
   }
-  v512 = Check_Buff(mask, 0x22BFA10);
+  v512 = Check_Buff(mask, 0x22BFA10);//489
   if ( sub_42CEB0 ( v512 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BFA10));
@@ -2231,7 +2231,7 @@ function DecodeForRemote()
     v514 = mplew.writeInt("v514");
       mplew.EndNode(false);
   }
-  v515 = Check_Buff(mask, 0x22BFD70);
+  v515 = Check_Buff(mask, 0x22BFD70);//468
   if ( sub_42CEB0 ( v515 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BFD70));
@@ -2239,7 +2239,7 @@ function DecodeForRemote()
     v517 = mplew.writeInt("v517");
       mplew.EndNode(false);
   }
-  v518 = Check_Buff(mask, 0x22BFDB8);
+  v518 = Check_Buff(mask, 0x22BFDB8);//478
   if ( sub_42CEB0 ( v518 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BFDB8));
@@ -2247,21 +2247,21 @@ function DecodeForRemote()
     v520 = mplew.writeInt("v520");
       mplew.EndNode(false);
   }
-  v521 = Check_Buff(mask, 0x22BFE00);
+  v521 = Check_Buff(mask, 0x22BFE00);//493
   if ( sub_42CEB0 ( v521 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BFE00));
     v522 = mplew.writeInt("v522");
       mplew.EndNode(false);
   }
-  v523 = Check_Buff(mask, 0x22BFE48);
+  v523 = Check_Buff(mask, 0x22BFE48);//494
   if ( sub_42CEB0 ( v523 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BFE48));
     v524 = mplew.writeInt("v524");
       mplew.EndNode(false);
   }
-  v525 = Check_Buff(mask, 0x22BFED8);
+  v525 = Check_Buff(mask, 0x22BFED8);//496
   if ( sub_42CEB0 ( v525 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BFED8));
@@ -2269,38 +2269,38 @@ function DecodeForRemote()
     v527 = mplew.writeInt("v527");
       mplew.EndNode(false);
   }
-  v528 = Check_Buff(mask, 0x22BD418);
+  v528 = Check_Buff(mask, 0x22BD418);//323
   if ( sub_42CEB0 ( v528 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BD418));
     v529 = mplew.write("v529");
       mplew.EndNode(false);
   }
-   v530  = mplew.write("");
-   v531  = mplew.write("");
+   v530  = mplew.write("v530");
+   v531  = mplew.write("v531");
   v532 = mplew.write("v532");
-  v533 = Check_Buff(mask, 0x22BD8E0);
+  v533 = Check_Buff(mask, 0x22BD8E0);//349
   if ( sub_42CEB0 ( v533 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BD8E0));
     v534 = mplew.write("v534");
       mplew.EndNode(false);
   }
-  v535 = Check_Buff(mask, 0x22BD928);
+  v535 = Check_Buff(mask, 0x22BD928);//350
   if ( sub_42CEB0 ( v535 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BD928));
     v536 = mplew.write("v536");
       mplew.EndNode(false);
   }
-  v537 = Check_Buff(mask, 0x22BE390);
+  v537 = Check_Buff(mask, 0x22BE390);//389
   if ( sub_42CEB0 ( v537 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BE390));
     v538 = mplew.write("v538");
       mplew.EndNode(false);
   }
-  v539 = Check_Buff(mask, 0x22BE6F0);
+  v539 = Check_Buff(mask, 0x22BE6F0);//405
   if ( sub_42CEB0 ( v539 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BE6F0));
@@ -2309,7 +2309,7 @@ function DecodeForRemote()
     v542 = mplew.writeInt("v542");
       mplew.EndNode(false);
   }
-  v543 = Check_Buff(mask, 0x22BE780);
+  v543 = Check_Buff(mask, 0x22BE780);//407
   if ( sub_42CEB0 ( v543 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BE780));
@@ -2317,7 +2317,7 @@ function DecodeForRemote()
     v545 = mplew.writeInt("v545");
       mplew.EndNode(false);
   }
-  v546 = Check_Buff(mask, 0x22BEC00);
+  v546 = Check_Buff(mask, 0x22BEC00);//422
   if ( sub_42CEB0 ( v546 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BEC00));
@@ -2327,14 +2327,14 @@ function DecodeForRemote()
     v550 = mplew.writeInt("v550");
       mplew.EndNode(false);
   }
-  v551 = Check_Buff(mask, 0x22BF230);
+  v551 = Check_Buff(mask, 0x22BF230);//442
   if ( sub_42CEB0 ( v551 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BF230));
     v552 = mplew.write("v552");
       mplew.EndNode(false);
   }
-  v553 = Check_Buff(mask, 0x22BF5D8);
+  v553 = Check_Buff(mask, 0x22BF5D8);//456
   if ( sub_42CEB0 ( v553 ) )
   {
         mplew.StartNode("Mask - " + map.get(0x22BF5D8));
@@ -2350,7 +2350,7 @@ function DecodeForRemote()
     {
         mplew.StartNode("Mas+-- 未处理 " + (basemask + l));
         mplew.writeShort(0);
-        switch ( l)) 
+        switch (l)) 
         {
             case 0:
             case 1:
@@ -2382,18 +2382,19 @@ function DecodeForRemote()
     }
 
   }
-  v559 = Check_Buff(mask, 0x22BA838);
+  v559 = Check_Buff(mask, 0x22BA838);//311
   if ( sub_42CEB0 ( v559 ) )
     {
         mplew.StartNode("Mask - " + map.get(0x22BA838));
         v560 = mplew.writeInt("v560");
         mplew.EndNode(false);
     }
-//   add_buff(a2, &v769, 0x220u);
+//   add_buff(a2, &v769,0x220u);
 }
 
 function sub_EAD600 (/*  */)
 {
+        mplew.StartNode("sub_EAD600");
   mplew.writeInt("v2");
    mplew.writeInt("");
   mplew.writeInt("");
@@ -2408,5 +2409,5 @@ function sub_EAD600 (/*  */)
     }
     while ( v10 );
   }
-  return result;
+        mplew.EndNode(false);
 }
