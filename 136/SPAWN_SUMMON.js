@@ -127,5 +127,5 @@ function addCharLook() {
     }
     mplew.write("nMixedHairColor");
     mplew.write("nMixHairPercent");
-    v13 = mplew.writeBuffer("unk new", 5);
+    mplew.writeBuffer("unk new", 5);
 }

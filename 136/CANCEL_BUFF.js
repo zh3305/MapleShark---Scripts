@@ -137,7 +137,6 @@ function sub_B7C3F0(uFlag, a2) {
 }
 function sub_E86220(mask/*  */) {
   v3 = 0;
-  // v4 = Data;
   for ( i = 0; ; i += 40 )
   {
     result=true;

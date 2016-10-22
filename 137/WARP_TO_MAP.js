@@ -21,11 +21,11 @@ mplew.write(0);
 // mplew.AddLong("1");
 // mplew.AddLong("Channel");
 mplew.write("CharInfo");
-mplew.AddInt("未知");
-mplew.AddInt("未知固定INT");
-mplew.AddInt("未知固定INT");
+mplew.writeInt("未知");
+mplew.writeInt("未知固定INT");
+mplew.writeInt("未知固定INT");
 var CharInfo = mplew.write("CharInfo");
-v9=mplew.AddShort("0",0);
+v9=mplew.writeShort("0",0);
    if ( v9 )
     {
       v11 = mplew.writeMapleAsciiString("");
@@ -41,9 +41,9 @@ v9=mplew.AddShort("0",0);
     }
 if (CharInfo) {
     mplew.StartNode("connectData");
-    mplew.AddInt("INT");
-    mplew.AddInt("INT");
-    mplew.AddInt("定INT");
+    mplew.writeInt("INT");
+    mplew.writeInt("INT");
+    mplew.writeInt("定INT");
     mplew.EndNode(true);
 
     mplew.StartNode("CharacterData::Decode");
@@ -51,7 +51,7 @@ if (CharInfo) {
     mplew.write("Unknown");
     mplew.StartNode("Seeds");
     for (i = 1; i <= 3; i++) {
-        mplew.AddInt("timeGetTime+");
+        mplew.writeInt("timeGetTime+");
     }
     mplew.EndNode(false);
 
@@ -66,7 +66,7 @@ if (CharInfo) {
     }
     while ( !v11 );
   }
-    mplew.AddInt("0");
+    mplew.writeInt("0");
     mplew.StartNode("flag & 0x01");
     if ((mask & 0x01) != 0) {
         addCharStats();
@@ -132,11 +132,11 @@ if (CharInfo) {
         count = mplew.AddShort("Count");
         for (i = 1; i <= count; i++) {
             mplew.StartNode("小游戏Match Record " + i);
-            mplew.AddInt("Unknown");
-            mplew.AddInt("Unknown");
-            mplew.AddInt("Unknown");
-            mplew.AddInt("Unknown");
-            mplew.AddInt("Unknown");
+            mplew.writeInt("Unknown");
+            mplew.writeInt("Unknown");
+            mplew.writeInt("Unknown");
+            mplew.writeInt("Unknown");
+            mplew.writeInt("Unknown");
             mplew.EndNode(false);
         }
         mplew.EndNode(false);
@@ -151,7 +151,7 @@ if (CharInfo) {
         count = mplew.AddShort("Count");
         for (i = 1; i <= count; i++) {
             mplew.StartNode("Couple Ring " + i);
-            mplew.AddInt("getPartnerChrId");
+            mplew.writeInt("getPartnerChrId");
             mplew.AddPaddedString("getPartnerName", 13);
             mplew.AddLong("getRingId");
             mplew.AddLong("getPartnerRingId");
@@ -163,11 +163,11 @@ if (CharInfo) {
         count = mplew.AddShort("Count");
         for (i = 1; i <= count; i++) {
             mplew.StartNode("Friendship Ring " + i);
-            mplew.AddInt("getPartnerChrId");
+            mplew.writeInt("getPartnerChrId");
             mplew.AddPaddedString("getPartnerName", 13);
             mplew.AddLong("getRingId");
             mplew.AddLong("getPartnerRingId");
-            mplew.AddInt("getItemId");
+            mplew.writeInt("getItemId");
             mplew.EndNode(false);
         }
         mplew.EndNode(false);
@@ -176,12 +176,12 @@ if (CharInfo) {
         count = mplew.AddShort("Count");
         for (i = 1; i <= count; i++) {
             mplew.StartNode("Marriage Ring " + i);
-            mplew.AddInt("marriageId 30000");
-            mplew.AddInt("chr.id 30000");
-            mplew.AddInt("getPartnerChrId");
+            mplew.writeInt("marriageId 30000");
+            mplew.writeInt("chr.id 30000");
+            mplew.writeInt("getPartnerChrId");
             mplew.writeShort("", 3);
-            mplew.AddInt("getItemId");
-            mplew.AddInt("getItemId");
+            mplew.writeInt("getItemId");
+            mplew.writeInt("getItemId");
             mplew.AddPaddedString("chr.getName()", 13);
             mplew.AddPaddedString("getPartnerName", 13);
 
@@ -198,7 +198,7 @@ if (CharInfo) {
     if ((mask & 0x1000) != 0) {
         mplew.StartNode("addRocksInfo FF C9 9A 3B");
         for (i = 1; i <= 28; i++) {
-            mplew.AddInt("Teleport Rock " + i + " Map Id");
+            mplew.writeInt("Teleport Rock " + i + " Map Id");
         }
         mplew.EndNode(false);
     }
@@ -214,7 +214,7 @@ if (CharInfo) {
         count = mplew.AddShort("Count");
         for (i = 1; i <= count; i++) {
             mplew.StartNode("Unknown " + i);
-            mplew.AddInt("Unknown");
+            mplew.writeInt("Unknown");
             mplew.AddLong("错误!未解析的代码段! addCharLook");
             mplew.EndNode(false);
         }
@@ -225,11 +225,11 @@ if (CharInfo) {
     mplew.StartNode("flag & 0x1000");
     if ((mask & 0x1000) != 0) {
         mplew.StartNode("Unknown");
-        count = mplew.AddInt("Count 0x1000");
+        count = mplew.writeInt("Count 0x1000");
         for (i = 1; i <= count; i++) {
             mplew.StartNode("Unknown " + i);
-            mplew.AddInt("Unknown");
-            mplew.AddInt("Unknown");
+            mplew.writeInt("Unknown");
+            mplew.writeInt("Unknown");
             mplew.EndNode(false);
         }
         mplew.EndNode(false);
@@ -349,7 +349,7 @@ if (CharInfo) {
     if ((mask & 0x10000000) != 0) {
         mplew.StartNode("addChosenSkills");
         for (i = 1; i <= 5; i++) {
-            mplew.AddInt("sk.left ");
+            mplew.writeInt("sk.left ");
         }
 
         mplew.EndNode(false);
@@ -377,8 +377,8 @@ if (CharInfo) {
     mplew.StartNode("flag & 0x1 內在能力聲望訊息 ");
     if ((mask & 0x1) != 0) {
         mplew.StartNode("addHonorInfo");
-        mplew.AddInt("getHonorLevel");
-        mplew.AddInt("getHonourExp");
+        mplew.writeInt("getHonorLevel");
+        mplew.writeInt("getHonourExp");
         mplew.EndNode(false);
     }
     mplew.EndNode(false);
@@ -557,6 +557,14 @@ if (CharInfo) {
             --result;
         } while (result != 0);
     }
+    if ( mask & 0x100000 )
+    {
+        for ( i3 =  mplew.writeShort("137 new",0); i3 > 0; --i3 )
+        {
+            Packet_ReadInt(0);
+            Packet_ReadInt(0);
+        }
+    }
     mplew.StartNode("flag & 0x80000 ")
     if (mask & 0x80000) {
         if (mplew.write("bool", 1)) {
@@ -713,8 +721,8 @@ mplew.write("", 1, 0);
  mplew.StartNode("New 133 Unknown")
 // mplew.AddField("New 133 Unknown ", 48);
         mplew.writeBuffer("Unknown hex", "02 00 00 00 82 16 FB 52 01 00 00")//3 int
-       unkmake= mplew.write("unk make",0xDC,0x14);
-     mplew.writeInt("make",count133-36);
+       unkmake= mplew.write("unk make",0xDC,0x14,0x8C);
+        mplew.writeInt("make",count133-36);
         mplew.AddPaddedString("nuk make",count133-36);
         mplew.writeBuffer("Unknown hex", "F7 24 11 76 00 00 00")//3 int
         mplew.write("unk make",unkmake); 
@@ -846,7 +854,7 @@ function ReadIfFlaggedShort(value, flag, text) {
 }
 function ReadIfFlaggedInt(value, flag, text) {
     if ((value & flag) == flag) {
-        mplew.AddInt(text + " - " + flag);
+        mplew.writeInt(text + " - " + flag);
         return value - flag;
     }
     return value;
@@ -892,14 +900,14 @@ function IsZero(job) {
 function addCharStats() {
     mplew.StartNode("addCharStats");
 
-    mplew.AddInt("Id");
-    mplew.AddInt("Id");
-    mplew.AddInt("Unknown");
+    mplew.writeInt("Id");
+    mplew.writeInt("Id");
+    mplew.writeInt("Unknown");
     mplew.AddPaddedString("Name", 13);
     mplew.write("Gender");
     mplew.write("Skin");
-    mplew.AddInt("Face");
-    mplew.AddInt("Hair");
+    mplew.writeInt("Face");
+    mplew.writeInt("Hair");
     mplew.AddField("Unknown", 3);
     mplew.write("Level");
     job = mplew.AddShort("Job");
@@ -909,10 +917,10 @@ function addCharStats() {
     mplew.AddShort("Dexterity");
     mplew.AddShort("Intelligence");
     mplew.AddShort("Luck");
-    mplew.AddInt("Current HP");
-    mplew.AddInt("Max HP");
-    mplew.AddInt("Current MP");
-    mplew.AddInt("Max MP");
+    mplew.writeInt("Current HP");
+    mplew.writeInt("Max HP");
+    mplew.writeInt("Current MP");
+    mplew.writeInt("Max MP");
 
     mplew.EndNode(true);
     mplew.AddShort("Available AP");
@@ -926,7 +934,7 @@ function addCharStats() {
             mplew.StartNode("Advancement " + i);
 
             mplew.write("Advancement");
-            mplew.AddInt("Value");
+            mplew.writeInt("Value");
 
             mplew.EndNode(false);
         }
@@ -936,31 +944,31 @@ function addCharStats() {
 
     mplew.EndNode(false);
     mplew.AddLong("Experience");
-    mplew.AddInt("Fame");
-    mplew.AddInt("Weapon Points");
-    mplew.AddInt("Gachapon Experience");
-    mplew.AddInt("未知 133新出现INT");
+    mplew.writeInt("Fame");
+    mplew.writeInt("Weapon Points");
+    mplew.writeInt("Gachapon Experience");
+    mplew.writeInt("未知 133新出现INT");
     mplew.AddLong("-2L Time");
-    mplew.AddInt("Map Id");
+    mplew.writeInt("Map Id");
     mplew.write("Spawn Point");
-    //  mplew.AddInt("Unknown");
+    //  mplew.writeInt("Unknown");
     mplew.AddShort("Job Subcategory");
 
     if (HasFaceMark(job)) {
-        mplew.AddInt("Face Mark");
+        mplew.writeInt("Face Mark");
     }
 
     mplew.write("Fatigue");
-    mplew.AddInt("Current date");
+    mplew.writeInt("Current date");
     //  mplew.AddField("Unknown", 164);
 
     mplew.StartNode("maoletraitype exp");
-    mplew.AddInt("charisma");
-    mplew.AddInt("insight");
-    mplew.AddInt("will");
-    mplew.AddInt("craft");
-    mplew.AddInt("sense");
-    mplew.AddInt("charm");
+    mplew.writeInt("charisma");
+    mplew.writeInt("insight");
+    mplew.writeInt("will");
+    mplew.writeInt("craft");
+    mplew.writeInt("sense");
+    mplew.writeInt("charm");
     mplew.EndNode(false);
 
     mplew.StartNode("maoletraitype exp");
@@ -974,9 +982,9 @@ function addCharStats() {
 
     mplew.write("", 0);
     mplew.AddLong("-2L Time");
-    mplew.AddInt("Pvp exp");
+    mplew.writeInt("Pvp exp");
     mplew.write("pvpRank ");
-    mplew.AddInt("BattlePoints");
+    mplew.writeInt("BattlePoints");
     mplew.write("5");
     mplew.write("6");
     mplew.writeInt("", 0);
@@ -989,16 +997,16 @@ function addCharStats() {
     } else {
         mplew.AddLong("Reversed -2L Time");
     }
-    mplew.AddInt("getReward"); //
+    mplew.writeInt("getReward"); //
     mplew.write("getReward > 0"); //
     mplew.EndNode(false);
 
     mplew.StartNode("connectData cards");
     for (i = 0; i < (9 - 0); i++) { //
         mplew.StartNode("cards " + i);
-        mplew.AddInt("Unknown"); //
+        mplew.writeInt("Unknown"); //
         mplew.write("Unknown"); //
-        mplew.AddInt("Unknown"); //
+        mplew.writeInt("Unknown"); //
         mplew.EndNode(true);
     }
     mplew.EndNode(true);
@@ -1011,7 +1019,7 @@ function addCharStats() {
         mplew.writeInt(0);
         result = mplew.write(0);
     mplew.EndNode(false);
-    mplew.AddInt("Unknown",0); //sub_750220
+    mplew.writeInt("Unknown",0); //sub_750220
     mplew.EndNode(false);
 }
 
@@ -1019,14 +1027,14 @@ function UnkFunctin6() {
     mplew.StartNode("UnkFunctin6");
     v7 = 2;
     while (v7 < 74) {
-        mplew.AddInt("Unknown"); //
+        mplew.writeInt("Unknown"); //
         while (true) {
             res = 255;
             mplew.write("Unknown"); //
             if (res == 255) {
                 break;
             }
-            mplew.AddInt("Unknown"); //
+            mplew.writeInt("Unknown"); //
         }
         v7 += 36;
     }
@@ -1035,16 +1043,16 @@ function UnkFunctin6() {
 
 function addPotionPotInfo() {
     mplew.StartNode("addPotionPotInfo");
-    size = mplew.AddInt("PotionPot size");
+    size = mplew.writeInt("PotionPot size");
 
     for (i = 0; i < size; i++) {
         mplew.StartNode("PotionPot " + i);
         //  mplew.writeInt(p.getId());
-        mplew.AddInt("id");
-        mplew.AddInt("MaxValue");
-        mplew.AddInt("Hp");
-        mplew.AddInt("Unknown");
-        mplew.AddInt("Mp");
+        mplew.writeInt("id");
+        mplew.writeInt("MaxValue");
+        mplew.writeInt("Hp");
+        mplew.writeInt("Unknown");
+        mplew.writeInt("Mp");
         mplew.AddLong("StartDate");
         mplew.AddLong("EndDate");
         mplew.EndNode(false);
@@ -1056,16 +1064,16 @@ function addPotionPotInfo() {
 function addInventoryInfo() {
     mplew.StartNode("addInventoryInfo");
 
-    mplew.AddInt("Character Id");
+    mplew.writeInt("Character Id");
     mplew.StartNode("Unknown");
     for (i = 1; i <= 2; i++) {
         mplew.StartNode("Unknown " + i);
-        mplew.AddInt("Unknown");
-        mplew.AddInt("Unknown");
+        mplew.writeInt("Unknown");
+        mplew.writeInt("Unknown");
         mplew.EndNode(false);
     }
     mplew.EndNode(false);
-    mplew.AddInt("Character Id");
+    mplew.writeInt("Character Id");
     mplew.AddField("Unknown", 31);
 
     addPotionPotInfo();
@@ -1107,13 +1115,13 @@ function addInventoryInfo() {
     mplew.writeInt("", 0);
 
     mplew.StartNode("ExtendedSlots");
-    size = mplew.AddInt("getExtendedSlots().size()");
+    size = mplew.writeInt("getExtendedSlots().size()");
     for (i = 0; i < size; i++) {
         mplew.StartNode("ExtendedSlots " + i);
-        mplew.AddInt("index");
-        mplew.AddInt("getExtendedSlot");
+        mplew.writeInt("index");
+        mplew.writeInt("getExtendedSlot");
         for (j = 1; j != 0; j++) {
-            pos = mplew.AddInt("Byte Position");
+            pos = mplew.writeInt("Byte Position");
             if (pos == -1) {
                 break;
             }
@@ -1164,18 +1172,18 @@ function DecodeEquipmentInventory(name) {
 
 function DecodeItem() {
     type = mplew.write("Type");
-    item = mplew.AddInt("Item ID");
+    item = mplew.writeInt("Item ID");
     hasUniqueId = mplew.write("HasCashid");
     if (hasUniqueId == 0x01) {
         mplew.AddLong("CashID");
     }
     if (type == 0x01) {
         mplew.AddLong("Expiration Time");
-        mplew.AddInt("-1 ?");
+        mplew.writeInt("-1 ?");
         mplew.StartNode("addEquipStats");
 
         mplew.StartNode("Flags part 1");
-        var flag = mplew.AddInt("Status Flags v.132");
+        var flag = mplew.writeInt("Status Flags v.132");
         inputflag = flag;
         flag = ReadIfFlaggedByte(flag, 0x01, "Slots 可使用捲軸次數");
         flag = ReadIfFlaggedByte(flag, 0x02, "Scrolls 捲軸強化次數");
@@ -1215,7 +1223,7 @@ function DecodeItem() {
         mplew.EndNode(true);
 
         mplew.StartNode("Flags part 2");
-        flag = mplew.AddInt("Status Flags v.132");
+        flag = mplew.writeInt("Status Flags v.132");
         flag = ReadIfFlaggedByte(flag, 0x01, "TOTAL_DAMAGE");
         flag = ReadIfFlaggedByte(flag, 0x02, "ALL_STAT");
         flag = ReadIfFlaggedByte(flag, 0x04, "KARMA_COUNT");
@@ -1245,7 +1253,7 @@ function DecodeItem() {
         if (hasUniqueId == 0x00)
             mplew.AddLong("?x8"); // Unique ID?
         mplew.writeBuffer("getTime(-2)", "00 40 E0 FD 3B 37 4F 01")
-        mplew.AddInt("-1");
+        mplew.writeInt("-1");
         mplew.writeLong("", 0);
         mplew.writeBuffer("getTime(-2)", "00 40 E0 FD 3B 37 4F 01")
         mplew.writeLong("", 0);
@@ -1254,12 +1262,12 @@ function DecodeItem() {
         mplew.AddShort("魂武器类型");
         mplew.AddShort("魂武器");
         mplew.AddShort("魂武器 炽热结晶数量");
-        mplew.AddInt("突破伤害上限 LimitBreak");
+        mplew.writeInt("突破伤害上限 LimitBreak");
 
         mplew.EndNode(true); //addEquipBonusStats
     } else if (type == 0x02) {
         mplew.AddLong("Expiration Time");
-        mplew.AddInt("-1 ?");
+        mplew.writeInt("-1 ?");
         mplew.AddShort("数量");
         mplew.AddString("Name");
         mplew.AddShort("Flags");
@@ -1269,7 +1277,7 @@ function DecodeItem() {
         mplew.AddField("133 未知 0(19)  ", 19);
     } else if (type == 0x03) { //宠物
         mplew.AddLong("Expiration Time");
-        mplew.AddInt("-1 ?");
+        mplew.writeInt("-1 ?");
         mplew.AddPaddedString("Petname", 13);
         mplew.write("Level");
         mplew.AddShort("Closeness");
@@ -1277,10 +1285,10 @@ function DecodeItem() {
         mplew.AddLong("Time");
         mplew.AddShort("Unknown!?");
         mplew.AddShort("Flags?");
-        mplew.AddInt("SecondsLeft!?");
+        mplew.writeInt("SecondsLeft!?");
         mplew.AddShort("CanPickup!?");
         mplew.write("-.-");
-        mplew.AddInt("BuffSkill ?!");
+        mplew.writeInt("BuffSkill ?!");
         mplew.writeInt("", -1);
         mplew.writeInt("", 100);
         mplew.writeInt("", 0);
@@ -1298,8 +1306,8 @@ function addCompletedQuestInfo() {
         count = mplew.AddShort("Count");
         for (i = 1; i <= count; i++) {
             mplew.StartNode("Quest " + i);
-            mplew.AddInt("Id");
-            mplew.AddInt("Completion Time");
+            mplew.writeInt("Id");
+            mplew.writeInt("Completion Time");
             mplew.EndNode(false);
         }
     } else {
@@ -1315,7 +1323,7 @@ function addStartedQuestInfo() {
         count = mplew.AddShort("Count");
         for (i = 1; i <= count; i++) {
             mplew.StartNode("Quest " + i);
-            mplew.AddInt("Id");
+            mplew.writeInt("Id");
             mplew.AddString("Kills");
             mplew.EndNode(false);
         }
@@ -1328,8 +1336,8 @@ function addCoolDownInfo() {
     cooldownSkillsCount = mplew.AddShort("技能冷却总数Cooldown Skills Count");
     for (i = 0; i < cooldownSkillsCount; i++) {
         mplew.StartNode("Cooldown Skill " + (i + 1));
-        mplew.AddInt("ID");
-        mplew.AddInt("Remaining Seconds");
+        mplew.writeInt("ID");
+        mplew.writeInt("Remaining Seconds");
         mplew.EndNode(false);
     }
     // if (cooldownSkillsCount == 0)
@@ -1346,11 +1354,11 @@ if(mplew.AddBool("newPacket"))
     isFourthJob = true;
     for (i = 0; i < skillCount; i++) {
         mplew.StartNode("Skill " + (i + 1));
-        Skills = mplew.AddInt("Skills ID");
-        mplew.AddInt("Level ? teachId?");
+        Skills = mplew.writeInt("Skills ID");
+        mplew.writeInt("Level ? teachId?");
         mplew.AddLong("Default Expiration Time");
         if (is_skill_need_master_level(Skills)) {
-            mplew.AddInt("FourthJob")
+            mplew.writeInt("FourthJob")
         }
         mplew.EndNode(false);
     }
@@ -1451,7 +1459,7 @@ function QuestInfoPacket() {
     count = mplew.AddShort("Count");
     for (i = 1; i <= count; i++) {
         mplew.StartNode("Quest " + i);
-        mplew.AddInt("Id");
+        mplew.writeInt("Id");
         mplew.AddString("Data");
         mplew.EndNode(false);
     }
