@@ -6612,7 +6612,8 @@ for (l = 0; l < 9; ++l) {
         }
         mplew.EndNode(false);
     }
-}
+}                     
+v206 = mplew.writeShort("v206");
 sub_EAD0B0(mask);
 //未处理 N 个INT
 v2713 = Check_Buff(mask, 0x22B9200);//67

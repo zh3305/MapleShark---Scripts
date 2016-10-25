@@ -22,7 +22,7 @@ function addMonsterStatus() {
         mplew.writeInt("life.getChangedStats().pushed");
         mplew.writeInt("life.getChangedStats().speed");
         mplew.writeInt("life.getChangedStats().level");
-        mplew.writeInt(0);
+        mplew.writeInt("nUserCount");
     }
 }
 function writeMaskFromList(mask) {

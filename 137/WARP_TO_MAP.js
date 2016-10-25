@@ -69,6 +69,7 @@ if (CharInfo) {
     mplew.writeInt("0");
     mplew.StartNode("flag & 0x01");
     if ((mask & 0x01) != 0) {
+         mplew.write("137 new");
         addCharStats();
         mplew.write("好友上限");
         mplew.StartNode("祝福");
