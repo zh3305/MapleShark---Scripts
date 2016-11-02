@@ -6246,6 +6246,7 @@ if (sub_42CEB0(v2591)) {
 v2593 = mplew.write("")
 v2594 = mplew.write("")
 v2595 = mplew.write("v2595")
+v206 = mplew.writeShort("137 new");
 v2596 = Check_Buff(mask, 0x22BAE68);//163
 if (sub_42CEB0(v2596)) {
     mplew.StartNode("Mask - " + map.get(0x22BAE68));
@@ -6331,8 +6332,7 @@ if (sub_42CEB0(v2619)) {
 v2621 = Check_Buff(mask, 0x22BC3C8);//261
 if (sub_42CEB0(v2621)) {
     mplew.StartNode("Mask - " + map.get(0x22BC3C8));
-    sub_EAD600( /* iPacket */
-    );
+    sub_EAD600( /* iPacket */);
     mplew.EndNode(false);
 }
 v2622 = Check_Buff(mask, 0x22BC2A8);//256
@@ -6607,13 +6607,15 @@ for (l = 0; l < 9; ++l) {
                 //mplew.writeZeroBytes(9);// 00 00 00 00 00 00 00 00 00
                 break;
             default:
+                mplew.writeInt("Skill Value");
+                mplew.writeInt("SkillID");
+                mplew.writeZeroBytes(5);
                 mplew.AddComment("--- 未处理 buff " + index.toString(10) + "---");
                 break;
         }
         mplew.EndNode(false);
     }
-}                     
-v206 = mplew.writeShort("v206");
+}
 sub_EAD0B0(mask);
 //未处理 N 个INT
 v2713 = Check_Buff(mask, 0x22B9200);//67
@@ -6685,27 +6687,24 @@ function sub_42CAD0() {
         v1 += 7;
     }
 }
-function sub_439640()
-{ 
-     mplew.StartNode("sub_439640");
+function sub_439640() {
+    mplew.StartNode("sub_439640");
     v1 = 0;
     v2 = 0;
     v3 = 5;
-    while ( 1 )
-    {
+    while (1) {
         v4 = mplew.write(0);
         v2 |= (v4 & 0x7F) << v1;
-        if ( v4 >= 0 )
-        break;
-        if ( --v3 <= 0 )
-        {
+        if (v4 >= 0)
+            break;
+        if (--v3 <= 0) {
             v7 = -2147467259;
             CxxThrowException(v7, 0x204B878);
         }
         v1 += 7;
     }
     mplew.EndNode(false);
-    mplew.AddComment("sub_42D560 return:"+ ((v2 & 1) + (v2 >> 1)) * (1 - 2 * (v2 & 1)))
+    mplew.AddComment("sub_42D560 return:" + ((v2 & 1) + (v2 >> 1)) * (1 - 2 * (v2 & 1)))
 }
 function sub_EAD0B0(mask) {
     // unsigned var v3; // esi@1
@@ -6993,4 +6992,20 @@ function sub_1A9506A() {
     // return (v1 >> 16) & 0x7FFF;//未处理,不能读取数据
     return 2;
     //单True/双False
+}
+function sub_EAD600(/*  */)
+{
+    mplew.writeInt("v2");
+    mplew.writeInt("");
+    mplew.writeInt("");
+    result = mplew.writeInt("result");
+    if (result > 0) {
+        iPacket_1a = result;
+        do {
+            result = mplew.writeInt("result");
+
+            --iPacket_1a;
+        }
+        while (iPacket_1a);
+    }
 }

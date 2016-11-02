@@ -1,6 +1,5 @@
 NPC_TALK();
 function NPC_TALK()
-//int __thiscall NPC_TALK(var this, CInPacket *type2)
 {
   Int_4 = mplew.write("Int_4");          // /mplew.write(4);
   Int_npcID = mplew.writeInt("Int_npcID");       //  mplew.writeInt(npc);
@@ -22,12 +21,12 @@ function NPC_TALK()
       break;
     case 2:
       mplew.StartNode("sub_D697C0");
-      type2 = sub_D697C0(type, 0, 0, type2 /* v2, Int_4, Int_npcID, CInPacket2, type, 0, 0, type2 */);
+      type2 = sub_DA2300(type, 0, 0, type2 /* v2, Int_4, Int_npcID, CInPacket2, type, 0, 0, type2 */);
       mplew.EndNode(false);
       break;
     case 15:
       mplew.StartNode("sub_D697C0");
-      type2 = sub_D697C0(type, 0, 1, type2/* v2, Int_4, Int_npcID, CInPacket2, type, 0, 1, type2 */);
+      type2 = sub_DA2300(type, 0, 1, type2/* v2, Int_4, Int_npcID, CInPacket2, type, 0, 1, type2 */);
       mplew.EndNode(false);
       break;
     case 3:
@@ -349,12 +348,16 @@ function sub_D691F0(/*  */)
   return sub_4C9390(/* v7 */);
 }
 
-function sub_D697C0(a2, a6, a7, type2)//type, 0, 1, type2
-//int __thiscall sub_D697C0 (/* var this, var Int_4, var Int_npcID, var CInPacket2, var a2, var a6, var a7, int type2 */)
+function sub_DA2300(a2, a6, a7, type2)
 {
-  if (a2 & 4)
-    Int_npcID = mplew.writeInt("Int_npcID");
- talk= mplew.writeMapleAsciiString("");
+   v91  = mplew.write("v91") != 0;
+   v90  = mplew.write("v91") != 0;
+  mplew.writeMapleAsciiString("v91");
+  for ( i = mplew.write("i"); i > 0;  )
+  {
+    v7 = mplew.writeInt("v7");
+    --i;
+  }
 }
 
 function sub_D69A10(a5/*  */)
@@ -542,12 +545,12 @@ function sub_D6F760(/*  */)
 }
 
 function sub_D6B910(/*  */)
-//LONG __thiscall sub_D6B910 (/* const var this, var a2, var a3, int a4 */)
 {
-
+  mplew.write(0);
+  mplew.write(0);
   mplew.writeMapleAsciiString("");
   for (var i = mplew.write("i"); i > 0;) {
-    v6 = mplew.writeInt("v6");
+    mplew.writeInt("v6");
     --i;
   }
   v60 = mplew.writeInt("v60");
