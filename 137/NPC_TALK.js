@@ -1,306 +1,328 @@
 NPC_TALK();
-function NPC_TALK()
-{
+function NPC_TALK() {
   Int_4 = mplew.write("Int_4");          // /mplew.write(4);
   Int_npcID = mplew.writeInt("Int_npcID");       //  mplew.writeInt(npc);
-  if (mplew.write(""))
-    mplew.writeInt("");
+  if (mplew.write("unk", 0)) {
+    mplew.writeInt("unk", 0);
+  }
   Byt_msgType = mplew.write("Byt_msgType");    // msgType
   type = mplew.write("type");// 
   var type2 = mplew.write("type2");          // type2
   switch (Byt_msgType) {
     case 0:
-      mplew.StartNode("sub_D68F80");
-      type2 = sub_D68F80(type/* v2, Int_4, Int_npcID, CInPacket2, type, type2 */);
+      mplew.StartNode("msgType :" + 0);
+      sub_D9C230(type/* v2, Int_4, Int_npcID, iPacket, type, type2 */);// 136 var break;
       mplew.EndNode(false);
       break;
     case 1:
-      mplew.StartNode("sub_D691F0");
-      type2 = sub_D691F0(/* v2, Int_4, Int_npcID, CInPacket2.m_bLoopback, type */);
+      mplew.StartNode("msgType :" + 1);
+      sub_D9C4A0(/* v2, Int_4, Int_npcID, iPacket, type, type2 */);
       mplew.EndNode(false);
       break;
     case 2:
-      mplew.StartNode("sub_D697C0");
-      type2 = sub_DA2300(type, 0, 0, type2 /* v2, Int_4, Int_npcID, CInPacket2, type, 0, 0, type2 */);
-      mplew.EndNode(false);
-      break;
-    case 15:
-      mplew.StartNode("sub_D697C0");
-      type2 = sub_DA2300(type, 0, 1, type2/* v2, Int_4, Int_npcID, CInPacket2, type, 0, 1, type2 */);
+      mplew.StartNode("msgType :" + 2);
+      sub_D9C720(/* v2, Int_4, Int_npcID, iPacket, type */);// 136 var break;
       mplew.EndNode(false);
       break;
     case 3:
-      mplew.StartNode("sub_D69A10");
-      type2 = sub_D69A10(type/* Int_4, Int_npcID, CInPacket2, type, type2 */);
+      mplew.StartNode("msgType :" + 3);
+      sub_D9CCF0(type/* v2, Int_4, Int_npcID, iPacket, type, 0, 0, type2 */);// 136 var break;
       mplew.EndNode(false);
       break;
-    case 16:
-      mplew.StartNode("sub_D69CA0");
-      type2 = sub_D69CA0(/* Int_4, Int_npcID, CInPacket2, type, type2 */);
+    case 0x10:
+      mplew.StartNode("msgType :" + 0x10);
+      sub_D9CCF0(type/* v2, Int_4, Int_npcID, iPacket, type, 0, 1, type2 */);// 163 var break;
       mplew.EndNode(false);
       break;
-    case 34:
-      mplew.StartNode("sub_D69F30");
-      type2 = sub_D69F30(/* Int_4, Int_npcID, CInPacket2, type */);
+    case 0x11:
+      mplew.StartNode("msgType :" + 0x11);                                  // 16+1
+      sub_D9CF40(/* v2, Int_4, Int_npcID, iPacket, type, 0, 1, type2 */);
       mplew.EndNode(false);
       break;
     case 4:
-      mplew.StartNode("sub_D6A2F0");
-      type2 = sub_D6A2F0(/* Int_4, Int_npcID, CInPacket2, type */);
+      mplew.StartNode("msgType :" + 4);                                     // 3+1
+      sub_D9D190(type/* v2, Int_4, Int_npcID, iPacket, type, type2 */);
+      mplew.EndNode(false);
+      break;
+    case 0x12:
+      mplew.StartNode("msgType :" + 0x12);                                  // 137 new
+      sub_D9D440(type/* v2, Int_4, Int_npcID, iPacket, type, type2 */);
+      mplew.EndNode(false);
+      break;
+    case 0x25:
+      mplew.StartNode("msgType :" + 0x25);                                  // 34+3
+      sub_D9D6D0(/* v2, Int_4, Int_npcID, iPacket, type */);// 136 var break;
       mplew.EndNode(false);
       break;
     case 5:
-      mplew.StartNode("sub_D6A560");
-      type2 = sub_D6A560(type/* Int_4, Int_npcID, CInPacket2, type, type2 */);
-      mplew.EndNode(false);
-      break;
-    case 9:
-      mplew.StartNode("sub_D6E730");
-      type2 = sub_D6E730(/* Int_4, Int_npcID, CInPacket2 */);
-      mplew.EndNode(false);
-      break;
-    case 31:
-      mplew.StartNode("sub_D6A7B0");
-      type2 = sub_D6A7B0(/* Int_4, Int_npcID, CInPacket2 */);
-      mplew.EndNode(false);
-      break;
-    case 37:
-      mplew.StartNode("sub_D6B050");
-      type2 = sub_D6B050(/* Int_4, Int_npcID, CInPacket2 */);
-      mplew.EndNode(false);
-      break;
-    case 38:
-      mplew.StartNode("sub_D6B4C0");
-      type2 = sub_D6B4C0(/* Int_4, Int_npcID, CInPacket2 */);
-      mplew.EndNode(false);
-      break;
-    case 39:
-      mplew.StartNode("sub_D6FCF0");
-      type2 = sub_D6FCF0(/* Int_4, Int_npcID, CInPacket2 */);
-      mplew.EndNode(false);
-      break;
-    case 40:
-      mplew.StartNode("sub_D70710");
-      type2 = sub_D70710(/* Int_4, Int_npcID, CInPacket2 */);
-      mplew.EndNode(false);
-      break;
-    case 41:
-      mplew.StartNode("sub_D6F160");
-      type2 = sub_D6F160(/* Int_4, Int_npcID, CInPacket2 */);
-      mplew.EndNode(false);
-      break;
-    case 42:
-      mplew.StartNode("sub_D6F760");
-      type2 = sub_D6F760(/* Int_4, Int_npcID, CInPacket2 */);
-      mplew.EndNode(false);
-      break;
-    case 10:
-      mplew.StartNode("sub_D6B910");
-      type2 = sub_D6B910(/* Int_4, Int_npcID, CInPacket2 */);
-      mplew.EndNode(false);
-      break;
-    case 11:
-      mplew.StartNode("sub_D6C050");
-      type2 = sub_D6C050(/* Int_4, Int_npcID, CInPacket2 */);
-      mplew.EndNode(false);
-      break;
-    case 12:
-      mplew.StartNode("sub_D6C4F0");
-      type2 = sub_D6C4F0(/* Int_4, Int_npcID, CInPacket2 */);
-      mplew.EndNode(false);
-      break;
-    case 13:
-      mplew.StartNode("sub_D6C9B0");
-      type2 = sub_D6C9B0(/* Int_4, Int_npcID, CInPacket2 */);
+      mplew.StartNode("msgType :" + 5);
+      sub_D9DA90(/* v2, Int_4, Int_npcID, iPacket, type */);
       mplew.EndNode(false);
       break;
     case 6:
-      mplew.StartNode("sub_D67860");
-      type2 = sub_D67860(/* Int_4, Int_npcID, CInPacket2 */);
+      mplew.StartNode("msgType :" + 6);
+      sub_D9DD00(type/* Int_4, Int_npcID, iPacket, type, type2 */);
+      mplew.EndNode(false);
+      break;
+    case 0xA:
+      mplew.StartNode("msgType :" + 0xA);
+      sub_DA2300(/* v2, Int_4, Int_npcID, iPacket */);
+      mplew.EndNode(false);
+      break;
+    case 0x22:
+      mplew.StartNode("msgType :" + 0x22);
+      sub_D9DF50(/* v2, Int_4, Int_npcID, iPacket */);// 136 var break;
+      mplew.EndNode(false);
+    case 0x28:
+      mplew.StartNode("msgType :" + 0x28);
+      sub_D9E7F0(/* Int_4, Int_npcID, iPacket */);
+      mplew.EndNode(false);
+      break;
+    case 0x29:
+      mplew.StartNode("msgType :" + 0x29);
+      sub_D9EC60(/* Int_4, Int_npcID, iPacket */);
+      mplew.EndNode(false);
+      break;
+    case 0x2A:
+      mplew.StartNode("msgType :" + 0x2A);
+      sub_DA38C0(/* Int_4, Int_npcID, iPacket */);
+      mplew.EndNode(false);
+      break;
+    case 0x2B:
+      mplew.StartNode("msgType :" + 0x2B);
+      sub_DA4340(/* Int_4, Int_npcID, iPacket */);
+      mplew.EndNode(false);
+      break;
+    case 0x2C:
+      mplew.StartNode("msgType :" + 0x2C);
+      sub_DA2D30(/* Int_4, Int_npcID, iPacket */);
+      mplew.EndNode(false);
+      break;
+    case 0x2D:
+      mplew.StartNode("msgType :" + 0x2D);
+      sub_DA3330(/* Int_4, Int_npcID, iPacket */);
+      mplew.EndNode(false);
+      break;
+    case 0xB:
+      mplew.StartNode("msgType :" + 0xB);
+      sub_D9F0B0(/* Int_4, Int_npcID, iPacket */);
+      mplew.EndNode(false);
+      break;
+    case 0xC:
+      mplew.StartNode("msgType :" + 0xC);
+      sub_D9F7F0(/* Int_4, Int_npcID, iPacket */);
+      mplew.EndNode(false);
+      break;
+    case 0xD:
+      mplew.StartNode("msgType :" + 0xD);
+      sub_D9FC90(/* Int_4, Int_npcID, iPacket */);
+      mplew.EndNode(false);
+      break;
+    case 0xE:
+      mplew.StartNode("msgType :" + 0xE);                                   // 13+1
+      sub_DA0150(/* v2, Int_4, Int_npcID, iPacket */);
       mplew.EndNode(false);
       break;
     case 7:
-      mplew.StartNode("sub_D67880");
-      type2 = sub_D67880(/* Int_4, Int_npcID, CInPacket2 */);
+      mplew.StartNode("msgType :" + 7);                                     // 6+1
+      sub_D9A9F0(/* Int_4, Int_npcID, iPacket */);
       mplew.EndNode(false);
       break;
     case 8:
-      mplew.StartNode("sub_D678A0");
-      type2 = sub_D678A0(/* Int_4, Int_npcID, CInPacket2 */);
+      mplew.StartNode("msgType :" + 8);
+      sub_D9AA10(/* Int_4, Int_npcID, iPacket */);
       mplew.EndNode(false);
       break;
-    case 17:
-      mplew.StartNode("sub_D71280");
-      type2 = sub_D71280(/* CInPacket2 */);
+    case 9:
+      mplew.StartNode("msgType :" + 9);                                     // 8+1
+      sub_D9AA30(/* Int_4, Int_npcID, iPacket */);
       mplew.EndNode(false);
       break;
-    case 21:
-      mplew.StartNode("sub_D682E0");
-      type2 = sub_D682E0(/* CInPacket2, type */);
+    case 0x13:
+      mplew.StartNode("msgType :" + 0x13);
+      sub_DA4F10(/* v2, iPacket */);                  // 17+2
       mplew.EndNode(false);
       break;
-    case 22:
-      mplew.StartNode("sub_D68470");
-      type2 = sub_D68470(/* CInPacket2 */);
+    case 0x18:
+      mplew.StartNode("msgType :" + 0x18);                                  // 21+3
+      sub_D9B590(/* v2, iPacket, type */);
       mplew.EndNode(false);
       break;
-    case 23:
-      mplew.StartNode("sub_D694F0");
-      type2 = sub_D694F0(type, 0);/* Int_4, Int_npcID, CInPacket2, type, 0 */
+    case 0x19:
+      mplew.StartNode("msgType :" + 0x19);                                  // 22+3
+      sub_D9B720(/* v2, iPacket */);
       mplew.EndNode(false);
       break;
-    case 24:
-      mplew.StartNode("sub_D694F0");
-      type2 = sub_D694F0(type, 1/* Int_4, Int_npcID, CInPacket2, type, 1 */);
+    case 0x1A:
+      mplew.StartNode("msgType :" + 0x1A);                                  // 23+3
+      sub_D9CA20(type, 0/* Int_4, Int_npcID, iPacket, type, 0 */);
       mplew.EndNode(false);
       break;
-    case 25:
-      mplew.StartNode("sub_D6CE20");
-      type2 = sub_D6CE20(type, 0, 0, 0 /* Int_4, Int_npcID, CInPacket2, type, 0, 0, 0 */);
+    case 0x1B:
+      mplew.StartNode("msgType :" + 0x1B);
+      sub_D9CA20(type, 1/* Int_4, Int_npcID, iPacket, type, 1 */);
       mplew.EndNode(false);
       break;
-    case 26:
-      mplew.StartNode("sub_D6CE20");
-      type2 = sub_D6CE20(type, 0, 1, 0 /* Int_4, Int_npcID, CInPacket2, type, 0, 1, 0 */);
+    case 0x1C:
+      mplew.StartNode("msgType :" + 0x1C);
+      sub_DA05C0(type, 0/* Int_4, Int_npcID, iPacket, type, 0, 0, 0 */);
       mplew.EndNode(false);
       break;
-    case 27:
-      mplew.StartNode("sub_D6D0F0");
-      type2 = sub_D6D0F0(type, 0 /* Int_4, Int_npcID, CInPacket2, type, 0 */);
+    case 0x1D:
+      mplew.StartNode("msgType :" + 0x1D);
+      sub_DA05C0(type, 0/* Int_4, Int_npcID, iPacket, type, 0, 1, 0 */);
       mplew.EndNode(false);
       break;
-    case 28:
-      mplew.StartNode("sub_D6CE20");
-      type2 = sub_D6CE20(type, 0, 0, 1 /* Int_4, Int_npcID, CInPacket2, type, 0, 0, 1 */);
+    case 0x1E:
+      mplew.StartNode("msgType :" + 0x1E);                                  // 27+3
+      sub_DA0890(type, 0/* v2, Int_4, Int_npcID, iPacket, type, 0 */);
       mplew.EndNode(false);
       break;
-    case 29:
-      mplew.StartNode("sub_D6CE20");
-      type2 = sub_D6CE20(type, 0, 1, 1 /* Int_4, Int_npcID, CInPacket2, type, 0, 1, 1 */);
+    case 0x1F:
+      mplew.StartNode("msgType :" + 0x1F);
+      sub_DA05C0(type, 1/* Int_4, Int_npcID, iPacket, type, 0, 0, 1 */);
       mplew.EndNode(false);
       break;
-    case 30:
-      mplew.StartNode("sub_D6D0F0");
-      type2 = sub_D6D0F0(type, 1 /* Int_4, Int_npcID, CInPacket2, type, 1 */);
+    case 0x20:
+      mplew.StartNode("msgType :" + 0x20);
+      sub_DA05C0(type, 1/* Int_4, Int_npcID, iPacket, type, 0, 1, 1 */);
       mplew.EndNode(false);
       break;
-    case 33:
-      mplew.StartNode("sub_D6D3A0");
-      type2 = sub_D6D3A0(/* Int_4, Int_npcID, CInPacket2, type */);
+    case 0x21:
+      mplew.StartNode("msgType :" + 0x21);                                  // 30+3
+      sub_DA0890(type, 1/* v2, Int_4, Int_npcID, iPacket, type, 1 */);
       mplew.EndNode(false);
       break;
-    case 35:
-      mplew.StartNode("sub_D6D6D0");
-      type2 = sub_D6D6D0(/* Int_4, Int_npcID, CInPacket2, type */);
+    case 0x24:
+      mplew.StartNode("msgType :" + 0x24);                                  // 33+3
+      sub_DA0B40(/* Int_4, Int_npcID, iPacket, type */);
       mplew.EndNode(false);
       break;
-    case 44:
-      mplew.StartNode("sub_D6D9C0");
-      type2 = sub_D6D9C0(/* Int_npcID, CInPacket2 */);
+    case 0x26:
+      mplew.StartNode("msgType :" + 0x26);                                  // 35+3
+      sub_DA0E70(/* v2, Int_4, Int_npcID, iPacket, type */);
       mplew.EndNode(false);
       break;
-    case 46:
-      mplew.StartNode("sub_D6DC20");
-      type2 = sub_D6DC20(/* CInPacket2 */);
+    case 0x2F:
+      mplew.StartNode("msgType :" + 0x2F);                                  // 44+3
+      sub_DA1160(/* v2, Int_npcID, iPacket */);
       mplew.EndNode(false);
       break;
-    case 47:
-      mplew.StartNode("sub_D6E590");
-      type2 = sub_D6E590(/* CInPacket2 */);
+    case 0x32:
+      mplew.StartNode("msgType :" + 0x32);                                  // 46+4
+      sub_DA13C0(/* iPacket */);
       mplew.EndNode(false);
       break;
-    case 48:
-      mplew.StartNode("sub_D68610");
-      type2 = sub_D68610(/* CInPacket2 */);
+    case 0x33:
+      mplew.StartNode("msgType :" + 0x33);                                  // 47+4
+      sub_DA14E0(/* iPacket */);
       mplew.EndNode(false);
       break;
-    case 53:
-      mplew.StartNode("sub_D678C0");
-      type2 = sub_D678C0(/* Int_4, Int_npcID, CInPacket2 */);
+    case 0x34:
+      mplew.StartNode("msgType :" + 0x34);                                  // 48+4
+      sub_D9B8C0(/* iPacket */);
       mplew.EndNode(false);
       break;
-    case 54:
-      mplew.StartNode("sub_D686B0");
-      type2 = sub_D686B0(/* Int_4, Int_npcID, CInPacket2 */);
+    case 0x39:
+      mplew.StartNode("msgType :" + 0x39);
+      sub_D9AA50(/* Int_4, Int_npcID, iPacket */);
       mplew.EndNode(false);
       break;
-    case 55:
-      mplew.StartNode("sub_D68B20");
-      type2 = sub_D68B20(/* Int_4, Int_npcID, CInPacket2 */);
+    case 0x3A:
+      mplew.StartNode("msgType :" + 0x3A);
+      sub_D9B960(/* Int_4, Int_npcID, iPacket */);
       mplew.EndNode(false);
       break;
-    case 56:
-      mplew.StartNode("sub_D6DD40");
-      type2 = sub_D6DD40(type, 0/* Int_4, Int_npcID, CInPacket2, type, 0 */);
+    case 0x3B:
+      mplew.StartNode("msgType :" + 0x3B);                                  // 55+4
+      sub_D9BDD0(/* Int_4, Int_npcID, iPacket */);
       mplew.EndNode(false);
       break;
-    case 57:
-      mplew.StartNode("sub_D6DD40");
-      type2 = sub_D6DD40(type, 1/* Int_4, Int_npcID, CInPacket2, type, 1 */);
+    case 0x3C:
+      mplew.StartNode("msgType :" + 0x3C);
+      sub_DA1680(type, 0/* v2, Int_4, Int_npcID, iPacket, type, 0 */);// 57+3
       mplew.EndNode(false);
       break;
-    case 58:
-      mplew.StartNode("sub_D6E010");
-      type2 = sub_D6E010(type, 0, 0, 0/* Int_4, Int_npcID, CInPacket2, type, 0, 0, 0 */);
+    case 0x3D:
+      mplew.StartNode("msgType :" + 0x3D);                                  // 137 new
+      sub_DA1680(type, 1/* v2, Int_4, Int_npcID, iPacket, type, 1 */);
       mplew.EndNode(false);
       break;
-    case 59:
-      mplew.StartNode("sub_D6E010");
-      type2 = sub_D6E010(type, 0, 1, 0/* Int_4, Int_npcID, CInPacket2, type, 0, 1, 0 */);
+    case 0x3E:
+      mplew.StartNode("msgType :" + 0x3E);                                  // 58+4
+      sub_DA1950(type, 0/* v2, Int_4, Int_npcID, iPacket, type, 0, 0, 0 */);
       mplew.EndNode(false);
       break;
-    case 60:
-      mplew.StartNode("sub_D6E2E0");
-      type2 = sub_D6E2E0(type, 0/* Int_4, Int_npcID, CInPacket2, type, 0 */);
+    case 0x3F:
+      mplew.StartNode("msgType :" + 0x3F);
+      sub_DA1950(type, 0/* v2, Int_4, Int_npcID, iPacket, type, 0, 1, 0 */);
       mplew.EndNode(false);
       break;
-    case 61:
-      mplew.StartNode("sub_D6E010");
-      type2 = sub_D6E010(type, 0, 0, 1/* Int_4, Int_npcID, CInPacket2, type, 0, 0, 1 */);
+    case 0x40:
+      mplew.StartNode("msgType :" + 0x40);                                  // 60+4
+      sub_DA1C20(0/* v2, Int_4, Int_npcID, iPacket, type, 0 */);
       mplew.EndNode(false);
       break;
-    case 62:
-      mplew.StartNode("sub_D6E010");
-      type2 = sub_D6E010(type, 0, 1, 1/* Int_4, Int_npcID, CInPacket2, type, 0, 1, 1 */);
+    case 0x41:
+      mplew.StartNode("msgType :" + 0x41);
+      sub_DA1950(type, 1/* v2, Int_4, Int_npcID, iPacket, type, 0, 0, 1 */);
       mplew.EndNode(false);
       break;
-    case 63:
-      mplew.StartNode("sub_D6E2E0");
-      type2 = sub_D6E2E0(type, 1/* Int_4, Int_npcID, CInPacket2, type, 1 */);
+    case 0x42:
+      mplew.StartNode("msgType :" + 0x42);
+      sub_DA1950(type, 1/* v2, Int_4, Int_npcID, iPacket, type, 0, 1, 1 */);
+      mplew.EndNode(false);
+      break;
+    case 0x43:
+      mplew.StartNode("msgType :" + 0x43);
+      sub_DA1C20(1/* v2, Int_4, Int_npcID, iPacket, type, 1 */);// 63+4
+      mplew.EndNode(false);
+      break;
+    case 0x44:
+      mplew.StartNode("msgType :" + 0x44);
+      sub_DA1ED0(/* v2, iPacket */);
+      mplew.EndNode(false);
+      break;
+    case 0x45:
+      mplew.StartNode("msgType :" + 0x45);
+      sub_DA20C0(/* v2, iPacket */);
       mplew.EndNode(false);
       break;
     default:
       break;
   }
   var regR = /\r/g;
-var regN = /\n/g;
-talk = talk.replace(regR,"\\r").replace(regN,"\\n");
+  var regN = /\n/g;
+  talk = talk.replace(regR, "\\r").replace(regN, "\\n");
   // return type2;
   switch (Byt_msgType) {
     case 5:
       "sendSimpleSNew"
-  mplew.  LogAppend(  "cm.sendSimple(\"" +talk+"\")");
+      mplew.LogAppend("cm.sendSimple(\"" + talk + "\")");
       break;
-    case 2:
+    case 3:
       "sendYesNoSNew"
-  mplew.  LogAppend(  "cm.sendYesNo(\"" +talk+"\")");
+      mplew.LogAppend("cm.sendYesNo(\"" + talk + "\")");
       break;
     case 0:
-      switch (zeroPad(typea,2) + zeroPad(typea2,2) ) {
+      switch (zeroPad(typea, 2) + zeroPad(typea2, 2)) {
         case "0100":
           "sendPrevSNew"
-  mplew.  LogAppend(  "cm.sendPrev(\"" +talk+"\")");
+          mplew.LogAppend("cm.sendPrev(\"" + talk + "\")");
           break;
         case "0101":
+          if (type == 0x8) {
+            //接受 拒绝 sendAcceptDecline
+          }
           "sendNextPrevSNew"
-  mplew.  LogAppend(  "cm.sendNextPrev(\"" +talk+"\")");
+          mplew.LogAppend("cm.sendNextPrev(\"" + talk + "\")");
           break;
         case "0001":
           "sendNextSNew"
-  mplew.  LogAppend(  "cm.sendNext(\"" +talk+"\")");
+          mplew.LogAppend("cm.sendNext(\"" + talk + "\")");
           break;
         case "0000":
-  mplew.  LogAppend(  "cm.sendOk(\"" +talk+"\")");
+          mplew.LogAppend("cm.sendOk(\"" + talk + "\")");
           "sendOkSNew"
           break;
       }
@@ -308,7 +330,7 @@ talk = talk.replace(regR,"\\r").replace(regN,"\\n");
 
   }
 }
-function zeroPad (nub, digits) {
+function zeroPad(nub, digits) {
   var loop = digits;
   var zeros = "";
   while (loop) {
@@ -318,127 +340,135 @@ function zeroPad (nub, digits) {
   return (nub.toString().length > digits) ?
     nub.toString() : (zeros + nub).slice(-digits);
 }
+
 var typea;//对话框形式
 var typea2;
 var talk;//對話
-function sub_D68F80(int_type/*  */)
-//int __thiscall sub_D68F80 (/* var CNpcPool, var Int_4, var Int_npcID, var CInPacket2, var int_type, char *type2 */)
+function sub_D9C230(/*  */type)
+//void __thiscall sub_D9C230 (/* int *this, var a2, var Int_npcID, var CInPacket2, var type, int type2 */)
 {
-  // CInPacket23 = CInPacket2;
-  if (int_type & 4)
+  if (type & 4)
     Int_npcID = mplew.writeInt("Int_npcID");
-talk=  mplew.writeMapleAsciiString("");
+  talk = mplew.writeMapleAsciiString("");
   typea = mplew.write("typea");
   typea2 = mplew.write("typea2");
-  mplew.writeInt("New 未知",0);
+  mplew.writeInt("New 未知", 0);
 }
-function sub_D691F0(/*  */)
-//int __thiscall sub_D691F0 (/* var this, var a2, var a3, volatile var a4, unsigned __int8 a5 */)
+function sub_D9C4A0(/*  */)
+//void __thiscall sub_D9C4A0 (/* char *this, var a2, var a3, var a4, var a5, int *a6 */)
+{
+  talk = mplew.writeMapleAsciiString("");
+  typea = mplew.write("typea");
+  typea2 = mplew.write("typea2");
+  v8 = mplew.writeInt("137 new");
+}
+function sub_D9C720(/*  */)
+//int __thiscall sub_D9C720 (/* char *this, var a2, var a3, var iPacket, unsigned __int8 a5 */)
 {
   v16 = mplew.write("v16");
   v17 = v16;
   if (v16 > 0) {
     v7 = v16;
     do {
-      mplew.writeMapleAsciiString("");
+      talk = mplew.writeMapleAsciiString("");
       --v7;
     }
     while (v7);
   }
-  return sub_4C9390(/* v7 */);
 }
-
-function sub_DA2300(a2, a6, a7, type2)
+function sub_D9CCF0(type/*  */)
+//void __thiscall sub_D9CCF0 (/* void *this, var a2, var a3, var iPacket, var type, var a6, var a7, int *a8 */)
 {
-   v91  = mplew.write("v91") != 0;
-   v90  = mplew.write("v91") != 0;
-  mplew.writeMapleAsciiString("v91");
-  for ( i = mplew.write("i"); i > 0;  )
-  {
-    v7 = mplew.writeInt("v7");
-    --i;
-  }
-}
-
-function sub_D69A10(a5/*  */)
-//LONG __thiscall sub_D69A10 (/* var this, var a2, var a3, var iPacket2, var a5, char *a6 */)
-{
-  if (a5 & 4)
+  if (type & 4)
     a3 = mplew.writeInt("a3");
-  mplew.writeMapleAsciiString("");
-  mplew.writeMapleAsciiString("");
+  talk = mplew.writeMapleAsciiString("");
+}
+function sub_D9CF40(/*  */)
+//void __thiscall sub_D9CF40 (/* char *this, var a2, var a3, var iPacket, var a5, var a6, var a7, int *a8 */)
+{
+  v28 = mplew.writeInt("v28");
+  talk = mplew.writeMapleAsciiString("");
+}
+function sub_D9D190(type/*  */)
+//void __thiscall sub_D9D190 (/* char *this, var a2, var a3, var iPacket, var a5, int a6 */)
+{
+  if (type & 4)
+    a3 = mplew.writeInt("a3");
+  talk = mplew.writeMapleAsciiString("");
+  talk = mplew.writeMapleAsciiString("");
   v27 = mplew.writeShort("v27");
   v26 = mplew.writeShort("v26");
-  return result;
-}
-
-
-function sub_D69F30(/*  */)
-//LONG __thiscall sub_D69F30 (/* var this, var Int_4, var Int_npcID, const var a4, _DWORD *type */)
+} function sub_D9D440(type/*  */)
+//void __thiscall sub_D9D440 (/* char *this, var a2, var a3, var iPacket_1, var type, char *a6 */)
 {
+  if (type & 4)
+    a3 = mplew.writeInt("a3");
+  talk = mplew.writeMapleAsciiString("");
+  talk = mplew.writeMapleAsciiString("");
+  v26 = mplew.writeShort("v26");
+  v25 = mplew.writeShort("v25");
+}
+function sub_D9D6D0(/*  */) {
   v7 = mplew.writeShort("v7");
-  mplew.writeMapleAsciiString("");
-  mplew.writeMapleAsciiString("");
+  talk = mplew.writeMapleAsciiString("");
+  talk = mplew.writeMapleAsciiString("");
   v8 = mplew.writeShort("v8");
-  v36 = mplew.writeShort("v36");
   v35 = mplew.writeShort("v35");
+  v34 = mplew.writeShort("v34");
   a4 = mplew.writeShort("a4");
-  return result;
 }
-function sub_D6A2F0(/*  */)
-//LONG __thiscall sub_D6A2F0 (/* var this, var a2, var a3, var a4, _DWORD *a5 */)
-{
-  a4 = mplew.writeMapleAsciiString("");
-  v29 = mplew.writeInt("v29");
+function sub_D9DA90(/*  */) {
+  talk = mplew.writeMapleAsciiString("");
   v28 = mplew.writeInt("v28");
+  v27 = mplew.writeInt("v27");
   v7 = mplew.writeInt("v7");
 }
-function sub_D6A560(a5/*  */)
-//LONG __thiscall sub_D6A560 (/* var this, var a2, var a3, var a4, unsigned var a5, const CHAR **a6 */)
-{
-  if (a5 & 4)
+function sub_D9DD00(type/*  */) {
+  if (type & 4)
     a3 = mplew.writeInt("a3");
-  talk= mplew.writeMapleAsciiString("");
+  talk = mplew.writeMapleAsciiString("");
 }
-
-function sub_D6E730(/*  */)
-//LONG __thiscall sub_D6E730 (/* var this, var a2, int **a3, int *iPacket2 */)
+function sub_DA2300(/*  */)
+//void __thiscall sub_DA2300 (/* _DWORD *this, var a2, char **a3, int *iPacket */)
 {
-  v88 = mplew.write("") != 0;
-  v87 = mplew.write("") != 0;
-  mplew.writeMapleAsciiString("");
-  for (i = mplew.write("i"); i > 0;) {
+  v91 = mplew.write("") != 0;
+  v90 = mplew.write("") != 0;
+  talk = mplew.writeMapleAsciiString("");
+  for (i = mplew.write("i"); i > 0; --i) {
     v7 = mplew.writeInt("v7");
-    --i;
   }
-  // 不知道怎么计算 iPacket2 = mplew.writeInt("iPacket2");
+  if (false) {
+  }
+  else {
+    iPacket = mplew.writeInt("iPacket");
+  }
 }
-function sub_D6A7B0(/*  */)
-//LONG __thiscall sub_D6A7B0 (/* const var this, var a2, var a3, _DWORD *a4 */)
-{
-  mplew.writeMapleAsciiString("");
+function sub_D9DF50(/*  */) {
+  talk = mplew.writeMapleAsciiString("");
+  v81 = mplew.writeInt("v81");
+  for (i = mplew.write("i"); i > 0; --i) {
+    v7 = mplew.writeInt("v7");
+  }
   v80 = mplew.writeInt("v80");
-  for (i = mplew.write("i"); i > 0;) {
-    v7 = mplew.writeInt("v7");
-    --i;
-  }
-  v79 = mplew.writeInt("v79");
-  for (j = mplew.write("j"); j > 0;) {
+  for (j = mplew.write("j"); j > 0; --j) {
     v9 = mplew.writeInt("v9");
-    --j;
   }
-  a4 = mplew.writeInt("a4");
-  return result;
+  v81 = 1; //sub_772D70 (/* v19, v19 */);
+  if (v81 == 3) {
+  }
+  else {
+    a4 = mplew.writeInt("a4");
+  }
 }
-
-function sub_D6B050(/*  */)
-//LONG __thiscall sub_D6B050 (/* var this, var a2, var a3, int a4 */)
+function sub_D9E7F0(/*  */)
+//void __thiscall sub_D9E7F0 (/* void *this, var a2, var a3, int iPacket */)
 {
   v46 = mplew.write("") != 0;
   v45 = mplew.write("") != 0;
   mplew.write("");
-  mplew.writeMapleAsciiString("");
+  talk = mplew.writeMapleAsciiString("");
   v5 = mplew.write("v5");
+  v7 = v5;
   if (v5 > 0) {
     do {
       v8 = mplew.writeInt("v8");
@@ -446,16 +476,17 @@ function sub_D6B050(/*  */)
     }
     while (v7 > 0);
   }
-  mplew.writeInt("");
+  if (true) {
+    v12 = 10 * (mplew.writeInt("") / 0xA);
+  }
 }
-
-function sub_D6B4C0(/*  */)
-//LONG __thiscall sub_D6B4C0 (/* var this, var a2, var a3, int a4 */)
+function sub_D9EC60(/*  */)
+//void __thiscall sub_D9EC60 (/* _DWORD *this, var a2, var a3, int iPacket */)
 {
-
   mplew.write("");
-  mplew.writeMapleAsciiString("");
+  talk = mplew.writeMapleAsciiString("");
   v5 = mplew.write("v5");
+  v7 = v5;
   if (v5 > 0) {
     do {
       v8 = mplew.writeInt("v8");
@@ -463,325 +494,264 @@ function sub_D6B4C0(/*  */)
     }
     while (v7 > 0);
   }
-  mplew.writeInt("")
-  mplew.writeInt("")
-  return result;
+  v10 = (mplew.writeInt("") / 0xA);
+  v12 = (mplew.writeInt("") / 0xA);
 }
-
-function sub_D6FCF0(/*  */)
-//LONG __thiscall sub_D6FCF0 (/* var this, var a2, var a3, int a4 */)
+function sub_DA38C0(/*  */)
+//void __thiscall sub_DA38C0 (/* void *this, var a2, var a3, int a4 */)
 {
-  v85 = mplew.write("") != 0;
+  v89 = mplew.writeInt("v89");
+  v86 = mplew.write("") != 0;
   v5 = mplew.writeInt("v5");
-  v84 = mplew.writeInt("v84");
-  mplew.writeMapleAsciiString("");
+  v85 = mplew.writeInt("v85");
+  talk = mplew.writeMapleAsciiString("");
 }
-function sub_D70710(/*  */)
-//LONG __thiscall sub_D70710 (/* var this, var a2, var a3, int a4 */)
+function sub_DA4340(/*  */)
+//void __thiscall sub_DA4340 (/* void *this, var a2, var a3, int a4 */)
 {
-  v85 = mplew.write("") != 0;
+  v89 = mplew.writeInt("v89");
+  v86 = mplew.write("") != 0;
   v5 = mplew.writeInt("v5");
-  v84 = mplew.writeInt("v84");
-  mplew.writeMapleAsciiString("");
+  v85 = mplew.writeInt("v85");
+  talk = mplew.writeMapleAsciiString("");
 }
-function sub_D6F160(/*  */)
-//LONG __thiscall sub_D6F160 (/* const var this, var a2, var a3, int a4 */)
-{
-  v63 = mplew.write("") != 0;
-  v58 = mplew.write("") != 0;
+function sub_DA2D30(/*  */) {
+  v62 = mplew.write("") != 0;
+  v57 = mplew.write("") != 0;
   mplew.write("");
-  mplew.writeMapleAsciiString("");
-  v70 = 0;
-  v67 = 0;
-  sub_9DE4B0(/* &v66 */);
-  v70 = 1;
+  talk = mplew.writeMapleAsciiString("");
   v5 = mplew.write("v5");
-  if (v5 > 0) {
-    // v7 = v5;
-    // do
-    // {
-    //   --v7;
-    //   *sub_4430C0 (/* -1 */) = 0;
-    // }
-    // while ( v7 );
-  }
   if (v5 == 3) {
     v8 = mplew.writeInt("v8");
     v9 = mplew.writeInt("v9");
     v10 = mplew.writeInt("v10");
-  }
-  else {
+  } else {
+    if (v5 != 6) {
+      return;
+    }
     v12 = mplew.writeInt("v12");
     v13 = mplew.writeInt("v13");
-    v64 = mplew.writeInt("v64");
+    v63 = mplew.writeInt("v63");
+    v60 = mplew.writeInt("v60");
     v61 = mplew.writeInt("v61");
-    v62 = mplew.writeInt("v62");
     v14 = mplew.writeInt("v14");
-
   }
 }
-function sub_D6F760(/*  */)
-//LONG __thiscall sub_D6F760 (/* var this, var a2, var a3, int a4 */)
-{
+
+function sub_DA3330(/*  */) {
   mplew.write("");
-  mplew.writeMapleAsciiString("");
-  //   v6 = 6;
-  //   do
-  //   {
-  //     --v6;
-  //     *sub_4430C0 (/* -1 */) = 0;
-  //   }
-  //   while ( v6 );
+  talk = mplew.writeMapleAsciiString("");
   mplew.write("");
   v7 = mplew.writeInt("v7");
   v8 = mplew.writeInt("v8");
+  v55 = mplew.writeInt("v55");
   v56 = mplew.writeInt("v56");
   v57 = mplew.writeInt("v57");
-  v58 = mplew.writeInt("v58");
   v9 = mplew.writeInt("v9");
   mplew.writeInt("");
   mplew.writeInt("");
-
 }
-
-function sub_D6B910(/*  */)
-{
-  mplew.write(0);
-  mplew.write(0);
-  mplew.writeMapleAsciiString("");
-  for (var i = mplew.write("i"); i > 0;) {
-    mplew.writeInt("v6");
-    --i;
+function sub_D9F0B0(/*  */) {
+  talk = mplew.writeMapleAsciiString("");
+  for (i = mplew.write("i"); i > 0; --i) {
+    v6 = mplew.writeInt("v6");
   }
-  v60 = mplew.writeInt("v60");
+  v62 = mplew.writeInt("v62");
 }
-
-
-function sub_D6C050(/*  */)
-//_BYTE *__thiscall sub_D6C050 (/* var this, var a2, var a3, int a4 */)
-{
-  mplew.writeMapleAsciiString("");
-  v36 = mplew.write("v36");
-  if (v36 > 0) {
-    v35 = v36;
-    do {
-      v42 = mplew.writeBuffer("v42", 8);
-      mplew.write("");
-      --v35;
-    }
-    while (v35);
-  }
-  return result;
-}
-
-function sub_D6C4F0(/*  */)
-//_BYTE *__thiscall sub_D6C4F0 (/* var this, var a2, var a3, int a4 */)
-{
-  mplew.writeMapleAsciiString("");
-  v37 = mplew.write("v37");
+function sub_D9F7F0(/*  */) {
+  talk = mplew.writeMapleAsciiString("");
   v39 = mplew.write("v39");
-  if (v37 > 0) {
-    v36 = v37;
+  if (v39 <= 0)
+    return;
+  v38 = v39;
+  do {
+    v45 = mplew.writeBuffer("v45", 8);
+    mplew.write("");
+    --v38;
+  }
+  while (v38);
+}
+function sub_D9FC90(/*  */) {
+  talk = mplew.writeMapleAsciiString("");
+  v40 = mplew.write("v40");
+  v42 = mplew.write("v42");
+  if (v40 > 0) {
+    v39 = v40;
     do {
-      v44 = mplew.writeBuffer("v44", 8);
+      v47 = mplew.writeBuffer("v47", 8);
       mplew.write("");
-      v36 = (v36 - 1);
+      --v39;
     }
-    while (v36);
+    while (v39);
   }
 }
-
-function sub_D6C9B0(/*  */) {
-  v32 = mplew.writeMapleAsciiString("");
-  //   v48 = 0;
-  //   v4 = !v32 || !*v32;
-  //   v5 = 12 - (v4 != 0);
-  v5 = 11;
+function sub_DA0150(/*  */) {
+  talk = v4 = mplew.writeMapleAsciiString("");
+  v5 = 12 - (v4 != 0);
   if (v5 == 11) {
     v7 = mplew.write("v7");
     if (v7 <= 0) {
+      return;
     }
     if (v7 > 0) {
-      v34 = v7;
+      v33 = v7;
       do {
-        v41 = mplew.writeBuffer("v41", 8);
+        v40 = mplew.writeBuffer("v40", 8);
         mplew.write("");
-        --v34;
+        --v33;
       }
-      while (v34);
+      while (v33);
     }
   }
 }
-
-function sub_D67860(/*  */)
-//LONG __stdcall sub_D67860 (/* var a1, var a2, int a3 */)
-{
-  return sub_1981990(/* 0, a3 */);
+function sub_D9A9F0(/*  */) {
+  sub_19DE160(/* 0, a3 */);
 }
-
-function sub_1981990()//LONG __thiscall sub_1981990 (/* var this, int a2 */)
-{
+function sub_19DE160(/*  */) {
   v4 = mplew.write("v4");
   if (v4) {
+    // if (v4 == 1)
+    // v2[7704] = 0;
   }
   else {
-    mplew.writeMapleAsciiString("");
-    mplew.writeMapleAsciiString("");
-    mplew.writeMapleAsciiString("");
+    talk = mplew.writeMapleAsciiString("");
+    talk = mplew.writeMapleAsciiString("");
+    talk = mplew.writeMapleAsciiString("");
+    v5 = mplew.writeInt("v5");
     v6 = mplew.writeInt("v6");
-    v7 = mplew.writeInt("v7");
     mplew.writeInt("");
   }
-  return result;
 }
-function sub_D67880(/*  */)
-//int __stdcall sub_D67880 (/* var a1, var a2, int a3 */)
-{
-  return sub_19707B0(/* 0, a3 */);
-}
-function sub_19707B0(/*  */)
-//int __thiscall sub_19707B0 (/* var this, int a2 */)
-{
+function sub_19CB570(/*  */) {
   v4 = mplew.write("v4");
   if (v4) {
-
+    // result = v4 - 1;
+    // if (!result)
+    //   v3[7704] = 0;
   }
   else {
     v6 = mplew.writeInt("v6");
     v7 = mplew.writeInt("v7");
-    lpMultiByteStr = mplew.writeInt("lpMultiByteStr");
+    v8 = mplew.writeInt("v8");
     v9 = mplew.writeInt("v9");
     mplew.writeInt("");
   }
-  return result;
 }
-
-function sub_D678A0(/*  */)
-//LONG __stdcall sub_D678A0 (/* var a1, var a2, int a3 */)
-{
-  return sub_1981B70(/* 0, a3 */);
+function sub_D9AA10(/*  */) {
+  return sub_19CB570(/* 0, a3 */);
 }
-
-function sub_1981B70(/*  */)
-//LONG __thiscall sub_1981B70 (/* volatile var this, int a2 */)
-{
+function sub_D9AA30(/*  */) {
+  return sub_19DE340(/* a3 */);
+}
+function sub_19DE340(/*  */) {
   v4 = mplew.write("v4");
   if (v4) {
+    // if ( v4 == 1 )
+    //   v2[7704] = 0;
   }
   else {
-    mplew.writeMapleAsciiString("");
-    mplew.writeMapleAsciiString("");
+    talk = mplew.writeMapleAsciiString("");
+    talk = mplew.writeMapleAsciiString("");
     mplew.writeInt("");
   }
-  return result;
-}
-function sub_D71280(/*  */)
-//void *__thiscall sub_D71280 (/* var this, int a2 */)
-{
+} function sub_DA4F10(/*  */) {
   v2 = mplew.writeInt("v2");
-
-  //   v8 = sub_40DCD0 (/* 0x226D658, 0x1504u */);
-  if (true)//  if ( v8 )
-  {
-    //v9 = sub_E44F60 (/* v8, a2, v2, 2 * (v2 == 4) + 8 */);
+  if (v2 && v2 != 2 && v2 != 3 && v2 != 4 && v2 != 5 && v2 != 6) {
+    if (v2 == 1) {
+      // v5 = sub_40DF90 (/* 0x22E6488, 0x114u */);
+      v5 = true;
+      if (v5) {
+        // v6 = sub_E70300(/* v5, iPacket */);
+        mplew.writeInt("");
+        talk = mplew.writeMapleAsciiString("");
+      }
+    }
+    return;
+  }
+  v9 = true;// sub_40DF90 (/* 0x22E6488, 0x1528u */);
+  if (v9) {
+    // v10 = sub_E74750(/* v9, iPacket, v2, 2 * (v2 == 4) + 8 */);
     mplew.writeInt("");
-    mplew.writeMapleAsciiString("");
+    talk = mplew.writeMapleAsciiString("");
   }
 }
-function sub_D682E0(/*  */)
-//int __thiscall sub_D682E0 (/* var this, var a2, int a3 */)
-{
-  v4 = mplew.writeInt("v4");
-  mplew.writeZeroBytes(8);
+function sub_D9B590(/* _DWORD *this@<ecx>, signed __int32 ebx0@<ebx>, var iPacket, int a3 */) {
+  v5 = mplew.writeInt("v5");
+  v6 = v5;
+  if (v5 && v5 != 1) {
+  }
+  else {
+    v7 = true;//sub_40DF90(/* 0x22E6488, 0x15C0u */);
+    if (v7)
+      v8 = sub_DA6110(/* v7, iPacket, v6 */);
+  }
 }
-function sub_D68470()
+function sub_DA6110(/*  */) {
+  mplew.writeInt("");
+  v5 = mplew.writeInt("v5");
+  if (v5 > 0) {
+    a3 = v5;
+    do {
+      talk = v7 = mplew.writeMapleAsciiString("v7");
+      --a3;
+    }
+    while (a3);
+  }
+}
+function sub_D9B720()
 { }
-
-function sub_D694F0(a5, a6/*  */)
-//LONG __thiscall sub_D694F0 (/* var this, var a2, var a3, var a4, unsigned var a5, int a6 */)
+function sub_D9CA20(type, a6/*  */)
+//void __thiscall sub_D9CA20 (/* void *this, var a2, var a3, var iPacket, unsigned var type, int a6 */)
 {
-  if (a5 & 4)
+  if (type & 4)
     a3 = mplew.writeInt("a3");
-  mplew.writeMapleAsciiString("");
-  v32 = mplew.write("v32");
+  talk = mplew.writeMapleAsciiString("");
   v31 = mplew.write("v31");
-  v30 = mplew.writeInt("v30");
+  v30 = mplew.write("v30");
   v29 = mplew.writeInt("v29");
-  if (a6) {
-    v34 = mplew.writeInt("v34");
-    v33 = mplew.writeInt("v33");
-  }
-  else {
-    v34 = mplew.write("v34");
-  }
-}
-
-function sub_D694F0(a5, a6/*  */)
-//LONG __thiscall sub_D694F0 (/* var this, var a2, var a3, var a4, unsigned var a5, int a6 */)
-{
-  if (a5 & 4)
-    a3 = mplew.writeInt("a3");
-  mplew.writeMapleAsciiString("");
-  v32 = mplew.write("v32");
-  v31 = mplew.write("v31");
-  v30 = mplew.writeInt("v30");
-  v29 = mplew.writeInt("v29");
-  if (a6) {
-    v34 = mplew.writeInt("v34");
-    v33 = mplew.writeInt("v33");
-  }
-  else {
-    v34 = mplew.write("v34");
-  }
-}
-
-function sub_D6CE20(a5, a6, a7, a8 /*  */)
-//LONG __thiscall sub_D6CE20 (/* var this, var a2, var a3, var a4, unsigned var a5, var a6, var a7, int a8 */)
-{
-
-  iPacket = a4;
-  if (a5 & 4)
-    v10 = mplew.writeInt("v10");
-  var v10 = a3;
-  mplew.writeMapleAsciiString("");
-  v42 = 0;
-  v34 = mplew.writeInt("v34");
-  v33 = mplew.writeInt("v33");
-  if (a8) {
-    v36 = mplew.writeInt("v36");
-    v35 = mplew.writeInt("v35");
-  }
-  else {
-    v36 = mplew.write("v36");
-  }
-}
-
-function sub_D6D0F0(/*  */)
-//LONG __thiscall sub_D6D0F0 (/* var this, var a2, var a3, var a4, var a5, int a6 */)
-{
-  mplew.writeMapleAsciiString("");
-
   v28 = mplew.writeInt("v28");
-  v27 = mplew.writeInt("v27");
   if (a6) {
-    v30 = mplew.writeInt("v30");
-    v29 = mplew.writeInt("v29");
+    v33 = mplew.writeInt("v33");
+    v32 = mplew.writeInt("v32");
   }
   else {
-    v30 = mplew.write("v30");
+    v33 = mplew.write("v33");
   }
 }
-
-function sub_D6D3A0(/*  */)
-//LONG __thiscall sub_D6D3A0 (/* var this, var a2, var a3, var a4, char *a5 */)
+function sub_DA05C0(type, set/*  */)
+//void __thiscall sub_DA05C0 (/* void *this, var a2, var a3, var iPacket, unsigned var type, var a6, var a7, int set */)
 {
-  mplew.writeMapleAsciiString("");
-  v7 = 0;
-  v47 = 0;
-  v39 = mplew.writeInt("v39");
+  if (type & 4)
+    v10 = mplew.writeInt("v10");
+  talk = mplew.writeMapleAsciiString("");
+  v33 = mplew.writeInt("v33");
+  v32 = mplew.writeInt("v32");
+  if (set) {
+    v35 = mplew.writeInt("v35");
+    v34 = mplew.writeInt("v34");
+  }
+  else {
+    v35 = mplew.write("v35");
+  }
+}
+function sub_DA0890(/*  */)
+//void __thiscall sub_DA0890 (/* void *this, var a2, var a3, var a4, var a5, int set */)
+{
+  talk = mplew.writeMapleAsciiString("");
+  v27 = mplew.writeInt("v27");
+  v26 = mplew.writeInt("v26");
+  if (set) {
+    v29 = mplew.writeInt("v29");
+    v28 = mplew.writeInt("v28");
+  }
+  else {
+    v29 = mplew.write("v29");
+  }
+}
+function sub_DA0B40(/*  */) {
+  talk = mplew.writeMapleAsciiString("");
+  v42 = mplew.writeInt("v42");
   v8 = mplew.writeInt("v8");
-  a4 = 0;
-  v47 = 1;
   if (v8 > 0) {
     v7 = v8;
     do {
@@ -791,44 +761,30 @@ function sub_D6D3A0(/*  */)
     while (v7);
   }
 }
-
-function sub_D6D6D0(/*  */)
-//LONG __thiscall sub_D6D6D0 (/* var this, var a2, var a3, const char **a4, int a5 */)
-{
+function sub_DA0E70(/*  */) {
   v7 = mplew.writeInt("v7");
   a4 = mplew.write("a4");
-  mplew.writeMapleAsciiString("");
+  talk = mplew.writeMapleAsciiString("");
 }
-
-function sub_D6D9C0(/*  */)
-//int __thiscall sub_D6D9C0 (/* var this, var a2, int a3 */)
-{
+function sub_DA1160() {
 }
-function sub_D6DC20(/*  */)
-//int __stdcall sub_D6DC20 (/* int a1 */)
-{
-  v1 = mplew.writeInt("v1");
+function sub_DA13C0() {
+  v7 = mplew.writeInt("v7");
 }
-
-function sub_D6E590(/*  */)
-//int __stdcall sub_D6E590 (/* int a1 */)
-{
+function sub_DA14E0(/*  */) {
   v1 = mplew.writeInt("v1");
   if (v1) {
     if (v1 == 1) {
       mplew.writeInt("");
-      mplew.writeMapleAsciiString("");
-      v9 = -1;
+      talk = mplew.writeMapleAsciiString("");
     }
   }
   else {
     mplew.writeInt("");
-    v3 = mplew.writeInt("v3");
-
+    v2 = mplew.writeInt("v2");
   }
 }
-function sub_D68610(/* int a1 */) {
-
+function sub_D9B8C0(/*  */) {
   v2 = mplew.writeInt("v2");
   if (v2 > 0) {
     v3 = v2;
@@ -840,91 +796,91 @@ function sub_D68610(/* int a1 */) {
     }
     while (v3);
   }
-
 }
-function sub_D678C0(/* int a1, var a2, int a3 */) {
-  return sub_1988030(/* 0, a3 */);
-}
-function sub_1988030(/* _DWORD *this, int a2 */) {
-
+function sub_19E5700(/*  */) {
+  v4 = mplew.write("v4");
   if (v4) {
+    // if ( v4 == 1 )
+    //   v2[7704] = 0;
   }
   else {
-    mplew.writeMapleAsciiString("");
-    v17 = 0;
+    talk = mplew.writeMapleAsciiString("");
+    v16 = 0;
+    v5 = mplew.writeInt("v5");
     v6 = mplew.writeInt("v6");
-    v7 = mplew.writeInt("v7");
-    v15 = mplew.writeInt("v15");
     v14 = mplew.writeInt("v14");
+    v13 = mplew.writeInt("v13");
     mplew.writeInt("");
   }
-  return result;
 }
-
-function sub_D686B0(/*  */)
-//int __stdcall sub_D686B0 (/* int a1, var a2, _DWORD *iPacket */)
-{
+function sub_D9AA50(/*  */) {
+  sub_19E5700(/* 0, a3 */);
+}
+function sub_D9B960(/*  */) {
   for (i = mplew.write("i"); i > 0;) {
     v5 = mplew.writeInt("v5");
     --i;
   }
 }
-function sub_D68B20(/*  */) { }
+function sub_D9BDD0(/*  */) {
+}
 
-
-function sub_D6DD40(a5, a6 /*  */)
-//LONG __thiscall sub_D6DD40 (/* void *this, var a2, var a3, var a4, unsigned var a5, int a6 */)
+function sub_DA1680(type, set/*  */)
+//void __thiscall sub_DA1680 (/* void *this, var a2, var a3, var iPacket, unsigned var type, int set */)
 {
-
-  if (a5 & 4)
+  if (type & 4)
     a3 = mplew.writeInt("a3");
-  mplew.writeMapleAsciiString("");
-  v41 = 0;
-  v32 = mplew.write("v32");
+  talk = mplew.writeMapleAsciiString("");
   v31 = mplew.write("v31");
-  v30 = mplew.writeInt("v30");
+  v30 = mplew.write("v30");
   v29 = mplew.writeInt("v29");
-  if (a6) {
-    v34 = mplew.writeInt("v34");
-    v33 = mplew.writeInt("v33");
-  }
-  else {
-    v34 = mplew.write("v34");
-  }
-}
-
-function sub_D6E010(a5, a6, a7, a8/*  */)
-//LONG __thiscall sub_D6E010 (/* void *this, var a2, var a3, var a4, unsigned var a5, var a6, var a7, int a8 */)
-{
-  v8 = this;
-  v9 = a4;
-  if (a5 & 4)
-    v10 = mplew.writeInt("v10");
-  var v10 = a3;
-  mplew.writeMapleAsciiString("");
-  v42 = 0;
-  v34 = mplew.writeInt("v34");
-  v33 = mplew.writeInt("v33");
-  if (a8) {
-    v36 = mplew.writeInt("v36");
-    v35 = mplew.writeInt("v35");
-  }
-  else {
-    v36 = mplew.write("v36");
-  }
-}
-
-function sub_D6E2E0(a5, a6 /*  */)
-//LONG __thiscall sub_D6E2E0 (/* void *this, var a2, var a3, var a4, var a5, int a6 */)
-{
-  mplew.writeMapleAsciiString("");
   v28 = mplew.writeInt("v28");
-  v27 = mplew.writeInt("v27");
-  if (a6) {
-    v30 = mplew.writeInt("v30");
-    v29 = mplew.writeInt("v29");
+  if (set) {
+    v33 = mplew.writeInt("v33");
+    v32 = mplew.writeInt("v32");
   }
   else {
-    v30 = mplew.write("v30");
+    v33 = mplew.write("v33");
   }
+}
+function sub_DA1950(type, set/*  */) {
+  if (type & 4)
+    v10 = mplew.writeInt("v10");
+  talk = mplew.writeMapleAsciiString("");
+  v33 = mplew.writeInt("v33");
+  v32 = mplew.writeInt("v32");
+  if (set) {
+    v35 = mplew.writeInt("v35");
+    v34 = mplew.writeInt("v34");
+  }
+  else {
+    v35 = mplew.write("v35");
+  }
+}
+function sub_DA1C20(set/*  */)
+//void __thiscall sub_DA1C20 (/* void *this, var a2, var a3, var a4, var a5, int set */)
+{
+  talk = mplew.writeMapleAsciiString("");
+  v27 = mplew.writeInt("v27");
+  v26 = mplew.writeInt("v26");
+  if (set) {
+    v29 = mplew.writeInt("v29");
+    v28 = mplew.writeInt("v28");
+  }
+  else {
+    v29 = mplew.write("v29");
+  }
+}
+
+function sub_DA1ED0(/*  */) {
+  talk = mplew.writeMapleAsciiString("");
+  v5 = mplew.writeInt("v5");
+}
+function sub_DA20C0(/*  */) {
+  talk = mplew.writeMapleAsciiString("");
+  v3 = mplew.write("v3");
+  v4 = mplew.write("v4");
+  v5 = mplew.write("v5");
+  v31 = mplew.write("v31");
+  v23 = mplew.writeInt("v23");
 }
