@@ -8157,8 +8157,10 @@ function sub_42D850(mask) {
         Check_Buff(mask, 0x22B8AF8) ||
         Check_Buff(mask, 0x22B8B40) ||
         Check_Buff(mask, 0x22B8B88) ||
-        Check_Buff(mask, 0x22B8BD0) ||
-        Check_Buff(mask, 0x22B81C8)) {
+        Check_Buff(mask, 0x22B8BD0) 
+       // ||        Check_Buff(mask, 0x22B81C8) //TODO 未确定
+       ) 
+        {
         return true;
     }
     return false;
