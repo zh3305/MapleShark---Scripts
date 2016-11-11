@@ -16,8 +16,8 @@ mplew.write(0);
 mplew.writeInt(0);
 mplew.write(0);
 // mplew.AddShort("1");
-// mplew.AddLong("1");
-// mplew.AddLong("Channel");
+// mplew.writeLong("1");
+// mplew.writeLong("Channel");
 mplew.write("CharInfo");
 mplew.writeInt("未知");
 mplew.writeInt("未知固定INT");
@@ -42,7 +42,7 @@ if (CharInfo) {
     mplew.EndNode(true);
 
     mplew.StartNode("CharacterData::Decode");
-    var mask = mplew.AddLong("Flag");
+    var mask = mplew.writeLong("Flag");
     mplew.write("Unknown");
     mplew.StartNode("Seeds");
     for (i = 1; i <= 3; i++) {
@@ -82,7 +82,7 @@ if (CharInfo) {
     mplew.EndNode(false);
     mplew.StartNode("flag & 0x02");
     if ((mask & 0x02) != 0) {
-        mplew.AddLong("Meso 金币信息");
+        mplew.writeLong("Meso 金币信息");
     }
     mplew.EndNode(false);
     mplew.StartNode("flag & 0x08");
@@ -147,8 +147,8 @@ if (CharInfo) {
             mplew.StartNode("Couple Ring " + i);
             mplew.writeInt("getPartnerChrId");
             mplew.AddPaddedString("getPartnerName", 13);
-            mplew.AddLong("getRingId");
-            mplew.AddLong("getPartnerRingId");
+            mplew.writeLong("getRingId");
+            mplew.writeLong("getPartnerRingId");
             mplew.EndNode(false);
         }
         mplew.EndNode(false);
@@ -159,8 +159,8 @@ if (CharInfo) {
             mplew.StartNode("Friendship Ring " + i);
             mplew.writeInt("getPartnerChrId");
             mplew.AddPaddedString("getPartnerName", 13);
-            mplew.AddLong("getRingId");
-            mplew.AddLong("getPartnerRingId");
+            mplew.writeLong("getRingId");
+            mplew.writeLong("getPartnerRingId");
             mplew.writeInt("getItemId");
             mplew.EndNode(false);
         }
@@ -209,7 +209,7 @@ if (CharInfo) {
         for (i = 1; i <= count; i++) {
             mplew.StartNode("Unknown " + i);
             mplew.writeInt("Unknown");
-            mplew.AddLong("错误!未解析的代码段! addCharLook");
+            mplew.writeLong("错误!未解析的代码段! addCharLook");
             mplew.EndNode(false);
         }
         mplew.EndNode(false);
@@ -699,7 +699,7 @@ if (CharInfo) {
 
 mplew.write("", 0);
 mplew.write("", 0);
-mplew.AddLong("currentTimeMillis");
+mplew.writeLong("currentTimeMillis");
 mplew.writeInt("", 100, 0x64);
 mplew.writeShort("", 0);
 mplew.write("", 0);
@@ -841,7 +841,7 @@ function ReadIfFlaggedInt(value, flag, text) {
 }
 function ReadIfFlaggedLong(value, flag, text) {
     if ((value & flag) == flag) {
-        mplew.AddLong(text + " - " + flag);
+        mplew.writeLong(text + " - " + flag);
         mplew.AddComment("Left over flags: " + (value - flag));
         return value - flag;
     }
@@ -923,12 +923,12 @@ function addCharStats() {
     }
 
     mplew.EndNode(false);
-    mplew.AddLong("Experience");
+    mplew.writeLong("Experience");
     mplew.writeInt("Fame");
     mplew.writeInt("Weapon Points");
     mplew.writeInt("Gachapon Experience");
     mplew.writeInt("未知 133新出现INT");
-    mplew.AddLong("-2L Time");
+    mplew.writeLong("-2L Time");
     mplew.writeInt("Map Id");
     mplew.write("Spawn Point");
     //  mplew.writeInt("Unknown");
@@ -961,7 +961,7 @@ function addCharStats() {
     mplew.EndNode(false);
 
     mplew.write("", 0);
-    mplew.AddLong("-2L Time");
+    mplew.writeLong("-2L Time");
     mplew.writeInt("Pvp exp");
     mplew.write("pvpRank ");
     mplew.writeInt("BattlePoints");
@@ -973,9 +973,9 @@ function addCharStats() {
     parttimeJob = mplew.write("parttime.getJob()");
     if (parttimeJob > 0 && parttimeJob <= 5) {
         mplew.writeReversedLong(parttime.getTime());
-        mplew.AddLong("Reversed parttime.getTime()");
+        mplew.writeLong("Reversed parttime.getTime()");
     } else {
-        mplew.AddLong("Reversed -2L Time");
+        mplew.writeLong("Reversed -2L Time");
     }
     mplew.writeInt("getReward"); //
     mplew.write("getReward > 0"); //
@@ -990,7 +990,7 @@ function addCharStats() {
         mplew.EndNode(true);
     }
     mplew.EndNode(true);
-    mplew.AddLong("Reversed Time"); //
+    mplew.writeLong("Reversed Time"); //
     mplew.StartNode("137 new sub_750220");
     mplew.writeBuffer("", 8);
     mplew.writeBuffer("", 8);
@@ -1033,8 +1033,8 @@ function addPotionPotInfo() {
         mplew.writeInt("Hp");
         mplew.writeInt("Unknown");
         mplew.writeInt("Mp");
-        mplew.AddLong("StartDate");
-        mplew.AddLong("EndDate");
+        mplew.writeLong("StartDate");
+        mplew.writeLong("EndDate");
         mplew.EndNode(false);
     }
     mplew.EndNode(false);
@@ -1048,8 +1048,20 @@ function addInventoryInfo() {
     mplew.StartNode("Unknown");
     for (i = 1; i <= 2; i++) {
         mplew.StartNode("Unknown " + i);
-        mplew.writeInt("Unknown");
-        mplew.writeInt("Unknown");
+        mplew.writeInt("Unknown", 0);
+        var unksize = mplew.writeInt("unksize", 0);
+        for (i = 0; i < unksize; i++) {
+            mplew.StartNode("unk data " + i);
+            mplew.writeInt("未知 怪物ID");
+            mplew.writeLong("unk", 0x0A);
+            mplew.writeInt("Unknown");
+            mplew.writeLong("unk");
+            mplew.write("Unknown");
+            mplew.writeInt("Unknown", 9998714);
+            mplew.writeInt("index 0-" + unksize);
+            mplew.EndNode(false);
+
+        }
         mplew.EndNode(false);
     }
     mplew.EndNode(false);
@@ -1065,7 +1077,7 @@ function addInventoryInfo() {
     mplew.write("设置栏数量");
     mplew.write("其他栏数量");
     mplew.write("现金栏数量");
-    mplew.AddLong("Default Expiration Time");
+    mplew.writeLong("Default Expiration Time");
 
     mplew.write("Unknown");
 
@@ -1155,10 +1167,10 @@ function DecodeItem() {
     item = mplew.writeInt("Item ID");
     hasUniqueId = mplew.write("HasCashid");
     if (hasUniqueId == 0x01) {
-        mplew.AddLong("CashID");
+        mplew.writeLong("CashID");
     }
     if (type == 0x01) {
-        mplew.AddLong("Expiration Time");
+        mplew.writeLong("Expiration Time");
         mplew.writeInt("-1 ?");
         mplew.StartNode("addEquipStats");
 
@@ -1231,7 +1243,7 @@ function DecodeItem() {
         mplew.AddShort("getSocket3");
 
         if (hasUniqueId == 0x00)
-            mplew.AddLong("?x8"); // Unique ID?
+            mplew.writeLong("?x8"); // Unique ID?
         mplew.writeBuffer("getTime(-2)", "00 40 E0 FD 3B 37 4F 01")
         mplew.writeInt("-1");
         mplew.writeLong("", 0);
@@ -1246,23 +1258,23 @@ function DecodeItem() {
 
         mplew.EndNode(true); //addEquipBonusStats
     } else if (type == 0x02) {
-        mplew.AddLong("Expiration Time");
+        mplew.writeLong("Expiration Time");
         mplew.writeInt("-1 ?");
         mplew.AddShort("数量");
         mplew.AddString("Name");
         mplew.AddShort("Flags");
         item = parseInt(item / 10000);
         if (item == 233 || item == 207 || item == 287) //203 子弹 207 飞镖
-            mplew.AddLong("?");
+            mplew.writeLong("?");
         mplew.AddField("133 未知 0(19)  ", 19);
     } else if (type == 0x03) { //宠物
-        mplew.AddLong("Expiration Time");
+        mplew.writeLong("Expiration Time");
         mplew.writeInt("-1 ?");
         mplew.AddPaddedString("Petname", 13);
         mplew.write("Level");
         mplew.AddShort("Closeness");
         mplew.write("Fullness");
-        mplew.AddLong("Time");
+        mplew.writeLong("Time");
         mplew.AddShort("Unknown!?");
         mplew.AddShort("Flags?");
         mplew.writeInt("SecondsLeft!?");
@@ -1335,7 +1347,7 @@ function addSkillInfo() {
             mplew.StartNode("Skill " + (i + 1));
             Skills = mplew.writeInt("Skills ID");
             mplew.writeInt("Level ? teachId?");
-            mplew.AddLong("Default Expiration Time");
+            mplew.writeLong("Default Expiration Time", 150842304000000000);
             if (is_skill_need_master_level(Skills)) {
                 mplew.writeInt("FourthJob")
             }
@@ -1405,7 +1417,7 @@ function addCoreAura() {
     //     --v6;
     // }
     // while (v6);
-    mplew.AddLong("currentTimeMillis");
+    mplew.writeLong("currentTimeMillis");
     mplew.write("is龙的传人&&is林之灵 0 or 1");
     mplew.EndNode(false);
 

@@ -12,8 +12,8 @@ function EncodeTemporary() {
     sub_E831C0(mask);
     mplew.EndNode(false);
 
-        mplew.writeShort(0);
-        mplew.write(1);
+    mplew.writeShort(0);
+    mplew.write(1);
 
 }
 
@@ -501,7 +501,29 @@ function sub_E831C0(uFlag)//MobStat *MobStat, int uFlag, int iPacket, int tCur
     if (sub_B7C3F0(uFlag, 8))
         mplew.writeInt("MobStat1->tSeal_");
     if (sub_B7C3F0(uFlag, 0x4B)) {
-        mplew.write("MobStat1->tDeadlyCharge_");
+        var size = mplew.write("MobStat1->tDeadlyCharge_");
+        for (var _t = 0; _t < size; _t++) {
+            mplew.writeInt("chrId");
+            mplew.writeInt("技能ID");
+            mplew.writeInt("mse.getX()");// 伤害数值
+            mplew.writeInt(1000); // 延遲毫秒 : dotInterval * 1000
+            mplew.writeInt(0);// 结束时间
+            // if (mse.getSkill() > 0) {
+            //     mplew.writeInt(eff.getDOTTime() * 1000);// DotAnimation
+            //     mplew.writeInt(eff.getDOTTime());// DotCount
+            // } else {
+            mplew.writeInt(0);
+            mplew.writeInt(0);
+            // }
+            mplew.writeInt(0);//SuperPos
+            mplew.writeInt(0);//AttackDelay
+            mplew.writeInt(0);//DotTickIdx
+            mplew.writeInt(50);//DotTickDamR
+            mplew.writeInt("mons.getController() != null ? mons.getController().getSkillLevel(mse.getSkill()) : 999999");//经常为空
+            mplew.writeInt(0);//未知
+            mplew.writeInt("mse.getX()");
+            // mplew.writeInt("未知东西");
+        }
         // v14 = v6;
         // v8 = MobStat1[1].nACC;
         // if (v8)

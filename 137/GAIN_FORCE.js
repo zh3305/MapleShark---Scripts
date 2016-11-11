@@ -16,11 +16,11 @@ if (!(type == 0 || type == 9 || type == 14)) {
             mplew.writeInt("oid.get(" + i + ")");
         }
     } else {
-        mplew.writeInt(oid.get(0));
+        mplew.writeInt("oid.get(0)");
     }
     skillid = mplew.writeInt("skillid"); //skillid
 }
-    mplew.StartNode("while ");
+mplew.StartNode("while ");
 while (mplew.write("while")) {
     mplew.writeInt("count"); // count
     mplew.writeInt("color"); // color
@@ -35,7 +35,7 @@ while (mplew.write("while")) {
     mplew.writeInt(0); // 0
     mplew.AddComment("--------------------------------");
 }
-    mplew.EndNode(false);
+mplew.EndNode(false);
 
 
 if (type == 11) {

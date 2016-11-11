@@ -296,13 +296,34 @@ function NPC_TALK() {
   talk = talk.replace(regR, "\\r").replace(regN, "\\n");
   // return type2;
   switch (Byt_msgType) {
+    case 0x1D:
+      //旧对话框 带 大 NPC 图片 9130021 1 0 //接收 拒绝
+      mplew.LogAppend("cm.sendAcceptDecline(\"" + talk + "\")");
+    case 0x1A:
+      //旧对话框 带 大 NPC 图片 0 0 9130021 1 0 //带下一步 停止
+      // 1 1 9130021 1 0  /上一步 下一步 停止
+      mplew.LogAppend("cm.sendSimple(\"" + talk + "\")");
+      break;
+    case 0x44:
+      //unk1==1 type==0 tye2==0
+      mplew.LogAppend("cm.限时选择(\"" + talk + "\"," + Timeout + ")");
+      break;
+    case 6:
+      //新选择框 type2==1 type==0x38
+      mplew.LogAppend("cm.sendNewSimple(\"" + talk + "\")");
+      break;
     case 5:
       "sendSimpleSNew"
       mplew.LogAppend("cm.sendSimple(\"" + talk + "\")");
       break;
     case 3:
-      "sendYesNoSNew"
-      mplew.LogAppend("cm.sendYesNo(\"" + talk + "\")");
+      if (type2 == 1) {
+        // //新选择框 type2==1 type==0x24 是否 终止对话
+        mplew.LogAppend("cm.sendYesNoSNew(\"" + talk + "\")");
+      } else {
+        "sendYesNoSNew"
+        mplew.LogAppend("cm.sendYesNo(\"" + talk + "\")");
+      }
       break;
     case 0:
       switch (zeroPad(typea, 2) + zeroPad(typea2, 2)) {
@@ -313,9 +334,27 @@ function NPC_TALK() {
         case "0101":
           if (type == 0x8) {
             //接受 拒绝 sendAcceptDecline
+            mplew.LogAppend("cm.sendAcceptDecline(\"" + talk + "\")");
           }
-          "sendNextPrevSNew"
-          mplew.LogAppend("cm.sendNextPrev(\"" + talk + "\")");
+          else if (type == 0x38) {
+            //新对话框 下一步 带终止对话   tye2==1  unk1==0    玩家头像
+            mplew.LogAppend("cm.sendNewNext(\"" + talk + "\")");
+          }
+          else if (type == 0x24) {
+            //新对话框 下一步 带终止对话   tye2==1  unk1==0   
+            mplew.LogAppend("cm.sendNewNext(\"" + talk + "\")");
+          }
+          else if (type == 0x25) {
+            //新对话框 下一步   tye2==1  unk1==1   #face2# 新头像 ("#face2#哇! 就是这个人吗? \r\n传说中的勇士? ")
+            mplew.LogAppend("cm.sendNewNext(\"" + talk + "\")");
+          }
+          else if (type == 39) {
+            //新对话框 下一步   tye2==1  unk1==1   玩家头像
+            mplew.LogAppend("cm.sendNewNext(\"" + talk + "\")");
+          } else {
+            "sendNextPrevSNew"
+            mplew.LogAppend("cm.sendNextPrev(\"" + talk + "\")");
+          }
           break;
         case "0001":
           "sendNextSNew"
@@ -340,7 +379,7 @@ function zeroPad(nub, digits) {
   return (nub.toString().length > digits) ?
     nub.toString() : (zeros + nub).slice(-digits);
 }
-
+var Timeout;//时间
 var typea;//对话框形式
 var typea2;
 var talk;//對話
@@ -874,7 +913,7 @@ function sub_DA1C20(set/*  */)
 
 function sub_DA1ED0(/*  */) {
   talk = mplew.writeMapleAsciiString("");
-  v5 = mplew.writeInt("v5");
+  Timeout = mplew.writeInt("限时选择时间");
 }
 function sub_DA20C0(/*  */) {
   talk = mplew.writeMapleAsciiString("");
