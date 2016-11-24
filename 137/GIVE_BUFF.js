@@ -8,7 +8,6 @@ function HashMap() {
 }
 
 var map = new HashMap();
-map.put(0x22B81C8, 0);
 map.put(0x22b8c18, 180);
 map.put(0x22b8c18, 180);
 map.put(0x22b8c60, 181);
@@ -8158,7 +8157,6 @@ function sub_42D850(mask) {
         Check_Buff(mask, 0x22B8B40) ||
         Check_Buff(mask, 0x22B8B88) ||
         Check_Buff(mask, 0x22B8BD0) 
-       // ||        Check_Buff(mask, 0x22B81C8) //TODO 未确定
        ) 
         {
         return true;

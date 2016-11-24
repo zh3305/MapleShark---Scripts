@@ -296,9 +296,14 @@ function NPC_TALK() {
   talk = talk.replace(regR, "\\r").replace(regN, "\\n");
   // return type2;
   switch (Byt_msgType) {
+    case 0x10:
+      //type==0 tye2==0 忘记什么对话框了
+      mplew.LogAppend("cm.sendYesNo(\"" + talk + "\")");
+      break;
     case 0x1D:
       //旧对话框 带 大 NPC 图片 9130021 1 0 //接收 拒绝
       mplew.LogAppend("cm.sendAcceptDecline(\"" + talk + "\")");
+      break;
     case 0x1A:
       //旧对话框 带 大 NPC 图片 0 0 9130021 1 0 //带下一步 停止
       // 1 1 9130021 1 0  /上一步 下一步 停止
