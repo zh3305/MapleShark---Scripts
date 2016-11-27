@@ -296,78 +296,161 @@ function NPC_TALK() {
   talk = talk.replace(regR, "\\r").replace(regN, "\\n");
   // return type2;
   switch (Byt_msgType) {
-    case 0x10:
-      //type==0 tye2==0 忘记什么对话框了
-      mplew.LogAppend("cm.sendYesNo(\"" + talk + "\")");
+    case 0x3:
+      if (type == 0x25) {
+        //新对话框 type2 == 1 新对话框 不带终止按钮 npcid==0 是 否
+        mplew.LogAppend("cm.sendYesNoSNewforce(\"" + talk + "\"" + ((type & 4) ? "," + Int_npcID : "") + ")");
+      } else if (type == 0x24) {
+        //新对话框 type2==1  是否 终止对话
+        mplew.LogAppend("cm.sendYesNoSNew(\"" + talk + "\"" + ((type & 4) ? "," + Int_npcID : "") + ")");
+        // } else if (type2 == 1) {
+        //   // //新 type2==1 type==0x24 是否 终止对话
+        //   mplew.LogAppend("cm.sendYesNoSNew(\"" + talk + "\"" + ((type & 4) ? "," + Int_npcID : "") + ")");
+      } else if (type2 == 0) {
+        //旧对话框 是否 停止  type ==0 npc左边 type ==4 NPC 右边
+        mplew.LogAppend("cm.sendYesNo(\"" + talk + "\"" + ((type & 4) ? "," + Int_npcID : "") + ")");
+      }
       break;
-    case 0x1D:
-      //旧对话框 带 大 NPC 图片 9130021 1 0 //接收 拒绝
-      mplew.LogAppend("cm.sendAcceptDecline(\"" + talk + "\")");
+    case 0x5:
+      "sendSimpleSNew"
+      mplew.LogAppend("cm.sendSimple(\"" + talk + "\")");
+      break;
+    case 0x6:
+      //新选择框 type2==1 type==0x38
+      // mplew.LogAppend("cm.sendNewSimple(\"" + talk + "\")");
+      if (type == 0x25) {
+        //新选择框 type2==1  npcid==0 不带停止按钮
+        mplew.LogAppend("cm.sendNewSimpleforce(\"" + talk + "\"" + ((type & 4) ? "," + Int_npcID : "") + ")");
+      } else if (type == 0) {
+        //type==0 type2==0 旧下一步选择框
+        mplew.LogAppend("cm.sendSimple(\"" + talk + "\")");
+      }
+      break;
+    case 0x10:
+      if (type == 0) {
+        //type==0 tye2==0 旧对话框 是否
+        mplew.LogAppend("cm.sendYesNo(\"" + talk + "\")");
+      } else if (type == 1) {
+        //type==0 tye2==0 旧对话框 接受拒绝 不带停止
+        mplew.LogAppend("cm.sendAcceptDeclineforce(\"" + talk + "\")");
+      }
       break;
     case 0x1A:
       //旧对话框 带 大 NPC 图片 0 0 9130021 1 0 //带下一步 停止
-      // 1 1 9130021 1 0  /上一步 下一步 停止
-      mplew.LogAppend("cm.sendSimple(\"" + talk + "\")");
+      // 1 1 9130021 1 0  /上一步 下一步 停止   
+      if (direction != undefined) {
+        if (direction) {
+          //1 1 9310424 1 1 上一步 下一步 停止 type ==4  大图左边 9310424 npc图
+          mplew.LogAppend("cm.sendBNextPrevl(\"" + talk + "\"" + ((type & 4) ? "," + Int_npcID : "") + ")");
+        } else {
+          //1 1 9310425 1 0 上一步 下一步 停止 type ==4  大图右边  9310425 npc图
+          mplew.LogAppend("cm.sendBNextPrev(\"" + talk + "\"" + ((type & 4) ? "," + Int_npcID : "") + ")");
+        }
+      }
+      break;
+    case 0x1B:
+      //旧对话框 带  左右 大 NPC 图片 上一步 下一步 停止   
+      //1 1 9310424 1 9310425 1
+      mplew.LogAppend("cm.sendBNextPrev(\"" + talk + "\"" + ((type & 4) ? "," + Int_npcID : "") + ")");
+      break;
+    case 0x1D:
+      //旧对话框 带 大 NPC 图片 9130021 1 0 //接收 拒绝
+      mplew.LogAppend("cm.sendAcceptDecline(\"" + talk + "\"" + ((type & 4) ? "," + Int_npcID : "") + ")");
       break;
     case 0x44:
       //unk1==1 type==0 tye2==0
       mplew.LogAppend("cm.限时选择(\"" + talk + "\"," + Timeout + ")");
       break;
-    case 6:
-      //新选择框 type2==1 type==0x38
-      mplew.LogAppend("cm.sendNewSimple(\"" + talk + "\")");
-      break;
-    case 5:
-      "sendSimpleSNew"
-      mplew.LogAppend("cm.sendSimple(\"" + talk + "\")");
-      break;
-    case 3:
-      if (type2 == 1) {
-        // //新选择框 type2==1 type==0x24 是否 终止对话
-        mplew.LogAppend("cm.sendYesNoSNew(\"" + talk + "\")");
-      } else {
-        "sendYesNoSNew"
-        mplew.LogAppend("cm.sendYesNo(\"" + talk + "\")");
-      }
-      break;
     case 0:
       switch (zeroPad(typea, 2) + zeroPad(typea2, 2)) {
         case "0100":
-          "sendPrevSNew"
-          mplew.LogAppend("cm.sendPrev(\"" + talk + "\")");
+          if (type == 0 || type == 4) {
+            //旧 上一步 带停止 确定 对话 type ==0 左NPC type==4 右NPC  
+            mplew.LogAppend("cm.sendPrev(\"" + talk + "\"" + ((type & 4) ? "," + Int_npcID : "") + ")");
+          } else if (type == 2) {
+            //旧 上一步 带停止 确定   玩家头像
+            mplew.LogAppend("cm.sendTPrev(\"" + talk + "\"" + ((type & 4) ? "," + Int_npcID : "") + ")");
+          } else if (type == 0x38) {
+            //新 type2==1  确定   玩家头像  带终止对话
+            mplew.LogAppend("cm.sendOkNew(\"" + talk + "\"" + ((type & 4) ? "," + Int_npcID : "") + ")");
+          }
           break;
         case "0101":
-          if (type == 0x8) {
+          if (type == 0x4) {
+            //旧 上一步 下一步  
+            mplew.LogAppend("cm.sendNextPrev(\"" + talk + "\"" + ((type & 4) ? "," + Int_npcID : "") + ")");
+          } else if (type == 0x8) {
             //接受 拒绝 sendAcceptDecline
             mplew.LogAppend("cm.sendAcceptDecline(\"" + talk + "\")");
-          }
-          else if (type == 0x38) {
+          } else if (type == 0x38) {
             //新对话框 下一步 带终止对话   tye2==1  unk1==0    玩家头像
-            mplew.LogAppend("cm.sendNewNext(\"" + talk + "\")");
-          }
-          else if (type == 0x24) {
+            mplew.LogAppend("cm.sendTNewNext(\"" + talk + "\")");
+          } else if (type == 0x24) {
             //新对话框 下一步 带终止对话   tye2==1  unk1==0   
-            mplew.LogAppend("cm.sendNewNext(\"" + talk + "\")");
-          }
-          else if (type == 0x25) {
-            //新对话框 下一步   tye2==1  unk1==1   #face2# 新头像 ("#face2#哇! 就是这个人吗? \r\n传说中的勇士? ")
-            mplew.LogAppend("cm.sendNewNext(\"" + talk + "\")");
-          }
-          else if (type == 39) {
-            //新对话框 下一步   tye2==1  unk1==1   玩家头像
-            mplew.LogAppend("cm.sendNewNext(\"" + talk + "\")");
-          } else {
-            "sendNextPrevSNew"
+            mplew.LogAppend("cm.sendNewNext(\"" + talk + "\"" + ((type & 4) ? "," + Int_npcID : "") + ")");
+          } else if (type == 0x25) {
+            //新对话框 下一步  不带终止 tye2==1  unk1==1   #face2# 新头像 ("#face2#哇! 就是这个人吗? \r\n传说中的勇士? ")
+            mplew.LogAppend("cm.sendNewNextforce(\"" + talk + "\"" + ((type & 4) ? "," + Int_npcID : "") + ")");
+          } else if (type == 0x39) {
+            //新对话框 下一步   不带终止  玩家头像
+            mplew.LogAppend("cm.sendTNewNextforce(\"" + talk + "\")");
+          } else if (type == 0) {
+            //旧上一步 下一步 对话框  停止对话框 NPC 左边
             mplew.LogAppend("cm.sendNextPrev(\"" + talk + "\")");
+          } else if (type == 0x1) {
+            //旧上一步 下一步 对话框 没有停止按钮
+            mplew.LogAppend("cm.sendNextPrevforce(\"" + talk + "\")");
+          } else if (type == 0x11) {
+            //旧上一步 下一步 对话框 没有停止按钮 玩家头像
+            mplew.LogAppend("cm.sendTNextPrevforce(\"" + talk + "\")");
+          } else if (type == 0x3) {
+            //旧上一步 下一步 对话框 没有停止按钮 玩家头像 npc_id==0 tunk==1 tunk2==1064000
+            mplew.LogAppend("cm.sendTNextPrevforce(\"" + talk + "\")");
+          } else if (type == 0x2) {
+            //旧上一步 下一步 对话框 停止按钮 玩家头像
+            mplew.LogAppend("cm.sendTNextPrev(\"" + talk + "\")");
           }
           break;
         case "0001":
-          "sendNextSNew"
-          mplew.LogAppend("cm.sendNext(\"" + talk + "\")");
+          if (type == 0x1) {
+            //旧对话框  下一步 没有停止按钮
+            mplew.LogAppend("cm.sendNextforce(\"" + talk + "\")");
+          } else if (type == 5) {
+            //旧对话框 下一步  没有停止按钮  npc 在右边
+            mplew.LogAppend("cm.sendNextforce(\"" + talk + "\"" + ((type & 4) ? "," + Int_npcID : "") + ")");
+          } else if (type == 0 || type == 4) {
+            //旧对话框 下一步 停止 确认
+            mplew.LogAppend("cm.sendNext(\"" + talk + "\"" + ((type & 4) ? "," + Int_npcID : "") + ")");
+          } else if (type == 0x38) {
+            //新对话框 下一步 带终止对话   tye2==1    玩家头像 unk==0
+            mplew.LogAppend("cm.sendTNewNextforce(\"" + talk + "\")");
+          } else if (type == 0x39) {
+            //新对话框 下一步 不带终止对话   tye2==1    玩家头像 unk==0
+            mplew.LogAppend("cm.sendTNewNextforce(\"" + talk + "\")");
+          } else if (type == 0x3) {
+            //旧对话框 下一步 对话框 不带终止对话 玩家头像
+            mplew.LogAppend("cm.sendTNextPrevforce(\"" + talk + "\")");
+          } else if (type == 0x11) {
+            //旧对话框 下一步 对话框 不带终止对话 玩家头像 npc_id==0 tunk==1 tunk2==1064000
+            mplew.LogAppend("cm.sendTNextPrevforce(\"" + talk + "\")");
+          } else if (type == 0x24) {
+            //新对话框 下一步 带终止对话   tye2==1   
+            mplew.LogAppend("cm.sendNewNext(\"" + talk + "\"" + ((type & 4) ? "," + Int_npcID : "") + ")");
+          } else if (type == 0x25) {
+            if (showtime) {
+              //新对话框 没有按钮 定时 自动消失
+              mplew.LogAppend("cm.sendNewshow(\"" + talk + "\"" + ((type & 4) ? "," + Int_npcID : "") + "," + showtime + ")");
+
+            } else {
+              //新对话框 下一步 不带终止对话   tye2==1   
+              // cm.sendNewNextforce("#face1##b#fs25#小#fs20#~可爱~ #fs25#小#fs20#~可爱~ #g#fs25#小↗ ~可↑ ~爱~~! #k",2074100)
+              mplew.LogAppend("cm.sendNewNextforce(\"" + talk + "\"" + ((type & 4) ? "," + Int_npcID : "") + ")");
+            }
+          }
           break;
         case "0000":
-          mplew.LogAppend("cm.sendOk(\"" + talk + "\")");
-          "sendOkSNew"
+          //旧对话框 确定 停止 type ==0 左NPC type==4 右NPC  
+          mplew.LogAppend("cm.sendOk(\"" + talk + "\"" + ((type & 4) ? "," + Int_npcID : "") + ")");
           break;
       }
       break;
@@ -388,6 +471,9 @@ var Timeout;//时间
 var typea;//对话框形式
 var typea2;
 var talk;//對話
+var Int_npcID;
+var direction;//方向
+var showtime;
 function sub_D9C230(/*  */type)
 //void __thiscall sub_D9C230 (/* int *this, var a2, var Int_npcID, var CInPacket2, var type, int type2 */)
 {
@@ -396,7 +482,7 @@ function sub_D9C230(/*  */type)
   talk = mplew.writeMapleAsciiString("");
   typea = mplew.write("typea");
   typea2 = mplew.write("typea2");
-  mplew.writeInt("New 未知", 0);
+  showtime = mplew.writeInt("showtime", 0);
 }
 function sub_D9C4A0(/*  */)
 //void __thiscall sub_D9C4A0 (/* char *this, var a2, var a3, var a4, var a5, int *a6 */)
@@ -424,7 +510,7 @@ function sub_D9CCF0(type/*  */)
 //void __thiscall sub_D9CCF0 (/* void *this, var a2, var a3, var iPacket, var type, var a6, var a7, int *a8 */)
 {
   if (type & 4)
-    a3 = mplew.writeInt("a3");
+    Int_npcID = mplew.writeInt("Int_npcID");
   talk = mplew.writeMapleAsciiString("");
 }
 function sub_D9CF40(/*  */)
@@ -437,7 +523,7 @@ function sub_D9D190(type/*  */)
 //void __thiscall sub_D9D190 (/* char *this, var a2, var a3, var iPacket, var a5, int a6 */)
 {
   if (type & 4)
-    a3 = mplew.writeInt("a3");
+    Int_npcID = mplew.writeInt("a3");
   talk = mplew.writeMapleAsciiString("");
   talk = mplew.writeMapleAsciiString("");
   v27 = mplew.writeShort("v27");
@@ -446,7 +532,7 @@ function sub_D9D190(type/*  */)
 //void __thiscall sub_D9D440 (/* char *this, var a2, var a3, var iPacket_1, var type, char *a6 */)
 {
   if (type & 4)
-    a3 = mplew.writeInt("a3");
+    Int_npcID = mplew.writeInt("a3");
   talk = mplew.writeMapleAsciiString("");
   talk = mplew.writeMapleAsciiString("");
   v26 = mplew.writeShort("v26");
@@ -469,7 +555,7 @@ function sub_D9DA90(/*  */) {
 }
 function sub_D9DD00(type/*  */) {
   if (type & 4)
-    a3 = mplew.writeInt("a3");
+    Int_npcID = mplew.writeInt("a3");
   talk = mplew.writeMapleAsciiString("");
 }
 function sub_DA2300(/*  */)
@@ -748,25 +834,25 @@ function sub_D9CA20(type, a6/*  */)
 //void __thiscall sub_D9CA20 (/* void *this, var a2, var a3, var iPacket, unsigned var type, int a6 */)
 {
   if (type & 4)
-    a3 = mplew.writeInt("a3");
+    Int_npcID = mplew.writeInt("a3");
   talk = mplew.writeMapleAsciiString("");
-  v31 = mplew.write("v31");
-  v30 = mplew.write("v30");
-  v29 = mplew.writeInt("v29");
-  v28 = mplew.writeInt("v28");
+  mplew.write(1);
+  mplew.write(1);
+  mplew.writeInt("ipcid");
+  mplew.writeInt(1);
   if (a6) {
     v33 = mplew.writeInt("v33");
     v32 = mplew.writeInt("v32");
   }
   else {
-    v33 = mplew.write("v33");
+    direction = mplew.write("左右");
   }
 }
 function sub_DA05C0(type, set/*  */)
 //void __thiscall sub_DA05C0 (/* void *this, var a2, var a3, var iPacket, unsigned var type, var a6, var a7, int set */)
 {
   if (type & 4)
-    v10 = mplew.writeInt("v10");
+    Int_npcID = mplew.writeInt("v10");
   talk = mplew.writeMapleAsciiString("");
   v33 = mplew.writeInt("v33");
   v32 = mplew.writeInt("v32");
@@ -873,7 +959,7 @@ function sub_DA1680(type, set/*  */)
 //void __thiscall sub_DA1680 (/* void *this, var a2, var a3, var iPacket, unsigned var type, int set */)
 {
   if (type & 4)
-    a3 = mplew.writeInt("a3");
+    Int_npcID = mplew.writeInt("a3");
   talk = mplew.writeMapleAsciiString("");
   v31 = mplew.write("v31");
   v30 = mplew.write("v30");
@@ -889,7 +975,7 @@ function sub_DA1680(type, set/*  */)
 }
 function sub_DA1950(type, set/*  */) {
   if (type & 4)
-    v10 = mplew.writeInt("v10");
+    Int_npcID = mplew.writeInt("v10");
   talk = mplew.writeMapleAsciiString("");
   v33 = mplew.writeInt("v33");
   v32 = mplew.writeInt("v32");

@@ -19,18 +19,18 @@ function PARTY_OPERATION() {
             if (mplew.write(""))
                 v6 = mplew.write("v6");
             return;
-        case 0x1D:
+        case 0x1D://no
             return;
         case 5:
             v16 = mplew.writeInt("v16");
             mplew.writeMapleAsciiString("");
-            v253 = 8;
             v195 = mplew.writeInt("v195");
             v201 = mplew.writeInt("v201");
             v198 = mplew.writeInt("v198");
             return;
-        case 0x22:
-        case 0x28:
+        case 0x21://发生错误,不能处理组队邀请
+        case 0x22://邀请xxx加入组队
+        case 0x28://邀请xxx加入组队
             mplew.writeMapleAsciiString("");
             return;
         case 8:
@@ -41,9 +41,8 @@ function PARTY_OPERATION() {
             v201 = mplew.writeInt("v201");
             v30 = mplew.writeInt("v30");
             return;
-        case 0x46:
+        case 0x46://已向xxx申请入队
             mplew.writeMapleAsciiString("");
-
             return;
         case 0x10:
             mplew.writeInt("");
@@ -71,10 +70,10 @@ function PARTY_OPERATION() {
             }
             return;
         case 0x19:
-            mplew.writeInt("");
-            v74 = mplew.writeMapleAsciiString("v74");
-            v197 = mplew.write("v197");
-            v195 = mplew.writeInt("v195");
+            mplew.writeInt("party.getId()");
+            v74 = mplew.writeMapleAsciiString("target.getName()");
+            v197 = mplew.write(0);
+            v195 = mplew.writeInt(0);
             sub_7653B0(/* iPacket */);
             return;
         case 0x1A:
@@ -115,7 +114,7 @@ function PARTY_OPERATION() {
         case 0x3F:
             v118 = mplew.write("v118");
             return;
-        case 0x40:
+        case 0x40://无法修改组队属性,请稍后重新尝试
             return;
         case 0x4E:
         case 0x4F:
@@ -194,34 +193,20 @@ function PARTY_OPERATION() {
         case 0x54:
             v150 = mplew.write("v150");
             return;
-        case 0x33:
-            return;
-        case 0x34:
-            return;
-        case 0x35:
-            return;
-        case 0x12:
-            return;
-        case 0x13:
-            return;
-        case 0x17:
-            return;
-        case 0x1B:
-            return;
-        case 0x1C:
-            return;
-        case 0x37:
-            return;
-        case 0x2F:
-            return;
-        case 0x45:
-            return;
-        case 0x39:
-            return;
-        case 0x3A:
-            return;
-        case 0x31:
-            return;
+        case 0x33://能转让给同一个场地的组队成员
+        case 0x34://没有与队长同意地图的组队成员
+        case 0x35://只能向相同频道内的组队成员传授
+        case 0x12://已加入其他组
+        case 0x13://新手不能开启组队
+        case 0x17://没有参加的组队
+        case 0x1B://已经加入其他组
+        case 0x1C://组队成员已满
+        case 0x37://管理员不能开组队
+        case 0x2F://无法使用逐出功能的地图
+        case 0x45://当前地图中无法使用
+        case 0x39://不能与其他世界的人组队,完成剧情任务后可以使用
+        case 0x3A://这频道,找不到角色
+        case 0x31://无法使用逐出功能
         default:
             return;
     }
@@ -229,12 +214,39 @@ function PARTY_OPERATION() {
 function sub_7653B0(/*  */)
 //void __thiscall sub_7653B0 (/* void *this, int iPacket */)
 {
+    mplew.StartNode("sub_74F820 ");
     sub_74F820(/* iPacket */);
-    mplew.writeBuffer("v2 + 250", 0x18);
-    mplew.writeBuffer("v2 + 274", 0x78);
+    mplew.EndNode(false);
+    mplew.StartNode("v2 + 250" + " 0x18 ");
+    for (var i = 0; i < 6; i++) {
+        mplew.writeInt("137 new", 0);
+    }
+    mplew.EndNode(false);
+    // mplew.writeBuffer("v2 + 250", 0x18);
+    // mplew.writeBuffer("v2 + 274", 0x78);
+    mplew.StartNode("v2 + 274" + " 0x78 ");
+    for (var i = 0; i < 6; i++) {
+        mplew.writeInt("137 new", 0);
+    }
+    mplew.writeInt("party.getLeader().getId()");
+    for (var i = 0; i < 6; i++) {
+        mplew.writeInt("getMapid", 0);
+    }
+    for (var i = 0; i < 6; i++) {
+
+        mplew.StartNode("forchannel " + i);
+        mplew.writeInt("getDoorTown", 999999999);
+        mplew.writeInt("getDoorTarget", 999999999);
+        mplew.writeInt("getDoorSkill", 0);
+        mplew.writeInt("getDoorPositionx", 0);
+        mplew.writeInt("getDoorPositiony", 0);
+        mplew.EndNode(false);
+    }
+    mplew.EndNode(false);
+
     mplew.write("") != 0;
     mplew.write("") != 0;
-    v4 = mplew.writeMapleAsciiString("v4");
+    v4 = mplew.writeMapleAsciiString("队伍名字");
 }
 function sub_74F820(/*  */)
 //unsigned int __thiscall sub_74F820 (/* void *this, int a2 */)
