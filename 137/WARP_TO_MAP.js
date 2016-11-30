@@ -1001,16 +1001,17 @@ function addCharStats() {
     mplew.EndNode(false);
     mplew.writeInt("Unknown", 0); //sub_750220
     mplew.EndNode(false);
+    mplew.writeInt("未知Int", 0); //sub_750220
 }
 
 function UnkFunctin6() {
     mplew.StartNode("UnkFunctin6");
     v7 = 2;
     while (v7 < 74) {
-        mplew.writeInt("Unknown"); //
+        mplew.writeInt("Unknown", 0); //
         while (true) {
             res = 255;
-            mplew.write("Unknown"); //
+            mplew.write("Unknown", 255); //
             if (res == 255) {
                 break;
             }
@@ -1050,18 +1051,17 @@ function addInventoryInfo() {
         mplew.StartNode("Unknown " + i);
         mplew.writeInt("Unknown", 0);
         var unksize = mplew.writeInt("unksize", 0);
-        for (i = 0; i < unksize; i++) {
-            mplew.StartNode("unk data " + i);
-            mplew.writeInt("未知 怪物ID");
-            mplew.writeLong("unk", 0x0A);
-            mplew.writeInt("Unknown");
-            mplew.writeLong("unk");
-            mplew.write("Unknown");
-            mplew.writeInt("Unknown", 9998714);
-            mplew.writeInt("index 0-" + unksize);
-            mplew.EndNode(false);
-
-        }
+        // for (i = 0; i < unksize; i++) {
+        //     mplew.StartNode("unk data " + i);
+        //     mplew.writeInt("未知 怪物ID");
+        //     mplew.writeLong("unk", 0x0A);
+        //     mplew.writeInt("Unknown");
+        //     mplew.writeLong("unk");
+        //     mplew.write("Unknown");
+        //     mplew.writeInt("Unknown", 9998714);
+        //     mplew.writeInt("index 0-" + unksize);
+        //     mplew.EndNode(false);
+        // }
         mplew.EndNode(false);
     }
     mplew.EndNode(false);
@@ -1347,7 +1347,7 @@ function addSkillInfo() {
             mplew.StartNode("Skill " + (i + 1));
             Skills = mplew.writeInt("Skills ID");
             mplew.writeInt("Level ? teachId?");
-            mplew.writeLong("Default Expiration Time", 150842304000000000);
+            mplew.writeLong("Default Expiration Time");//, 150842304000000000
             if (is_skill_need_master_level(Skills)) {
                 mplew.writeInt("FourthJob")
             }

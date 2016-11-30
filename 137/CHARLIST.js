@@ -29,13 +29,13 @@ function CHARLIST() {
             while (v4 < v21);
         }
         v24 = mplew.write("v24");
-    
-        for (var i = 0; i < v24; i++ ) {
+
+        for (var i = 0; i < v24; i++) {
             sub_AB5200();
             mplew.write("v30");
         }
-        var msg="i < v24:"+i < v24+" I "+i+" v24 "+v24 ;
-        mplew.LogMessage(msg);
+        //  "i < v24:" + i < v24 + " I " + i + " v24 " + v24;
+        // mplew.LogMessage(msg);
         mplew.write("");
         mplew.write("");
         mplew.writeInt("");
@@ -93,7 +93,7 @@ function CHARLIST() {
     // return result;
 }
 function sub_AB5200(/*  */) {
- result=   GW_CharacterStatDecode();
+    result = GW_CharacterStatDecode();
     AvatarLookDecode();
     if (result == 10000 || result == 10100 || result == 10110 || result == 10111 || result == 10112) {
         AvatarLookDecode();
@@ -215,21 +215,21 @@ function GW_CharacterStatDecode() {
     mplew.EndNode(true);
     mplew.AddLong("Reversed Time"); //
     mplew.StartNode("137 new sub_750220");
-        mplew.writeBuffer("",8);
-        mplew.writeBuffer("",8);
-        mplew.writeInt(0);
-        mplew.writeInt(0);
-        mplew.writeInt(0);
-        result = mplew.write(0);
+    mplew.writeBuffer("", 8);
+    mplew.writeBuffer("", 8);
+    mplew.writeInt(0);
+    mplew.writeInt(0);
+    mplew.writeInt(0);
+    result = mplew.write(0);
     mplew.EndNode(false);
-    mplew.writeInt("Unknown",0); //sub_750220
+    mplew.writeInt("Unknown", 0); //sub_750220
     mplew.EndNode(false);
-    result=job;
+    result = job;
     return result;
 }
 
 function AvatarLookDecode() {
-    
+
     mplew.StartNode("AvatarLookDecode");
     AvatarLook = {};
     AvatarLook_1 = AvatarLook;
