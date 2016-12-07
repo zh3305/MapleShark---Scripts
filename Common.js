@@ -1,142 +1,142 @@
-Object.prototype.getKeyByValue = function( value ) {
-    for( var prop in this ) {
-        if( this.hasOwnProperty( prop ) ) {
-             if( this[ prop ] === value )
-                 return prop;
-        }
-    }
+Object.prototype.getKeyByValue = function (value) {
+	for (var prop in this) {
+		if (this.hasOwnProperty(prop)) {
+			if (this[prop] === value)
+				return prop;
+		}
+	}
 }
 var MapleJob = {
-    isSeparatedSp: function (job) {
-        return !MapleJob.is管理员(job) && !MapleJob.is林芝林(job) && !MapleJob.is皮卡啾(job);
-    },
+	isSeparatedSp: function (job) {
+		return !MapleJob.is管理员(job) && !MapleJob.is林芝林(job) && !MapleJob.is皮卡啾(job);
+	},
 	is冒险家: function (job) {
-        return parseInt(job / 1000) == 0;
-    }, is英雄: function (job) {
-        return parseInt(job / 10) == 11;
-    }, is圣骑士: function (job) {
-        return parseInt(job / 10) == 12;
-    }, is黑骑士: function (job) {
-        return parseInt(job / 10) == 13;
-    }, is大魔导士_火毒: function (job) {
-        return parseInt(job / 10) == 21;
-    }, is大魔导士_冰雷: function (job) {
-        return parseInt(job / 10) == 22;
-    }, IsFaShi: function (job) {
-        return job == 200 || job == 210 || job == 211 || job == 212 || job == 220 || job == 221 || job == 222 || job == 230 || job == 231 || job == 232;
-    }, is主教: function (job) {
-        return parseInt(job / 10) == 23;
-    }, is神射手: function (job) {
-        return parseInt(job / 10) == 31;
-    }, is弩箭神: function (job) {
-        return parseInt(job / 10) == 32;
-    }, IsGongJianShou: function (Job) {
-        return Job == 300 || Job == 310 || Job == 311 || Job == 312 || Job == 320 || Job == 321 || Job == 322;
-    }, is隐士: function (job) {
-        return parseInt(job / 10) == 41;
-    }, is侠盗: function (job) {
-        return parseInt(job / 10) == 42;
-    }, is暗影双刀: function (job) {
-        return parseInt(job / 10) == 43; // sub == 1 && job == 400
-    }, is拳霸: function (job) {
-        return parseInt(job / 10) == 51;
-    }, is枪神: function (job) {
-        return parseInt(job / 10) == 52;
-    }, IsHuoPaoShou: function (job) {
-        return parseInt(job / 10) == 53 || job == 501;
-    }, IsHaiDaoHuoPaoShou: function (a1) {
+		return parseInt(job / 1000) == 0;
+	}, is英雄: function (job) {
+		return parseInt(job / 10) == 11;
+	}, is圣骑士: function (job) {
+		return parseInt(job / 10) == 12;
+	}, is黑骑士: function (job) {
+		return parseInt(job / 10) == 13;
+	}, is大魔导士_火毒: function (job) {
+		return parseInt(job / 10) == 21;
+	}, is大魔导士_冰雷: function (job) {
+		return parseInt(job / 10) == 22;
+	}, IsFaShi: function (job) {
+		return job == 200 || job == 210 || job == 211 || job == 212 || job == 220 || job == 221 || job == 222 || job == 230 || job == 231 || job == 232;
+	}, is主教: function (job) {
+		return parseInt(job / 10) == 23;
+	}, is神射手: function (job) {
+		return parseInt(job / 10) == 31;
+	}, is弩箭神: function (job) {
+		return parseInt(job / 10) == 32;
+	}, IsGongJianShou: function (Job) {
+		return Job == 300 || Job == 310 || Job == 311 || Job == 312 || Job == 320 || Job == 321 || Job == 322;
+	}, is隐士: function (job) {
+		return parseInt(job / 10) == 41;
+	}, is侠盗: function (job) {
+		return parseInt(job / 10) == 42;
+	}, is暗影双刀: function (job) {
+		return parseInt(job / 10) == 43; // sub == 1 && job == 400
+	}, is拳霸: function (job) {
+		return parseInt(job / 10) == 51;
+	}, is枪神: function (job) {
+		return parseInt(job / 10) == 52;
+	}, IsHuoPaoShou: function (job) {
+		return parseInt(job / 10) == 53 || job == 501;
+	}, IsHaiDaoHuoPaoShou: function (a1) {
 		return (a1 == 500 || a1 == 510 || a1 == 511 || a1 == 512 || a1 == 520 || a1 == 521 || a1 == 522 || (IsHuoPaoShou(a1)))
-    }, IsZhanShi: function (job) {
-        return job == 100 || job == 110 || job == 111 || job == 112 || job == 120 || job == 121 || job == 122 || job == 130 || job == 131 || job == 132;
-    }, is火炮手: function (job) {
-        return parseInt(job / 10) == 53 || job == 501 || job == 1;
-    }, is龙的传人: function (job) {
-        return parseInt(job / 10) == 57 || job == 508;
-    }, is管理员: function (job) {
-        return job == 800 || job == 900 || job == 910;
-    }, is皇家骑士团: function (job) {
-        return parseInt(job / 1000) == 1;
-    }, is圣魂剑士: function (job) {
-        return parseInt(job / 100) == 11;
-    }, is烈焰巫师: function (job) {
-        return parseInt(job / 100) == 12;
-    }, is破风使者: function (job) {
-        return parseInt(job / 100) == 13;
-    }, is暗夜行者: function (job) {
-        return parseInt(job / 100) == 14;
-    }, is闪雷悍将: function (job) {
-        return parseInt(job / 100) == 15;
-    }, is英雄团: function (job) {
-        return parseInt(job / 1000) == 2;
-    }, is狂狼勇士: function (job) {
-        return parseInt(job / 100) == 21 || job == 2000;
-    }, is龙魔导士: function (job) {
-        return parseInt(job / 100) == 22 || job == 2001;
-    }, is双弩精灵: function (job) {
-        return parseInt(job / 100) == 23 || job == 2002;
-    }, is幻影侠盗: function (job) {
-        return parseInt(job / 100) == 24 || job == 2003;
-    }, is夜光: function (job) {
-        return parseInt(job / 100) == 27 || job == 2004;
-    }, is隐月: function (job) {
-        return parseInt(job / 100) == 25 || job == 2005;
-    }, is末日反抗军: function (job) {
-        return parseInt(job / 1000) == 3;
-    }, is恶魔: function (job) {
-        return is恶魔杀手(job) || is恶魔复仇者(job) || job == 3001;
-    }, is恶魔杀手: function (job) {
-        return parseInt(job / 10) == 311 || job == 3100;
-    }, is恶魔复仇者: function (job) {
-        return parseInt(job / 10) == 312 || job == 3101;
-    }, is炼狱巫师: function (job) {
-        return parseInt(job / 100) == 32;
-    }, is狂豹猎人: function (job) {
-        return parseInt(job / 100) == 33;
-    }, is机械师: function (job) {
-        return parseInt(job / 100) == 35;
-    }, is尖兵: function (job) {
-        return parseInt(job / 100) == 36 || job == 3002;
-    }, is晓の阵: function (job) {
-        return parseInt(job / 1000) == 4;
-    }, is剑豪: function (job) {
-        return parseInt(job / 100) == 41 || job == 4001;
-    }, is阴阳师: function (job) {
-        return parseInt(job / 100) == 42 || job == 4002;
-    }, is米哈尔: function (job) {
-        return parseInt(job / 1000) == 5;
-    }, is飞侠: function (job) {
-        return job == 400 || job == 420 || job == 421 || job == 422 || job == 410 || job == 411 || job == 412 || parseInt(job / 10) == 43;
-    }, is诺巴: function (job) {
-        return parseInt(job / 1000) == 6;
+	}, IsZhanShi: function (job) {
+		return job == 100 || job == 110 || job == 111 || job == 112 || job == 120 || job == 121 || job == 122 || job == 130 || job == 131 || job == 132;
+	}, is火炮手: function (job) {
+		return parseInt(job / 10) == 53 || job == 501 || job == 1;
+	}, is龙的传人: function (job) {
+		return parseInt(job / 10) == 57 || job == 508;
+	}, is管理员: function (job) {
+		return job == 800 || job == 900 || job == 910;
+	}, is皇家骑士团: function (job) {
+		return parseInt(job / 1000) == 1;
+	}, is圣魂剑士: function (job) {
+		return parseInt(job / 100) == 11;
+	}, is烈焰巫师: function (job) {
+		return parseInt(job / 100) == 12;
+	}, is破风使者: function (job) {
+		return parseInt(job / 100) == 13;
+	}, is暗夜行者: function (job) {
+		return parseInt(job / 100) == 14;
+	}, is闪雷悍将: function (job) {
+		return parseInt(job / 100) == 15;
+	}, is英雄团: function (job) {
+		return parseInt(job / 1000) == 2;
+	}, is狂狼勇士: function (job) {
+		return parseInt(job / 100) == 21 || job == 2000;
+	}, is龙魔导士: function (job) {
+		return parseInt(job / 100) == 22 || job == 2001;
+	}, is双弩精灵: function (job) {
+		return parseInt(job / 100) == 23 || job == 2002;
+	}, is幻影侠盗: function (job) {
+		return parseInt(job / 100) == 24 || job == 2003;
+	}, is夜光: function (job) {
+		return parseInt(job / 100) == 27 || job == 2004;
+	}, is隐月: function (job) {
+		return parseInt(job / 100) == 25 || job == 2005;
+	}, is末日反抗军: function (job) {
+		return parseInt(job / 1000) == 3;
+	}, is恶魔: function (job) {
+		return is恶魔杀手(job) || is恶魔复仇者(job) || job == 3001;
+	}, is恶魔杀手: function (job) {
+		return parseInt(job / 10) == 311 || job == 3100;
+	}, is恶魔复仇者: function (job) {
+		return parseInt(job / 10) == 312 || job == 3101;
+	}, is炼狱巫师: function (job) {
+		return parseInt(job / 100) == 32;
+	}, is狂豹猎人: function (job) {
+		return parseInt(job / 100) == 33;
+	}, is机械师: function (job) {
+		return parseInt(job / 100) == 35;
+	}, is尖兵: function (job) {
+		return parseInt(job / 100) == 36 || job == 3002;
+	}, is晓の阵: function (job) {
+		return parseInt(job / 1000) == 4;
+	}, is剑豪: function (job) {
+		return parseInt(job / 100) == 41 || job == 4001;
+	}, is阴阳师: function (job) {
+		return parseInt(job / 100) == 42 || job == 4002;
+	}, is米哈尔: function (job) {
+		return parseInt(job / 1000) == 5;
+	}, is飞侠: function (job) {
+		return job == 400 || job == 420 || job == 421 || job == 422 || job == 410 || job == 411 || job == 412 || parseInt(job / 10) == 43;
+	}, is诺巴: function (job) {
+		return parseInt(job / 1000) == 6;
 	},
 	is皮卡啾: function (job) {
-        return parseInt(job / 100) == 131 || job == 13000;
-    },
-    is林芝林: function (job) {
-        return parseInt(job / 100) == 112 || job == 11000;
-    }, is狂龙战士: function (job) {
-        return parseInt(job / 100) == 61 || job == 6000;
-    }, is萌天使: function (job) {
-        return parseInt(job / 100) == 65 || job == 6001;
-    }, is神之子: function (job) {
-        return job == 10000 || job == 10100 || job == 10110 || job == 10111 || job == 10112;
-    }, is林之灵: function (job) {
-        return parseInt(job / 100) == 112 || job == 11000;
-    }, is品克缤: function (job) {
-        return parseInt(job / 100) == 131 || job == 13000;
-    }, is超能力者: function (job) {
-        return job == 14000 || job == 14200 || job == 14210 || job == 14211 || job == 14212;
-    }, is剑士: function (job) {
-        return getTrueJobGrade(job) == 1;
-    }, is法师: function (job) {
-        return getTrueJobGrade(job) == 2;
-    }, is弓箭手: function (job) {
-        return getTrueJobGrade(job) == 3;
-    }, is盗贼: function (job) {
-        return getTrueJobGrade(job) == 4 || getTrueJobGrade(job) == 6;
-    }, is海盗: function (job) {
-        return getTrueJobGrade(job) == 5 || getTrueJobGrade(job) == 6;
-    }
+		return parseInt(job / 100) == 131 || job == 13000;
+	},
+	is林芝林: function (job) {
+		return parseInt(job / 100) == 112 || job == 11000;
+	}, is狂龙战士: function (job) {
+		return parseInt(job / 100) == 61 || job == 6000;
+	}, is萌天使: function (job) {
+		return parseInt(job / 100) == 65 || job == 6001;
+	}, is神之子: function (job) {
+		return job == 10000 || job == 10100 || job == 10110 || job == 10111 || job == 10112;
+	}, is林之灵: function (job) {
+		return parseInt(job / 100) == 112 || job == 11000;
+	}, is品克缤: function (job) {
+		return parseInt(job / 100) == 131 || job == 13000;
+	}, is超能力者: function (job) {
+		return job == 14000 || job == 14200 || job == 14210 || job == 14211 || job == 14212;
+	}, is剑士: function (job) {
+		return getTrueJobGrade(job) == 1;
+	}, is法师: function (job) {
+		return getTrueJobGrade(job) == 2;
+	}, is弓箭手: function (job) {
+		return getTrueJobGrade(job) == 3;
+	}, is盗贼: function (job) {
+		return getTrueJobGrade(job) == 4 || getTrueJobGrade(job) == 6;
+	}, is海盗: function (job) {
+		return getTrueJobGrade(job) == 5 || getTrueJobGrade(job) == 6;
+	}
 
 };
 function is_extendsp_job(job) {
@@ -150,24 +150,24 @@ function is_extendsp_job(job) {
 // console.log(parseInt(parseInt(3001/1000)));
 var GameConstants = {
 	isEnergyBuff: function (skill) { //body pressure, tele mastery, twister spin. etc
-        switch (skill) {
-            case 1095:
-            case 2111007:
-            case 2211007:
-            case 2311007:
-            case 5100015:
-            case 4341052://啊修罗
-            case 32111010:
-            case 35121003:
-            case 32121003:
-            case 21101003:
-            case 22161005:
-            case 12111007:
-            case 131000016:
-                return true;
-        }
-        return false;
-    }
+		switch (skill) {
+			case 1095:
+			case 2111007:
+			case 2211007:
+			case 2311007:
+			case 5100015:
+			case 4341052://啊修罗
+			case 32111010:
+			case 35121003:
+			case 32121003:
+			case 21101003:
+			case 22161005:
+			case 12111007:
+			case 131000016:
+				return true;
+		}
+		return false;
+	}
 }
 
 
@@ -965,7 +965,7 @@ function ReadIfFlaggedByte(value, flag, text) {
 		mplew.AddComment("Left over flags: " + (value - flag));
 		return value - flag;
 	}
-    return value;
+	return value;
 }
 
 function ReadIfFlaggedShort(value, flag, text) {
@@ -974,7 +974,7 @@ function ReadIfFlaggedShort(value, flag, text) {
 		mplew.AddComment("Left over flags: " + (value - flag));
 		return value - flag;
 	}
-    return value;
+	return value;
 }
 
 function ReadIfFlaggedInt(value, flag, text) {
@@ -983,7 +983,7 @@ function ReadIfFlaggedInt(value, flag, text) {
 		mplew.AddComment("Left over flags: " + (value - flag));
 		return value - flag;
 	}
-    return value;
+	return value;
 }
 
 function ReadIfFlaggedLong(value, flag, text) {
@@ -992,7 +992,7 @@ function ReadIfFlaggedLong(value, flag, text) {
 		mplew.AddComment("Left over flags: " + (value - flag));
 		return value - flag;
 	}
-    return value;
+	return value;
 }
 
 
@@ -1049,83 +1049,83 @@ function DecodeAvatar() {
 
 
 function IsBeginnerJob(pJobID) {
-    return (pJobID % 1000) == 0
-        || pJobID == 2001
-        || pJobID == 2002
-        || pJobID == 3001
-        || pJobID == 2003
-        || pJobID == 5000
-        || pJobID == 2004
-        || pJobID == 6000
-        || pJobID == 6001;
+	return (pJobID % 1000) == 0
+		|| pJobID == 2001
+		|| pJobID == 2002
+		|| pJobID == 3001
+		|| pJobID == 2003
+		|| pJobID == 5000
+		|| pJobID == 2004
+		|| pJobID == 6000
+		|| pJobID == 6001;
 }
 
 function is_ignore_master_level_for_common(pSkillID) {
-    v1 = false;
-    if (pSkillID > 5220014) {
-        if (pSkillID > 22181004) {
-            if (pSkillID <= 33121005) {
-                if (pSkillID == 33121005 || pSkillID == 23120011 || pSkillID == 23121008)
-                    return true;
-                return pSkillID == 33120010;
-            }
-            if (pSkillID != 35120014) {
-                return pSkillID == 51120000;
-            }
-        }
-        else {
-            if (pSkillID != 22181004) {
-                if (pSkillID > 5720005) {
-                    if (pSkillID == 5720008 || pSkillID == 5720012)
-                        return true;
-                    return pSkillID == 21120011;
-                }
-                if (pSkillID != 5720005) {
-                    if (pSkillID > 5321004) {
-                        return pSkillID == 5321006;
-                    }
-                    if (pSkillID < 5321003) {
-                        return pSkillID == 5320007;
-                    }
-                }
-            }
-        }
-        return true;
-    }
-    if (pSkillID == 5220014)
-        return true;
-    if (pSkillID > 3220010) {
-        if (pSkillID <= 4340010) {
-            if (pSkillID == 4340010 || pSkillID == 3220012 || pSkillID == 4110012)
-                return true;
-            return pSkillID == 4210012;
-        }
-        if (pSkillID > 5120012) {
+	v1 = false;
+	if (pSkillID > 5220014) {
+		if (pSkillID > 22181004) {
+			if (pSkillID <= 33121005) {
+				if (pSkillID == 33121005 || pSkillID == 23120011 || pSkillID == 23121008)
+					return true;
+				return pSkillID == 33120010;
+			}
+			if (pSkillID != 35120014) {
+				return pSkillID == 51120000;
+			}
+		}
+		else {
+			if (pSkillID != 22181004) {
+				if (pSkillID > 5720005) {
+					if (pSkillID == 5720008 || pSkillID == 5720012)
+						return true;
+					return pSkillID == 21120011;
+				}
+				if (pSkillID != 5720005) {
+					if (pSkillID > 5321004) {
+						return pSkillID == 5321006;
+					}
+					if (pSkillID < 5321003) {
+						return pSkillID == 5320007;
+					}
+				}
+			}
+		}
+		return true;
+	}
+	if (pSkillID == 5220014)
+		return true;
+	if (pSkillID > 3220010) {
+		if (pSkillID <= 4340010) {
+			if (pSkillID == 4340010 || pSkillID == 3220012 || pSkillID == 4110012)
+				return true;
+			return pSkillID == 4210012;
+		}
+		if (pSkillID > 5120012) {
 			5201008
-            return pSkillID == 5220012;
-        }
-        if (pSkillID < 5120011) {
-            return pSkillID == 4340012;
-        }
-        return true;
-    }
-    if (pSkillID >= 3220009)
-        return true;
-    if (pSkillID > 2121009) {
-        if (pSkillID > 2321010) {
-            if (pSkillID < 3120010 || pSkillID > 3120012)
-                return false;
-        }
-        else {
-            if (pSkillID != 2321010) {
-                return pSkillID == 2221009;
-            }
-        }
-        return true;
-    }
-    if (pSkillID == 2121009 || pSkillID == 1120012 || pSkillID == 1220013)
-        return true;
-    return pSkillID == 1320011;
+			return pSkillID == 5220012;
+		}
+		if (pSkillID < 5120011) {
+			return pSkillID == 4340012;
+		}
+		return true;
+	}
+	if (pSkillID >= 3220009)
+		return true;
+	if (pSkillID > 2121009) {
+		if (pSkillID > 2321010) {
+			if (pSkillID < 3120010 || pSkillID > 3120012)
+				return false;
+		}
+		else {
+			if (pSkillID != 2321010) {
+				return pSkillID == 2221009;
+			}
+		}
+		return true;
+	}
+	if (pSkillID == 2121009 || pSkillID == 1120012 || pSkillID == 1220013)
+		return true;
+	return pSkillID == 1320011;
 }
 
 // function is_skill_need_master_level(pSkillID)
@@ -1161,42 +1161,40 @@ function is_ignore_master_level_for_common(pSkillID) {
 // }
 
 function IsEvanJob(pJobID) {
-    return (parseInt(pJobID / 100) == 22 || pJobID == 2001);
+	return (parseInt(pJobID / 100) == 22 || pJobID == 2001);
 }
 
 function GetJobType(pJobID) {
-    if (IsBeginnerJob(pJobID) || (pJobID % 100) == 0 || pJobID == 501 || pJobID == 508) {
-        return 1;
-    }
-    else {
-        tmp = 0;
-        if (parseInt(pJobID / 10) == 43)
-            tmp = (pJobID - 430) / 2;
-        else
-            tmp = pJobID % 10;
-        tmp += 2;
-        if (tmp >= 2 && (tmp <= 4 || tmp <= 10 && IsEvanJob(pJobID)))
-            return tmp;
-        else
-            return 0;
-    }
+	if (IsBeginnerJob(pJobID) || (pJobID % 100) == 0 || pJobID == 501 || pJobID == 508) {
+		return 1;
+	}
+	else {
+		tmp = 0;
+		if (parseInt(pJobID / 10) == 43)
+			tmp = (pJobID - 430) / 2;
+		else
+			tmp = pJobID % 10;
+		tmp += 2;
+		if (tmp >= 2 && (tmp <= 4 || tmp <= 10 && IsEvanJob(pJobID)))
+			return tmp;
+		else
+			return 0;
+	}
 
 }
-
 function is_skill_need_master_level(nSkillID) {
 	var result; // eax@2
 	var v2; // eax@9
 	var v3; // edi@9
 
 	if (is_ignore_master_level(nSkillID)
-		|| parseInt(nSkillID / 1000000) == 92 && !(nSkillID % 10000)
+		|| (parseInt(nSkillID / 1000000) == 92 && !(nSkillID % 10000))
 		|| is_making_skill_recipe(nSkillID)
 		|| is_common_skill(nSkillID)
 		|| is_novice_skill(nSkillID)
 		|| is_field_attack_obj_skill(nSkillID)) {
 		result = 0;
-	}
-	else {
+	} else {
 		v2 = get_skill_root_from_skill(nSkillID);
 		v3 = v2;
 		result = nSkillID != 0x282B358
@@ -1216,14 +1214,14 @@ function is_ignore_master_level(nSkillID) {
 					return 1;
 				v1 = nSkillID == 0x1F95F0A;
 				// continue  LABEL_39;
-				 if ( v1 )
+				if (v1)
 					return 1;
 				return 0;
 			}
 			if (nSkillID != 51120000) {
 				v1 = nSkillID == 80001913;
 				// continue  LABEL_39;
-				 if ( v1 )
+				if (v1)
 					return 1;
 				return 0;
 			}
@@ -1234,16 +1232,16 @@ function is_ignore_master_level(nSkillID) {
 					return 1;
 				v1 = nSkillID - 0x51312E - 0xF112DD == 3;
 				// continue  LABEL_39;
-				
-				 if ( v1 )
+
+				if (v1)
 					return 1;
 				return 0;
 			}
 			if (nSkillID != 0x14247F0) {
 				v1 = nSkillID == 0x1524DBA + 3;
 				// continue  LABEL_39;
-				
-				 if ( v1 )
+
+				if (v1)
 					return 1;
 				return 0;
 			}
@@ -1256,7 +1254,7 @@ function is_ignore_master_level(nSkillID) {
 		if (nSkillID > 0x4FA6AC) {
 			if (nSkillID != (0x4FA6AC + 2)) {
 				v1 = nSkillID == 0x512D47;
-				 if ( v1 )
+				if (v1)
 					return 1;
 				return 0;
 			}
@@ -1286,9 +1284,9 @@ function is_ignore_master_level(nSkillID) {
 	}
 	//return v1;
 
-  if ( v1 )
-    return 1;
-  return 0;
+	if (v1)
+		return 1;
+	return 0;
 }
 function is_making_skill_recipe(a1) {
 	var v1; // ecx@3
@@ -1441,11 +1439,9 @@ function IsShengZhiZi(a1) {
 	return a1 == 10000 || a1 == 10100 || a1 == 10110 || a1 == 10111 || a1 == 10112;
 }
 
-function IsLongMoDao( a1)
-{
-  return parseInt(a1 / 100) == 22 || a1 == 2001;
+function IsLongMoDao(a1) {
+	return parseInt(a1 / 100) == 22 || a1 == 2001;
 }
-function is_dual_job( a1)
-{
-  return parseInt(a1 / 10) == 43;
+function is_dual_job(a1) {
+	return parseInt(a1 / 10) == 43;
 }
