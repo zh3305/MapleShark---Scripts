@@ -1,13 +1,10 @@
 function sub_B7C3F0(uFlag, a2) {
-  var result; // eax@2
-  if (a2 < 0x220)
-  { result = (uFlag[a2 >> 5] >> (31 - (a2 & 0x1F))) & 1; }
-  else
-  { result = 0; }
-  return result;
+    var result; // eax@2
+    if (a2 < 0x220) { result = (uFlag[a2 >> 5] >> (31 - (a2 & 0x1F))) & 1; } else { result = 0; }
+    return result;
 }
 var mask = new Array(3);
-mask[0] = 0x0;
+mask[0] = 0x10;
 mask[1] = 0x0;
 mask[2] = 1073741824;
 mask[3] = 0x0;
@@ -26,14 +23,23 @@ mask[15] = 0x0;
 mask[16] = 0x0;
 
 
-var str = "";
-for (var index = 0; index < 0x220; index++) {
-  if (sub_B7C3F0(mask, index)) {
-    str = str + " " + index + " ";
-    // console.log("-------" + index.toString(10) + "-------");
-  }
+function sub_B7C3F02(uFlag, a2) {
+    var result; // eax@2
+    if (a2 < 32) {
+        result = (uFlag[a2 >> 5] >> (31 - (a2 & 0x1F))) & 1;
+    } else {
+        result = 0;
+    }
+    return result;
 }
-// console.log(str);
+var str = "123123";
+for (var index = 0; index < 0x220; index++) {
+    if (sub_B7C3F02(mask, index)) {
+        str = str + " " + index + " ";
+        console.log("-------" + index.toString(10) + "-------");
+    }
+}
+console.log((1 << 0));
 //console.log(gethexind(0x1000, 5))
 // pattern2 =/^(((-?\d+)(\.\d+)?)|0x[a-fA-F0-9]{1,8})$/igm
 // console.log(pattern2.test("-1.0"))
@@ -42,90 +48,89 @@ for (var index = 0; index < 0x220; index++) {
 // console.log(parseInt("0xFF").toString(16).toUpperCase());
 
 
+// function gethexind(buffstat, firstStr) {
+//     if (buffstat > 2147483648) {
+//         return 0;
+//     }
+//     var value = 0;
+//     while (buffstat > 1) {
+//         buffstat /= 2;
+//         value++;
+//     }
+//     value = 31 - value;
+//     first = firstStr;
+//     value += first * 32;
+//     return value;
+//     // var Y = (Math.log(buffstat) / Math.log(2));
+//     // return (31 - Y) + (firstStr * 32)
+// }
 
-function gethexind(buffstat, firstStr) {
-  if (buffstat > 2147483648) {
-    return 0;
-  }
-  var value = 0;
-  while (buffstat > 1) {
-    buffstat /= 2;
-    value++;
-  }
-  value = 31 - value;
-  first = firstStr;
-  value += first * 32;
-  return value;
-  // var Y = (Math.log(buffstat) / Math.log(2));
-  // return (31 - Y) + (firstStr * 32)
-}
-function HashMap() {
-  var size = 0;/** Map 大小 **/
-  var entry = new Object();  /** 对象 **/
-  /** 存 **/
-  this.put = function (key, value) {
-    if (!this.containsKey(key)) {
-      size++;
-    }
-    entry[key] = value;
-  }
-  /** 取 **/
-  this.get = function (key) {
-    if (this.containsKey(key)) {
-      return entry[key];
-    }
-    else {
-      return null;
-    }
-  }
+// function HashMap() {
+//     var size = 0; /** Map 大小 **/
+//     var entry = new Object(); /** 对象 **/
+//     /** 存 **/
+//     this.put = function(key, value) {
+//             if (!this.containsKey(key)) {
+//                 size++;
+//             }
+//             entry[key] = value;
+//         }
+//         /** 取 **/
+//     this.get = function(key) {
+//         if (this.containsKey(key)) {
+//             return entry[key];
+//         } else {
+//             return null;
+//         }
+//     }
 
-  /** 删除 **/
-  this.remove = function (key) {
-    if (delete entry[key]) {
-      size--;
-    }
-  }
+//     /** 删除 **/
+//     this.remove = function(key) {
+//         if (delete entry[key]) {
+//             size--;
+//         }
+//     }
 
-  /** 是否包含 Key **/
-  this.containsKey = function (key) {
-    return (key in entry);
-  }
+//     /** 是否包含 Key **/
+//     this.containsKey = function(key) {
+//         return (key in entry);
+//     }
 
-  /** 是否包含 Value **/
-  this.containsValue = function (value) {
-    for (var prop in entry) {
-      if (entry[prop] == value) {
-        return true;
-      }
-    }
-    return false;
-  }
+//     /** 是否包含 Value **/
+//     this.containsValue = function(value) {
+//         for (var prop in entry) {
+//             if (entry[prop] == value) {
+//                 return true;
+//             }
+//         }
+//         return false;
+//     }
 
-  /** 所有 Value **/
-  this.values = function () {
-    var values = new Array(size);
-    for (var prop in entry) {
-      values.push(entry[prop]);
-    }
-    return values;
-  }
+//     /** 所有 Value **/
+//     this.values = function() {
+//         var values = new Array(size);
+//         for (var prop in entry) {
+//             values.push(entry[prop]);
+//         }
+//         return values;
+//     }
 
-  /** 所有 Key **/
-  this.keys = function () {
-    var keys = new Array(size);
-    for (var prop in entry) {
-      keys.push(prop);
-    }
-    return keys;
-  }
+//     /** 所有 Key **/
+//     this.keys = function() {
+//         var keys = new Array(size);
+//         for (var prop in entry) {
+//             keys.push(prop);
+//         }
+//         return keys;
+//     }
 
-  /** Map Size **/
-  this.size = function () {
-    return size;
-  }
-}
+//     /** Map Size **/
+//     this.size = function() {
+//         return size;
+//     }
+// }
 
-var map = new HashMap();
+// var map = new HashMap();
 
 /*
 map.put("A","1");
@@ -190,15 +195,15 @@ function MyObject(name)
 /** 如果改成复写toString()方法的对象 , 效果就完全不一样了 **/
 
 
-function operator(m_data) {
-  v1 = 0;
-  while (!m_data[v1]) {
-    if (++v1 >= 14) {
-      if (!m_data[14])
-        return 0;
-      return 1;
-    }
-  }
-  return 1;
-}
-console.log(!(554100 % 10000))
+// function operator(m_data) {
+//     v1 = 0;
+//     while (!m_data[v1]) {
+//         if (++v1 >= 14) {
+//             if (!m_data[14])
+//                 return 0;
+//             return 1;
+//         }
+//     }
+//     return 1;
+// }
+// console.log(!(554100 % 10000))

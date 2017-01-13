@@ -274,12 +274,12 @@ if (CharInfo) {
                 mplew.writeInt("maxmp");
             }
             if ((v4 & 0x100) != 0) {
-                mplew.writeInt("", 0);//未知
+                mplew.writeInt("", 0); //未知
             }
             if ((v4 & 0x200) != 0) {
-                mplew.writeInt("", -1);//未知
-                mplew.writeInt("", 0);//未知
-                mplew.writeInt("", 0);//未知
+                mplew.writeInt("", -1); //未知
+                mplew.writeInt("", 0); //未知
+                mplew.writeInt("", 0); //未知
             }
             // mplew.EndNode(false);
             mplew.EndNode(false);
@@ -304,15 +304,14 @@ if (CharInfo) {
                         dummyBLD.nItemID = mplew.writeInt("dummyBLD.nItemID");
                         dummyBLD.nCount = mplew.writeShort("dummyBLD.nCount ");
                         mplew.writeBuffer("dummyBLD.ftDate -2?", "00 40 E0 FD 3B 37 4F 01")
-                        // mplew.writeLong("dummyBLD.ftDate");
-                    }
-                    else {
+                            // mplew.writeLong("dummyBLD.ftDate");
+                    } else {
                         dummyBLD.dwNPCID = mplew.writeInt("dummyBLD.dwNPCID");
                         dummyBLD.nItemIndex = mplew.writeShort("dummyBLD.nItemIndex ");
                         dummyBLD.nItemID = mplew.writeInt("dummyBLD.nItemID");
                         dummyBLD.nCount = mplew.writeShort("dummyBLD.nCount ");
                         mplew.writeBuffer("dummyBLD.ftDate -2?", "00 40 E0 FD 3B 37 4F 01")
-                        // mplew.writeLong("dummyBLD.ftDate");
+                            // mplew.writeLong("dummyBLD.ftDate");
                     }
                 }
             }
@@ -360,8 +359,8 @@ if (CharInfo) {
 
     mplew.StartNode("flag & 0x10000 GW_SoulCollection");
     if ((mask & 0x10000) != 0) {
-        v143 = mplew.writeShort("Count");//未知
-        for (var i = 0; i < v143; i++) {//ZMap<long,ZRef<GW_SoulCollection>,long>::Insert
+        v143 = mplew.writeShort("Count"); //未知
+        for (var i = 0; i < v143; i++) { //ZMap<long,ZRef<GW_SoulCollection>,long>::Insert
             mplew.writeInt("");
             mplew.writeInt("");
         }
@@ -391,8 +390,7 @@ if (CharInfo) {
                     while (v257 > 0);
                 }
             }
-        }
-        else {
+        } else {
             for (lpOutputString = mplew.writeShort("forCount"); lpOutputString > 0; --lpOutputString) {
                 iPacket2 = mplew.writeShort("iPacket2");
                 v259 = mplew.writeInt("v259");
@@ -405,7 +403,7 @@ if (CharInfo) {
     mplew.StartNode("flag & 0x4 ReturnEffectInfo::Decode");
     if ((mask & 0x4) != 0) {
         if (mplew.write("Bool", 0, 1)) {
-            result = mplew.writeInt("result");//0100
+            result = mplew.writeInt("result"); //0100
         }
     }
     mplew.EndNode(false);
@@ -474,7 +472,7 @@ if (CharInfo) {
     mplew.EndNode(false);
 
     mplew.StartNode("flag & 0x20000 RunnerGameRecord::Decode")
-    if ((mask & 0x20000) != 0) {//RunnerGameRecord::Decode
+    if ((mask & 0x20000) != 0) { //RunnerGameRecord::Decode
         //              struct RunnerGameRecord
         //            {
         //              unsigned int dwCharacterID;
@@ -568,9 +566,9 @@ if (CharInfo) {
         if (v275 > 0) {
             iPacket2 = v275;
             do {
-                mplew.write("", 0);//*this = Packet_ReadByte(a2);
-                mplew.writeInt("", 0);//*(v2 + 1) = Packet_ReadInt(a2);
-                mplew.writeInt("", 0);// result = Packet_ReadInt(a2);
+                mplew.write("", 0); //*this = Packet_ReadByte(a2);
+                mplew.writeInt("", 0); //*(v2 + 1) = Packet_ReadInt(a2);
+                mplew.writeInt("", 0); // result = Packet_ReadInt(a2);
                 --iPacket2;
             }
             while (iPacket2);
@@ -579,9 +577,9 @@ if (CharInfo) {
         if (v277 > 0) {
             iPacket2 = v277;
             do {
-                mplew.writeInt("", 0);//*this = Packet_ReadInt(CInPacket);
-                mplew.writeInt("", 0);//  *(v2 + 4) = Packet_ReadInt(CInPacket);
-                mplew.writeLong("", 0);//return Packet_ReadBuffer(CInPacket, v2 + 8, 8u);
+                mplew.writeInt("", 0); //*this = Packet_ReadInt(CInPacket);
+                mplew.writeInt("", 0); //  *(v2 + 4) = Packet_ReadInt(CInPacket);
+                mplew.writeLong("", 0); //return Packet_ReadBuffer(CInPacket, v2 + 8, 8u);
                 --iPacket2;
             }
             while (iPacket2);
@@ -623,7 +621,7 @@ if (CharInfo) {
 
 
     mplew.StartNode("flag & 0x40000  addCoreAura")
-    if ((mask & 0x40000) != 0) {//addCoreAura
+    if ((mask & 0x40000) != 0) { //addCoreAura
         addCoreAura();
         mplew.write("", 1);
     }
@@ -680,8 +678,8 @@ if (CharInfo) {
             v1 += 7;
         }
         mplew.AddComment("sub_42D560 return:" + ((v2 & 1) + (v2 >> 1)) * (1 - 2 * (v2 & 1)))
-        //  return ((v2 & 1) + (v2 >> 1)) * (1 - 2 * (v2 & 1));
-        // sub_42D560 end
+            //  return ((v2 & 1) + (v2 >> 1)) * (1 - 2 * (v2 & 1));
+            // sub_42D560 end
     }
 
     mplew.EndNode(false);
@@ -708,14 +706,14 @@ mplew.write(1, 0);
 
 count133 = mplew.writeInt("New 133 Unknown count", 0x2c, 0x32, 0x6A);
 mplew.StartNode("New 133 Unknown")
-// mplew.AddField("New 133 Unknown ", 48);
-mplew.writeBuffer("Unknown hex", "02 00 00 00 82 16 FB 52 01 00 00")//3 int
+    // mplew.AddField("New 133 Unknown ", 48);
+mplew.writeBuffer("Unknown hex", "02 00 00 00 82 16 FB 52 01 00 00") //3 int
 unkmake = mplew.write("unk make", 0xDC, 0x14, 0x8C);
 mplew.writeInt("make", count133 - 36);
 mplew.AddPaddedString("nuk make", count133 - 36);
-mplew.writeBuffer("Unknown hex", "F7 24 11 76 00 00 00")//3 int
+mplew.writeBuffer("Unknown hex", "F7 24 11 76 00 00 00") //3 int
 mplew.write("unk make", unkmake);
-mplew.writeBuffer("Unknown hex", " 08 00 00 00 01 00 00")//3 int
+mplew.writeBuffer("Unknown hex", " 08 00 00 00 01 00 00") //3 int
 mplew.write("unk make", unkmake);
 mplew.writeInt(0);
 mplew.EndNode(true);
@@ -773,8 +771,7 @@ if (v3) {
             ++v7;
         }
         while (v7 < 10);
-    }
-    else {
+    } else {
         mplew.writeInt("");
         mplew.writeInt("");
         mplew.writeInt("v6");
@@ -826,6 +823,7 @@ function ReadIfFlaggedByte(value, flag, text) {
     }
     return value;
 }
+
 function ReadIfFlaggedShort(value, flag, text) {
     if ((value & flag) == flag) {
         mplew.AddShort(text + " - " + flag);
@@ -833,6 +831,7 @@ function ReadIfFlaggedShort(value, flag, text) {
     }
     return value;
 }
+
 function ReadIfFlaggedInt(value, flag, text) {
     if ((value & flag) == flag) {
         mplew.writeInt(text + " - " + flag);
@@ -840,6 +839,7 @@ function ReadIfFlaggedInt(value, flag, text) {
     }
     return value;
 }
+
 function ReadIfFlaggedLong(value, flag, text) {
     if ((value & flag) == flag) {
         mplew.writeLong(text + " - " + flag);
@@ -848,6 +848,7 @@ function ReadIfFlaggedLong(value, flag, text) {
     }
     return value;
 }
+
 function HasSeparatedSP(job) {
     if (IsAran(job))
         return false;
@@ -859,21 +860,27 @@ function HasSeparatedSP(job) {
 function HasFaceMark(job) {
     return IsXenon(job) || IsDemonSlayer(job) || IsDemonAvenger(job);
 }
+
 function IsKOC(job) {
     return job >= 1000 && job < 2000;
 }
+
 function IsAran(job) {
     return job >= 2000 && job <= 2112 && job != 2001 && job != 2002 && job != 2003 && job != 2004;
 }
+
 function IsDemonSlayer(job) {
     return job == 30001 || (job >= 3100 && job <= 3112 && job != 3101);
 }
+
 function IsXenon(job) {
     return job == 3002 || (job >= 3600 && job <= 3612);
 }
+
 function IsDemonAvenger(job) {
     return job == 3001 || job == 3101 || (job >= 3120 && job <= 3122);
 }
+
 function IsZero(job) {
     return job == 10000 || (job >= 10100 && job <= 10112);
 }
@@ -1347,17 +1354,16 @@ function addSkillInfo() {
         for (i = 0; i < skillCount; i++) {
             mplew.StartNode("Skill " + (i + 1));
             Skills = mplew.writeInt("Skills ID");
-            mplew.LogAppend(Skills + ",");
+            // mplew.LogAppend(Skills + ",");
             mplew.writeInt("Level ? teachId?");
-            mplew.writeLong("Default Expiration Time");//, 150842304000000000
+            mplew.writeLong("Default Expiration Time"); //, 150842304000000000
             if (is_skill_need_master_level(Skills)) {
                 mplew.writeInt("FourthJob")
             }
             mplew.EndNode(false);
         }
         mplew.EndNode(false);
-    }
-    else {
+    } else {
         mplew.StartNode("old Skills Format");
 
         mplew.EndNode(false);
@@ -1375,13 +1381,14 @@ function UnkFunction() {
     mplew.EndNode(false);
 
 }
+
 function addRedLeafInfo() {
     mplew.StartNode("addRedLeafInfo");
     mplew.writeInt("chr.getClient().getAccID()");
     mplew.writeInt("chr.getId()");
     count = mplew.writeInt("Count", 5);
     mplew.writeInt("Unknown", 0);
-    for (i = 1; i <= count; i++) {//Packet_ReadBuffer(a2, (v2 + 4), 0x28u);
+    for (i = 1; i <= count; i++) { //Packet_ReadBuffer(a2, (v2 + 4), 0x28u);
         mplew.StartNode("addRedLeafInfo " + i);
         mplew.writeInt("9410165-9410168");
         mplew.writeInt("getFriendShipPoints");
@@ -1390,6 +1397,7 @@ function addRedLeafInfo() {
     mplew.EndNode(false);
 
 }
+
 function addCoreAura() {
     mplew.StartNode("addCoreAura");
     mplew.writeInt("", 0);
@@ -1401,18 +1409,18 @@ function addCoreAura() {
     // do {
     //     mplew.writeInt("v3");
     //     --v4;
-    mplew.writeInt("aura.getAtt()");//wep att
-    mplew.writeInt("aura.getDex()");//dex
-    mplew.writeInt("aura.getLuk()");//luk
-    mplew.writeInt("aura.getMagic()");//magic att
-    mplew.writeInt("aura.getInt()");//int
-    mplew.writeInt("aura.getStr()");//str
+    mplew.writeInt("aura.getAtt()"); //wep att
+    mplew.writeInt("aura.getDex()"); //dex
+    mplew.writeInt("aura.getLuk()"); //luk
+    mplew.writeInt("aura.getMagic()"); //magic att
+    mplew.writeInt("aura.getInt()"); //int
+    mplew.writeInt("aura.getStr()"); //str
     // }
     // while (v4);
     // v6 = 4;
     // do {
     mplew.writeInt("", 0);
-    mplew.writeInt("aura.getTotal()");//max
+    mplew.writeInt("aura.getTotal()"); //max
     mplew.writeInt(0);
     mplew.writeInt(0);
     //     mplew.writeInt("v5");
@@ -1424,6 +1432,7 @@ function addCoreAura() {
     mplew.EndNode(false);
 
 }
+
 function getNumSteal(jobNum) {
     switch (jobNum) {
         case 1:
@@ -1458,76 +1467,77 @@ function QuestInfoPacket() {
     mplew.EndNode(false);
 
 }
+
 function addAbilityInfo() {
-    v143 = mplew.writeShort("角色内在能力 count");//未知
+    v143 = mplew.writeShort("角色内在能力 count"); //未知
 
     for (var i = 0; i < v143; i++) {
         mplew.StartNode("Inner-Statistic " + i);
         mplew.write("", i + 1);
         mplew.writeInt("",
-            70000061,//	运气和敏捷增加	运气和敏捷增加。
-            70000062,//	运气和智力增加	运气和智力增加。
-            70000060,//	智力和敏捷增加	智力和敏捷增加。
-            70000050,//	金币获得量增加	金币获得量增加。
-            70000051,//	力量和敏捷增加	力量和敏捷增加。
-            70000052,//	力量和智力增加	力量和智力增加。
-            70000053,//	力量和运气增加	力量和运气增加。
-            70000054,//	敏捷和智力增加	敏捷和智力增加。
-            70000055,//	敏捷和运气增加	敏捷和运气增加。
-            70000056,//	智力和运气增加	智力和运气增加。
-            70000057,//	敏捷和力量增加	敏捷和力量增加。
-            70000058,//	智力和力量增加	智力和力量增加。
-            70000059,//	运气和力量增加	运气和力量增加。
-            70000041,//	物防提升伤害	攻击时，根据物理防御力的一定比例，增加最终伤害。
-            70000042,//	魔防提升伤害	攻击时，根据魔法防御力的一定比例，增加最终伤害。
-            70000040,//	命中值提升伤害	攻击时，根据命中值的一定比例，增加最终伤害。
-            70000045,//	有一定概率无冷却时间	使用技能后，有一定概率无冷却时间。
-            70000046,//	被动技能等级加1	被动技能的技能等级增加1级。
-            70000043,//	受到魔攻减少伤害	受到魔法攻击时，根据物理防御力的一定比例，减少伤害。
-            70000044,//	受到物攻减少伤害	受到物理攻击时，根据魔法防御力的一定比例，减少伤害。
-            70000049,//	物品掉落率增加	物品掉落率增加。
-            70000047,//	增加群攻技能对象数	增加群攻技能的攻击对象数量。
-            70000048,//	增益持续时间增加	增益持续时间增加。
-            70000029,//	物理防御力增加%	物理防御力增加一定比例。
-            70000037,//	阿斯旺塔追加伤害	攻击塔时，伤害增加一定比例。
-            70000036,//	一般怪物追加伤害	攻击普通怪物时，伤害提高。
-            70000039,//	给异常敌人额外伤害	对象存在状态异常效果时，伤害增加。
-            70000038,//	一击必杀解放战补给模式普通怪物	攻击解放战补给模式的普通怪物时，有一定概率造成一击必杀效果。
-            70000033,//	命中率增加	命中率增加。
-            70000032,//	最大MP增加一定比例	最大MP增加一定比例。
-            70000035,//	攻击BOSS怪物时伤害提高	攻击BOSS怪物时，伤害提高。
-            70000034,//	回避率增加	回避率增加。
-            70000031,//	最大HP增加一定比例	最大HP增加一定比例。
-            70000030,//	魔法防御力增加%	魔法防御力增加一定比例。
-            70000018,//	魔防提升物防	根据魔法防御力的一定比例，增加物理防御力。
-            70000019,//	命中值提升MP上限	根据命中值的一定比例，增加最大MP。
-            70000028,//	回避值增加%	回避值增加一定比例。
-            70000027,//	命中值增加%	命中值增加一定比例。
-            70000026,//	升级增加魔法攻击力	每达到一定等级，魔法攻击力增加1。
-            70000025,//	升级增加物理攻击力	每达到一定等级，攻击力增加1。
-            70000024,//	运气提升敏捷	根据投资了AP的运气的一定比例，增加敏捷。
-            70000023,//	智力提升运气	根据投资了AP的智力的一定比例，增加运气。
-            70000022,//	敏捷提升力量	根据投资了AP的敏捷的一定比例，增加力量。
-            70000021,//	力量提升敏捷	根据投资了AP的力量的一定比例，增加敏捷。
-            70000020,//	回避值提升HP上限	根据回避值的一定比例，增加最大HP。
-            70000007,//	魔法防御力增加	魔法防御力增加。
-            70000008,//	最大HP增加	最大HP增加。
-            70000009,//	最大MP增加	最大MP增加。
-            70000011,//	移动速度增加	移动速度增加。
-            70000010,//	跳跃力增加	跳跃力增加。
-            70000013,//	魔法攻击力增加	魔法攻击力增加。
-            70000012,//	物理攻击力增加	物理攻击力增加。
-            70000015,//	全属性增加	所有能力值增加。
-            70000014,//	爆击率增加	爆击率增加。
-            70000017,//	物防提升魔防	根据物理防御力的一定比例，增加魔法防御力。
-            70000016,//	攻击速度提升	攻击速度提高1阶段。
-            70000002,//	智力增加	智力增加。
-            70000001,//	敏捷增加	敏捷增加。
-            70000000,//	力量增加	力量增加。
-            70000006,//	物理防御力增加	物理防御力增加。
-            70000005,//	回避值增加	回避值增加。
-            70000004,//	命中值增加	命中值增加。
-            70000003//	运气增加	运气增加。
+            70000061, //	运气和敏捷增加	运气和敏捷增加。
+            70000062, //	运气和智力增加	运气和智力增加。
+            70000060, //	智力和敏捷增加	智力和敏捷增加。
+            70000050, //	金币获得量增加	金币获得量增加。
+            70000051, //	力量和敏捷增加	力量和敏捷增加。
+            70000052, //	力量和智力增加	力量和智力增加。
+            70000053, //	力量和运气增加	力量和运气增加。
+            70000054, //	敏捷和智力增加	敏捷和智力增加。
+            70000055, //	敏捷和运气增加	敏捷和运气增加。
+            70000056, //	智力和运气增加	智力和运气增加。
+            70000057, //	敏捷和力量增加	敏捷和力量增加。
+            70000058, //	智力和力量增加	智力和力量增加。
+            70000059, //	运气和力量增加	运气和力量增加。
+            70000041, //	物防提升伤害	攻击时，根据物理防御力的一定比例，增加最终伤害。
+            70000042, //	魔防提升伤害	攻击时，根据魔法防御力的一定比例，增加最终伤害。
+            70000040, //	命中值提升伤害	攻击时，根据命中值的一定比例，增加最终伤害。
+            70000045, //	有一定概率无冷却时间	使用技能后，有一定概率无冷却时间。
+            70000046, //	被动技能等级加1	被动技能的技能等级增加1级。
+            70000043, //	受到魔攻减少伤害	受到魔法攻击时，根据物理防御力的一定比例，减少伤害。
+            70000044, //	受到物攻减少伤害	受到物理攻击时，根据魔法防御力的一定比例，减少伤害。
+            70000049, //	物品掉落率增加	物品掉落率增加。
+            70000047, //	增加群攻技能对象数	增加群攻技能的攻击对象数量。
+            70000048, //	增益持续时间增加	增益持续时间增加。
+            70000029, //	物理防御力增加%	物理防御力增加一定比例。
+            70000037, //	阿斯旺塔追加伤害	攻击塔时，伤害增加一定比例。
+            70000036, //	一般怪物追加伤害	攻击普通怪物时，伤害提高。
+            70000039, //	给异常敌人额外伤害	对象存在状态异常效果时，伤害增加。
+            70000038, //	一击必杀解放战补给模式普通怪物	攻击解放战补给模式的普通怪物时，有一定概率造成一击必杀效果。
+            70000033, //	命中率增加	命中率增加。
+            70000032, //	最大MP增加一定比例	最大MP增加一定比例。
+            70000035, //	攻击BOSS怪物时伤害提高	攻击BOSS怪物时，伤害提高。
+            70000034, //	回避率增加	回避率增加。
+            70000031, //	最大HP增加一定比例	最大HP增加一定比例。
+            70000030, //	魔法防御力增加%	魔法防御力增加一定比例。
+            70000018, //	魔防提升物防	根据魔法防御力的一定比例，增加物理防御力。
+            70000019, //	命中值提升MP上限	根据命中值的一定比例，增加最大MP。
+            70000028, //	回避值增加%	回避值增加一定比例。
+            70000027, //	命中值增加%	命中值增加一定比例。
+            70000026, //	升级增加魔法攻击力	每达到一定等级，魔法攻击力增加1。
+            70000025, //	升级增加物理攻击力	每达到一定等级，攻击力增加1。
+            70000024, //	运气提升敏捷	根据投资了AP的运气的一定比例，增加敏捷。
+            70000023, //	智力提升运气	根据投资了AP的智力的一定比例，增加运气。
+            70000022, //	敏捷提升力量	根据投资了AP的敏捷的一定比例，增加力量。
+            70000021, //	力量提升敏捷	根据投资了AP的力量的一定比例，增加敏捷。
+            70000020, //	回避值提升HP上限	根据回避值的一定比例，增加最大HP。
+            70000007, //	魔法防御力增加	魔法防御力增加。
+            70000008, //	最大HP增加	最大HP增加。
+            70000009, //	最大MP增加	最大MP增加。
+            70000011, //	移动速度增加	移动速度增加。
+            70000010, //	跳跃力增加	跳跃力增加。
+            70000013, //	魔法攻击力增加	魔法攻击力增加。
+            70000012, //	物理攻击力增加	物理攻击力增加。
+            70000015, //	全属性增加	所有能力值增加。
+            70000014, //	爆击率增加	爆击率增加。
+            70000017, //	物防提升魔防	根据物理防御力的一定比例，增加魔法防御力。
+            70000016, //	攻击速度提升	攻击速度提高1阶段。
+            70000002, //	智力增加	智力增加。
+            70000001, //	敏捷增加	敏捷增加。
+            70000000, //	力量增加	力量增加。
+            70000006, //	物理防御力增加	物理防御力增加。
+            70000005, //	回避值增加	回避值增加。
+            70000004, //	命中值增加	命中值增加。
+            70000003 //	运气增加	运气增加。
         );
         mplew.write("Inner" + i + " Level");
         mplew.write("Inner" + i + " Rank");

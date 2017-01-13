@@ -14,8 +14,14 @@ def ShowFlags(Flag):
         while (iii<17):
             val=Dword(Flag+iii*4);
             if(val!=0):
+                for num in range(0,32):
+                    print(" %#x"%(1<<num));
+                    if(val &(1<<num)!=0):
+                        print(" map.put(%#x,%d); "%(Flag, gethexind(1<<num,iii)));
+                        # print 'sss :', val
+            # if(val!=0):
                 #print ("pos=%d; hex = %#x  st=%d; \n"%(iii, val,gethexind(val,iii)));
-                print(" map.put(%#x,%d); "%(Flag, gethexind(val,iii)));
+                # print(" map.put(%#x,%d); "%(Flag, gethexind(val,iii)));
             iii=iii+1;
     else:
         print("无数据");

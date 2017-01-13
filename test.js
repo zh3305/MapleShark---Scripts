@@ -1,7 +1,6 @@
-
 function GetMapleBuff(buffstat) {
-  return buffstat = 1 << (31 - (buffstat % 32))
-}// GetNulllBuff(null)[Math.floor(buffstat / 32)] = 
+    return buffstat = 1 << (31 - (buffstat % 32))
+} // GetNulllBuff(null)[Math.floor(buffstat / 32)] = 
 function GetNulllBuff(retdata) {
     if (retdata == null) {
         retdata = [];
@@ -12,4 +11,4 @@ function GetNulllBuff(retdata) {
     return retdata;
 }
 
-  console.log(GetMapleBuff(1).tostring(16));
+console.log(GetMapleBuff(1));

@@ -296,7 +296,7 @@ function NPC_TALK() {
     talk = talk.replace(regR, "\\r").replace(regN, "\\n");
     // return type2;
     switch (Byt_msgType) {
-        case 0x3:
+        case 0x3://YesNo
             if (type == 0x25) {
                 //新对话框 type2 == 1 新对话框 不带终止按钮 npcid==0 是 否
                 mplew.LogAppend("cm.sendYesNoSNewforce(\"" + talk + "\"" + ((type & 4) ? "," + Int_npcID : "") + ")");
@@ -311,10 +311,10 @@ function NPC_TALK() {
                 mplew.LogAppend("cm.sendYesNo(\"" + talk + "\"" + ((type & 4) ? "," + Int_npcID : "") + ")");
             }
             break;
-        case 0x5:
-            "sendSimpleSNew"
-            mplew.LogAppend("cm.sendSimple(\"" + talk + "\")");
-            break;
+        // case 0x5:
+        //     "sendSimpleSNew"
+        //     mplew.LogAppend("cm.sendSimple(\"" + talk + "\")");
+        //     break;
         case 0x6:
             //新选择框 type2==1 type==0x38
             // mplew.LogAppend("cm.sendNewSimple(\"" + talk + "\")");
@@ -335,7 +335,7 @@ function NPC_TALK() {
         case 0x10:
             if (type == 0) {
                 //type==0 tye2==0 旧对话框 是否
-                mplew.LogAppend("cm.sendYesNo(\"" + talk + "\")");
+                mplew.LogAppend("cm.sendAcceptDecline(\"" + talk + "\")");
             } else if (type == 2) {
                 //type==0 tye2==0 旧对话框 接受拒绝  玩家头像
                 mplew.LogAppend("cm.sendTAcceptDecline(\"" + talk + "\")");
@@ -892,7 +892,7 @@ function sub_D9CA20(type, a6/*  */)
     typea2 = mplew.write("typea2");
     mplew.writeInt("ipcid");
     mplew.writeInt(1);
-    if (a6) {
+    if (a6) {//1a 0
         v33 = mplew.writeInt("v33");
         v32 = mplew.writeInt("v32");
     }
@@ -900,8 +900,8 @@ function sub_D9CA20(type, a6/*  */)
         direction = mplew.write("左右");
     }
 }
-function sub_DA05C0(type, set/*  */)
 //void __thiscall sub_DA05C0 (/* void *this, var a2, var a3, var iPacket, unsigned var type, var a6, var a7, int set */)
+function sub_DA05C0(type, set/*  */)
 {
     if (type & 4)
         Int_npcID = mplew.writeInt("v10");
