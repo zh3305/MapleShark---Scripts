@@ -3,9 +3,9 @@
      var entry = new Object();
      this.put = function(key, value) {
          if (!this.containsKey(key)) {
-             size++
+             size++;
          }
-         entry[key] = value
+         entry[key] = value;
      };
      this.get = function(key) {
          if (this.containsKey(key)) {
@@ -16,36 +16,36 @@
      };
      this.remove = function(key) {
          if (delete entry[key]) {
-             size--
+             size--;
          }
      };
      this.containsKey = function(key) {
-         return (key in entry)
+         return (key in entry);
      };
      this.containsValue = function(value) {
          for (var prop in entry) {
              if (entry[prop] == value) {
-                 return true
+                 return true;
              }
          }
-         return false
+         return false;
      };
      this.values = function() {
          var values = new Array(size);
          for (var prop in entry) {
-             values.push(entry[prop])
+             values.push(entry[prop]);
          }
-         return values
+         return values;
      };
      this.keys = function() {
          var keys = new Array(size);
          for (var prop in entry) {
              keys.push(prop)
          }
-         return keys
+         return keys;
      };
      this.size = function() {
-         return size
+         return size;
      }
  }
 
@@ -6562,20 +6562,21 @@
      v2893 = mplew.writeInt("v2893");
      mplew.EndNode(false);
  }
-mplew.EndNode(false);
+ mplew.EndNode(false);
  // sub_40ED00( /* &v5264, 0x220 */ );
  // }
 
-// }
-// SecondaryStat::DecodeForLocal();
-v206 = mplew.writeShort("v206");
-v216 = mplew.write("ComboAbilityBuff");
-v217 = mplew.write("bFirstSet");
-v214 = mplew.write("IsTemporaryOnShow");
-if (sub_E60680(mask)) {
-    mplew.write("isMovementAffectingStat", 0)
-}
-mplew.writeInt("未知", 0);
+ // }
+ // SecondaryStat::DecodeForLocal();
+ v206 = mplew.writeShort("v206");
+ v216 = mplew.write("ComboAbilityBuff");
+ v217 = mplew.write("bFirstSet");
+ v214 = mplew.write("IsTemporaryOnShow");
+ if (sub_E60680(mask)) {
+     mplew.write("isMovementAffectingStat", 0)
+ }
+ mplew.writeInt("未知", 0);
+
  function sub_43ACB0() {
      mplew.StartNode("sub_439640");
      v1 = 0;

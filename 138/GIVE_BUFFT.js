@@ -3,19 +3,19 @@ function HashMap() {
     var entry = new Object();
     this.put = function(key, value) {
         if (!this.containsKey(key)) { size++ }
-        entry[key] = value
+        entry[key] = value;
     };
     this.get = function(key) {
         if (this.containsKey(key)) { return entry[key] } else {
             throw "找不到对应的Mask " + key.toString(16);
         }
     };
-    this.remove = function(key) { if (delete entry[key]) { size-- } };
-    this.containsKey = function(key) { return (key in entry) };
+    this.remove = function(key) { if (delete entry[key]) { size--; } };
+    this.containsKey = function(key) { return (key in entry); };
     this.containsValue = function(value) { for (var prop in entry) { if (entry[prop] == value) { return true } } return false };
     this.values = function() { var values = new Array(size); for (var prop in entry) { values.push(entry[prop]) } return values };
     this.keys = function() { var keys = new Array(size); for (var prop in entry) { keys.push(prop) } return keys };
-    this.size = function() { return size }
+    this.size = function() { return size; }
 }
 
 var map = new HashMap();

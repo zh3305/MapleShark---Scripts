@@ -68,9 +68,9 @@ function addMonsterInformation() {
         mplew.writeInt("link");
     }
     mplew.write("life.getCarnivalTeam()");
-    mplew.writeInt("life.getHp()"); // life.getHp() > 2147483647 ? 2147483647 : (life.getChangedStats() != null ? (int) life.getChangedStats().getHp() : (int) life.getHp())
+    mplew.writeLong("life.getHp()"); // life.getHp() > 2147483647 ? 2147483647 : (life.getChangedStats() != null ? (int) life.getChangedStats().getHp() : (int) life.getHp())
     mplew.writeInt("nEffectItemID", 0);
-    if (mplew.DAddInt() == -2350 /*unk*/) { // 巡逻怪物的侦测范围?
+    if (mplew.DAddInt() == -2350 /*unk*/ ) { // 巡逻怪物的侦测范围?
         mplew.writeInt("", -2350);
         mplew.writeInt("", -1750);
         mplew.writeInt("", 150);
@@ -80,9 +80,9 @@ function addMonsterInformation() {
     mplew.writeInt("", 0);
     mplew.writeInt("", 0);
     mplew.writeInt("", 0);
-    if (WzMonstrId / 10000 == 961)//pvp怪物
+    if (WzMonstrId / 10000 == 961) //pvp怪物
     {
-        mplew.writeMapleAsciiString("pvp怪物");//m_sLifeReleaseMobName
+        mplew.writeMapleAsciiString("pvp怪物"); //m_sLifeReleaseMobName
     }
     mplew.writeInt("nAfterAttack", -1);
     mplew.writeInt("nCurrentAction", -1);

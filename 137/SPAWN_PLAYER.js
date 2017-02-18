@@ -2174,14 +2174,17 @@ function DecodeForRemote()
                 case 6:
                     mplew.writeShort(0);
                     mplew.writeInt(0);
-                    mplew.writeLong(0);
+                    mplew.writeLong("0");
                     break;
                 case 5:
                     mplew.writeInt(0);
-                    mplew.writeLong(0);
+                    mplew.writeLong("0");
                     mplew.write(0);
                     break;
-                    // case 2:
+                case 2:
+                    mplew.writeShort(0);
+                    mplew.writeInt(0);
+                    break;
                     // case 7:
                     // case 8:
                 default:

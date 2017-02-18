@@ -1,4 +1,5 @@
 SPAWN_MONSTER_CONTROL();
+
 function SPAWN_MONSTER_CONTROL()
 //int __stdcall SPAWN_MONSTER_CONTROL(int a1)
 {
@@ -15,16 +16,15 @@ function SPAWN_MONSTER_CONTROL()
         type2 = mplew.write("nCalcDamageIndex");
 
         mplew.StartNode("sub_BD9DD0");
-        sub_BD9DD0(/* v1, v3, v4, a1, 1 */);
+        sub_BD9DD0( /* v1, v3, v4, a1, 1 */ );
         mplew.EndNode(false);
-    }
-    else {
+    } else {
         // result = sub_BD8910 (/* v2 */);
     }
     //   return result;
 }
 
-function sub_BD9DD0(/*  */)
+function sub_BD9DD0( /*  */ )
 //int __thiscall sub_BD9DD0 (/* char *this, var type, var ObjectId_1, var nCalcDamageIndex, var iPacket, int int_1 */)
 {
     //   Mob = CMobPool::GetMob(this, ObjectId_1);
@@ -54,17 +54,19 @@ function sub_BD9DD0(/*  */)
 
     if (mplew.Remaining() > 1) {
         mplew.StartNode("addMonsterInformation");
-        addMonsterInformation();//Mob_1, ObjectId_1, iPacket_1
+        addMonsterInformation(); //Mob_1, ObjectId_1, iPacket_1
         mplew.EndNode(false);
     }
     //   }
 }
+
 function writeMaskFromList(mask) {
     var MAX_MOBSTAT = 3;
     for (var i = 0; i < MAX_MOBSTAT; i++) {
         mask[i] = mplew.writeInt("mask[(" + i + ")]");
     }
 }
+
 function EncodeTemporary() {
 
     mplew.StartNode("mask");
@@ -77,6 +79,7 @@ function EncodeTemporary() {
     sub_E831C0(mask);
     mplew.EndNode(false);
 }
+
 function addMonsterStatus() {
     getChangedStats = mplew.write("life.getChangedStats() != null", 0, 1);
     if (getChangedStats) {
@@ -95,6 +98,7 @@ function addMonsterStatus() {
         mplew.writeInt(0);
     }
 }
+
 function sub_B7C3F0(uFlag, a2) {
     var result; // eax@2
 
@@ -104,8 +108,7 @@ function sub_B7C3F0(uFlag, a2) {
             mplew.AddComment("uFlag " + a2)
         }
         result = rest;
-    }
-    else {
+    } else {
         result = 0;
     }
     return result;
@@ -124,9 +127,9 @@ function addMonsterInformation() {
         mplew.writeInt("link");
     }
     mplew.write("life.getCarnivalTeam()");
-    mplew.writeInt("life.getHp()");// life.getHp() > 2147483647 ? 2147483647 : (life.getChangedStats() != null ? (int) life.getChangedStats().getHp() : (int) life.getHp())
+    mplew.writeLong("life.getHp()"); // life.getHp() > 2147483647 ? 2147483647 : (life.getChangedStats() != null ? (int) life.getChangedStats().getHp() : (int) life.getHp())
     mplew.writeInt("", 0);
-    if (mplew.DAddInt() == -2350/*unk*/) { // 巡逻怪物的侦测范围?
+    if (mplew.DAddInt() == -2350 /*unk*/ ) { // 巡逻怪物的侦测范围?
         mplew.writeInt("", -2350);
         mplew.writeInt("", -1750);
         mplew.writeInt("", 150);
@@ -144,15 +147,16 @@ function addMonsterInformation() {
     var getEliteMobType = mplew.writeInt("life.getEliteMobType()");
     mplew.write("life.getEliteMobType() >= 0 菁英怪物"); // 菁英怪物
     if (getEliteMobType >= 0) {
-        mplew.writeInt("", getEliteMobType == 2 ? 0x80000000 : 0x66000000);//*(v2 + 1)
-        mplew.writeInt("", getEliteMobType == 2 ? 0x24000000 : 0xC000000);//*(v2 + 2)
-        mplew.writeInt("", 0x1000000);//*(v2 + 3)
-        mplew.writeInt("", 0);//*(v2 + 4)
+        mplew.writeInt("", getEliteMobType == 2 ? 0x80000000 : 0x66000000); //*(v2 + 1)
+        mplew.writeInt("", getEliteMobType == 2 ? 0x24000000 : 0xC000000); //*(v2 + 2)
+        mplew.writeInt("", 0x1000000); //*(v2 + 3)
+        mplew.writeInt("", 0); //*(v2 + 4)
     }
     mplew.write("", 0);
     mplew.writeInt("", 0);
 }
-function sub_E831C0(uFlag)//MobStat *MobStat, int uFlag, int iPacket, int tCur
+
+function sub_E831C0(uFlag) //MobStat *MobStat, int uFlag, int iPacket, int tCur
 {
     v5 = sub_B7C3F0(uFlag, 0);
     if (v5) {
@@ -667,8 +671,7 @@ function sub_E831C0(uFlag)//MobStat *MobStat, int uFlag, int iPacket, int tCur
         mplew.writeInt("MobStat1->uIncizing_");
         mplew.writeInt("MobStat1->pIncizing_");
     }
-    if (sub_B7C3F0(uFlag, 0x42))
-    { mplew.writeInt("MobStat1->nSoulExplosion_"); }
+    if (sub_B7C3F0(uFlag, 0x42)) { mplew.writeInt("MobStat1->nSoulExplosion_"); }
     if (sub_B7C3F0(uFlag, 0x55)) {
         mplew.writeInt("MobStat1->nJaguarBleeding_");
         mplew.writeInt("MobStat1->rJaguarBleeding_");
