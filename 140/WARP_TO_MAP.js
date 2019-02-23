@@ -133,6 +133,75 @@ if (CharInfo) {
         addInventoryInfo(); //物品信息
     }
     mplew.EndNode(false);
+
+    mplew.StartNode("flag & 0x1000000 unk");
+    if ((mask & 0x1000000) != 0) {
+        // sub_651B70(/* v387 + 1529 */);
+        v152 = mplew.writeInt("");
+        if (v152 > 0) {
+            v153 = v152;
+            do {
+                v154 = mplew.writeInt("");
+                // lpOutputString = v154;
+                FileTime = mplew.writeBuffer("FileTime", 8);
+                // sub_76D4F0(/* &lpOutputString, &FileTime */);
+                --v153;
+            }
+            while (v153);
+        }
+    }
+
+    mplew.EndNode(false);
+    mplew.StartNode("flag & 0x40000000 unk");
+    if ((mask & 0x40000000) != 0) {
+        // sub_651BE0 (/* v387 + 1553 */);
+        v155 = mplew.writeInt("");
+        if (v155 > 0) {
+            v156 = v155;
+            do {
+                // lpOutputString = 0;
+                // v385 = 0;
+                lpOutputString = mplew.writeBuffer("lpOutputString", 8);
+                FileTime = mplew.writeBuffer("FileTime", 8);
+                // sub_788E20(/* &lpOutputString, &FileTime */);
+                --v156;
+            }
+            while (v156);
+        }
+    }
+    mplew.EndNode(false);
+    mplew.StartNode("flag & 0x80000 unk");
+    if ((mask & 0x80000) != 0) {
+        for (v390 = mplew.write(""); v390; v390 = mplew.write("")) {
+            sub_779D80(/* &lpOutputString, ipacket */);
+            //         function sub_76B0B0 (/*  */) {
+            mplew.writeInt("");
+            mplew.write("");
+            mplew.write("");
+            mplew.writeInt("");
+            mplew.writeInt("");
+            mplew.writeInt("");
+            mplew.writeInt("");
+            mplew.write("");
+            mplew.writeInt("");
+            mplew.writeBuffer(" v27", 8);
+            mplew.writeBuffer(" v35", 8);
+            mplew.writeBuffer(" v43", 8);
+            mplew.writeBuffer(" v51", 8);
+            // }
+
+            // v420 = 20;
+            // v160 = &lpOutputString;
+            // if ((BYTE3(v390) - 1) <= 2u )
+            // {
+            //     sub_789E50(/* &lpOutputString */);
+            //     v160 = &lpOutputString;
+            // }
+            // v420 = 6;
+            //   sub_6551A0 (/* v160 */);
+        }
+    }
+    mplew.EndNode(false);
     mplew.StartNode("flag & 0x100");
     if ((mask & 0x100) != 0) {
         addSkillInfo();
@@ -372,14 +441,14 @@ if (CharInfo) {
                         dummyBLD.nItemID = mplew.writeInt("dummyBLD.nItemID");
                         dummyBLD.nCount = mplew.writeShort("dummyBLD.nCount ");
                         mplew.writeBuffer("dummLong.ftDate -2?", "94354848000000000")
-                            // mplew.writeLong("dummyBLD.ftDate");
+                        // mplew.writeLong("dummyBLD.ftDate");
                     } else {
                         dummyBLD.dwNPCID = mplew.writeInt("dummyBLD.dwNPCID");
                         dummyBLD.nItemIndex = mplew.writeShort("dummyBLD.nItemIndex ");
                         dummyBLD.nItemID = mplew.writeInt("dummyBLD.nItemID");
                         dummyBLD.nCount = mplew.writeShort("dummyBLD.nCount ");
                         mplew.writeBuffer("dummLong.ftDate -2?", "94354848000000000")
-                            // mplew.writeLong("dummyBLD.ftDate");
+                        // mplew.writeLong("dummyBLD.ftDate");
                     }
                 }
             }
@@ -628,23 +697,23 @@ if (CharInfo) {
     if (result > 0) {
         v17 = result;
         do {
-            // v16 = sub_217E646;
-            // v15 = -1157267456;
-            // LOBYTE( /* v3 */ ) = mplew.Decode8("");
-            // v6 = v3;
-            // v7 = v4;
-            v8 = mplew.writeInt("v8");
-            v9 = mplew.writeInt("v9");
-            v10 = mplew.writeInt("v10");
-            v11 = mplew.writeInt("v11");
-            v12 = mplew.writeInt("v12");
-            v13 = mplew.writeInt("v13");
-            v14 = mplew.writeInt("v14");
+            mplew.StartNode("List  " + result)
+            mplew.writeLong("unk");
+            mplew.writeInt("SkillID");
+            mplew.writeInt(1);
+            mplew.writeInt(0);
+            mplew.writeInt("技能等级");
+            mplew.writeInt("关联技能1");
+            mplew.writeInt("关联技能2");
+            mplew.writeInt("关联技能3");
+            mplew.writeLong("addExpirationTime");
             // sub_76CC10( /* &v15 */ );
             // result = sub_76EC70( /* -1 */ );
-            // v5 = v17 == 1;
-            // v17 = (v17 - 1);
+            v5 = v17 == 1;
+            v17 = (v17 - 1);
             // qmemcpy(result, & v6, 0x2C u);
+            result--;
+            mplew.EndNode(false);
         }
         while (!v5);
     }
@@ -775,8 +844,8 @@ if (CharInfo) {
             v1 += 7;
         }
         mplew.AddComment("sub_42D560 return:" + ((v2 & 1) + (v2 >> 1)) * (1 - 2 * (v2 & 1)))
-            //  return ((v2 & 1) + (v2 >> 1)) * (1 - 2 * (v2 & 1));
-            // sub_42D560 end
+        //  return ((v2 & 1) + (v2 >> 1)) * (1 - 2 * (v2 & 1));
+        // sub_42D560 end
     }
 
     mplew.EndNode(false);
@@ -806,7 +875,7 @@ mplew.write(1, 0);
 
 count133 = mplew.writeInt("New 133 Unknown count", 0x2c, 0x32, 0x6A);
 mplew.StartNode("New 133 Unknown")
-    // mplew.AddField("New 133 Unknown ", 48);
+// mplew.AddField("New 133 Unknown ", 48);
 mplew.writeBuffer("Unknown hex", "02 00 00 00 82 16 FB 52 01 00 00") //3 int
 unkmake = mplew.write("unk make", 0xDC, 0x14, 0x8C);
 mplew.writeInt("make", count133 - 36);
@@ -1217,7 +1286,7 @@ function addInventoryInfo() {
         mplew.EndNode(false);
     }
     mplew.EndNode(false);
-    mplew.AddField("Unknown 0", 9);
+    // mplew.AddField("Unknown 0", 9);
     mplew.EndNode(true);
     mplew.EndNode(false);
 
@@ -1327,8 +1396,8 @@ function DecodeItem() {
         mplew.AddShort("潜能2");
         mplew.AddShort("潜能3");
         mplew.AddShort("附加潜能4");
-        mplew.AddShort("附加潜能5");
         mplew.AddShort("附加潜能6");
+        mplew.AddShort("附加潜能5");
         mplew.AddShort("Anvilled item ID + (itemid - (itemid % 10000))");
         mplew.AddShort("Socket state?");
         mplew.AddShort("getSocket1");
@@ -1349,7 +1418,9 @@ function DecodeItem() {
         mplew.AddShort("魂武器 炽热结晶数量");
         mplew.writeInt("突破伤害上限 LimitBreak");
         mplew.AddUShort("139 new");
-        mplew.AddUShort("139 new");
+        if (mplew.AddUShort("139 new")) {
+            mplew.writeLong("unk");
+        }
         mplew.EndNode(true); //addEquipBonusStats
     } else if (type == 0x02) {
         mplew.writeLong("Expiration Time");
@@ -1485,7 +1556,7 @@ function addRedLeafInfo() {
 
 }
 
-function sub_1AC20D0( /*  */ )
+function sub_1AC20D0( /*  */)
 //unsigned int __stdcall sub_1AC20D0 (/* CInPacket *a1 */)
 {
     v1 = 0;
@@ -1493,7 +1564,7 @@ function sub_1AC20D0( /*  */ )
     v3 = result;
     for (i = result; result; i = result) {
         // sub_A3B830( /* &v24 */ );
-        sub_A4D310( /* &v24, a1 */ );
+        sub_A4D310( /* &v24, a1 */);
         // v5 = CWvsContext::GetCharacterData( & v21);
         result = mplew.writeInt("result");
         v3 = result;
@@ -1501,14 +1572,14 @@ function sub_1AC20D0( /*  */ )
     return result;
 }
 
-function sub_A4D310( /*  */ ) //139 new
+function sub_A4D310( /*  */) //139 new
 //char __thiscall sub_A4D310 (/* unsigned var this, CInPacket *a2 */)
 {
     mplew.writeInt("this");
     mplew.writeInt("");
     mplew.writeInt("");
-    mplew.Decode8("");
-    mplew.Decode8("");
+    mplew.writeLong("unk");
+    mplew.writeLong("unk");
     v7 = mplew.writeShort("");
     v8 = mplew.writeShort("");
     v9 = mplew.writeShort("");

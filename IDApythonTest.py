@@ -18,7 +18,7 @@ def ShowFlags(Flag):
                     print(" %#x"%(1<<num));
                     if(val &(1<<num)!=0):
                         print(" map.put(%#x,%d); "%(Flag, gethexind(1<<num,iii)));
-                        # print 'sss :', val
+                        print 'sss :', val
             # if(val!=0):
                 #print ("pos=%d; hex = %#x  st=%d; \n"%(iii, val,gethexind(val,iii)));
                 # print(" map.put(%#x,%d); "%(Flag, gethexind(val,iii)));
